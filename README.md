@@ -4,7 +4,7 @@
   <h1>Welcome to the Class of FemaleTechGen! </h1>
   <p>The Class 2022 of Female Tech Power over Generations is a two-days hands-on coding training for all Females of all Generations.</p>
   
-![GenFemaleTechLogo](./img/femaletech.jpg)
+![FemaleTechGenLogo](./img/femaletech.jpg)
 
   <p>
     <sub>Built with ❤ by everybody who wants to make the world a little bit more diverse! </sub>
