@@ -1,1 +1,1 @@
-# GenFemaleTech = FemaleTechPower = Female Tech over Generations
+# GenFemaleTech =  Female Tech Power over Generations
