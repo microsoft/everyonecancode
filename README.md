@@ -13,7 +13,6 @@
 
 <hr>
 
-![Microgram App Mock](./img/microgram-mock.png)
 
 ## Goal of the Class 2022 of Female Tech Power over Generations
 
@@ -22,6 +21,9 @@ The goal is to show all Females of any generation, that anything is possible als
 But you can start in any age, so we thought of starting with a commonality: building an App on our phone which can take pictures and which we can talk to or in other (tech) words: how to build a progressive Web App on our Phone which uses pre-trained machine learning models as restful endpoints. The Application uses REST APIs and we will use Azure to meet the challenge to get it running.
 To close the gap we will first start with getting the application to run and then secondly integrate the ML REST APIs. As a place where we can create our Tech Dreams we will use Github create our space of collaboration as our motto always is: Sharing is Caring!
 
+<div align="center">
+![Microgram App Mock](./img/microgram-mock.png)
+</div>
 
 ## Goal of the Class 2022 of Female Tech Power over Generations Training Days 
 
