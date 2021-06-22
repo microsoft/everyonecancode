@@ -13,6 +13,7 @@
 
 <hr>
 
+![Microgram App Mock](./img/microgram-mock.png)
 
 ## Goal of the Class 2022 of Female Tech Power over Generations
 
