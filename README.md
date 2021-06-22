@@ -22,9 +22,8 @@ But you can start in any age, so we thought of starting with a commonality: buil
 To close the gap we will first start with getting the application to run and then secondly integrate the ML REST APIs. As a place where we can create our Tech Dreams we will use Github create our space of collaboration as our motto always is: Sharing is Caring!
 
 <div align="center">
-  <p>
-     ![Microgram App Mock](./img/microgram-mock.png)
-  </p>
+  <p></p>
+  ![Microgram App Mock](./img/microgram-mock.png)
 </div>
 
 ## Goal of the Class 2022 of Female Tech Power over Generations Training Days 
