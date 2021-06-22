@@ -23,7 +23,7 @@ To close the gap we will first start with getting the application to run and the
 
 <div align="center">
   <p></p>
-  <img src="./img/microgram-mock.png" />
+  <img src="./img/microgram-mock.png" alt="Microgram App Mockup" />
 </div>
 
 ## Goal of the Class 2022 of Female Tech Power over Generations Training Days 
