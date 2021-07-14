@@ -9,8 +9,9 @@ azure-storage-blob = "*"
 uvloop = "*"
 fastapi = "*"
 httptools = "*"
+python-multipart = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.8.5"
+python_version = "3.9"
