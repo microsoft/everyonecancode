@@ -1,10 +1,15 @@
 
 <template>
   <b-navbar fixed-bottom :mobile-burger="false">
-    <template #brand>
+    <template #start>
       <b-navbar-item tag="div"> Hallo </b-navbar-item>
       <b-navbar-item tag="block">
-        <b-icon type="is-primary" icon="camera" pack="fas"></b-icon>
+        <b-icon
+          type="is-primary"
+          size="is-large"
+          icon="camera"
+          pack="fas"
+        ></b-icon>
       </b-navbar-item>
     </template>
   </b-navbar>
