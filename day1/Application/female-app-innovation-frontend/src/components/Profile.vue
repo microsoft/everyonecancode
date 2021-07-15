@@ -1,6 +1,11 @@
 <template>
   <div>
-    <img :src="profile.avatar_url" />
+    <b-image
+            :src="profile.avatar_url"
+            alt="Profile Picture of User"
+            ratio="1by1"
+            rounded="true"
+    ></b-image>
     <h2>{{ profile.name }}</h2>
   </div>
 </template>

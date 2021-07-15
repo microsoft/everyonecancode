@@ -1,8 +1,10 @@
 <template>
   <div>
     <div>
-      <div v-for="image in imageList" :key="image">
-        <img width="400px" :src="image.url" />
+      <div class="tile is-parent" v-for="image in imageList" :key="image">
+        <div class="tile is-child">
+        <b-image ratio="1by1  " :src="image.url" />
+        </div>
       </div>
     </div>
   </div>
