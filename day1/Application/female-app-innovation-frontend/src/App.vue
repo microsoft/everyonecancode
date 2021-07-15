@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/femaletech.jpg" />
+    <Profile/>
     <ImageList/>
   </div>
 </template>
@@ -8,9 +8,11 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import ImageList from "./components/ImageList.vue";
+import Profile from "./components/Profile.vue";
 
 @Component({
   components: {
+    Profile,
     ImageList
   },
 })

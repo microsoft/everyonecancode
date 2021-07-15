@@ -1,8 +1,5 @@
 <template>
   <div>
-    <h1>
-      Welcome to your first Microgram to upload your pixel-perfect pictures 🤗
-    </h1>
     <div>
       <div v-for="image in imageList" :key="image">
         <img width="400px" :src="image.url" />
