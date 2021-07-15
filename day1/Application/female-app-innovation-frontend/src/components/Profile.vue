@@ -1,12 +1,15 @@
 <template>
-  <div>
+  <div class="profile is-size-4">
     <b-image
             :src="profile.avatar_url"
             alt="Profile Picture of User"
             ratio="1by1"
             rounded="true"
     ></b-image>
-    <h2>{{ profile.name }}</h2>
+    <h1>{{ profile.name }}</h1>
+    <div class="buttons">
+        <b-button rounded type="is-black" expanded>Edit Profile</b-button>
+    </div>
   </div>
 </template>
 
@@ -40,4 +43,7 @@ export default class Profile extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.profile {
+    padding: 30px
+}
 </style>
