@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="container">
+      <vue-web-cam selectFirstDevice="true"/>
       <Profile />
       <ImageList />
       <Navbar />

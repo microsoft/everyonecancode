@@ -1,16 +1,17 @@
 
 <template>
   <b-navbar fixed-bottom :mobile-burger="false">
-    <template #start>
-      <b-navbar-item tag="div"> Hallo </b-navbar-item>
-      <b-navbar-item tag="block">
+    <template #brand>
+      <div class="buttons container">
+        <b-button rounded type="is-black" expanded>
         <b-icon
-          type="is-primary"
+          type="is-white"
           size="is-large"
           icon="camera"
           pack="fas"
         ></b-icon>
-      </b-navbar-item>
+        </b-button>
+        </div>
     </template>
   </b-navbar>
 </template>
