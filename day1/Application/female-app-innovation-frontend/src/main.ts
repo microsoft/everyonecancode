@@ -8,8 +8,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 // internal icons
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import WebCam from 'vue-web-cam';
 import router from './router'
+import EasyCamera from 'easy-vue-camera';
 
 
 library.add(faCamera);
@@ -18,7 +18,7 @@ Vue.use(Buefy, {
   defaultIconComponent: "vue-fontawesome",
   defaultIconPack: "fas",
 });
-Vue.use(WebCam)
+Vue.component("EasyCamera",EasyCamera);
 Vue.config.productionTip = false;
 new Vue({
   router,
