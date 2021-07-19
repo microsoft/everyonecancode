@@ -9,6 +9,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import WebCam from 'vue-web-cam';
+import router from './router'
+
 
 library.add(faCamera);
 Vue.component("vue-fontawesome", FontAwesomeIcon);
@@ -19,6 +21,7 @@ Vue.use(Buefy, {
 Vue.use(WebCam)
 Vue.config.productionTip = false;
 new Vue({
+  router,
   store,
   render: (h) => h(App),
 }).$mount("#app");
