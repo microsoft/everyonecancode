@@ -21,7 +21,6 @@
     "vue-page-stack": "^1.5.0",
     "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.5.2",
-    "vue-web-cam": "^1.9.0",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
