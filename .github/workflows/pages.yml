@@ -19,10 +19,12 @@ jobs:
       - uses: actions/setup-node@v2.1.5
         with:
           node-version: '12'
-
+          
       - run: |
           npm ci
           npm run build
+        env:
+          PUBLIC_PATH: FemaleAIAppInnovationEcosystem
         working-directory: day1/Application/female-app-innovation-frontend
       - name: Upload result of Application build
         uses: actions/upload-artifact@v2
