@@ -1,29 +1,47 @@
 
 <template>
   <div id="microphone">
-    <h1>Microphone</h1>
     <VueRecordAudio @stream="onStream" @result="onResult" />
+    <p class="is-large">{{ text }}</p>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from "vue-property-decorator";
-import axios from "axios";
+import { Component, Vue } from "vue-property-decorator";
+import {
+  SpeechConfig,
+  AudioConfig,
+  SpeechRecognizer,
+  SpeechRecognitionEventArgs,
+} from "microsoft-cognitiveservices-speech-sdk";
 
-const apiUrl =
-  "https://westeurope.api.cognitive.microsoft.com/sts/v1.0/issuetoken";
 const apiKey = "d349139ec5084a5b816e99a4a01e02e7";
+const region = "westeurope";
+
+const speechConfig = SpeechConfig.fromSubscription(apiKey, region);
+speechConfig.speechRecognitionLanguage = "de-DE";
+var recognizer: SpeechRecognizer;
 
 @Component({
   components: {},
 })
 export default class Microphone extends Vue {
-  onStream(data: any) {
-    console.log(data);
+  text = "";
+
+  onStream(stream: MediaStream) {
+    const audioConfig = AudioConfig.fromStreamInput(stream);
+    recognizer = new SpeechRecognizer(speechConfig, audioConfig);
+    recognizer.recognizing = this.onRegonitionResult;
+    recognizer.recognized = this.onRegonitionResult;
+    recognizer.startContinuousRecognitionAsync();
   }
 
-  result(data: any) {
-    console.log(data);
+  onRegonitionResult(sender: any, event: SpeechRecognitionEventArgs) {
+    this.text = event.result.text;
+  }
+
+  onResult() {
+    recognizer.stopContinuousRecognitionAsync();
   }
 }
 </script>
