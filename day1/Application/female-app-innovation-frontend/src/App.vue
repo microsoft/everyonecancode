@@ -14,8 +14,6 @@ import ImageList from "./components/ImageList.vue";
 import Profile from "./components/Profile.vue";
 import Navbar from "./components/Navbar.vue";
 
-
-
 @Component({
   components: {
     Profile,
@@ -54,7 +52,7 @@ body {
     border-radius: 5px;
     padding: 15px;
     margin: 5px 0;
-   }
+  }
 
   .cube-input {
     margin: 5px 0;
@@ -92,5 +90,4 @@ body {
   opacity: 0.5;
   transform: translateX(-100%);
 }
-
 </style>

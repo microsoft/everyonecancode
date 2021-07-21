@@ -4,23 +4,22 @@
     <template #brand>
       <div class="buttons container">
         <b-button rounded type="is-black" expanded>
-        <router-link to="/camera">
-        <b-icon
-          type="is-white"
-          size="is-large"
-          icon="camera"
-          pack="fas"
-        ></b-icon>
-        </router-link>
+          <router-link to="/camera">
+            <b-icon
+              type="is-white"
+              size="is-large"
+              icon="camera"
+              pack="fas"
+            ></b-icon>
+          </router-link>
         </b-button>
-        </div>
+      </div>
     </template>
   </b-navbar>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-
 
 @Component
 export default class Navbar extends Vue {}
