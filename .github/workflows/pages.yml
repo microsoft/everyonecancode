@@ -28,8 +28,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: static-website
-          path: .vuepress/dist
-
+          path: day1/Application/female-app-innovation-frontend
   deploy:
     runs-on: ubuntu-latest
     needs: build
@@ -41,10 +40,10 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: static-website
-          path: .vuepress/dist
+          path: day1/Application/female-app-innovation-frontend
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
-          build_dir: .vuepress/dist
+          build_dir: day1/Application/female-app-innovation-frontend
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
