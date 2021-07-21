@@ -24,7 +24,7 @@ jobs:
           npm ci
           npm run build
         env:
-          PUBLIC_PATH: FemaleAIAppInnovationEcosystem
+          BASE_URL: FemaleAIAppInnovationEcosystem
         working-directory: day1/Application/female-app-innovation-frontend
       - name: Upload result of Application build
         uses: actions/upload-artifact@v2
