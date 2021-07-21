@@ -20,8 +20,11 @@ jobs:
         with:
           node-version: '12'
 
-      - run: npx vuepress build
-      - name: Upload result of vuepress build
+      - run: |
+          npm ci
+          npm run build
+        working-directory: day1/Application/female-app-innovation-frontend
+      - name: Upload result of Application build
         uses: actions/upload-artifact@v2
         with:
           name: static-website
