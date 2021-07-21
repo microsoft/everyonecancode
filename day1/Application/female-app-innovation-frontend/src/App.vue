@@ -24,15 +24,15 @@ import Navbar from "./components/Navbar.vue";
   },
 })
 export default class App extends Vue {
-  transitionName = 'forward'
-  screen = 'home'
+  transitionName = "forward";
+  screen = "home";
   @Watch("$route")
-  route(to, from){
-    if (to.params['stack-key-dir'] === 'forward') {
-        this.transitionName = 'forward';
-      } else {
-        this.transitionName = 'back';
-      }
+  route(to: any, from: any) {
+    if (to.params["stack-key-dir"] === "forward") {
+      this.transitionName = "forward";
+    } else {
+      this.transitionName = "back";
+    }
   }
 }
 </script>
