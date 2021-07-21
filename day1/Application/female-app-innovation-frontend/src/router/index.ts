@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import VuePageStack from "vue-page-stack";
 import Home from "../views/Home.vue";
 import Camera from "../views/Camera.vue";
+import Recorder from "../views/Microphone.vue";
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,11 @@ const routes = [
     path: "/camera",
     name: "camera",
     component: Camera,
+  },
+  {
+    path: "/microphone",
+    name: "microphone",
+    component: Recorder,
   },
 ];
 

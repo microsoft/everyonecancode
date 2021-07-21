@@ -5,3 +5,4 @@ declare module "*.vue" {
 
 declare module "easy-vue-camera";
 declare module "vue-page-stack";
+declare module "@codekraft-studio/vue-record";

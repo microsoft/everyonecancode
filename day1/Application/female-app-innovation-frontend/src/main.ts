@@ -6,12 +6,14 @@ import "buefy/dist/buefy.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 // internal icons
-import { faCamera } from "@fortawesome/free-solid-svg-icons";
+import { faCamera, faMicrophone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import router from "./router";
 import EasyCamera from "easy-vue-camera";
+import VueRecord from "@codekraft-studio/vue-record";
 
-library.add(faCamera);
+library.add(faCamera, faMicrophone);
+Vue.use(VueRecord);
 Vue.component("vue-fontawesome", FontAwesomeIcon);
 Vue.use(Buefy, {
   defaultIconComponent: "vue-fontawesome",
