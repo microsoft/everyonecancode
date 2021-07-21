@@ -7,6 +7,7 @@
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
 import axios from "axios";
+import router from "../router";
 
 const apiUrl = "https://fotobackendtest.azurewebsites.net";
 
@@ -18,6 +19,7 @@ export default class Camera extends Vue {
   @Watch("picture")
   savePicture() {
     //console.log(this.picture);
+    router.back();
     fetch(this.picture)
       .then((res) => res.blob())
       .then((blob) => {
@@ -25,7 +27,7 @@ export default class Camera extends Vue {
         console.log(file);
         const data = new FormData();
         data.append("file", file);
-        axios.post(`${apiUrl}/upload/`, data, {
+        return axios.post(`${apiUrl}/upload/`, data, {
           headers: { "Content-Type": "multipart/form-data" },
         });
       });
