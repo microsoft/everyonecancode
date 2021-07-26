@@ -1,9 +1,13 @@
 <template>
   <div>
     <div>
-      <div class="tile is-parent" v-for="image in imageList" :key="image">
+      <div
+        class="tile is-parent"
+        v-for="image in imageList"
+        :key="image.image_url"
+      >
         <div class="tile is-child">
-          <b-image ratio="1by1  " :src="image.url" />
+          <b-image ratio="1by1  " :src="image.image_url" />
         </div>
       </div>
     </div>
@@ -28,11 +32,7 @@ export default class ImageList extends Vue {
     axios
       .get(`${apiUrl}/images`)
       .then((response) => {
-        this.imageList = response.data.files.map((file: any) => {
-          return {
-            url: `${apiUrl}/images/${file}`,
-          };
-        });
+        this.imageList = response.data;
       })
       .catch((error) => {
         console.log(error);
