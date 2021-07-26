@@ -8,6 +8,7 @@
       >
         <div class="tile is-child">
           <b-image ratio="1by1  " :src="image.image_url" />
+          <b-button rounded type="is-black" v-on:click="deleteImage(image)" />
         </div>
       </div>
     </div>
@@ -23,6 +24,13 @@ const apiUrl = "https://fotobackendtest.azurewebsites.net";
 @Component
 export default class ImageList extends Vue {
   imageList = [];
+
+  deleteImage(image: any) {
+    console.log(image);
+    axios.delete(image.image_url).then(() => {
+      this.getImageList();
+    });
+  }
 
   mounted() {
     this.getImageList();
