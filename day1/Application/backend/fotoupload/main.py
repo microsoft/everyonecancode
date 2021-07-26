@@ -46,6 +46,17 @@ async def images(image_name):
     return StreamingResponse(blob.chunks())
 
 
+@app.delete("/images/{image_name}", status_code=204)
+async def delete(image_name):
+    try:
+        blob_container_client = container_client.get_blob_client(image_name)
+        blob_container_client.delete_blob()
+    except ResourceNotFoundError:
+        raise HTTPException(
+            status_code=404, detail="Your picture was not found 🤓")
+    return {}
+
+
 @app.post("/upload/")
 async def upload(file: UploadFile = File(...)):
     container_client.upload_blob(
