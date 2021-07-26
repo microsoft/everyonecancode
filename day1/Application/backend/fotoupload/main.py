@@ -1,9 +1,13 @@
 import os
 import io
-from fastapi import FastAPI, HTTPException, File, UploadFile
+from fastapi import FastAPI, HTTPException, File, UploadFile, Request
 from azure.storage.blob import BlobServiceClient
 from azure.core.exceptions import ResourceNotFoundError
 from fastapi.responses import StreamingResponse
+from pydantic import BaseModel
+from datetime import datetime
+from typing import List
+from urllib.parse import quote
 
 
 connection_string = os.environ['STORAGE_CONNECTIONSTRING']
@@ -14,14 +18,19 @@ container_client = service.get_container_client("images")
 
 app = FastAPI()
 
+class Image(BaseModel):
+    created_at: datetime = None
+    image_url: str
 
-@app.get("/images")
-async def list_images():
+
+
+@app.get("/images", response_model=List[Image])
+async def list_images(request: Request):
     try:
-        blobs = [b.name for b in container_client.list_blobs()]
+        blobs = [Image(created_at=b.last_modified, image_url=f"{request.url}/{quote(b.name)}") for b in container_client.list_blobs()]
     except ResourceNotFoundError:
         raise HTTPException(status_code=404, detail="Container not found")
-    return {"files": blobs}
+    return blobs
 
 
 @app.get("/images/{image_name}")
