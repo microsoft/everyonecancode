@@ -1,0 +1,26 @@
+name: pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - uses: azure/login@v1
+        with:
+          creds: ${{secrets.AZURE_CREDENTIALS}}
+
+      - uses: azure/webapps-deploy@v2
+        with:
+          app-name: fotobackendtest
+          package: day1/Application/backend/fotoupload
