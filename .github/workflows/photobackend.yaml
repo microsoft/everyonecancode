@@ -1,4 +1,4 @@
-name: pages
+name: photobackend
 
 on:
   push:
