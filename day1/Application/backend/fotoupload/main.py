@@ -55,7 +55,6 @@ async def delete(image_name):
     except ResourceNotFoundError:
         raise HTTPException(
             status_code=404, detail="Your picture was not found 🤓")
-    return {}
 
 
 @app.post("/upload/")
