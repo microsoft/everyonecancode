@@ -13,6 +13,11 @@
             <b-icon type="is-white" icon="microphone" pack="fas"></b-icon>
           </router-link>
         </b-button>
+        <b-button rounded type="is-black">
+          <router-link to="/faceai">
+            <b-icon type="is-white" icon="grin-stars" pack="fas"></b-icon>
+          </router-link>
+        </b-button>
       </div>
     </template>
   </b-navbar>

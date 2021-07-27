@@ -4,6 +4,7 @@ import VuePageStack from "vue-page-stack";
 import Home from "../views/Home.vue";
 import Camera from "../views/Camera.vue";
 import Recorder from "../views/Microphone.vue";
+import FaceAI from "../views/FaceAI.vue";
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,11 @@ const routes = [
     path: "/microphone",
     name: "microphone",
     component: Recorder,
+  },
+  {
+    path: "/faceai",
+    name: "faceai",
+    component: FaceAI,
   },
 ];
 
