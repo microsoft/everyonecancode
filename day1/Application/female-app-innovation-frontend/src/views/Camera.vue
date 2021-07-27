@@ -1,11 +1,12 @@
 <template>
   <div id="camera">
-    <EasyCamera v-model="picture" fullscreen="true"></EasyCamera>
+    <EasyCamera ref="camera" v-model="picture" fullscreen="true"></EasyCamera>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from "vue-property-decorator";
+import { Component, Vue, Watch, Ref } from "vue-property-decorator";
+import EasyCamera from "easy-vue-camera";
 import axios from "axios";
 import router from "../router";
 
@@ -25,10 +26,12 @@ function createGuid() {
   components: {},
 })
 export default class Camera extends Vue {
+  @Ref() readonly camera!: EasyCamera;
+
   picture = "";
   @Watch("picture")
   savePicture() {
-    //console.log(this.picture);
+    this.camera.close();
     router.back();
     fetch(this.picture)
       .then((res) => res.blob())

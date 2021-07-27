@@ -1,12 +1,12 @@
 <template>
   <div id="camera">
-    <EasyCamera v-model="picture" fullscreen="true"></EasyCamera>
+    <EasyCamera ref="camera" v-model="picture" fullscreen="true"></EasyCamera>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from "vue-property-decorator";
-import router from "../router";
+import { Component, Vue, Watch, Ref } from "vue-property-decorator";
+import EasyCamera from "easy-vue-camera";
 import { ApiKeyCredentials } from "@azure/ms-rest-js";
 import { FaceClient } from "@azure/cognitiveservices-face";
 
@@ -24,9 +24,12 @@ const client = new FaceClient(credentials, endpoint);
   components: {},
 })
 export default class FaceAI extends Vue {
+  @Ref() readonly camera!: EasyCamera;
+
   picture = "";
   @Watch("picture")
   savePicture() {
+    this.camera.close();
     fetch(this.picture)
       .then((res) => res.blob())
       .then((blob) => {
