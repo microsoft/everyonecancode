@@ -8,7 +8,9 @@
       >
         <div class="tile is-child">
           <b-image ratio="1by1  " :src="image.image_url" />
-          <b-button rounded type="is-black" v-on:click="deleteImage(image)" />
+          <b-button rounded type="is-black" v-on:click="deleteImage(image)">
+            Delete
+          </b-button>
         </div>
       </div>
     </div>
