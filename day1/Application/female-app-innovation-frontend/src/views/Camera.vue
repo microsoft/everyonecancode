@@ -6,7 +6,6 @@
 
 <script lang="ts">
 import { Component, Vue, Watch, Ref } from "vue-property-decorator";
-import EasyCamera from "easy-vue-camera";
 import axios from "axios";
 import router from "../router";
 
@@ -26,7 +25,7 @@ function createGuid() {
   components: {},
 })
 export default class Camera extends Vue {
-  @Ref() readonly camera!: EasyCamera;
+  @Ref() readonly camera!: any;
 
   picture = "";
   @Watch("picture")

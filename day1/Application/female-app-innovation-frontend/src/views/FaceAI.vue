@@ -1,5 +1,5 @@
 <template>
-  <div id="camera">
+  <section>
     <div v-if="!faces">
       <EasyCamera ref="camera" v-model="picture" fullscreen></EasyCamera>
     </div>
@@ -10,15 +10,13 @@
         </b-tab-item>
       </b-tabs>
     </section>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Watch, Ref } from "vue-property-decorator";
-import EasyCamera from "easy-vue-camera";
 import { ApiKeyCredentials } from "@azure/ms-rest-js";
 import { FaceClient } from "@azure/cognitiveservices-face";
-import { FaceAttributes } from "@azure/cognitiveservices-face/esm/models/mappers";
 
 const endpoint =
   "https://female-tech-gen-face-api.cognitiveservices.azure.com/";
@@ -34,10 +32,11 @@ const client = new FaceClient(credentials, endpoint);
   components: {},
 })
 export default class FaceAI extends Vue {
-  @Ref() readonly camera!: EasyCamera;
+  @Ref() readonly camera!: any;
 
   picture = "";
-  faces? = null;
+  faces: any = null;
+
   columns = [
     { field: "faceAttributes.age", label: "Age" },
     { field: "faceAttributes.emotion", label: "Emotion" },
