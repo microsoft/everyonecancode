@@ -1,19 +1,15 @@
 <template>
   <div id="camera">
     <div v-if="!faces">
-      <EasyCamera ref="camera" v-model="picture" fullscreen="true"></EasyCamera>
+      <EasyCamera ref="camera" v-model="picture" fullscreen></EasyCamera>
     </div>
-    <div v-if="faces" class="tile is-parent">
-      <div v-for="face in faces" :key="face.id" class="tile is-child">
-        {{ face.faceAttributes.age }}
-        {{ face.faceAttributes.emotion }}
-        {{ face.faceAttributes.facialHair }}
-        {{ face.faceAttributes.gender }}
-        {{ face.faceAttributes.smile }}
-        {{ face.faceAttributes.glasses }}
-        {{ face.faceAttributes.accessories }}
-      </div>
-    </div>
+    <section v-if="faces">
+      <b-tabs>
+        <b-tab-item label="Results">
+          <b-table :data="faces" :columns="columns"> </b-table>
+        </b-tab-item>
+      </b-tabs>
+    </section>
   </div>
 </template>
 
@@ -42,7 +38,15 @@ export default class FaceAI extends Vue {
 
   picture = "";
   faces? = null;
-
+  columns = [
+    { field: "faceAttributes.age", label: "Age" },
+    { field: "faceAttributes.emotion", label: "Emotion" },
+    { field: "faceAttributes.facialHair", label: "Facial Hair" },
+    { field: "faceAttributes.gender", label: "Gender" },
+    { field: "faceAttributes.smile", label: "Smile" },
+    { field: "faceAttributes.glasses", label: "Glasses" },
+    { field: "faceAttributes.accessories", label: "accessories" },
+  ];
   @Watch("picture")
   savePicture() {
     this.camera.close();
@@ -70,7 +74,4 @@ export default class FaceAI extends Vue {
 </script>
 
 <style scoped>
-#camera {
-  width: 100vh;
-}
 </style>
