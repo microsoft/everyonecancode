@@ -7,6 +7,18 @@
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
 import router from "../router";
+import { ApiKeyCredentials } from "@azure/ms-rest-js";
+import { FaceClient } from "@azure/cognitiveservices-face";
+
+const endpoint =
+  "https://female-tech-gen-face-api.cognitiveservices.azure.com/";
+const apiKey = "ad4f4c1263834e3cab0213f29575f3a8";
+
+const credentials = new ApiKeyCredentials({
+  inHeader: { "Ocp-Apim-Subscription-Key": apiKey },
+});
+
+const client = new FaceClient(credentials, endpoint);
 
 @Component({
   components: {},
@@ -15,18 +27,12 @@ export default class FaceAI extends Vue {
   picture = "";
   @Watch("picture")
   savePicture() {
-    //console.log(this.picture);
-    router.back();
     fetch(this.picture)
       .then((res) => res.blob())
       .then((blob) => {
-        const file = new File([blob], `face.png`, {
-          type: "image/png",
+        client.face.detectWithStream(blob).then((response) => {
+          console.log(response);
         });
-        console.log(file);
-        const data = new FormData();
-        data.append("file", file);
-        // TODO: call face api
       });
   }
 }
