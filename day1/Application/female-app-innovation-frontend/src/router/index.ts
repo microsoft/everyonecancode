@@ -5,6 +5,7 @@ import Home from "../views/Home.vue";
 import Camera from "../views/Camera.vue";
 import Recorder from "../views/Microphone.vue";
 import FaceAI from "../views/FaceAI.vue";
+import EditProfile from "../views/EditProfile.vue";
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,11 @@ const routes = [
     path: "/faceai",
     name: "faceai",
     component: FaceAI,
+  },
+  {
+    path: "/editprofile",
+    name: "editprofile",
+    component: EditProfile,
   },
 ];
 
