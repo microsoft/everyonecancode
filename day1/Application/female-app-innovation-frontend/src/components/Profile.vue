@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Watch } from "vue-property-decorator";
 import axios from "axios";
 import store from "../store/index";
 
@@ -32,6 +32,8 @@ export default class Profile extends Vue {
   get githubUsername() {
     return this.$store.state.githubUsername;
   }
+
+  @Watch("githubUsername")
   getProfileDetails() {
     axios
       .get(`${githubApiUrl}${this.githubUsername}`)
