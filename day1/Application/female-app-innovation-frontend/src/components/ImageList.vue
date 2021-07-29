@@ -7,7 +7,7 @@
         :key="image.image_url"
       >
         <div class="tile is-child">
-          <b-image ratio="1by1  " :src="image.image_url" />
+          <b-image ratio="1by1  " :src="`${apiUrl}/${image.image_url}`" />
           <b-button rounded type="is-black" v-on:click="deleteImage(image)">
             Delete
           </b-button>
@@ -21,15 +21,14 @@
 import { Component, Vue } from "vue-property-decorator";
 import axios from "axios";
 
-const apiUrl = "https://fotobackendtest.azurewebsites.net";
-
 @Component
 export default class ImageList extends Vue {
+  apiUrl = "https://fotobackendtest.azurewebsites.net";
   imageList = [];
 
   deleteImage(image: any) {
     console.log(image);
-    axios.delete(`${apiUrl}${image.image_url}`).then(() => {
+    axios.delete(`${this.apiUrl}${image.image_url}`).then(() => {
       this.getImageList();
     });
   }
@@ -40,7 +39,7 @@ export default class ImageList extends Vue {
 
   getImageList() {
     axios
-      .get(`${apiUrl}/images`)
+      .get(`${this.apiUrl}/images`)
       .then((response) => {
         this.imageList = response.data;
       })
