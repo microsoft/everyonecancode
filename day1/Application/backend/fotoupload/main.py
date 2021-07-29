@@ -29,7 +29,7 @@ class Image(BaseModel):
 async def list_images(request: Request):
     try:
         blobs = [Image(created_at=b.last_modified,
-                       image_url=f"{request.url}/{quote(b.name)}") for b in container_client.list_blobs()]
+                       image_url=f"/images/{quote(b.name)}") for b in container_client.list_blobs()]
         blobs.sort(key=lambda a: a.created_at, reverse=True)
     except ResourceNotFoundError:
         raise HTTPException(status_code=404, detail="Container not found")

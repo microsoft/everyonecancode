@@ -29,11 +29,7 @@ export default class ImageList extends Vue {
 
   deleteImage(image: any) {
     console.log(image);
-    if (window.location.href.split("/")[0] == "https") {
-      console.log("change url");
-      image.image_url = image.image_url.replace("http://", "https://");
-    }
-    axios.delete(image.image_url).then(() => {
+    axios.delete(`${apiUrl}${image.image_url}`).then(() => {
       this.getImageList();
     });
   }
