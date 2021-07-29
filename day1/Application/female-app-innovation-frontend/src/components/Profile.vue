@@ -18,18 +18,20 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import axios from "axios";
+import store from "../store/index";
 
 const githubApiUrl = "https://api.github.com/users/";
 
-@Component
+@Component({ store: store })
 export default class Profile extends Vue {
-  githubUsername = "CodeUnicornMartha";
   profile = {};
 
   mounted() {
     this.getProfileDetails();
   }
-
+  get githubUsername() {
+    return this.$store.state.githubUsername;
+  }
   getProfileDetails() {
     axios
       .get(`${githubApiUrl}${this.githubUsername}`)

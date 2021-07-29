@@ -15,7 +15,14 @@
       <b-input v-model="githubUsername" maxlength="30"></b-input>
     </b-field>
     <div class="buttons">
-      <b-button rounded type="is-black" expanded>Save Profile</b-button>
+      <b-button
+        rounded
+        type="is-black"
+        expanded
+        v-on:click="saveProfile"
+        :disabled="!isValid"
+        >Save Profile</b-button
+      >
     </div>
   </div>
 </template>
@@ -23,12 +30,14 @@
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
 import axios from "axios";
+import store from "../store/index";
+import _ from "lodash";
 
 const githubApiUrl = "https://api.github.com/users/";
 
-@Component
+@Component({ store: store })
 export default class EditProfile extends Vue {
-  githubUsername = "CodeUnicornMartha";
+  githubUsername = this.$store.state.githubUsername;
   isValid = false;
   profile = {};
 
@@ -41,8 +50,6 @@ export default class EditProfile extends Vue {
   mounted() {
     this.onUsernameChanged();
   }
-
-  @Watch("githubUsername")
   onUsernameChanged() {
     console.log(this.githubUsername);
     axios
@@ -55,6 +62,13 @@ export default class EditProfile extends Vue {
         console.log(error);
         this.isValid = false;
       });
+  }
+  saveProfile() {
+    this.$store.commit("setGithubUsername", this.githubUsername);
+  }
+  @Watch("githubUsername")
+  debounceonUsernameChanged() {
+    _.debounce(this.onUsernameChanged.bind(this), 300);
   }
 }
 </script>
