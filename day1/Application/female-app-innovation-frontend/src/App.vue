@@ -36,9 +36,6 @@ export default class App extends Vue {
 </script>
 
 <style lang="scss">
-body {
-  background-image: linear-gradient(rgb(228, 248, 248), rgb(39, 35, 243));
-}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

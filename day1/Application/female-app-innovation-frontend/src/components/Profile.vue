@@ -8,8 +8,14 @@
     ></b-image>
     <h1>{{ profile.name }}</h1>
     <div class="buttons">
-      <b-button rounded type="is-black" expanded>
-        <router-link to="/editprofile"> Edit Profile </router-link>
+      <b-button
+        tag="router-link"
+        to="/editprofile"
+        rounded
+        type="is-black"
+        expanded
+      >
+        Edit Profile
       </b-button>
     </div>
   </div>

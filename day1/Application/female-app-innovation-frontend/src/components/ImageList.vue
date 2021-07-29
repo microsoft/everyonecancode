@@ -8,7 +8,12 @@
       >
         <div class="tile is-child">
           <b-image ratio="1by1  " :src="`${apiUrl}/${image.image_url}`" />
-          <b-button rounded type="is-black" v-on:click="deleteImage(image)">
+          <b-button
+            id="btn-delete"
+            rounded
+            type="is-black"
+            v-on:click="deleteImage(image)"
+          >
             Delete
           </b-button>
         </div>
@@ -52,4 +57,7 @@ export default class ImageList extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#btn-delete {
+  margin-top: 5px;
+}
 </style>
