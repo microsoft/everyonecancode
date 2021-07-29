@@ -31,7 +31,7 @@
 import { Component, Vue, Watch } from "vue-property-decorator";
 import axios from "axios";
 import store from "../store/index";
-import _ from "lodash";
+import { debounce } from "lodash";
 
 const githubApiUrl = "https://api.github.com/users/";
 
@@ -41,15 +41,20 @@ export default class EditProfile extends Vue {
   isValid = false;
   profile = {};
 
+  @Watch("githubUsername")
+  public debouncedOnUsernameChanged = debounce(this.onUsernameChanged, 500);
+
   get status() {
     if (this.isValid) {
       return "is-success";
     }
     return "is-danger";
   }
+
   mounted() {
     this.onUsernameChanged();
   }
+
   onUsernameChanged() {
     console.log(this.githubUsername);
     axios
@@ -63,12 +68,9 @@ export default class EditProfile extends Vue {
         this.isValid = false;
       });
   }
+
   saveProfile() {
     this.$store.commit("setGithubUsername", this.githubUsername);
-  }
-  @Watch("githubUsername")
-  debounceonUsernameChanged() {
-    _.debounce(this.onUsernameChanged.bind(this), 300);
   }
 }
 </script>
