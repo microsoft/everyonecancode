@@ -8,6 +8,7 @@
 import { Component, Vue, Watch, Ref } from "vue-property-decorator";
 import axios from "axios";
 import router from "../router";
+import store from "../store/index";
 
 const apiUrl = "https://fotobackendtest.azurewebsites.net";
 
@@ -22,7 +23,7 @@ function createGuid() {
 }
 
 @Component({
-  components: {},
+  store: store,
 })
 export default class Camera extends Vue {
   @Ref() readonly camera!: any;
@@ -41,9 +42,13 @@ export default class Camera extends Vue {
         console.log(file);
         const data = new FormData();
         data.append("file", file);
-        return axios.post(`${apiUrl}/upload/`, data, {
-          headers: { "Content-Type": "multipart/form-data" },
-        });
+        return axios
+          .post(`${apiUrl}/upload/`, data, {
+            headers: { "Content-Type": "multipart/form-data" },
+          })
+          .then(() => {
+            this.$store.dispatch("refreshImageList");
+          });
       });
   }
 }

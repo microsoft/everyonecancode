@@ -24,33 +24,22 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import axios from "axios";
+import store from "../store/index";
 
-@Component
+@Component({ store: store })
 export default class ImageList extends Vue {
   apiUrl = "https://fotobackendtest.azurewebsites.net";
-  imageList = [];
+
+  get imageList() {
+    return this.$store.state.imageList;
+  }
 
   deleteImage(image: any) {
-    console.log(image);
-    axios.delete(`${this.apiUrl}${image.image_url}`).then(() => {
-      this.getImageList();
-    });
+    this.$store.dispatch("deleteImage", image);
   }
 
   mounted() {
-    this.getImageList();
-  }
-
-  getImageList() {
-    axios
-      .get(`${this.apiUrl}/images`)
-      .then((response) => {
-        this.imageList = response.data;
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    this.$store.dispatch("refreshImageList");
   }
 }
 </script>
