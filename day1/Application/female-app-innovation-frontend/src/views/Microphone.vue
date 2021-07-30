@@ -15,13 +15,13 @@ import {
   SpeechRecognizer,
   SpeechRecognitionEventArgs,
 } from "microsoft-cognitiveservices-speech-sdk";
+import { speechApiKey } from "../settings";}
 
 import NavBarBack from "../components/NavBarBack.vue";
 
-const apiKey = "d349139ec5084a5b816e99a4a01e02e7";
 const region = "westeurope";
 
-const speechConfig = SpeechConfig.fromSubscription(apiKey, region);
+const speechConfig = SpeechConfig.fromSubscription(speechApiKey, region);
 speechConfig.speechRecognitionLanguage = "de-DE";
 var recognizer: SpeechRecognizer;
 
