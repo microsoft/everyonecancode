@@ -15,7 +15,7 @@ import {
   SpeechRecognizer,
   SpeechRecognitionEventArgs,
 } from "microsoft-cognitiveservices-speech-sdk";
-import { speechApiKey } from "../settings";}
+import { speechApiKey } from "../settings";
 
 import NavBarBack from "../components/NavBarBack.vue";
 

@@ -1,9 +1,15 @@
 <template>
   <section>
     <div v-if="!faces">
-      <EasyCamera ref="camera" v-model="picture" fullscreen></EasyCamera>
+      <EasyCamera
+        v-on:close="onClose"
+        ref="camera"
+        v-model="picture"
+        fullscreen
+      ></EasyCamera>
     </div>
     <section v-if="faces">
+      <NavBarBack />
       <b-tabs>
         <b-tab-item label="Results">
           <b-table :data="faces" :columns="columns"> </b-table>
@@ -18,6 +24,9 @@ import { Component, Vue, Watch, Ref } from "vue-property-decorator";
 import { ApiKeyCredentials } from "@azure/ms-rest-js";
 import { FaceClient } from "@azure/cognitiveservices-face";
 import { faceApiKey, faceApiEndpoint } from "../settings";
+import NavBarBack from "../components/NavBarBack.vue";
+
+import router from "../router";
 
 const credentials = new ApiKeyCredentials({
   inHeader: { "Ocp-Apim-Subscription-Key": faceApiKey },
@@ -26,7 +35,7 @@ const credentials = new ApiKeyCredentials({
 const client = new FaceClient(credentials, faceApiEndpoint);
 
 @Component({
-  components: {},
+  components: { NavBarBack },
 })
 export default class FaceAI extends Vue {
   @Ref() readonly camera!: any;
@@ -43,9 +52,14 @@ export default class FaceAI extends Vue {
     { field: "faceAttributes.glasses", label: "Glasses" },
     { field: "faceAttributes.accessories", label: "accessories" },
   ];
+
+  onClose() {
+    router.back();
+  }
+
   @Watch("picture")
   savePicture() {
-    this.camera.close();
+    this.camera.stop();
     fetch(this.picture)
       .then((res) => res.blob())
       .then((blob) => {
