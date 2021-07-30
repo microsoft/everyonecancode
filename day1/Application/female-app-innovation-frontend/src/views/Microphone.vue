@@ -1,6 +1,7 @@
 
 <template>
   <div id="microphone">
+    <NavBarBack />
     <VueRecordAudio @stream="onStream" @result="onResult" />
     <p class="is-large">{{ text }}</p>
   </div>
@@ -15,6 +16,8 @@ import {
   SpeechRecognitionEventArgs,
 } from "microsoft-cognitiveservices-speech-sdk";
 
+import NavBarBack from "../components/NavBarBack.vue";
+
 const apiKey = "d349139ec5084a5b816e99a4a01e02e7";
 const region = "westeurope";
 
@@ -23,7 +26,7 @@ speechConfig.speechRecognitionLanguage = "de-DE";
 var recognizer: SpeechRecognizer;
 
 @Component({
-  components: {},
+  components: { NavBarBack },
 })
 export default class Microphone extends Vue {
   text = "";

@@ -1,6 +1,11 @@
 <template>
   <div id="camera">
-    <EasyCamera ref="camera" v-model="picture" fullscreen="true"></EasyCamera>
+    <EasyCamera
+      ref="camera"
+      v-on:close="onClose"
+      v-model="picture"
+      fullscreen="true"
+    ></EasyCamera>
   </div>
 </template>
 
@@ -29,10 +34,14 @@ export default class Camera extends Vue {
   @Ref() readonly camera!: any;
 
   picture = "";
+
+  onClose() {
+    router.back();
+  }
+
   @Watch("picture")
   savePicture() {
     this.camera.close();
-    router.back();
     fetch(this.picture)
       .then((res) => res.blob())
       .then((blob) => {

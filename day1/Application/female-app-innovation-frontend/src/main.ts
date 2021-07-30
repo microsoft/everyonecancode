@@ -11,14 +11,22 @@ import {
   faMicrophone,
   faGrinStars,
   faCheck,
-  faExclamationCircle
+  faExclamationCircle,
+  faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import router from "./router";
 import EasyCamera from "easy-vue-camera";
 import VueRecord from "@codekraft-studio/vue-record";
 
-library.add(faCamera, faMicrophone, faGrinStars, faCheck, faExclamationCircle);
+library.add(
+  faCamera,
+  faMicrophone,
+  faGrinStars,
+  faCheck,
+  faExclamationCircle,
+  faArrowLeft
+);
 Vue.use(VueRecord);
 Vue.component("vue-fontawesome", FontAwesomeIcon);
 Vue.use(Buefy, {
