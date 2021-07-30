@@ -25,10 +25,11 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import store from "../store/index";
+import { imageApiUrl } from "../settings";
 
 @Component({ store: store })
 export default class ImageList extends Vue {
-  apiUrl = "https://fotobackendtest.azurewebsites.net";
+  readonly apiUrl = imageApiUrl;
 
   get imageList() {
     return this.$store.state.imageList;

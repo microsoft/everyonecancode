@@ -15,7 +15,7 @@ import axios from "axios";
 import router from "../router";
 import store from "../store/index";
 
-const apiUrl = "https://fotobackendtest.azurewebsites.net";
+import { imageApiUrl } from "../settings";
 
 function createGuid() {
   let S4 = () =>
@@ -52,7 +52,7 @@ export default class Camera extends Vue {
         const data = new FormData();
         data.append("file", file);
         return axios
-          .post(`${apiUrl}/upload/`, data, {
+          .post(`${imageApiUrl}/upload/`, data, {
             headers: { "Content-Type": "multipart/form-data" },
           })
           .then(() => {

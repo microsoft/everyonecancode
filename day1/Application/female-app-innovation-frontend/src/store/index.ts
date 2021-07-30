@@ -4,11 +4,11 @@ import VuexPersistence from "vuex-persist";
 
 import axios from "axios";
 
+import { imageApiUrl } from "../settings";
+
 const vuexLocal = new VuexPersistence({
   storage: window.localStorage,
 });
-
-const apiUrl = "https://fotobackendtest.azurewebsites.net";
 
 Vue.use(Vuex);
 
@@ -28,7 +28,7 @@ export default new Vuex.Store({
   actions: {
     refreshImageList(context) {
       axios
-        .get(`${apiUrl}/images`)
+        .get(`${imageApiUrl}/images`)
         .then((response) => {
           context.commit("setImageList", response.data);
         })
@@ -37,7 +37,7 @@ export default new Vuex.Store({
         });
     },
     deleteImage(context, image) {
-      axios.delete(`${apiUrl}${image.image_url}`).then(() => {
+      axios.delete(`${imageApiUrl}${image.image_url}`).then(() => {
         context.dispatch("refreshImageList");
       });
     },
