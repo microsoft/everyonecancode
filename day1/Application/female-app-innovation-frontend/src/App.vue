@@ -24,6 +24,7 @@ import Navbar from "./components/Navbar.vue";
 export default class App extends Vue {
   transitionName = "forward";
   screen = "home";
+
   @Watch("$route")
   route(to: any, from: any) {
     if (to.params["stack-key-dir"] === "forward") {

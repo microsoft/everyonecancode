@@ -17,16 +17,13 @@
 import { Component, Vue, Watch, Ref } from "vue-property-decorator";
 import { ApiKeyCredentials } from "@azure/ms-rest-js";
 import { FaceClient } from "@azure/cognitiveservices-face";
-
-const endpoint =
-  "https://female-tech-gen-face-api.cognitiveservices.azure.com/";
-const apiKey = "ad4f4c1263834e3cab0213f29575f3a8";
+import { faceApiKey, faceApiEndpoint } from "../settings";
 
 const credentials = new ApiKeyCredentials({
-  inHeader: { "Ocp-Apim-Subscription-Key": apiKey },
+  inHeader: { "Ocp-Apim-Subscription-Key": faceApiKey },
 });
 
-const client = new FaceClient(credentials, endpoint);
+const client = new FaceClient(credentials, faceApiEndpoint);
 
 @Component({
   components: {},
