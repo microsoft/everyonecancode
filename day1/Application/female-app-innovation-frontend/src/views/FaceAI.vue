@@ -34,6 +34,10 @@ const credentials = new ApiKeyCredentials({
 
 const client = new FaceClient(credentials, faceApiEndpoint);
 
+function check(value: number, text: string) {
+  return value > 0.5 ? text : "";
+}
+
 @Component({
   components: { NavBarBack },
 })
@@ -44,13 +48,13 @@ export default class FaceAI extends Vue {
   faces: any = null;
 
   columns = [
-    { field: "faceAttributes.age", label: "Age" },
-    { field: "faceAttributes.emotion", label: "Emotion" },
-    { field: "faceAttributes.facialHair", label: "Facial Hair" },
-    { field: "faceAttributes.gender", label: "Gender" },
-    { field: "faceAttributes.smile", label: "Smile" },
-    { field: "faceAttributes.glasses", label: "Glasses" },
-    { field: "faceAttributes.accessories", label: "accessories" },
+    { field: "age", label: "Age" },
+    { field: "emotion", label: "Emotion" },
+    { field: "facialHair", label: "Facial Hair" },
+    { field: "gender", label: "Gender" },
+    { field: "smile", label: "Smile" },
+    { field: "glasses", label: "Glasses" },
+    { field: "accessories", label: "accessories" },
   ];
 
   onClose() {
@@ -77,38 +81,45 @@ export default class FaceAI extends Vue {
           })
           .then((response) => {
             this.faces = response.map((face) => {
-              //let anger = face.faceAttributes.emotion.anger;
-              //let contempt = face.faceAttributes.emotion.contempt;
-              //let disgust = face.faceAttributes.emotion.disgust;
-              //let fear = face.faceAttributes.emotion.fear;
-              //let happiness = face.faceAttributes.emotion.happiness;
-              //let neutral = face.faceAttributes.emotion.neutral;
-              //let sadness = face.faceAttributes.emotion.sadness;
-              //let surprise = face.faceAttributes.emotion.surprise;
-              //let moustache = face.faceAttributes.facialHair.moustache;
-              //let beard = face.faceAttributes.facialHair.beard;
-              //let sideburns = face.faceAttributes.facialHair.sideburns;
-              //let age2 = face.faceAttributes.age;
-
               const {
                 age = 0,
                 emotion: {
-                  anger = "",
-                  contempt = "",
-                  disgust = "",
-                  fear = "",
-                  happiness = "",
-                  neutral = "",
-                  sadness = "",
-                  surprise = "",
+                  anger = 0,
+                  contempt = 0,
+                  disgust = 0,
+                  fear = 0,
+                  happiness = 0,
+                  neutral = 0,
+                  sadness = 0,
+                  surprise = 0,
                 } = {},
-                facialHair: { moustache = "", beard = "", sideburns = "" } = {},
-              } = { ...face };
+                facialHair: { moustache = 0, beard = 0, sideburns = 0 } = {},
+                gender = "",
+                smile = 0,
+                glasses = "",
+                accessories = "",
+              } = { ...face.faceAttributes };
 
               return {
-                age: age,
-                emotion: `${anger}, ${contempt}, ${disgust}, ${fear}, ${happiness}, ${neutral}, ${sadness}, ${surprise}`,
-                facialHair: `${moustache}, ${beard}, ${sideburns}`,
+                age,
+                emotion: `${check(anger, "anger")} ${check(
+                  contempt,
+                  "contempt"
+                )} ${check(disgust, "disgust")} ${check(fear, "fear")} ${check(
+                  happiness,
+                  "happiness"
+                )} ${check(neutral, "neutral")} ${check(
+                  sadness,
+                  "sadness"
+                )} ${check(surprise, "surprise")}`,
+                facialHair: `${check(moustache, "moustache")} ${check(
+                  beard,
+                  "beard"
+                )} ${check(sideburns, "sideburns")}`,
+                gender,
+                smile: `${check(smile, "smile")}`,
+                glasses,
+                accessories,
               };
             });
           });
