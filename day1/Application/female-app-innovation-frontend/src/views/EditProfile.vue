@@ -71,6 +71,7 @@ export default class EditProfile extends Vue {
 
   saveProfile() {
     this.$store.commit("setGithubUsername", this.githubUsername);
+    this.$router.back();
   }
 }
 </script>
