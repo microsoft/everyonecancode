@@ -18,6 +18,7 @@ service = BlobServiceClient.from_connection_string(conn_str=connection_string)
 container_client = service.get_container_client("images")
 
 app = FastAPI()
+cache_header = {"Cache-Control": "max-age=31556952"}
 
 
 class Image(BaseModel):
@@ -44,7 +45,7 @@ async def images(image_name):
     except ResourceNotFoundError:
         raise HTTPException(
             status_code=404, detail="Your picture was not found, just try to upload again 🤓")
-    return StreamingResponse(blob.chunks())
+    return StreamingResponse(blob.chunks(), headers=cache_header)
 
 
 @app.delete("/images/{image_name}")
