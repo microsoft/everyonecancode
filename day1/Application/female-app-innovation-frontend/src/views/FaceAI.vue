@@ -76,7 +76,41 @@ export default class FaceAI extends Vue {
             ],
           })
           .then((response) => {
-            this.faces = response;
+            this.faces = response.map((face) => {
+              //let anger = face.faceAttributes.emotion.anger;
+              //let contempt = face.faceAttributes.emotion.contempt;
+              //let disgust = face.faceAttributes.emotion.disgust;
+              //let fear = face.faceAttributes.emotion.fear;
+              //let happiness = face.faceAttributes.emotion.happiness;
+              //let neutral = face.faceAttributes.emotion.neutral;
+              //let sadness = face.faceAttributes.emotion.sadness;
+              //let surprise = face.faceAttributes.emotion.surprise;
+              //let moustache = face.faceAttributes.facialHair.moustache;
+              //let beard = face.faceAttributes.facialHair.beard;
+              //let sideburns = face.faceAttributes.facialHair.sideburns;
+              //let age2 = face.faceAttributes.age;
+
+              const {
+                age = 0,
+                emotion: {
+                  anger = "",
+                  contempt = "",
+                  disgust = "",
+                  fear = "",
+                  happiness = "",
+                  neutral = "",
+                  sadness = "",
+                  surprise = "",
+                } = {},
+                facialHair: { moustache = "", beard = "", sideburns = "" } = {},
+              } = { ...face };
+
+              return {
+                age: age,
+                emotion: `${anger}, ${contempt}, ${disgust}, ${fear}, ${happiness}, ${neutral}, ${sadness}, ${surprise}`,
+                facialHair: `${moustache}, ${beard}, ${sideburns}`,
+              };
+            });
           });
       });
   }
