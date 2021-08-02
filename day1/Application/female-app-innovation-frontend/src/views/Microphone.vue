@@ -1,4 +1,3 @@
-
 <template>
   <div id="microphone">
     <NavBarBack />
@@ -49,5 +48,4 @@ export default class Microphone extends Vue {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

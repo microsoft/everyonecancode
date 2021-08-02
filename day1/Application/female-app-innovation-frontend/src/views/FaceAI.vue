@@ -83,5 +83,4 @@ export default class FaceAI extends Vue {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

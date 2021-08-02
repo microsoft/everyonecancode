@@ -1,4 +1,3 @@
-
 <template>
   <b-navbar fixed-bottom :mobile-burger="false">
     <template #brand>
@@ -31,5 +30,4 @@ export default class Navbar extends Vue {}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>
+<style scoped></style>
