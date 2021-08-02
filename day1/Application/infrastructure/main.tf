@@ -6,13 +6,19 @@ locals {
     location = "westeurope"
 }
 
+resource "random_string" "suffix" {
+  length           = 6
+  special          = false
+}
+
 resource "azurerm_resource_group" "devops" {
-    name = "female_tech_infra"
+    name = "female_tech_infra_${random_string.suffix.result}"
     location = local.location
 }
 
+
 resource "azurerm_storage_account" "upload" {
-  name = "uploadstoragefornewpics"
+  name = "uploadstoragefornewpics_${random_string.suffix.result}"
 
   location            = local.location
   resource_group_name = azurerm_resource_group.devops.name
