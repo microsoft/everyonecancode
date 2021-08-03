@@ -94,7 +94,7 @@ resource "azurerm_cognitive_account" "speechapi" {
 }
 
 output "webapp_name" {
-  value = azurerm_app_service.api.default_site_hostname
+  value = azurerm_app_service.api.name
 }
 output "face_api_key" {
   value     = azurerm_cognitive_account.faceapi.primary_access_key
