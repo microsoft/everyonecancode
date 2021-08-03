@@ -80,7 +80,15 @@ resource "azurerm_cognitive_account" "speechapi" {
   }
 }
 
-outputs "webapp_name" {
+output "webapp_name" {
   value = azurerm_function_app.api.endpoint
 }
-
+output "face_api_key" {
+  value = azurerm_cognitive_account.faceapi.primary_access_key
+}
+output "speech_api_key" {
+  value = azurerm_cognitive_account.speechapi.primary_access_key
+}
+output "speech_api_endpoint" {
+  value = azurerm_cognitive_account.speechapi.endpoint
+}
