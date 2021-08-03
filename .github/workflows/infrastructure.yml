@@ -101,10 +101,10 @@ jobs:
       id: out
       working-directory: day1/Application/infrastructure
       run: |
-        echo "::set-output name=face-api-key::$(terraform output face_api_key)"
-        echo "::set-output name=speech-api-key::$(terraform output speech_api_key)"
-        echo "::set-output name=webapp-name::$(terraform output webapp_name)"
-        echo "::set-output name=speech-api-endpoint::$(terraform output speech_api_endpoint)"
+        echo "::set-output name=face-api-key::$(terraform output -raw face_api_key)"
+        echo "::set-output name=speech-api-key::$(terraform output -raw speech_api_key)"
+        echo "::set-output name=webapp-name::$(terraform output -raw webapp_name)"
+        echo "::set-output name=speech-api-endpoint::$(terraform output -raw speech_api_endpoint)"
       
       
   deploy-backend:
