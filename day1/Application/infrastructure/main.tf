@@ -41,14 +41,14 @@ resource "azurerm_app_service_plan" "linux" {
 }
 
 resource "azurerm_function_app" "api" {
-  name = "uploadstoragefornewdocs"
+  name = "apiforpics${random_string.suffix.result}"
 
   resource_group_name = azurerm_resource_group.devops.name
   location            = local.location
 
   storage_account_name       = azurerm_storage_account.upload.name
   storage_account_access_key = azurerm_storage_account.upload.primary_access_key
-  os_type = "linux"
+  os_type                    = "linux"
 
   app_service_plan_id = azurerm_app_service_plan.linux.id
 }
