@@ -80,5 +80,7 @@ resource "azurerm_cognitive_account" "speechapi" {
   }
 }
 
-
+outputs "webapp_name" {
+  value = azurerm_function_app.api.endpoint
+}
 
