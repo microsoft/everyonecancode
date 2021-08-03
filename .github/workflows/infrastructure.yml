@@ -57,6 +57,11 @@ jobs:
         ARM_CLIENT_SECRET: ${{secrets.ARM_CLIENT_SECRET}}
         ARM_SUBSCRIPTION_ID: ${{secrets.ARM_SUBSCRIPTION_ID}}
         ARM_TENANT_ID: ${{secrets.ARM_TENANT_ID}}
+    outputs:
+      face-api-key: ${{ steps.out.outputs.face-api-key }}
+      speech-api-key: ${{ steps.out.outputs.speech-api-key }}
+      webapp-name: ${{ steps.out.outputs.webapp-name }}
+      speech-api-endpoint: ${{ steps.out.outputs.speech-api-endpoint }}
 
     steps:
     # Checkout the repository to the GitHub Actions runner
@@ -92,12 +97,14 @@ jobs:
       run: terraform apply -auto-approve
       working-directory: day1/Application/infrastructure
       
-    - working-directory: day1/Application/infrastructure 
+    - name: Capture Output
+      id: out
+      working-directory: day1/Application/infrastructure
       run: |
-        echo "::set-output name=face_api_key::$(terraform output face_api_key)"
-        echo "::set-output name=speech_api_key::$(terraform output speech_api_key)"
-        echo "::set-output name=webapp_name::$(terraform output webapp_name)"
-        echo "::set-output name=speech_api_endpoint::$(terraform output speech_api_endpoint)"
+        echo "::set-output name=face-api-key::$(terraform output face_api_key)"
+        echo "::set-output name=speech-api-key::$(terraform output speech_api_key)"
+        echo "::set-output name=webapp-name::$(terraform output webapp_name)"
+        echo "::set-output name=speech-api-endpoint::$(terraform output speech_api_endpoint)"
       
       
   deploy-backend:
