@@ -47,11 +47,11 @@ resource "azurerm_app_service" "api" {
   location            = local.location
 
   storage_account {
-  name = "upload"
-  account_name       = azurerm_storage_account.upload.name
-  access_key = azurerm_storage_account.upload.primary_access_key
-  share_name = "images"
-  type       = "AzureBlob"
+    name         = "upload"
+    account_name = azurerm_storage_account.upload.name
+    access_key   = azurerm_storage_account.upload.primary_access_key
+    share_name   = "images"
+    type         = "AzureBlob"
 
   }
 
