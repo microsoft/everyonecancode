@@ -96,6 +96,7 @@ jobs:
       working-directory: day1/Application/infrastructure
       
     - run: echo $(terraform output)
+      working-directory: day1/Application/infrastructure
       
   deploy-backend:
     runs-on: ubuntu-latest
