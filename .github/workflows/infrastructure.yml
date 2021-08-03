@@ -95,7 +95,7 @@ jobs:
       run: terraform apply -auto-approve
       working-directory: day1/Application/infrastructure
       
-    - run: echo ${{ steps.apply.outcome }}
+    - run: echo $(terraform outputs)
       
   deploy-backend:
     runs-on: ubuntu-latest
