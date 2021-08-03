@@ -46,9 +46,14 @@ resource "azurerm_app_service" "api" {
   resource_group_name = azurerm_resource_group.devops.name
   location            = local.location
 
-  storage_account_name       = azurerm_storage_account.upload.name
-  storage_account_access_key = azurerm_storage_account.upload.primary_access_key
-  os_type                    = "linux"
+  storage_account {
+  name = "upload"
+  account_name       = azurerm_storage_account.upload.name
+  access_key = azurerm_storage_account.upload.primary_access_key
+  share_name = "images"
+  type       = "AzureBlob"
+
+  }
 
   app_service_plan_id = azurerm_app_service_plan.linux.id
 }
