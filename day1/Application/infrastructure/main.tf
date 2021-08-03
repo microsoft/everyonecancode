@@ -89,10 +89,12 @@ output "webapp_name" {
   value = azurerm_app_service.api.default_site_hostname
 }
 output "face_api_key" {
-  value = azurerm_cognitive_account.faceapi.primary_access_key
+  value     = azurerm_cognitive_account.faceapi.primary_access_key
+  sensitive = true
 }
 output "speech_api_key" {
-  value = azurerm_cognitive_account.speechapi.primary_access_key
+  value     = azurerm_cognitive_account.speechapi.primary_access_key
+  sensitive = true
 }
 output "speech_api_endpoint" {
   value = azurerm_cognitive_account.speechapi.endpoint
