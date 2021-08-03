@@ -29,7 +29,7 @@ resource "azurerm_storage_account" "upload" {
 }
 
 resource "azurerm_app_service_plan" "linux" {
-  name                = "function-appservice-plan"
+  name                = "appservice-plan"
   location            = azurerm_resource_group.devops.location
   resource_group_name = azurerm_resource_group.devops.name
   kind                = "Linux"
@@ -40,7 +40,7 @@ resource "azurerm_app_service_plan" "linux" {
   }
 }
 
-resource "azurerm_function_app" "api" {
+resource "azurerm_app_service" "api" {
   name = "apiforpics${random_string.suffix.result}"
 
   resource_group_name = azurerm_resource_group.devops.name
@@ -81,7 +81,7 @@ resource "azurerm_cognitive_account" "speechapi" {
 }
 
 output "webapp_name" {
-  value = azurerm_function_app.api.endpoint
+  value = azurerm_app_service.api.default_site_hostname
 }
 output "face_api_key" {
   value = azurerm_cognitive_account.faceapi.primary_access_key
