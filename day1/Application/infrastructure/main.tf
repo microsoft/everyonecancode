@@ -1,3 +1,11 @@
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "FemaleTechGen"
+    storage_account_name = "femaletechgen"
+    container_name       = "tfstate"
+    key                  = "femaletechgen.prod.terraform.tfstate"
+  }
+}
 provider "azurerm" {
   features {}
 }
