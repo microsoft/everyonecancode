@@ -45,7 +45,7 @@
 name: 'Terraform'
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   deploy-infrastructure:
@@ -97,6 +97,7 @@ jobs:
   deploy-backend:
     runs-on: ubuntu-latest
     needs: deploy-infrastructure
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
 
     steps:
       - name: Checkout
@@ -138,11 +139,12 @@ jobs:
         with:
           name: static-website
           path: day1/Application/female-app-innovation-frontend/dist
+          
   deploy-frontend:
     runs-on: ubuntu-latest
     needs: build-frontend
 
-    if: ${{ github.ref == 'refs/heads/main' }}
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
 
     steps:
       - name: Download build of static website
