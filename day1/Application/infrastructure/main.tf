@@ -12,7 +12,7 @@ provider "azurerm" {
 }
 
 variable "frontend_url" {
-  type = string
+  type    = string
   default = "*"
 }
 
