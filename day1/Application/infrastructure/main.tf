@@ -75,7 +75,7 @@ resource "azurerm_app_service" "api" {
     app_command_line = "gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app"
 
     cors {
-      allowed_origins = ["${var.frontend_url}"]
+      allowed_origins = [var.frontend_url]
     }
   }
 
