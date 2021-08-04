@@ -70,7 +70,7 @@ resource "azurerm_app_service" "api" {
   }
 
   site_config {
-    python_version = "3.8"
+    python_version = "3.4"
 
     app_command_line = "gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app"
 
