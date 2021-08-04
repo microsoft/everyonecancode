@@ -6,8 +6,14 @@ terraform {
     key                  = "femaletechgen.prod.terraform.tfstate"
   }
 }
+
 provider "azurerm" {
   features {}
+}
+
+variable "frontend_url" {
+  type = string
+  default = "*"
 }
 
 locals {
@@ -54,6 +60,8 @@ resource "azurerm_app_service" "api" {
   resource_group_name = azurerm_resource_group.devops.name
   location            = local.location
 
+  python_version = "3.8"
+
   storage_account {
     name         = "upload"
     account_name = azurerm_storage_account.upload.name
@@ -62,6 +70,15 @@ resource "azurerm_app_service" "api" {
     type         = "AzureBlob"
 
   }
+
+  site_config {
+    app_command_line = "gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app"
+
+    cors {
+      allowed_origins = ["${var.frontend_url}"]
+    }
+  }
+
 
   app_service_plan_id = azurerm_app_service_plan.linux.id
 }
