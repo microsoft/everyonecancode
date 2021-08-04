@@ -70,8 +70,8 @@ resource "azurerm_app_service" "api" {
   }
 
   site_config {
-    python_version = "3.4"
-
+    linuxFxVersion   = "PYTHON|3.8"
+    http2_enabled    = true
     app_command_line = "gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app"
 
     cors {
