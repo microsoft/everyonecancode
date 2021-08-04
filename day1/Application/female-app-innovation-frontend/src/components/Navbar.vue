@@ -45,9 +45,7 @@ export default class Navbar extends Vue {}
   left: 50%;
   transform: translatex(-50%);
 }
-#brand {
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-}
+
 #top,
 #bottom,
 #left,
