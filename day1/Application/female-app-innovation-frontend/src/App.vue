@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
     <transition :name="transitionName">
       <vue-page-stack>
         <router-view :key="screen" class="router-view-c"></router-view>
@@ -91,5 +95,44 @@ export default class App extends Vue {
 @font-face {
   font-family: HaloHandletter;
   src: url("../public/fonts/HaloHandletter.otf") format("opentype");
+}
+#top,
+#bottom,
+#left,
+#right {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  position: fixed;
+}
+#left,
+#right {
+  top: 0;
+  bottom: 0;
+  width: 2px;
+}
+#left {
+  left: 0;
+}
+#right {
+  right: 0;
+}
+
+#top,
+#bottom {
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+#top {
+  top: 0;
+}
+#bottom {
+  bottom: 0;
 }
 </style>
