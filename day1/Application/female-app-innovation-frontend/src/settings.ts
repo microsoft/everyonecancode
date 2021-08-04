@@ -1,5 +1,5 @@
 const imageApiUrl = "https://fotobackendtest.azurewebsites.net";
-const faceApiKey = process.env.VUE_APP_FACE_API_KEY;
+const faceApiKey = process.env.VUE_APP_FACE_API_KEY || "8f02209a24e641c2b9a9af81e34c5be8";
 const speechApiKey =
   process.env.VUE_APP_SPEECH_API_KEY || "d349139ec5084a5b816e99a4a01e02e7⏎";
 const faceApiEndpoint =

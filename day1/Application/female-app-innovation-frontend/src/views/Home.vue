@@ -1,5 +1,12 @@
 <template>
   <div id="app">
+    <b-navbar fixed-top :mobile-burger="false">
+      <template #brand>
+        <b-navbar-item id="fontnavbar" class="title is-2">
+          Milligram
+        </b-navbar-item>
+      </template>
+    </b-navbar>
     <div class="container">
       <Profile />
       <ImageList />
@@ -24,4 +31,8 @@ import Navbar from "../components/Navbar.vue";
 export default class Home extends Vue {}
 </script>
 
-<style scoped></style>
+<style scoped>
+#fontnavbar {
+  font-family: HaloHandletter;
+}
+</style>

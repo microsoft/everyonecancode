@@ -88,4 +88,8 @@ export default class App extends Vue {
   opacity: 0.5;
   transform: translateX(-100%);
 }
+@font-face {
+  font-family: HaloHandletter;
+  src: url("../public/fonts/HaloHandletter.otf") format("opentype");
+}
 </style>
