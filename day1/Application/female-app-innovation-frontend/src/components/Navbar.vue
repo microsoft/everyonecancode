@@ -38,7 +38,7 @@ export default class Navbar extends Vue {}
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .buttons-container {
-  padding: 6px;
+  padding: 2px;
 }
 .navbar-center {
   position: absolute;
