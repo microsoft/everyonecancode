@@ -71,6 +71,7 @@ resource "azurerm_app_service" "api" {
 
   site_config {
     linux_fx_version = "PYTHON|3.8"
+    scm_type         = "LocalGit"
     http2_enabled    = true
     app_command_line = "gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app"
 
