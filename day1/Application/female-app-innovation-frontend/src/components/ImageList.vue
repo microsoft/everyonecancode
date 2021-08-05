@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="tile is-ancestor">
-      <div
-        class="tile is-parent"
-        v-for="image in imageList"
-        :key="image.image_url"
-      >
-        <div class="tile is-child">
+      <div class="tile is-parent is-vertical">
+        <div
+          class="tile is-child"
+          v-for="image in imageList"
+          :key="image.image_url"
+        >
           <b-image ratio="1by1  " :src="`${apiUrl}/${image.image_url}`" />
           <b-button
             id="btn-delete"
