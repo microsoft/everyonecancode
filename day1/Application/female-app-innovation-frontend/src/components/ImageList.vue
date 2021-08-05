@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div class="tile is-ancestor">
       <div
         class="tile is-parent"
         v-for="image in imageList"
