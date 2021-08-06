@@ -22,7 +22,6 @@
           </router-link>
         </b-button>
       </div>
-      </ul>
     </template>
   </b-navbar>
 </template>
