@@ -54,7 +54,6 @@ export default class FaceAI extends Vue {
     { field: "gender", label: "Gender" },
     { field: "smile", label: "Smile" },
     { field: "glasses", label: "Glasses" },
-    { field: "accessories", label: "accessories" },
   ];
 
   onClose() {
@@ -76,7 +75,6 @@ export default class FaceAI extends Vue {
               "smile",
               "gender",
               "glasses",
-              "accessories",
             ],
           })
           .then((response) => {
@@ -97,7 +95,6 @@ export default class FaceAI extends Vue {
                 gender = "",
                 smile = 0,
                 glasses = "",
-                accessories = "",
               } = { ...face.faceAttributes };
 
               return {
@@ -119,7 +116,6 @@ export default class FaceAI extends Vue {
                 gender,
                 smile: `${check(smile, "smile")}`,
                 glasses,
-                accessories,
               };
             });
           });
