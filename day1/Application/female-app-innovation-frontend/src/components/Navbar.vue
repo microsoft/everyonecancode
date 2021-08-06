@@ -5,24 +5,23 @@
       <div id="right"></div>
       <div id="top"></div>
       <div id="bottom"></div>
-      <ul class="navbar-center">
-        <div class="buttons-container">
-          <b-button rounded type="is-black">
-            <router-link to="/camera">
-              <b-icon type="is-white" icon="camera" pack="fas"></b-icon>
-            </router-link>
-          </b-button>
-          <b-button rounded type="is-black">
-            <router-link to="/microphone">
-              <b-icon type="is-white" icon="microphone" pack="fas"></b-icon>
-            </router-link>
-          </b-button>
-          <b-button rounded type="is-black">
-            <router-link to="/faceai">
-              <b-icon type="is-white" icon="grin-stars" pack="fas"></b-icon>
-            </router-link>
-          </b-button>
-        </div>
+      <div class="buttons-container navbar-center">
+        <b-button rounded type="is-black">
+          <router-link to="/camera">
+            <b-icon type="is-white" icon="camera" pack="fas"></b-icon>
+          </router-link>
+        </b-button>
+        <b-button rounded type="is-black">
+          <router-link to="/microphone">
+            <b-icon type="is-white" icon="microphone" pack="fas"></b-icon>
+          </router-link>
+        </b-button>
+        <b-button rounded type="is-black">
+          <router-link to="/faceai">
+            <b-icon type="is-white" icon="grin-stars" pack="fas"></b-icon>
+          </router-link>
+        </b-button>
+      </div>
       </ul>
     </template>
   </b-navbar>
@@ -41,6 +40,7 @@ export default class Navbar extends Vue {}
   padding: 2px;
 }
 .navbar-center {
+  width: 500px;
   position: absolute;
   left: 50%;
   transform: translatex(-50%);
