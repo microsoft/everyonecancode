@@ -48,4 +48,8 @@ export default class Microphone extends Vue {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+#microphone{
+  margin-top: 3.25rem;
+}
+</style>

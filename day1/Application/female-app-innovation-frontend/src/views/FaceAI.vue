@@ -1,7 +1,7 @@
 <template>
   <section>
-    <canvas id="ghostVideo" style="display: none"></canvas>
-    <div v-if="!faces">
+    <div v-if="faces.length == 0">
+      <canvas id="ghostVideo" style="display: none"></canvas>
       <div id="faceRectContainer">
         <canvas id="faceRect"></canvas>
       </div>
@@ -13,7 +13,7 @@
         fullscreen
       ></EasyCamera>
     </div>
-    <section v-if="faces">
+    <section v-if="faces.length > 0">
       <NavBarBack />
       <b-tabs>
         <b-tab-item label="Results">
@@ -50,10 +50,10 @@ export default class FaceAI extends Vue {
   @Ref() readonly camera!: any;
 
   picture = "";
-  faces: any = null;
+  faces: any = [];
   liveFaces: any = null;
   faceRect = { width: 92, height: 92, left: 301, top: 149 }; // hardcoded rectangle for testing
-  useLiveFaceDetection = true; // toggle live face detection in camera view
+  useLiveFaceDetection = false; // toggle live face detection in camera view
 
   columns = [
     { field: "age", label: "Age" },
@@ -235,6 +235,7 @@ export default class FaceAI extends Vue {
   left: 0;
   height: 100vh;
   margin-top: -3.25rem;
+  pointer-events: none;
 }
 
 #faceRect {
@@ -242,5 +243,12 @@ export default class FaceAI extends Vue {
   height: 100%;
   width: 100%;
   z-index: 2;
+}
+</style>
+<style>
+
+body.has-navbar-fixed-bottom{
+  padding-bottom: 0rem;
+  padding-top: 0rem;
 }
 </style>
