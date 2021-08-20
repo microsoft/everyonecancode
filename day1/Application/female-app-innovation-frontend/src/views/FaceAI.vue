@@ -50,10 +50,11 @@ export default class FaceAI extends Vue {
   @Ref() readonly camera!: any;
 
   picture = "";
+  faceInterval : number = null;
   faces: any = [];
   liveFaces: any = null;
   faceRect = { width: 92, height: 92, left: 301, top: 149 }; // hardcoded rectangle for testing
-  useLiveFaceDetection = false; // toggle live face detection in camera view
+  useLiveFaceDetection = true; // toggle live face detection in camera view
 
   columns = [
     { field: "age", label: "Age" },
@@ -65,11 +66,12 @@ export default class FaceAI extends Vue {
   ];
 
   onClose() {
+    window.clearInterval(this.faceInterval);
     router.back();
   }
 
   created() {
-    window.setInterval(() => {
+    this.faceInterval = window.setInterval(() => {
       let canvas = document.getElementById("ghostVideo") as HTMLCanvasElement; // declare a canvas element in your html
       let ctx = canvas.getContext("2d");
       let video = document.querySelector("video");
@@ -115,42 +117,9 @@ export default class FaceAI extends Vue {
             .then((res) => res.blob())
             .then((blob) => {
               client.face
-                .detectWithStream(blob, {
-                  returnFaceAttributes: [
-                    "age",
-                    "emotion",
-                    "facialHair",
-                    "smile",
-                    "gender",
-                    "glasses",
-                  ],
-                })
+                .detectWithStream(blob)
                 .then((response) => {
                   this.liveFaces = response.map((face) => {
-                    const {
-                      age = 0,
-                      emotion: {
-                        anger = 0,
-                        contempt = 0,
-                        disgust = 0,
-                        fear = 0,
-                        happiness = 0,
-                        neutral = 0,
-                        sadness = 0,
-                        surprise = 0,
-                      } = {},
-                      facialHair: {
-                        moustache = 0,
-                        beard = 0,
-                        sideburns = 0,
-                      } = {},
-                      gender = "",
-                      smile = 0,
-                      glasses = "",
-                    } = { ...face.faceAttributes };
-
-                    console.log(face.faceRectangle);
-
                     this.faceRect = face.faceRectangle;
                   });
                 });
@@ -159,12 +128,13 @@ export default class FaceAI extends Vue {
       } catch (e) {
         console.log(e);
       }
-    }, 1000);
+    }, 2000);
   }
 
   @Watch("picture")
   savePicture() {
     this.camera.stop();
+    clearInterval(this.faceInterval);
     fetch(this.picture)
       .then((res) => res.blob())
       .then((blob) => {
