@@ -50,11 +50,11 @@ export default class FaceAI extends Vue {
   @Ref() readonly camera!: any;
 
   picture = "";
-  faceInterval : number = null;
-  faces: any = [];
-  liveFaces: any = null;
+  faceInterval = -1;
+  faces: any[] = [];
+  liveFaces: any[] = [];
   faceRect = { width: 92, height: 92, left: 301, top: 149 }; // hardcoded rectangle for testing
-  useLiveFaceDetection = true; // toggle live face detection in camera view
+  useLiveFaceDetection = false; // toggle live face detection in camera view
 
   columns = [
     { field: "age", label: "Age" },
@@ -65,12 +65,12 @@ export default class FaceAI extends Vue {
     { field: "glasses", label: "Glasses" },
   ];
 
-  onClose() {
+  onClose(): void {
     window.clearInterval(this.faceInterval);
     router.back();
   }
 
-  created() {
+  created(): void {
     this.faceInterval = window.setInterval(() => {
       let canvas = document.getElementById("ghostVideo") as HTMLCanvasElement; // declare a canvas element in your html
       let ctx = canvas.getContext("2d");
@@ -116,13 +116,11 @@ export default class FaceAI extends Vue {
           fetch(frame)
             .then((res) => res.blob())
             .then((blob) => {
-              client.face
-                .detectWithStream(blob)
-                .then((response) => {
-                  this.liveFaces = response.map((face) => {
-                    this.faceRect = face.faceRectangle;
-                  });
+              client.face.detectWithStream(blob).then((response) => {
+                this.liveFaces = response.map((face) => {
+                  this.faceRect = face.faceRectangle;
                 });
+              });
             });
         }
       } catch (e) {
@@ -132,7 +130,7 @@ export default class FaceAI extends Vue {
   }
 
   @Watch("picture")
-  savePicture() {
+  savePicture(): void {
     this.camera.stop();
     clearInterval(this.faceInterval);
     fetch(this.picture)
@@ -216,8 +214,7 @@ export default class FaceAI extends Vue {
 }
 </style>
 <style>
-
-body.has-navbar-fixed-bottom{
+body.has-navbar-fixed-bottom {
   padding-bottom: 0rem;
   padding-top: 0rem;
 }
