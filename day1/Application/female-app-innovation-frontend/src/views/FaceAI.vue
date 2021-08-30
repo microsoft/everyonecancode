@@ -54,7 +54,8 @@ export default class FaceAI extends Vue {
   faces: any[] = [];
   liveFaces: any[] = [];
   faceRect = { width: 92, height: 92, left: 301, top: 149 }; // hardcoded rectangle for testing
-  useLiveFaceDetection = false; // toggle live face detection in camera view
+  useLiveFaceDetection = true; // toggle live face detection in camera view
+  liveFaceDetectionInverval = 3000;
 
   columns = [
     { field: "age", label: "Age" },
@@ -126,7 +127,7 @@ export default class FaceAI extends Vue {
       } catch (e) {
         console.log(e);
       }
-    }, 2000);
+    }, this.liveFaceDetectionInverval);
   }
 
   @Watch("picture")
