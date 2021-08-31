@@ -30,7 +30,7 @@ var recognizer: SpeechRecognizer;
 export default class Microphone extends Vue {
   text = "";
 
-  onStream(stream: MediaStream) {
+  onStream(stream: MediaStream): void {
     const audioConfig = AudioConfig.fromStreamInput(stream);
     recognizer = new SpeechRecognizer(speechConfig, audioConfig);
     recognizer.recognizing = this.onRegonitionResult;
@@ -38,14 +38,18 @@ export default class Microphone extends Vue {
     recognizer.startContinuousRecognitionAsync();
   }
 
-  onRegonitionResult(sender: any, event: SpeechRecognitionEventArgs) {
+  onRegonitionResult(sender: any, event: SpeechRecognitionEventArgs): void {
     this.text = event.result.text;
   }
 
-  onResult() {
+  onResult(): void {
     recognizer.stopContinuousRecognitionAsync();
   }
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+#microphone {
+  margin-top: 3.25rem;
+}
+</style>
