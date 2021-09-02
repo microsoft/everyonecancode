@@ -33,6 +33,7 @@ export default new Vuex.Store({
           context.commit("setImageList", response.data);
         })
         .catch((error) => {
+          context.commit("setImageList", []);
           console.log(error);
         });
     },

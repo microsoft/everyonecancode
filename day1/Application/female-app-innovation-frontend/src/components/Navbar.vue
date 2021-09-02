@@ -6,17 +6,17 @@
       <div id="top"></div>
       <div id="bottom"></div>
       <div class="buttons-container navbar-center">
-        <b-button rounded type="is-black">
+        <b-button v-if="showCameraButton" rounded type="is-black">
           <router-link to="/camera">
             <b-icon type="is-white" icon="camera" pack="fas"></b-icon>
           </router-link>
         </b-button>
-        <b-button rounded type="is-black">
+        <b-button v-if="showSpeechButton" rounded type="is-black">
           <router-link to="/microphone">
             <b-icon type="is-white" icon="microphone" pack="fas"></b-icon>
           </router-link>
         </b-button>
-        <b-button rounded type="is-black">
+        <b-button v-if="showFaceButton" rounded type="is-black">
           <router-link to="/faceai">
             <b-icon type="is-white" icon="grin-stars" pack="fas"></b-icon>
           </router-link>
@@ -28,9 +28,25 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import {
+  imageApiUrl,
+  faceApiKey,
+  faceApiEndpoint,
+  speechApiKey,
+} from "../settings";
 
 @Component
-export default class Navbar extends Vue {}
+export default class Navbar extends Vue {
+  get showCameraButton(): boolean {
+    return imageApiUrl !== "";
+  }
+  get showFaceButton(): boolean {
+    return faceApiKey !== "" && faceApiEndpoint !== "";
+  }
+  get showSpeechButton(): boolean {
+    return speechApiKey !== "";
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
