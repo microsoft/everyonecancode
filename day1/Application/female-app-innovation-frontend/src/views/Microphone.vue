@@ -20,8 +20,6 @@ import NavBarBack from "../components/NavBarBack.vue";
 
 const region = "westeurope";
 
-const speechConfig = SpeechConfig.fromSubscription(speechApiKey, region);
-speechConfig.speechRecognitionLanguage = "de-DE";
 var recognizer: SpeechRecognizer;
 
 @Component({
@@ -31,6 +29,8 @@ export default class Microphone extends Vue {
   text = "";
 
   onStream(stream: MediaStream): void {
+    const speechConfig = SpeechConfig.fromSubscription(speechApiKey, region);
+    speechConfig.speechRecognitionLanguage = "de-DE";
     const audioConfig = AudioConfig.fromStreamInput(stream);
     recognizer = new SpeechRecognizer(speechConfig, audioConfig);
     recognizer.recognizing = this.onRegonitionResult;
