@@ -15,12 +15,26 @@ In this challenge you will learn how to:
 
 ## Getting started
 
+![](./images/createresource.png)
+
+![](./images/selectspeech.png)
+
 ## Create Speech Cognitive Service
+
+![](./images/createspeech.png)
+
+![](./images/createspeechresource.png)
+
+![](./images/copykeys.png)
 
 ## Integrate Speech Service Credential into Github Secret
 
 ![](./images/vue-app-speech-api-key-secret.png)
 
 ## Run Frontend Pipeline again
+
+![](./images/runworkflow.png)
+
+![](./images/rerunalljobs.png)
 
 ## Talk to me! What do you have to say? Play around!
