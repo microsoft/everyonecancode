@@ -55,11 +55,26 @@ In this day you will learn how to:
 ## Deploy Image Upload
 
 ### Create Azure Account
+// Create Account + Subscription
 
 ### Create Resource Group
-
+* Visit portal.azure.com & log in with your Azure Account
+* Click on *Create a resource*
+![Create RG 1](images/backend_create_rg_0.png)
+* Search & select *Resource Group* from the text field
+![Create RG 2](images/backend_create_rg_1.png)
+* Select your subscription
+* Choose a name like `Milligram` to group all your resources related to this application
+* Last but not least, select a region near you to host all your services
+![Create RG 3](images/backend_create_rg_2.png)
 ### Create Storage Account
-
+* Go to the start page of the Azure Portal
+* Click on *Create a resource* as you did before for the Resource Group
+* Search for *Storage Account* and click *Create*
+* Select your subscription & the recently created resource group
+* Make sure to select `Standard` for *Performance* and `Locally-redundant storage (LRS)` for *Reduncy*
+![Storage](images/backend_storage_0.png)
+* Hit *Review & create* to finish creating the storage account
 ### Create Web App
 
 ### Integrate Storage
