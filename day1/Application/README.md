@@ -32,15 +32,24 @@ In this day you will learn how to:
 * Click the button which says *I understand my workflows, go ahead and enable them* to enable Github Actions
 ![Enable Github Actions](images/frontend_enable_action.png)
 ### Run Github Action
-// TODO: Manual execution + Challenge: Change in Codespace + push
+* In the ***Actions** tab of your repository, click on the **pages** Action
+* Open the **Run Workflow** dropdown and click the **Run Workflow** button to confirm the Action execution
+![Run Github Action](images/frontend_run_action.png)
+// TODO: Add Challenge to hange in Codespace + push
 ### Enable Github Page in Project Settings
 * Go to your repository settings
 ![Repository Settings](images/repo_main.png)
-* Navigate to **Pages**, select the branch *main* and hit the save button
+* Navigate to **Pages**, select the branch *gh-pages* and hit the save button
 ![Enable Pages](images/frontend_pages.png)
+* The deployment will take 1-2 minutes. After that, the Milligram website is accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`
 ### Open Github Page on your phone
-### Add Application to home screen and play around
-
+* Open your personal Milligram website on your phone and explore it's content
+* Edit the profile in the app to show your own Github profile picture in the app
+![Add to homescreen 1](images/frontend_homescreen_0.jpg)
+### Add The application to your homescreen
+* Open the browser menu to add the website to your homescreen
+![Add to homescreen 2](images/frontend_homescreen_1.jpg) ![Add to homescreen 2](images/frontend_homescreen_2.jpg)
+* Now you can open the website like a normal app from the homescreen of your phone
 # Milligram Application Backend
 
 ## Deploy Image Upload
