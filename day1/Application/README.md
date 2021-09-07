@@ -76,7 +76,22 @@ In this day you will learn how to:
 ![Storage](images/backend_storage_0.png)
 * Hit *Review & create* to finish creating the storage account
 ### Create Web App
+* Go to the start page of the Azure Portal again
+* Click on *Create a resource* as you did before
+* Search for *Web App* and click *Create*
+* Select your subscription & previously created Resource Group
+* Make sure to adjust the settings according to the image below
+![Backend 0](images/backend_app_0.png)
+* Create a new App Service Plan
+![Backend 1](images/backend_app_1.png)
+* Click the *Dev/Test* tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan
+![Backend 2](images/backend_app_2.png)
+* Click *Review + Create* at the bottom of the screen
+* Review the displayed information and click *Create* on the next screen to spin up the backend application
 
+:::tip
+📝 On the review page, you can find information about the estimated costs of your service. Make sure it displays *Estimated price - Free*
+:::
 ### Integrate Storage
 
 ### Enter Credentials and copy connection string to Github Secret
