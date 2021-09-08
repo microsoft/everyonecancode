@@ -28,6 +28,8 @@ jobs:
           BASE_URL: FemaleAIAppInnovationEcosystem
           VUE_APP_FACE_API_KEY: ${{ secrets.VUE_APP_FACE_API_KEY }}
           VUE_APP_SPEECH_API_KEY: ${{ secrets.VUE_APP_SPEECH_API_KEY }}
+          VUE_APP_IMAGE_API_URL: ${{secrets.VUE_APP_IMAGE_API_URL}}
+          VUE_APP_FACE_API_ENDPOINT: ${{secrets.VUE_APP_FACE_API_ENDPOINT}}
           
         working-directory: day1/Application/female-app-innovation-frontend
       - name: Upload result of Application build
