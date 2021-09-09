@@ -13,10 +13,17 @@ In this challenge you will learn how to:
 
 ## Table of contents
 
+### Further informative resources:
+
+- [What is a Resource / Resource Group / Subscription?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
+- [Speech API](https://azure.microsoft.com/services/cognitive-services/speech-services/#overview)
+- [Regions and Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview)
+- [Github Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets)
+
 ## Getting started
 
 - Navigate to the **Resource Group** we created during the "Face" challenge
-- Create a **new resource** and search for **speech**
+- Create a new **Resource** and search for **Speech**
 ![](./images/createresource.png)
 
 ![](./images/selectspeech.png)
