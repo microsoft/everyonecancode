@@ -11,11 +11,23 @@ In this challenge you will learn how to:
 - how to pass the API key to you App using Github Secrets
 - how to take a selfie 😉
 
+*API - Application Programming Interface: A software intermediary that allows two applications to talk to each other*
+
+### Further informative resources:
+
+- [What is a Resource / Resource Group / Subscription?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
+- [Face API](https://azure.microsoft.com/services/cognitive-services/face/)
+- [Regions and Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview)
+- [Github Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets)
+
 ## Table of contents
 
 ## Getting started
 
 The first step in creating our Face API is to create a new resource.
+
+*Azure Resource: In Azure, the term resource refers to an entity managed by Azure. For example, virtual machines, virtual networks, and storage accounts are all referred to as Azure resources.*
+
 - Click the **big "+" symbol** on the main page
 - Pick the category **"AI + Machine Learning"**
 - Create a **Face** service.
@@ -23,9 +35,9 @@ The first step in creating our Face API is to create a new resource.
 
 ## Create Face Cognitive Service
 
-- Choose your **subscription**
-- Create a new **Resource Group** (if not already available)
-- Choose *West Europe* as **Region**
+- Choose your **Subscription**
+- Create a new **Resource Group** (A storage for multiple resources)
+- Choose *West Europe* as **Region** (Location of datacenter where the service is deployed)
 - Create a **unique name** and select the **Standard S0 Pricing Tier**.
 ![](./images/create-face-options.png)
 
