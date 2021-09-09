@@ -18,6 +18,8 @@ In this challenge you will learn how to:
 
 ## Sign Up and Create at Github Account
 
+- Create a GitHub account to get started
+- Simply add your email, password and your desired username
 ![](./images/GithubSignUp.png)
 
 ![](./images/EnterEmail.png)
@@ -26,8 +28,10 @@ In this challenge you will learn how to:
 
 ![](./images/EnterUserName.png)
 
+- Type **n**, so you do not receive any emails from GitHub about new product updates and announcements.
 ![](./images/noannouncements.png)
 
+- To **verify** the account, please follow the instructions.
 ![](./images/verification.png)
 
 ![](./images/verifyyouraccount.png)
@@ -38,14 +42,18 @@ In this challenge you will learn how to:
 
 ### Upload Profile Picture and insert your name
 
+This is the front page of your account. This overview shows you everything from your contributions, repositories your active in, your achievements and much more.
 ![](./images/accountfrontpage.png)
 
+To change or add any of your information, click on your icon in the top right corner and choose **Settings**.
 ![](./images/Settings.png)
 
+- Click on **Profile** and add your public information.
 ![](./images/EditProfile.png)
 
 ## Fork Repository
 
+A Fork is a copy of a repository. This is extremely handy, if you want to freely experiment without making any changes to the original project. 
 ![](./images/ForkTheRepository.png)
 
 ![](./images/Forked.png)
