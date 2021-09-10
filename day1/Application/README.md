@@ -25,15 +25,26 @@ In this day you will learn how to:
     3. [Deploy Image Upload](#deploy-image-upload)
 3. [Overcharged? We got you covered](#overcharged-we-got-you-covered)
 
+### Further informative resources:
+
+- [What is Github Action?](https://github.com/features/actions)
+- [Github Action Documentation](https://docs.github.com/actions)
+- [What is a repository?](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories)
+- [What is a Resource / Resource Group / Subscription?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
+
 # Milligram Application Frontend
 
 ### Enable Github Action
 * Go to your repository **Actions**
 * Click the button which says *I understand my workflows, go ahead and enable them* to enable Github Actions
+
+*A [repository](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories) contains all of your project's files and each file's revision history. You can discuss and manage your project's work within the repository.*
+
 ![Enable Github Actions](images/frontend_enable_action.png)
 ### Run Github Action
-* In the ***Actions** tab of your repository, click on the **pages** Action
+* In the **Actions** tab of your repository, click on the **pages** Action
 * Open the **Run Workflow** dropdown and click the **Run Workflow** button to confirm the Action execution
+
 ![Run Github Action](images/frontend_run_action.png)
 // TODO: Add Challenge to hange in Codespace + push
 ### Enable Github Page in Project Settings
@@ -60,8 +71,11 @@ In this day you will learn how to:
 ### Create Resource Group
 * Visit portal.azure.com & log in with your Azure Account
 * Click on *Create a resource*
+
+*Azure Resource: In Azure, the term resource refers to an entity managed by Azure. For example, virtual machines, virtual networks, and storage accounts are all referred to as Azure resources.*
+
 ![Create RG 1](images/backend_create_rg_0.png)
-* Search & select *Resource Group* from the text field
+* Search & select *Resource Group* (A storage for multiple resources) from the text field
 ![Create RG 2](images/backend_create_rg_1.png)
 * Select your subscription
 * Choose a name like `Milligram` to group all your resources related to this application
