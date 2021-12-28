@@ -25,87 +25,105 @@ In this day you will learn how to:
     3. [Deploy Image Upload](#deploy-image-upload)
 3. [Overcharged? We got you covered](#overcharged-we-got-you-covered)
 
-### Further informative resources:
+### Further informative resources
 
 - [What is Github Action?](https://github.com/features/actions)
 - [Github Action Documentation](https://docs.github.com/actions)
 - [What is a repository?](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories)
 - [What is a Resource / Resource Group / Subscription?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
 
-# Milligram Application Frontend
+## Milligram Application Frontend
 
 ### Enable Github Action
-* Go to your repository **Actions**
-* Click the button which says *I understand my workflows, go ahead and enable them* to enable Github Actions
+
+- Go to your repository **Actions**
+- Click the button which says *I understand my workflows, go ahead and enable them* to enable Github Actions
 
 *A [repository](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories) contains all of your project's files and each file's revision history. You can discuss and manage your project's work within the repository.*
 
 ![Enable Github Actions](images/frontend_enable_action.png)
+
 ### Run Github Action
-* In the **Actions** tab of your repository, click on the **pages** Action
-* Open the **Run Workflow** dropdown and click the **Run Workflow** button to confirm the Action execution
+
+- In the **Actions** tab of your repository, click on the **pages** Action
+- Open the **Run Workflow** dropdown and click the **Run Workflow** button to confirm the Action execution
 
 ![Run Github Action](images/frontend_run_action.png)
 // TODO: Add Challenge to hange in Codespace + push
+
 ### Enable Github Page in Project Settings
-* Go to your repository settings
+
+- Go to your repository settings
 ![Repository Settings](images/repo_main.png)
-* Navigate to **Pages**, select the branch *gh-pages* and hit the save button
+- Navigate to **Pages**, select the branch *gh-pages* and hit the save button
 ![Enable Pages](images/frontend_pages.png)
-* The deployment will take 1-2 minutes. After that, the Milligram website is accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`
+- The deployment will take 1-2 minutes. After that, the Milligram website is accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`
+
 ### Open Github Page on your phone
-* Open your personal Milligram website on your phone and explore it's content
-* Edit the profile in the app to show your own Github profile picture in the app
+
+- Open your personal Milligram website on your phone and explore it's content
+- Edit the profile in the app to show your own Github profile picture in the app
 ![Add to homescreen 1](images/frontend_homescreen_0.jpg)
+
 ### Add The application to your homescreen
-* Open the browser menu to add the website to your homescreen
+
+- Open the browser menu to add the website to your homescreen
 ![Add to homescreen 2](images/frontend_homescreen_1.jpg) ![Add to homescreen 2](images/frontend_homescreen_2.jpg)
-* Now you can open the website like a normal app from the homescreen of your phone
-# Milligram Application Backend
+- Now you can open the website like a normal app from the homescreen of your phone
+
+## Milligram Application Backend
 
 ## Deploy Image Upload
 
 ### Create Azure Account
+
 // Create Account + Subscription
 
 ### Create Resource Group
-* Visit portal.azure.com & log in with your Azure Account
-* Click on *Create a resource*
+
+- Visit portal.azure.com & log in with your Azure Account
+- Click on *Create a resource*
 
 *Azure Resource: In Azure, the term resource refers to an entity managed by Azure. For example, virtual machines, virtual networks, and storage accounts are all referred to as Azure resources.*
 
 ![Create RG 1](images/backend_create_rg_0.png)
-* Search & select *Resource Group* (A storage for multiple resources) from the text field
+
+- Search & select *Resource Group* (A storage for multiple resources) from the text field
 ![Create RG 2](images/backend_create_rg_1.png)
-* Select your subscription
-* Choose a name like `Milligram` to group all your resources related to this application
-* Last but not least, select a region near you to host all your services
+- Select your subscription
+- Choose a name like `Milligram` to group all your resources related to this application
+- Last but not least, select a region near you to host all your services
 ![Create RG 3](images/backend_create_rg_2.png)
+
 ### Create Storage Account
-* Go to the start page of the Azure Portal
-* Click on *Create a resource* as you did before for the Resource Group
-* Search for *Storage Account* and click *Create*
-* Select your subscription & the recently created resource group
-* Make sure to select `Standard` for *Performance* and `Locally-redundant storage (LRS)` for *Reduncy*
+
+- Go to the start page of the Azure Portal
+- Click on *Create a resource* as you did before for the Resource Group
+- Search for *Storage Account* and click *Create*
+- Select your subscription & the recently created resource group
+- Make sure to select `Standard` for *Performance* and `Locally-redundant storage (LRS)` for *Reduncy*
 ![Storage](images/backend_storage_0.png)
-* Hit *Review & create* to finish creating the storage account
+- Hit *Review & create* to finish creating the storage account
+
 ### Create Web App
-* Go to the start page of the Azure Portal again
-* Click on *Create a resource* as you did before
-* Search for *Web App* and click *Create*
-* Select your subscription & previously created Resource Group
-* Make sure to adjust the settings according to the image below
+
+- Go to the start page of the Azure Portal again
+- Click on *Create a resource* as you did before
+- Search for *Web App* and click *Create*
+- Select your subscription & previously created Resource Group
+- Make sure to adjust the settings according to the image below
 ![Backend 0](images/backend_app_0.png)
-* Create a new App Service Plan
+- Create a new App Service Plan
 ![Backend 1](images/backend_app_1.png)
-* Click the *Dev/Test* tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan
+- Click the *Dev/Test* tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan
 ![Backend 2](images/backend_app_2.png)
-* Click *Review + Create* at the bottom of the screen
-* Review the displayed information and click *Create* on the next screen to spin up the backend application
+- Click *Review + Create* at the bottom of the screen
+- Review the displayed information and click *Create* on the next screen to spin up the backend application
 
 :::tip
 📝 On the review page, you can find information about the estimated costs of your service. Make sure it displays *Estimated price - Free*
 :::
+
 ### Integrate Storage
 
 ### Enter Credentials and copy connection string to Github Secret
@@ -127,8 +145,6 @@ In this day you will learn how to:
 ## Overcharged? We got you covered
 
 ### Use prepared Milligram Backend Service
-
-
 
 Tipp template
 
