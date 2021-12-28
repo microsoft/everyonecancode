@@ -21,7 +21,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          package: day1/Applications/backend/fotoupload
+          package: day1/Application/backend/fotoupload
           app-name: 'femalemilligram'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C6399CEE7AA343269D41BBA24CEAA24C }}
