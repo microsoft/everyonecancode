@@ -11,7 +11,7 @@ from typing import List
 from urllib.parse import quote
 
 
-connection_string = os.environ['STORAGE_CONNECTIONSTRING']
+connection_string = os.environ['STORAGE_CONNECTSTRING']
 service = BlobServiceClient.from_connection_string(conn_str=connection_string)
 
 # Get a client to interact with a specific container - though it may not yet exist
