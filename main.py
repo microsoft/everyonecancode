@@ -2,6 +2,7 @@ import os
 import io
 from azure.storage import blob
 from fastapi import FastAPI, HTTPException, File, UploadFile, Request
+from fastapi.responses import RedirectResponse
 from azure.storage.blob import BlobServiceClient
 from azure.core.exceptions import ResourceNotFoundError
 from fastapi.responses import StreamingResponse
@@ -25,6 +26,9 @@ class Image(BaseModel):
     created_at: datetime = None
     image_url: str
 
+@app.get("/")
+async def redirect_to_docs():
+    return RedirectResponse("/docs")
 
 @app.get("/images", response_model=List[Image])
 async def list_images(request: Request):
