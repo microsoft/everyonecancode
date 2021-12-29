@@ -113,9 +113,14 @@ _Azure Resource: In Azure, the term resource refers to an entity managed by Azur
 - Click on _Create a resource_ as you did before
 - Search for _Web App_ and click _Create_
 - Select your subscription & previously created Resource Group
-- Make sure to adjust the settings according to the image below
-  ![Backend 0](images/backend_app_0.png)
-- Create a new App Service Plan
+- Make sure to adjust the settings according to the image below:
+  - Name: `<pick your own unique name>`
+  - Publish: `Code`
+  - Runtime stack: `Python 3.8`
+  - Operating System: `Linux`
+  - Region: `West Europe`
+    ![Backend 0](images/backend_app_0.png)
+- Create a new App Service Plan and `<pick your own name>`
   ![Backend 1](images/backend_app_1.png)
 - Click the _Dev/Test_ tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan
   ![Backend 2](images/backend_app_2.png)
@@ -126,11 +131,21 @@ _Azure Resource: In Azure, the term resource refers to an entity managed by Azur
 📝 On the review page, you can find information about the estimated costs of your service. Make sure it displays _Estimated price - Free_
 :::
 
-### Integrate Storage
+### Integrate Storage and configure Web App
 
-### Enter Credentials and copy connection string to Github Secret
-
-### Create Service Principal for Subscription
+- Copy secret _Connection String_ from Storage Account from _access keys_
+- Navigate back to the Web App and open the _Configuration_ tab, click _New connection string_ and create a new connection string with the following settings:
+  - Name: `STORAGE`
+  - Value: `<paste your connection string from Storage Account>`
+  - Type: `Custom`
+- Hit `ok` and `Save`
+- Then select `General Settings` on the same page and fill in the following `Startup Command`: `gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app`
+- Hit `Save`
+- Navigate and Scroll down to the _CORS_ tab on the left hand side of your App Service and enter `https://<YourGithubHandle>.github.io` under _Allowed Origins_
+- Hit `Save`
+- Navigate to the _Deployment Center_ tab on the left hand side of your App
+- Under _Settings_ tab connect your _Github Account_ and under _Organization_ select your Github Handle and under _Repository_ select `FemaleAIAppInnovationEcosystem` as well as the `main` _Branch_
+- Hit `Save`
 
 ## Make Application Backend run in the Cloud
 
