@@ -154,6 +154,7 @@ _Azure Resource: In Azure, the term resource refers to an entity managed by Azur
 
 - Navigate to the _Overview_ tab on the left hand side of the App
 - Hit the _URL_ and test the website using the docs to figure out if the features of our Milligram will work
+- Select GET/images endpoint hit `Try it Out` and then hit `Execute`, once you get the 200 Response Code you have a successful running service! Congratulations!
 
 ### Integrate Azure Web App Url in Github Secret
 
