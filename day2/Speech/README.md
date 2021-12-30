@@ -6,8 +6,8 @@
 
 In this challenge you will learn how to:
 
-- how to create a Face API service in Azure
-- how to connect you Face API service with your App
+- how to create a Speech API service in Azure
+- how to connect you Speech API service with your App
 - how to pass the API key to you App using Github Secrets
 - how to take a selfie 😉
 
@@ -22,7 +22,7 @@ In this challenge you will learn how to:
 
 ## Getting started
 
-- Navigate to the **Resource Group** we created during the "Face" challenge
+- Navigate to the **Resource Group** we created during the "Speech" challenge
 - Create a new **Resource** and search for **Speech**
 ![](./images/createresource.png)
 
@@ -35,7 +35,7 @@ In this challenge you will learn how to:
 
 ![](./images/createspeechresource.png)
 
-- Similar to the "Face" challenge, copy the key to store it in **Github Secrets**
+- Similar to the "Speech" challenge, copy the key to store it in **Github Secrets**
 ![](./images/copykeys.png)
 
 ## Integrate Speech Service Credential into Github Secret
