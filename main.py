@@ -33,6 +33,15 @@ async def unicorn_exception_handler(request: Request, exc: KeyError):
             content={"message": f"Oops! You forgot to set the STORAGE connection string for your Azure Storage Account. You can test locally by setting CUSTOMCONNSTR_STORAGE."},
         )
     raise exc
+
+@app.exception_handler(ValueError)
+async def unicorn_exception_handler(request: Request, exc: KeyError):
+    if exc.args[0] == 'Connection string is either blank or malformed.':
+        return JSONResponse(
+            status_code=500,
+            content={"message": f"Oops! Your connection string is either blank or malformed."},
+        )
+    raise exc
 class Image(BaseModel):
     created_at: datetime = None
     image_url: str
