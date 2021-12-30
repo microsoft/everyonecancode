@@ -139,8 +139,6 @@ _Azure Resource: In Azure, the term resource refers to an entity managed by Azur
   - Value: `<paste your connection string from Storage Account>`
   - Type: `Custom`
 - Hit `ok` and `Save`
-- Then select `General Settings` on the same page and fill in the following `Startup Command`: `gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app`
-- Hit `Save`
 - Navigate and Scroll down to the _CORS_ tab on the left hand side of your App Service and enter `https://<YourGithubHandle>.github.io` under _Allowed Origins_
 - Hit `Save`
 
