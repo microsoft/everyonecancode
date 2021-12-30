@@ -1,16 +1,13 @@
 import os
-import io
-from azure.storage import blob
-from fastapi import FastAPI, HTTPException, File, UploadFile, Request
-from fastapi.responses import RedirectResponse
-from azure.storage.blob import BlobServiceClient
-from azure.core.exceptions import ResourceNotFoundError
-from fastapi.responses import StreamingResponse
-from pydantic import BaseModel
 from datetime import datetime
 from typing import List
 from urllib.parse import quote
 
+from azure.core.exceptions import ResourceNotFoundError
+from azure.storage.blob import BlobServiceClient
+from fastapi import FastAPI, File, HTTPException, Request, UploadFile
+from fastapi.responses import RedirectResponse, StreamingResponse
+from pydantic import BaseModel
 
 connection_string = os.environ['CUSTOMCONNSTR_STORAGE']
 service = BlobServiceClient.from_connection_string(conn_str=connection_string)
