@@ -30,7 +30,7 @@ async def unicorn_exception_handler(request: Request, exc: KeyError):
     if exc.args[0] == 'CUSTOMCONNSTR_STORAGE':
         return JSONResponse(
             status_code=500,
-            content={"message": f"Oops! You forgot to set the STORAGE connection string for your Azure Storage Account. You can test locally by setting CUSTOMCONNSTR_STORAGE."},
+            content={"message": f"Oops! You forgot to set the STORAGE connection string for your Azure Storage Account. You can test locally by setting CUSTOMCONNSTR_STORAGE. 🤓"},
         )
     raise exc
 
@@ -39,7 +39,7 @@ async def unicorn_exception_handler(request: Request, exc: KeyError):
     if exc.args[0] == 'Connection string is either blank or malformed.':
         return JSONResponse(
             status_code=500,
-            content={"message": f"Oops! Your connection string is either blank or malformed."},
+            content={"message": f"Oops! Your connection string is either blank or malformed. 🤓"},
         )
     raise exc
 class Image(BaseModel):
@@ -57,7 +57,10 @@ async def list_images(container_client = Depends(get_container_client)):
                        image_url=f"/images/{quote(b.name)}") for b in container_client.list_blobs()]
         blobs.sort(key=lambda a: a.created_at, reverse=True)
     except ResourceNotFoundError:
-        raise HTTPException(status_code=404, detail="Container not found")
+        return JSONResponse(
+            status_code=500,
+            content={"message": f"Oops! You forgot to create a blob storage container named 'images'. 🤓"},
+        )
     return blobs
 
 
@@ -68,7 +71,7 @@ async def images(image_name, container_client = Depends(get_container_client)):
         blob = blob_container_client.download_blob()
     except ResourceNotFoundError:
         raise HTTPException(
-            status_code=404, detail="Your picture was not found, just try to upload again 🤓")
+            status_code=404, detail="Your picture was not found, just try to upload again. 🤓")
     return StreamingResponse(blob.chunks(), headers=cache_header)
 
 
@@ -79,7 +82,7 @@ async def delete(image_name, container_client = Depends(get_container_client)):
         blob_container_client.delete_blob()
     except ResourceNotFoundError:
         raise HTTPException(
-            status_code=404, detail="Your picture was not found 🤓")
+            status_code=404, detail="Your picture was not found. 🤓")
     return {}
 
 
@@ -90,4 +93,4 @@ async def upload(file: UploadFile = File(...), container_client = Depends(get_co
     return {"filename": file.filename}
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, port=8000)
