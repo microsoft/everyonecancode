@@ -134,6 +134,9 @@ _Azure Resource: In Azure, the term resource refers to an entity managed by Azur
 ### Integrate Storage and configure Web App
 
 - Copy secret _Connection String_ from Storage Account from _access keys_
+
+![](./images/secretaccesskeys.png)
+
 - Navigate back to the Web App and open the _Configuration_ tab, click _New connection string_ and create a new connection string with the following settings:
   - Name: `STORAGE`
   - Value: `<paste your connection string from Storage Account>`
@@ -151,12 +154,37 @@ _Azure Resource: In Azure, the term resource refers to an entity managed by Azur
 ### Check if Milligram Service is running correctly
 
 - Navigate to the _Overview_ tab on the left hand side of the App
+
+![App Service URL](./images/appservicedoclink.png)
+
 - Hit the _URL_ and test the website using the docs to figure out if the features of our Milligram will work
+- In your Browser you will have the following view:
+
+![Test API Page](./images/TestAPIGetImages.png)
+
 - Select GET/images endpoint hit `Try it Out` and then hit `Execute`, once you get the 200 Response Code you have a successful running service! Congratulations!
 
 ### Integrate Azure Web App Url in Github Secret
 
+- On your Repository page select settings and navigate to secrets
+- Add a _new secret_ named `VUE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`
+![Github Frontend Url](./images/FrontendAPIUrl.png)
+
 ### Run Frontend Pipeline again
+
+- Navigate to Actions and select the pages workflow and rerun the workflow: 
+
+![Github Frontend Workflow](./images/RunWorkflowFrontend.png)
+
+- Once the Workflow is started you will see the Github Action running and finally finishing.
+
+![Github Frontend Workflow Progress](./images/FrontendInProgress.png)
+
+- and finally finishing up the Milligram Service.
+
+![Github Frontend Workflow Done](./images/FrontendDone.png)
+
+- Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...`
 
 ### Open the App - Take a Selfie and review your News Feed
 
