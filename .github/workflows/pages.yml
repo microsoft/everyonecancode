@@ -31,12 +31,12 @@ jobs:
           VUE_APP_IMAGE_API_URL: ${{secrets.VUE_APP_IMAGE_API_URL}}
           VUE_APP_FACE_API_ENDPOINT: ${{secrets.VUE_APP_FACE_API_ENDPOINT}}
           
-        working-directory: day1/Application/female-app-innovation-frontend
+        working-directory: frontend
       - name: Upload result of Application build
         uses: actions/upload-artifact@v2
         with:
           name: static-website
-          path: day1/Application/female-app-innovation-frontend/dist
+          path: frontend/dist
   deploy:
     runs-on: ubuntu-latest
     needs: build
