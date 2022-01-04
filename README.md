@@ -47,10 +47,10 @@ This workshop consists of multiple challenges, you have to complete. Your traine
 
 Here's the overview of the training week. Happy hacking!
 
-- [Day 1 - Github - Create new Dreams](day1/Github/Github.md)
-- [Day 1 - Application on our Phone ](day1/Application/Application.md)
-- [Day 2 - Make our Application identify our face](day2/Face/Face.md)
-- [Day 2 - Make our Application understand our language](day2/Speech/Speech.md)
+- [Day 1 - Github - Create new Dreams](day1/Github/README.md)
+- [Day 1 - Application on our Phone ](day1/Application/README.md)
+- [Day 2 - Make our Application identify our face](day2/Face/README.md)
+- [Day 2 - Make our Application understand our language](day2/Speech/README.md)
 
 ## Contributing
 
