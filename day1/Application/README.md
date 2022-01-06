@@ -123,8 +123,7 @@ First things first we will create our first "Azure Account".
 
 ![](./images/CreateAzurePass.png)
 
-![](./images/CreateAzurePassEmail.png)
-
+![](./images/EnterPromoCode.png)
 
 // Create Account + Subscription
 
