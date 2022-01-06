@@ -34,12 +34,16 @@ In this day you will learn how to:
 
 ## Milligram Application Frontend
 
-First let's get started with the front end application. The part that you will see and use on your mobile phone or you web browser. This is the main way to interact with milligrams services.
+First let's get started with the front end application. The part that you will
+see and use on your mobile phone or you web browser. This is the main way to
+interact with milligrams services.
 
 
 ### Enable Github Action
 
-We've prepared an automated way to create and update the website for you. You will use two of GitHubs awesome features. GitHub Pages and GitHub Actions. Let's get started with the actions.
+We've prepared an automated way to create and update the website for you. You
+will use two of GitHubs awesome features. GitHub Pages and GitHub Actions. Let's
+get started with the actions.
 
 - Go to your repository **Actions**
 - Click the button which says _I understand my workflows, go ahead and enable them_ to enable Github Actions
@@ -59,22 +63,35 @@ Now observe how the workflow is beeing run and take a look at the individual ste
 
 ### Enable Github Page in Project Settings
 
-To be able to display the website (frontend) we've built and deployed using GitHub Actions, we need to enable the GitHub Pages for your repository.
-GitHub Pages are an easy way to display a static website related to your repository. Many people use it to display the documentation for their projects. We will use it to serve the frontend for milligram.
+To be able to display the website (frontend) we've built and deployed using
+GitHub Actions, we need to enable the GitHub Pages for your repository.  GitHub
+Pages are an easy way to display a static website related to your repository.
+Many people use it to display the documentation for their projects. We will use
+it to serve the frontend for milligram.
 
 - Go to your repository settings
   ![Repository Settings](images/repo_main.png)
 - Navigate to **Pages**, select the branch _gh-pages_ and hit the save button
   ![Enable Pages](images/frontend_pages.png)
-- The deployment will take 1-2 minutes. After that, the Milligram website is accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`
+- The deployment will take 1-2 minutes. After that, the Milligram website is
+  accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`
 
-Take a look at the website. Try changing the profile to your GitHub account name and see that it is stored even if you refresh the browser.
+Take a look at the website. Try changing the profile to your GitHub account name
+and see that it is stored even if you refresh the browser.
 
 // TODO: Add Challenge to hange in Codespace + push
 
 ### Open Github Page on your phone
 
-Milligram is a fun litte app similar to photo based social media that you might be familiar with. Of course we want to use it on our mobile phones so we can use the cameras to take awesome selfies and picture for milligram.
+Milligram is a fun litte app similar to photo based social media that you might
+be familiar with. Of course we want to use it on our mobile phones so we can use
+the cameras to take awesome selfies and picture for milligram. It's main
+features are:
+
+- Display simple GitHub account information from your own profile
+- Take fotos and add them to the stream of images
+- Check your age and facial expression using Azure Face Recognition (implemented on day 2)
+- Transcribe sentences you speak using Azure Speech Service (implemented on day2)
 
 - Open your personal Milligram website on your phone and explore it's content
 - Edit the profile in the app to show your own Github profile picture in the app
@@ -82,15 +99,23 @@ Milligram is a fun litte app similar to photo based social media that you might 
 
 ### Add The application to your homescreen
 
+On modern mobile phone you can "install" webapps on you homescreen to make them
+easier accessible and make them look more like an app from the official
+Appstores.
+
 - Open the browser menu to add the website to your homescreen
   ![Add to homescreen 2](images/frontend_homescreen_1.jpg) ![Add to homescreen 2](images/frontend_homescreen_2.jpg)
 - Now you can open the website like a normal app from the homescreen of your phone
 
 ## Milligram Application Backend
 
+The Application Backend will receive uploaded 
+
 ## Deploy Image Upload
 
 ### Create Azure Account
+
+
 
 // Create Account + Subscription
 
