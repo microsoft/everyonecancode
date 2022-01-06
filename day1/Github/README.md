@@ -58,4 +58,12 @@ A Fork is a copy of a repository. This is extremely handy, if you want to freely
 
 ![fork confirmation page](./images/Forked.png)
 
+
+:::tip
+📝
+  - Link1
+  - Link2
+:::
+
+
 [◀ Previous challenge](../../README.md) | [🔼 Day x](../../README.md) | [Next challenge ▶](../Application/README.md)

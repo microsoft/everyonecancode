@@ -79,5 +79,10 @@ Ask your coach if you did not succeed. We have you covered with a back up. ⚠�
 
 Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
 
+:::tip
+📝
+  - Link1
+  - Link2
+:::
 
 [◀ Previous challenge](../../day1/Application/README.md) | [🔼 Day x](../../README.md) | [Next challenge ▶](../Speech/README.md)
