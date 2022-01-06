@@ -118,15 +118,15 @@ First things first we will create our first "Azure Account".
 
 ### Create Azure Account
 
-- Browser: portal.azure.com
-- Create Azure Pass 
+Go to your Browser and enter `microsoftazurepass.com`:
 
-![](./images/CreateAzurePass.png)
+![Create Azure Pass](./images/CreateAzurePass.png)
 
-![](./images/CreateAzurePassEmail.png)
+Afterwards enter `your Promo Code`:
 
+![Enter Promo Code](./images/EnterPromoCode.png)
 
-// Create Account + Subscription
+If you have more questions, please ask your coach or click for more details [here](Redemption Process Guide - Microsoft Azure Pass).
 
 ### Create Resource Group
 
