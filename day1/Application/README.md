@@ -226,11 +226,17 @@ We need to tell the Web Application where it can find our storage service. The a
 
 ### Deploy Milligram Backend Code to Azure Web App via Github Action
 
+That our social media application can actually do something we need to bring our source code to the Azure Web App. To do that we will automate this so called "deployment" that we don't have to rely on a manual process every time we want to make changes (e.g. changing the title of the application) to our application and thus we avoid many mistakes. 
+
 - Navigate to the _Deployment Center_ tab on the left hand side of your App
 - Under _Settings_ tab connect your _Github Account_ and under _Organization_ select your Github Handle and under _Repository_ select `FemaleAIAppInnovationEcosystem` as well as the `main` _Branch_
 - Hit `Save`
 
+Once you hit `Save` the service automatically creates a workflow file in your Github Repository. This workflow is immediately being executed and after about 2 minutes your web app will be ready. You can also check your deployment on your "Actions" tab in your repository. The color green is always a good sign. 😎
+
 ### Check if Milligram Service is running correctly
+
+Let's pause a second. To make sure that you are on track, test your application if you get a response from our back end service. Before we bring everything together we want to make sure the back end service is working as expected. 
 
 - Navigate to the _Overview_ tab on the left hand side of the App
 
@@ -245,7 +251,8 @@ We need to tell the Web Application where it can find our storage service. The a
 
 ### Integrate Azure Web App Url in Github Secret
 
-It uses a Github Feature called _Secrets_ where you can store your "Password" to connect to the Storage. 
+Now that we are sure that our back end service works as expected we can bring everything together now.
+To do this we will use a Github Feature called _Secrets_ where you can store your backend URL to make your frontend talk to the backend service. 
 
 - On your Repository page select settings and navigate to secrets
 - Add a _new secret_ named `VUE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`
@@ -253,11 +260,13 @@ It uses a Github Feature called _Secrets_ where you can store your "Password" to
 
 ### Run Frontend Pipeline again
 
+For the change of adding the secret taking effect in the frontend we need to run our build pipeline again so that the process can pickup the newly created setting.
+
 - Navigate to Actions and select the pages workflow and rerun the workflow: 
 
 ![Github Frontend Workflow](./images/RunWorkflowFrontend.png)
 
-- Once the workflow is started you will see the workflow running and finally finishing.
+- Once the workflow is started you will see the workflow running and finally finish.
 
 ![Github Frontend Workflow Progress](./images/FrontendInProgress.png)
 
@@ -265,18 +274,36 @@ It uses a Github Feature called _Secrets_ where you can store your "Password" to
 
 ![Github Frontend Workflow Done](./images/FrontendDone.png)
 
-- Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...`
 
 ### Open the App - Take a Selfie and review your News Feed
 
+Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...`
+
+Our frontend application should now have a new button with a camera symbol that allows us to take pictures.
+These pictures should then appear on the timeline or News Feed.
+
+So go ahead and take at least 5 pictures and make sure they appear in your app. Make sure to share them with at least 1-2 friends so they can also upload their photos to your News Feed. 
+
+That's a wrap for today! Congrats! 🥳🙏
+
+Tomorrow we will make our app smart by adding artificial intelligence to it for estimating how old you are as well as talking to our app.
+
+
 ## Overcharged? We got you covered
+
+Ask your coach if you did not succeed. We have you covered with a back up. ⚠️
 
 ### Use prepared Milligram Backend Service
 
-Tipp template
+Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
+
+
+Interesting Links for you to read:
 
 :::tip
-📝 This is a special hint.
+📝
+  - Link1
+  - Link2
 :::
 
 [◀ Previous challenge](../Github/README.md) | [🔼 Day x](../../README.md) | [Next challenge ▶](../../day2/Face/README.md)
