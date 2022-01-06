@@ -130,7 +130,16 @@ If you have more questions, please ask your coach or click for more details [her
 
 ### Create Resource Group
 
-- Visit portal.azure.com & log in with your Azure Account
+Go to your Browser and visit `portal.azure.com`.
+
+![Portal Azure Log In](./images/portalazurelogin.png)
+
+Now we log in with `your Azure Account`
+
+![Log In Azure](./images/LogInAzure.png)
+
+![Portal View](./images/portalview.png)
+
 - Click on _Create a resource_
 
 _Azure Resource: In Azure, the term resource refers to an entity managed by Azure. For example, virtual machines, virtual networks, and storage accounts are all referred to as Azure resources._
