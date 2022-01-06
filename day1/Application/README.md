@@ -128,7 +128,7 @@ Afterwards enter `your Promo Code`:
 
 If you have more questions, please ask your coach or click for more details [here](Redemption Process Guide - Microsoft Azure Pass).
 
-### Create Resource Group
+### Log Into Azure
 
 Go to your Browser and visit `portal.azure.com`.
 
@@ -140,20 +140,36 @@ Now we log in with `your Azure Account`
 
 ![Portal View](./images/portalview.png)
 
+### Create a Resource and a Resource Group
+
 - Click on _Create a resource_
 
-_Azure Resource: In Azure, the term resource refers to an entity managed by Azure. For example, virtual machines, virtual networks, and storage accounts are all referred to as Azure resources._
+> __Azure Resource__: In Azure, the term resource refers to an entity managed by Azure. For example, virtual machines, virtual networks, 
+> and storage accounts are all referred to as Azure resources._
+
+> __Resource Group__: A resource group is a container that holds related resources for an Azure solution. The resource group can include all the 
+> resources > for the solution, or only those resources that you want to manage as a group._
+
+- Search & select _Resource Group_ (A storage for multiple resources) from the text field
 
 ![Create RG 1](images/backend_create_rg_0.png)
 
-- Search & select _Resource Group_ (A storage for multiple resources) from the text field
-  ![Create RG 2](images/backend_create_rg_1.png)
 - Select your subscription
 - Choose a name like `Milligram` to group all your resources related to this application
+
+
+![Create RG 2](images/backend_create_rg_1.png)
+
 - Last but not least, select a region near you to host all your services
-  ![Create RG 3](images/backend_create_rg_2.png)
+
+![Create RG 3](images/backend_create_rg_2.png)
 
 ### Create Storage Account
+
+Our storage account is the place where we "save" our pictures for our News Feed. 
+Inside the storage account we use the so called Azure Blob Storage. The Blob Storage can hold a massive amount of files.
+Just like the disk or storage on your Computer. A cool fun fact is that you can store as many photos on the storage as you like
+and you don't have to worry about your storage space.
 
 - Go to the start page of the Azure Portal
 - Click on _Create a resource_ as you did before for the Resource Group
@@ -166,6 +182,8 @@ _Azure Resource: In Azure, the term resource refers to an entity managed by Azur
 - Click the _New Container_ button and create a container named `images`
 
 ### Create Web App
+
+Our Azure Web App is a Computer managed by Microsoft where you can easily run your own application without worrying about Software Updates, Security Issues, BackUp or Hardware Issues (as you might have already experienced on your phone).
 
 - Go to the start page of the Azure Portal again
 - Click on _Create a resource_ as you did before
@@ -191,13 +209,16 @@ _Azure Resource: In Azure, the term resource refers to an entity managed by Azur
 
 ### Integrate Storage and configure Web App
 
-- Copy secret _Connection String_ from Storage Account from _access keys_
+Now let's connect our Application with our Storage that you can take pictures on your phone and store them in the Cloud Storage. 
+We need to tell the Web Application where it can find our storage service. The application can take external configurations to configure the connection to the storage account. 
+
+- For this reason copy the secret _Connection String_ from our Storage Account from _access keys_
 
 ![](./images/secretaccesskeys.png)
 
 - Navigate back to the Web App and open the _Configuration_ tab, click _New connection string_ and create a new connection string with the following settings:
   - Name: `STORAGE`
-  - Value: `<paste your connection string from Storage Account>`
+  - Value: `<paste your (earlier copied) connection string from Storage Account>`
   - Type: `Custom`
 - Hit `ok` and `Save`
 - Navigate and Scroll down to the _CORS_ tab on the left hand side of your App Service and enter `https://<YourGithubHandle>.github.io` under _Allowed Origins_
@@ -223,6 +244,8 @@ _Azure Resource: In Azure, the term resource refers to an entity managed by Azur
 - Select GET/images endpoint hit `Try it Out` and then hit `Execute`, once you get the 200 Response Code you have a successful running service! Congratulations!
 
 ### Integrate Azure Web App Url in Github Secret
+
+It uses a Github Feature called _Secrets_ where you can store your "Password" to connect to the Storage. 
 
 - On your Repository page select settings and navigate to secrets
 - Add a _new secret_ named `VUE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`
