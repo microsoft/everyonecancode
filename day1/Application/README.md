@@ -74,7 +74,12 @@ Take a look at the website. Try changing the profile to your GitHub account name
 
 ### Open Github Page on your phone
 
-Milligram is a fun litte app similar to photo based social media that you might be familiar with. Of course we want to use it on our mobile phones so we can use the cameras to take awesome selfies and picture for milligram.
+Milligram is a fun litte app similar to photo based social media that you might be familiar with. Of course we want to use it on our mobile phones so we can use the cameras to take awesome selfies and picture for milligram. It's main features are:
+
+- Display simple GitHub account information from your own profile
+- Take fotos and add them to the stream of images
+- Check your age and facial expression using Azure Face Recognition (implemented on day 2)
+- Transcribe sentences you speak using Azure Speech Service (implemented on day2)
 
 - Open your personal Milligram website on your phone and explore it's content
 - Edit the profile in the app to show your own Github profile picture in the app
@@ -82,15 +87,23 @@ Milligram is a fun litte app similar to photo based social media that you might 
 
 ### Add The application to your homescreen
 
+On modern mobile phone you can "install" webapps on you homescreen to make them
+easier accessible and make them look more like an app from the official
+Appstores.
+
 - Open the browser menu to add the website to your homescreen
   ![Add to homescreen 2](images/frontend_homescreen_1.jpg) ![Add to homescreen 2](images/frontend_homescreen_2.jpg)
 - Now you can open the website like a normal app from the homescreen of your phone
 
 ## Milligram Application Backend
 
+The Application Backend will receive uploaded 
+
 ## Deploy Image Upload
 
 ### Create Azure Account
+
+
 
 // Create Account + Subscription
 
