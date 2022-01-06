@@ -83,8 +83,13 @@ Start your own Coding Journey or try out an Azure certification as we did using 
 :::tip
 📝
   - https://www.udacity.com/course/intro-to-programming-nanodegree--nd000
-  - Link2
+  - Learning Paths
 :::
 
+Be sure to check out our Microsoft Programs for you:
+
+ - MS Aspire Program
+ - Internships at MS
+ - Professional Careers at Microsoft
 
 [◀ Previous challenge](../Face/README.md) | [🔼 Day x](../../README.md)
