@@ -34,12 +34,16 @@ In this day you will learn how to:
 
 ## Milligram Application Frontend
 
-First let's get started with the front end application. The part that you will see and use on your mobile phone or you web browser. This is the main way to interact with milligrams services.
+First let's get started with the front end application. The part that you will
+see and use on your mobile phone or you web browser. This is the main way to
+interact with milligrams services.
 
 
 ### Enable Github Action
 
-We've prepared an automated way to create and update the website for you. You will use two of GitHubs awesome features. GitHub Pages and GitHub Actions. Let's get started with the actions.
+We've prepared an automated way to create and update the website for you. You
+will use two of GitHubs awesome features. GitHub Pages and GitHub Actions. Let's
+get started with the actions.
 
 - Go to your repository **Actions**
 - Click the button which says _I understand my workflows, go ahead and enable them_ to enable Github Actions
@@ -59,22 +63,30 @@ Now observe how the workflow is beeing run and take a look at the individual ste
 
 ### Enable Github Page in Project Settings
 
-To be able to display the website (frontend) we've built and deployed using GitHub Actions, we need to enable the GitHub Pages for your repository.
-GitHub Pages are an easy way to display a static website related to your repository. Many people use it to display the documentation for their projects. We will use it to serve the frontend for milligram.
+To be able to display the website (frontend) we've built and deployed using
+GitHub Actions, we need to enable the GitHub Pages for your repository.  GitHub
+Pages are an easy way to display a static website related to your repository.
+Many people use it to display the documentation for their projects. We will use
+it to serve the frontend for milligram.
 
 - Go to your repository settings
   ![Repository Settings](images/repo_main.png)
 - Navigate to **Pages**, select the branch _gh-pages_ and hit the save button
   ![Enable Pages](images/frontend_pages.png)
-- The deployment will take 1-2 minutes. After that, the Milligram website is accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`
+- The deployment will take 1-2 minutes. After that, the Milligram website is
+  accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`
 
-Take a look at the website. Try changing the profile to your GitHub account name and see that it is stored even if you refresh the browser.
+Take a look at the website. Try changing the profile to your GitHub account name
+and see that it is stored even if you refresh the browser.
 
 // TODO: Add Challenge to hange in Codespace + push
 
 ### Open Github Page on your phone
 
-Milligram is a fun litte app similar to photo based social media that you might be familiar with. Of course we want to use it on our mobile phones so we can use the cameras to take awesome selfies and picture for milligram. It's main features are:
+Milligram is a fun litte app similar to photo based social media that you might
+be familiar with. Of course we want to use it on our mobile phones so we can use
+the cameras to take awesome selfies and picture for milligram. It's main
+features are:
 
 - Display simple GitHub account information from your own profile
 - Take fotos and add them to the stream of images
