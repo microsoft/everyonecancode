@@ -52,14 +52,14 @@ _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-re
 
 ![Enable Github Actions](images/frontend_enable_action.png)
 
-### Run Github Action
+### Run Github Actions
 
-- In the **Actions** tab of your repository, click on the **pages** Action
-- Open the **Run Workflow** dropdown and click the **Run Workflow** button to confirm the Action execution
+- In the **Actions** tab of your repository, click on the **pages** workflow
+- Open the **Run Workflow** dropdown and click the **Run Workflow** button to confirm the workflow execution
 
 Now observe how the workflow is beeing run and take a look at the individual steps that are run for you by GitHub.
 
-![Run Github Action](images/frontend_run_action.png)
+![Run workflow](images/frontend_run_workflow.png)
 
 ### Enable Github Page in Project Settings
 
@@ -216,7 +216,7 @@ _Azure Resource: In Azure, the term resource refers to an entity managed by Azur
 
 ![Github Frontend Workflow](./images/RunWorkflowFrontend.png)
 
-- Once the Workflow is started you will see the Github Action running and finally finishing.
+- Once the workflow is started you will see the workflow running and finally finishing.
 
 ![Github Frontend Workflow Progress](./images/FrontendInProgress.png)
 
