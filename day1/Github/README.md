@@ -66,4 +66,4 @@ A Fork is a copy of a repository. This is extremely handy, if you want to freely
 :::
 
 
-[◀ Previous challenge](../../README.md) | [🔼 Day x](../../README.md) | [Next challenge ▶](../Application/README.md)
+[🔼 Day 1](../../README.md) | [Next challenge ▶](../Application/README.md)
