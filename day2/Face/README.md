@@ -55,8 +55,29 @@ In Action Secrets you can store encrypted variables that you create in an organi
 
 ## Run Frontend Pipeline again
 
+Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...`
+
+Our frontend application should now have a new button with a selfie 🤩 symbol that allows us to take selfies and estimate how old we are.
+These selfies will __not__ be saved and will __not__ appear on the timeline or News Feed.
+
 ## Take Selfies! How old are you really? Play around!
 
-## Overcharged? We got you covered:
+So go ahead and take at least 5 selfies and tell us how old you are in all of them.
+
+Take also pictures of people who are around you and estimate their age, you might surprise them. 😁
+
+That's a wrap for today! Congrats! 🥳🙏
+
+Now we will make our app understand when we talk 🗣️ to our Milligram Social Media App. 
+
+
+## Overcharged? We got you covered
+
+Ask your coach if you did not succeed. We have you covered with a back up. ⚠️
+
+### Use prepared Milligram Backend Service
+
+Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
+
 
 [◀ Previous challenge](../../day1/Application/README.md) | [🔼 Day x](../../README.md) | [Next challenge ▶](../Speech/README.md)
