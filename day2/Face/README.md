@@ -58,3 +58,5 @@ In Action Secrets you can store encrypted variables that you create in an organi
 ## Take Selfies! How old are you really? Play around!
 
 ## Overcharged? We got you covered:
+
+[◀ Previous challenge](../../day1/Application/README.md) | [🔼 Day x](../../README.md) | [Next challenge ▶](../Speech/README.md)

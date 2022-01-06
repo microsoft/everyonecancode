@@ -50,3 +50,5 @@ In this challenge you will learn how to:
 ![](./images/rerunalljobs.png)
 
 ## Talk to me! What do you have to say? Play around!
+
+[◀ Previous challenge](../Face/README.md) | [🔼 Day x](../../README.md)

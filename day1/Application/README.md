@@ -212,3 +212,5 @@ Tipp template
 :::tip
 📝 This is a special hint.
 :::
+
+[◀ Previous challenge](../Github/README.md) | [🔼 Day x](../../README.md) | [Next challenge ▶](../../day2/Face/README.md)
