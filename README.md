@@ -35,7 +35,8 @@ On Day 2 we will stay in the developer view by using our existing personal App a
 As final challenge you will connect your application with the services.  This shows the entire lifecycle and brings together best of both worlds.
 
 Afterwards the trainers will suggest a long list of online courses to get started and to get a deeper dive into the Technologies.
-Further all the FemaleTechGen graduates are invited to join our [AI Developer College](https://github.com/aidevcollege/aidevcollege) or [Azure Developer College](https://github.com/azuredevcollege/trainingdays).
+Further all the FemaleTechGen graduates are invited to join our [AI Developer College](https://github.com/aidevcollege/aidevcollege) or
+[Azure Developer College](https://github.com/azuredevcollege/trainingdays).
 
 <div align="center">
   <p> Female Tech ❤︎ All Generations</p>
