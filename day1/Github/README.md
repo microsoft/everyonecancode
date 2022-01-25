@@ -1,4 +1,4 @@
-# Challenge 1: # Github
+# Challenge 1: Github
 
 ⏲️ _Est. time to complete: 30 min._ ⏲️
 
