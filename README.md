@@ -3,7 +3,7 @@
   <h3> Female APP DEV Innovation over Generations for customers, partners, students, pupils, Microsoft internals </h3>
   <p>The APP DEV INNOVATION Program for FEMALES in the ENTIRE ECOSYSTEM over Generations is a two-days hands-on coding training for all Females of all Generations.</p>
   
-![FemaleTechGenLogo](./img/femaletech.jpg)
+![FemaleTechGenLogo](./img/anyone-can-code_1400x300.png)
 
   <p>
     <sub>Built with ❤ by everybody who wants to make the Microsoft App Dev Innovation world a little bit more diverse! </sub>
