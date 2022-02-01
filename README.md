@@ -1,9 +1,6 @@
-<div align="center">
-  <h1>Welcome to the APP DEV INNOVATION Program for FEMALES in the ENTIRE ECOSYSTEM! </h1>
-  <h3> Female APP DEV Innovation over Generations for customers, partners, students, pupils, Microsoft internals </h3>
-  <p>The APP DEV INNOVATION Program for FEMALES in the ENTIRE ECOSYSTEM over Generations is a two-days hands-on coding training for all Females of all Generations.</p>
+# Anyone can Code! – Light Your Fire for Coding
   
-![FemaleTechGenLogo](./img/femaletech.jpg)
+![FemaleTechGenLogo](./img/anyone-can-code_1400x300.png)
 
   <p>
     <sub>Built with ❤ by everybody who wants to make the Microsoft App Dev Innovation world a little bit more diverse! </sub>
@@ -14,7 +11,7 @@
 <hr>
 
 
-## Goal of the APP DEV INNOVATION Program for FEMALES in the ENTIRE ECOSYSTEM over Generations
+## Goal of the Anyone can Code Program for FEMALES in the ENTIRE ECOSYSTEM over Generations
 
 The goal is to show all Females of any generation, that anything is possible also in the area of Tech and to lit the fire in each of every Female to find the spark in Tech. We want to connect all generations of Females whether it's pupils, university students or professionals already performing in jobs. Further we want to connect those generations which haven't gotten in touch with Tech yet. Since we noticed that there is a huge gap between the communities and there aren't enough Female Tech Heros. 
 
@@ -26,7 +23,7 @@ To close the gap we will first start with getting the application to run and the
   <img src="./img/microgram-mock.png" alt="Microgram App Mockup" />
 </div>
 
-## Goal of the APP DEV INNOVATION Program for FEMALES in the ENTIRE ECOSYSTEM over Generations Training Days 
+## Goal of the Anyone can Code Program for FEMALES in the ENTIRE ECOSYSTEM over Generations Training Days 
 
 On Day 1 we will create our own Github Account and use this repository as our baseline. We will then use Azure Web Apps to host our Application. Further we play a bit around with the frontend to change our personal Headlines for our App and to understand the basic underlying concept of Azure. Further we will use Azure Functions to automate our tasks. Storages and Databases are used to store our Images or our data. All those Azure Services are used behind the scenes and can be consumed by our application aka personal App.
 
