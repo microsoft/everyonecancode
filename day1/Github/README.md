@@ -49,7 +49,7 @@ To change or add any of your information, click on your icon in the top right co
 ![top right user icon options popup](./images/Settings.png)
 
 - Click on **Profile** and add your public information.
-![profile page](./images/EditProfile.png)
+![profile page](./images/EditProfile.gif)
 
 ## Fork Repository
 

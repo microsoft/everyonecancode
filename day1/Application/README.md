@@ -70,7 +70,7 @@ Many people use it to display the documentation for their projects. We will use
 it to serve the frontend for milligram.
 
 - Go to your repository settings
-  ![Repository Settings](images/repo_main.png)
+  ![Repository Settings](images/repo_settings_tab_button.png)
 - Navigate to **Pages**, select the branch _gh-pages_ and hit the save button
   ![Enable Pages](images/frontend_pages.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
@@ -257,6 +257,7 @@ To do this we will use a Github Feature called _Secrets_ where you can store you
 - On your Repository page select settings and navigate to secrets
 - Add a _new secret_ named `VUE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`
 ![Github Frontend Url](./images/FrontendAPIUrl.png)
+![Github Secrets Create](./images/create_secret.png)
 
 ### Run Frontend Pipeline again
 
