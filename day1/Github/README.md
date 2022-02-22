@@ -19,51 +19,53 @@ In this challenge you will learn how to:
 ## Sign Up and Create at Github Account
 
 - Create a GitHub account to get started
-- Simply add your email, password and your desired username
-![Startpage of Github](./images/GithubSignUp.png)
+- Simply add your email, password and your desired username<br>
+![Startpage of Github](./images/dark/GithubSignUp.png)
 
-![Enter your Email page](./images/EnterEmail.png)
+![Enter your Email page](./images/dark/EnterEmail.png)
 
-![create a password page](./images/EnterPassword.png)
+![Create a password page](./images/dark/EnterPassword.png)
 
-![enter a username page](./images/EnterUserName.png)
+![Enter a username page](./images/dark/EnterUserName.png)
 
 - Type **y** for receiving emails from GitHub about new product updates and announcements. Or **n** for not receiving emails from Github about product updates and announcements.
-![announcement confirmation page](./images/noannouncements.png)
+![Announcement confirmation page](./images/dark/NoAnnouncements.png)
 
 - To **verify** the account, please follow the instructions.
-![verification page](./images/verification.png)
+![Verifiaction page](./images/dark/Verification.png)
 
-![verification page confirmation](./images/verifyyouraccount.png)
+![Verifiaction page confirmation](./images/dark/VerifyYourAccount.png)
 
-![create account page](./images/createanaccount.png)
+![Create account page](./images/dark/CreateAnAccount.png)
 
 ## Edit Github Profile
 
 ### Upload Profile Picture and insert your name
 
 This is the front page of your account. This overview shows you everything from your contributions, repositories your active in, your achievements and much more.
-![profile page](./images/accountfrontpage.png)
+![Profile page](./images/dark/AccountFrontpage.png#gh-dark-mode-only)
+![Profile page](./images/light/AccountFrontpage.png#gh-light-mode-only)
+
 
 To change or add any of your information, click on your icon in the top right corner and choose **Settings**.
-![top right user icon options popup](./images/Settings.png)
+![Top right user icon options popup](./images/dark/Settings.png#gh-dark-mode-only)
+![Top right user icon options popup](./images/light/Settings.png#gh-light-mode-only)
 
 - Click on **Profile** and add your public information.
-![profile page](./images/EditProfile.gif)
+![Profile page](./images/dark/EditProfile.gif#gh-dark-mode-only)
+![Profile page](./images/light/EditProfile.gif#gh-light-mode-only)
 
 ## Fork Repository
 
 A Fork is a copy of a repository. This is extremely handy, if you want to freely experiment without making any changes to the original project. 
-![highlighted fork button top right](./images/ForkTheRepository.png)
+![Highlighted fork button top right](./images/dark/ForkTheRepository.png#gh-dark-mode-only)
+![Highlighted fork button top right](./images/light/ForkTheRepository.png#gh-light-mode-only)
 
-![fork confirmation page](./images/Forked.png)
+![Fork confirmation page](./images/dark/Forked.png#gh-dark-mode-only)
+![Fork confirmation page](./images/light/Forked.png#gh-light-mode-only)
 
+_Tipps 📝_
+  > - [1 ▶](../Application/Tipp1/README.md)
+  > - [2 ▶](../Application/Tipp2/README.md)
 
-:::tip
-📝
-  - Link1
-  - Link2
-:::
-
-
-[🔼 Day 1](../../README.md) | [Next challenge ▶](../Application/README.md)
+[🔼 Home](../../README.md) | [Next challenge ▶](../Application/README.md)
