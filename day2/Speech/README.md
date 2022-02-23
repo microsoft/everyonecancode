@@ -24,32 +24,35 @@ In this challenge you will learn how to:
 
 - Navigate to the **Resource Group** we created during the "Speech" challenge
 - Create a new **Resource** and search for **Speech**
-![](./images/createresource.png)
+![](./images/light/createresource.png)
 
-![](./images/selectspeech.png)
+![](./images/light/selectspeech.png)
 
 ## Create Speech Cognitive Service
 
 - Create the new resource and set the values as in the screenshot
-![](./images/createspeech.png)
+![](./images/light/createspeech.png)
 
-![](./images/createspeechresource.png)
+![](./images/light/createspeechresource.png)
 
 - Similar to the "Speech" challenge, copy the key to store it in **Github Secrets**
-![](./images/copykeys.png)
+![](./images/light/copykeys.png)
 
 ## Integrate Speech Service Credential into Github Secret
 
-![](./images/vue-app-speech-api-key-secret.png)
+![](./images/light/vue-app-speech-api-key-secret.png#gh-light-mode-only)
+![](./images/dark/vue-app-speech-api-key-secret.png#gh-dark-mode-only)
 
 Now we will make our app understand when we talk 🗣️ to our Milligram Social Media App. 
 
 ## Run Frontend Pipeline again
 
 - Now navigate to **Actions** > **pages** and **Re-run all jobs**
-![](./images/runworkflow.png)
+![](./images/light/runworkflow.png#gh-light-mode-only)
+![](./images/dark/runworkflow.png#gh-dark-mode-only)
 
-![](./images/rerunalljobs.png)
+![](./images/light/rerunalljobs.png#gh-light-mode-only)
+![](./images/dark/rerunalljobs.png#gh-dark-mode-only)
 
 Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...`
 
@@ -80,11 +83,9 @@ Look at the prepared application with our pictures for you to play around [Milli
 
 Start your own Coding Journey or try out an Azure certification as we did using Udacity, Udemy, Pluralsight, Edx etc., make sure to check out the links posted below:
 
-:::tip
-📝
-  - https://www.udacity.com/course/intro-to-programming-nanodegree--nd000
-  - Learning Paths
-:::
+_Tipps 📝_
+  > - [Programming Cours](https://www.udacity.com/course/intro-to-programming-nanodegree--nd000)
+  > - Learning Paths
 
 Be sure to check out our Microsoft Programs for you:
 
@@ -92,4 +93,4 @@ Be sure to check out our Microsoft Programs for you:
  - Internships at MS
  - Professional Careers at Microsoft
 
-[◀ Previous challenge](../Face/README.md) | [🔼 Day x](../../README.md)
+[◀ Previous challenge](../Face/README.md) | [🔼 Home](../../README.md)

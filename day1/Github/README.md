@@ -65,7 +65,7 @@ A Fork is a copy of a repository. This is extremely handy, if you want to freely
 ![Fork confirmation page](./images/light/Forked.png#gh-light-mode-only)
 
 _Tipps 📝_
-  > - [1 ▶](../Application/Tipp1/README.md)
-  > - [2 ▶](../Application/Tipp2/README.md)
+  > - [▶ 1](./WorkInProgress)
+  > - [▶ 2](./WorkInProgress)
 
 [🔼 Home](../../README.md) | [Next challenge ▶](../Application/README.md)
