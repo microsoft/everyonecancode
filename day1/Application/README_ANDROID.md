@@ -38,12 +38,31 @@ First let's get started with the front end application. The part that you will
 see and use on your mobile phone or you web browser. This is the main way to
 interact with milligrams services.
 
+<details>
+<summary>What does front end mean?</summary>
+<br>
+Let's imagine a simple car. Everything you see - the seats, the roof, the floor, the user interface (dashboard, steering wheel, etc.) - that's all **front end**.
+Then you open the hood: and there it is! The **backend** and the **API**. You can see the engine, the transmission and some other elements.
+But how to understand this example now... quite simple. The **frontend** is what the user uses to give instructions to the **backend** via an **API**. So when you step on the gas pedal, the engine accelerates. 
+
+*Stepping on the gas pedal triggers a request in the frontend to the API in the backend for the engine to accelerate, and the required part of the backend (in this case, the engine) executes it.*
+</details>
+
 
 ### Enable Github Action
 
 We've prepared an automated way to create and update the website for you. You
 will use two of GitHubs awesome features. GitHub Pages and GitHub Actions. Let's
 get started with the actions.
+
+<details>
+<summary>What is Github?</summary>
+<br>
+Github is actually two things: **Git** and **Hub**.
+
+**Git** is a version control software. It allows developers to work on a specific project at the same time by tracking the changes. If something goes wrong, you can easily undo the changes with Git.
+**Hub** is nothing special in itself, but it represents the "social network" of developers built on top of Git. While Github does not own the Git software, it has created a platform that makes it easy to access and collaborate with Git. The groundbreaking feature of Github is that it makes it super easy to share/show your code with the world or just store it. You no longer have to worry about where you store your code. Companies have Github accounts for the same reason. Github provides an easy way to store your code online with built-in version control.
+</details>
 
 - Go to your repository **Actions**
 - Click the button which says _I understand my workflows, go ahead and enable them_ to enable Github Actions
