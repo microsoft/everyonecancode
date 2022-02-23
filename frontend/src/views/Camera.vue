@@ -4,7 +4,7 @@
       ref="camera"
       v-on:close="onClose"
       v-model="picture"
-      fullscreen="true"
+      fullscreen
     ></EasyCamera>
   </div>
 </template>
@@ -52,7 +52,7 @@ export default class Camera extends Vue {
         const data = new FormData();
         data.append("file", file);
         return axios
-          .post(`${imageApiUrl}/upload/`, data, {
+          .post(`${imageApiUrl}upload/`, data, {
             headers: { "Content-Type": "multipart/form-data" },
           })
           .then(() => {

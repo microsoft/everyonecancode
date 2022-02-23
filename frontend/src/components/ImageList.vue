@@ -7,7 +7,7 @@
           v-for="image in imageList"
           :key="image.image_url"
         >
-          <b-image ratio="1by1  " :src="`${apiUrl}/${image.image_url}`" />
+          <b-image ratio="1by1  " :src="`${apiUrl}${image.image_url}`" />
           <b-button
             id="btn-delete"
             rounded
