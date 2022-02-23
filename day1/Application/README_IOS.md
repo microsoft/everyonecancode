@@ -41,6 +41,7 @@ interact with milligrams services.
 <details>
 <summary>What does front end mean?</summary>
 <br>
+
 Let's imagine a simple car. Everything you see - the seats, the roof, the floor, the user interface (dashboard, steering wheel, etc.) - that's all **front end**.
 Then you open the hood: and there it is! The **backend** and the **API**. You can see the engine, the transmission and some other elements.
 But how to understand this example now... quite simple. The **frontend** is what the user uses to give instructions to the **backend** via an **API**. So when you step on the gas pedal, the engine accelerates. 

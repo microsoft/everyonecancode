@@ -21,6 +21,7 @@ In this challenge you will learn how to:
 <details>
 <summary>What is Github?</summary>
 <br>
+
 Github is actually two things: **Git** and **Hub**.
 
 **Git** is a version control software. It allows developers to work on a specific project at the same time by tracking the changes. If something goes wrong, you can easily undo the changes with Git.
