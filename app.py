@@ -11,11 +11,6 @@ from fastapi.responses import RedirectResponse, StreamingResponse, JSONResponse
 from pydantic import BaseModel
 
 app = FastAPI()
-app.add_middleware(CORSMiddleware,
-allow_origins=["*"],
-allow_credentials=True,
-allow_methods=["*"],
-allow_headers=["*"],)
 cache_header = {"Cache-Control": "max-age=31556952"}
 
 shared_container_client = None
@@ -54,6 +49,12 @@ class Image(BaseModel):
 @app.get("/")
 async def redirect_to_docs():
     return RedirectResponse("/docs")
+
+app.add_middleware(CORSMiddleware,
+allow_origins=["*"],
+allow_credentials=True,
+allow_methods=["*"],
+allow_headers=["*"],)
 
 @app.get("/images", response_model=List[Image])
 async def list_images(container_client = Depends(get_container_client)):
