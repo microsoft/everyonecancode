@@ -9,6 +9,7 @@ from azure.storage.blob import BlobServiceClient
 from fastapi import Depends, FastAPI, File, HTTPException, Request, UploadFile
 from fastapi.responses import RedirectResponse, StreamingResponse, JSONResponse
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 cache_header = {"Cache-Control": "max-age=31556952"}
@@ -91,6 +92,14 @@ async def upload(file: UploadFile = File(...), container_client = Depends(get_co
     container_client.upload_blob(
         file.filename, file.file, blob_type="BlockBlob", overwrite=True)
     return {"filename": file.filename}
+
+app.add_middleware(
+CORSMiddleware,
+allow_origins=["*"],
+allow_credentials=True,
+allow_methods=["*"],
+allow_headers=["*"],
+)
 
 if __name__ == "__main__":
     uvicorn.run(app, port=8000)
