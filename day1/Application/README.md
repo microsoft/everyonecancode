@@ -233,11 +233,11 @@ To ensure our social media application can actually do something, we need to bri
 - Under _Organization_ select your GitHub Handle and under _Repository_ select `FemaleAIAppInnovationEcosystem` as well as the `main` _Branch_
 - Hit `Save`
 
-Once you hit `Save` the service automatically creates a workflow file in your Github Repository. This workflow is immediately being executed and after about 2 minutes your web app will be ready. You can also check your deployment on your "Actions" tab in your repository. The color green is always a good sign. 😎
+Once you hit `Save` the service automatically creates a workflow file in your GitHub Repository. This workflow is immediately being executed and after about 2 minutes your web app is ready. You can also check your deployment on your "Actions" tab in your repository. The color green is always a good sign. 😎
 
 ### Check if Milligram Service is running correctly
 
-Let's pause a second. To make sure that you are on track, test your application if you get a response from our back end service. Before we bring everything together we want to make sure the back end service is working as expected. 
+Let's pause a second. To make sure that you are on track, test your application if you get a response from our backend service. Before we bring everything together we want to make sure the backend service is working as expected. 
 
 - Navigate to the _Overview_ tab on the left hand side of the App
 
