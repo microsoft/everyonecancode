@@ -82,7 +82,7 @@ Ask your coach if you did not succeed. We have you covered with a back up. ⚠�
 Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
 
 _Tipps 📝_
-  > - [▶ 1](./WorkInProgress)
+  > - [Machine Learning in 5 Levels of Difficulty](https://youtu.be/5q87K1WaoFI)
   > - [▶ 2](./WorkInProgress)
 
 [◀ Previous challenge](../../day1/Application/README.md) | [🔼 Home](../../README.md) | [Next challenge ▶](../Speech/README.md)
