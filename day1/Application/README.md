@@ -111,9 +111,9 @@ Appstores.
 
 The Application Backend will receive uploaded photos, store them for us and return them when needed.  
 
-Our Application can be divided into a Frontend (something you see and runs locally on your phone) and a Backend (something which processes your information). In this case as we want to create our own social media application we need pictures to be stored for our "News Feed". That means we need a place to store many files and a place to run our application logic (which is our programming code). 
+Our Application can be divided into a Frontend (something you see and runs locally on your phone) and a Backend (something which processes your information). In this case, as we want to create our own social media application we need pictures to be stored for our "News Feed". That means we need a place to store many files and a place to run our application logic (which is our programming code). 
 
-To store the files we will use the "Azure Storage Account" and to run our application we will use an "Azure Web App". 
+To store the files, we will use the "Azure Storage Account" and to run our application, we will use an "Azure Web App". 
 First things first we will create our first "Azure Account".
 
 ### Create Azure Account
