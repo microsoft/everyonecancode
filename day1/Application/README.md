@@ -255,7 +255,7 @@ Let's pause a second. To make sure that you are on track, test your application 
 Now that we are sure that our backend service works as expected, we can bring everything together.
 To do this, we will use a GitHub Feature called _Secrets_ where you can store your backend URL to make your frontend talk to the backend service. 
 
-- On your Repository page select settings and navigate to secrets
+- On your Repository page select settings and navigate to _Secrets_ > _Actions_
 - Add a _new secret_ named `VUE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`
 ![Github Frontend Url](./images/FrontendAPIUrl.png)
 
