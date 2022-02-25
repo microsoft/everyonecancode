@@ -4,7 +4,7 @@
 
 ## Here is what you will learn 🎯
 
-In this day you will learn how to:
+Today you will learn how to:
 
 - get started with Github Actions
 - deploy the Milligram frontend to Github Pages
