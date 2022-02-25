@@ -54,8 +54,8 @@ _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-re
 
 ### Run GitHub Actions
 
-- In the **Actions** tab of your repository, click on the **pages** workflow
-- Open the **Run Workflow** dropdown and click the **Run Workflow** button to confirm the workflow execution
+- In the **Actions** tab of your repository, click on the **pages** workflow.
+- Open the **Run Workflow** dropdown and click the **Run Workflow** button to confirm the workflow execution.
 
 Now observe how the workflow is beeing run and take a look at the individual steps that are run for you by GitHub.
 
