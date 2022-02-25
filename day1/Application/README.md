@@ -198,7 +198,7 @@ Our Azure Web App is a Computer managed by Microsoft where you can easily run yo
     ![Backend 0](images/backend_app_0.png)
 - Create a new App Service Plan and `<pick your own name>`
   ![Backend 1](images/backend_app_1.png)
-- Click the _Dev/Test_ tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan
+- Click on _Change size_ and then click the _Dev/Test_ tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan
   ![Backend 2](images/backend_app_2.png)
 - Click _Review + Create_ at the bottom of the screen
 - Review the displayed information and click _Create_ on the next screen to spin up the backend application
