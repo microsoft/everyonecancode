@@ -237,7 +237,7 @@ Once you hit `Save` the service automatically creates a workflow file in your Gi
 
 ### Check if Milligram Service is running correctly
 
-Let's pause a second. To make sure that you are on track, test your application if you get a response from our backend service. Before we bring everything together we want to make sure the backend service is working as expected. 
+Let's pause a second. To make sure that you are on track, test your application if you get a response from our backend service. Before we bring everything together, we want to make sure the backend service is working as expected. 
 
 - Navigate to the _Overview_ tab on the left hand side of the App
 
