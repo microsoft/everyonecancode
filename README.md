@@ -25,7 +25,7 @@ To close the gap, we will first start with getting the application up and runnin
 
 ## Goal of the Anyone can Code Program for FEMALES in the ENTIRE ECOSYSTEM over Generations Training Days 
 
-On Day 1 we will create our own Github Account and use this repository as our baseline. We will then use Azure Web Apps to host our Application. Further we play a bit around with the frontend to change our personal Headlines for our App and to understand the basic underlying concept of Azure. Further we will use Azure Functions to automate our tasks. Storages and Databases are used to store our Images or our data. All those Azure Services are used behind the scenes and can be consumed by our application aka personal App.
+On day 1 we will create our own GitHub Account and use this repository as our baseline. We will then use Azure Web Apps to host our Application. Further we play a bit around with the frontend to change our personal Headlines for our App and to understand the basic underlying concept of Azure. Further, we will use Azure Functions to automate our tasks. Storages and Databases are used to store our images or our data. All those Azure Services are used behind the scenes and can be consumed by our application aka personal App.
 
 
 On Day 2 we will stay in the developer view by using our existing personal App and our goal is to make it smart with pre-trained machine models behind the scenes. For this we will focus on our managed services like Azure Cognitive Services: Face API and Speech API. As a future developer I can use those REST APIs and enrich my applications without having deep ml expert knowledge.
