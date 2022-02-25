@@ -61,7 +61,7 @@ Now observe how the workflow is beeing run and take a look at the individual ste
 
 ![Run workflow](images/frontend_run_workflow.png)
 
-### Enable GitHub Page in Project Settings
+### Enable GitHub Pages in Project Settings
 
 To be able to display the website (frontend) we've built and deployed using
 GitHub Actions, we need to enable the GitHub Pages for your repository.  GitHub
