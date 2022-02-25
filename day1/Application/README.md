@@ -226,7 +226,7 @@ We need to tell the Web Application where it can find our storage service. The a
 
 ### Deploy Milligram Backend Code to Azure Web App via GitHub Actions
 
-That our social media application can actually do something we need to bring our source code to the Azure Web App. To do that we will automate this so called "deployment" that we don't have to rely on a manual process every time we want to make changes (e.g. changing the title of the application) to our application and thus we avoid many mistakes. 
+To ensure our social media application can actually do something, we need to bring our source code to the Azure Web App. To do that we will automate this so called "deployment". Hence, we don't have to rely on a manual process every time we want to make changes (e.g. changing the title of the application) to our application and thus, we avoid many mistakes. 
 
 - Navigate to the _Deployment Center_ tab on the left hand side of your App
 - Under _Settings_ tab connect your _Github Account_ and under _Organization_ select your Github Handle and under _Repository_ select `FemaleAIAppInnovationEcosystem` as well as the `main` _Branch_
