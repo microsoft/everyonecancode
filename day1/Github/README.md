@@ -12,9 +12,9 @@ In this challenge you will learn how to:
 
 ## Table Of Contents
 
-1. [Sign Up and Create a Github Account](#SignUpandCreateatGithubAccount)
-2. [Edit Github Profile](#EditGithubProfile)
-3. [Fork Repository](#ForkRepository)
+1. [Sign Up and Create a GitHub Account](#SignUpandCreateatGithubAccount)
+2. [Edit your GitHub Profile](#EditGithubProfile)
+3. [Fork a Repository](#ForkRepository)
 
 ## Sign Up and Create at Github Account
 
