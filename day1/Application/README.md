@@ -85,7 +85,7 @@ and see that it is stored even if you refresh the browser.
 
 Milligram is a fun litte app similar to photo based social media that you might
 be familiar with. Of course we want to use it on our mobile phones so we can use
-the cameras to take awesome selfies and picture for milligram. It's main
+the cameras to take awesome selfies and picture for Milligram. Its main
 features are:
 
 - Display simple GitHub account information from your own profile
