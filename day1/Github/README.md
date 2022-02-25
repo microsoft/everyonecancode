@@ -14,7 +14,7 @@ In this challenge you will learn how to:
 
 1. [Sign Up and Create a GitHub Account](#SignUpandCreateatGithubAccount)
 2. [Edit your GitHub Profile](#EditGithubProfile)
-3. [Fork a Repository](#ForkRepository)
+3. [Fork Repository](#ForkRepository)
 
 ## Sign Up and Create at Github Account
 
