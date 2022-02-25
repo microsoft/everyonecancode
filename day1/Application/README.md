@@ -145,10 +145,10 @@ Now we log in with `your Azure Account`
 - Click on _Create a resource_
 
 > __Azure Resource__: In Azure, the term resource refers to an entity managed by Azure. For example, virtual machines, virtual networks, 
-> and storage accounts are all referred to as Azure resources._
+> and storage accounts are all referred to as Azure resources.
 
 > __Resource Group__: A resource group is a container that holds related resources for an Azure solution. The resource group can include all the 
-> resources > for the solution, or only those resources that you want to manage as a group._
+> resources > for the solution, or only those resources that you want to manage as a group.
 
 - Search & select _Resource Group_ (A storage for multiple resources) from the text field
 
@@ -160,7 +160,7 @@ Now we log in with `your Azure Account`
 
 ![Create RG 2](images/backend_create_rg_1.png)
 
-- Last but not least, select a region near you to host all your services
+- Last but not least, select a region (e.g. West Europe) near you to host all your services
 
 ![Create RG 3](images/backend_create_rg_2.png)
 
