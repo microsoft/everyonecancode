@@ -35,8 +35,8 @@ Today you will learn how to:
 ## Milligram Application Frontend
 
 First let's get started with the front end application. The part that you will
-see and use on your mobile phone or you web browser. This is the main way to
-interact with milligrams services.
+see and use on your mobile phone or your web browser. This is the main way to
+interact with Milligrams services.
 
 
 ### Enable GitHub Actions
