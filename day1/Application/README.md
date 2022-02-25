@@ -67,7 +67,7 @@ To be able to display the website (frontend) we've built and deployed using
 GitHub Actions, we need to enable the GitHub Pages for your repository.  GitHub
 Pages are an easy way to display a static website related to your repository.
 Many people use it to display the documentation for their projects. We will use
-it to serve the frontend for milligram.
+it to serve the frontend for Milligram.
 
 - Go to your repository settings
   ![Repository Settings](images/repo_main.png)
