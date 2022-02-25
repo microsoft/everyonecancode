@@ -212,7 +212,7 @@ Our Azure Web App is a Computer managed by Microsoft where you can easily run yo
 Now let's connect our Application with our Storage that you can take pictures on your phone and store them in the Cloud Storage. 
 We need to tell the Web Application where it can find our storage service. The application can take external configurations to configure the connection to the storage account. 
 
-- For this reason copy the secret _Connection String_ from our Storage Account from _access keys_
+- For this reason copy the secret _Connection String_ from our Storage Account from _Access keys_
 
 ![](./images/secretaccesskeys.png)
 
@@ -224,7 +224,7 @@ We need to tell the Web Application where it can find our storage service. The a
 - Navigate and Scroll down to the _CORS_ tab on the left hand side of your App Service and enter `https://<YourGithubHandle>.github.io` under _Allowed Origins_
 - Hit `Save`
 
-### Deploy Milligram Backend Code to Azure Web App via Github Action
+### Deploy Milligram Backend Code to Azure Web App via GitHub Actions
 
 That our social media application can actually do something we need to bring our source code to the Azure Web App. To do that we will automate this so called "deployment" that we don't have to rely on a manual process every time we want to make changes (e.g. changing the title of the application) to our application and thus we avoid many mistakes. 
 
