@@ -15,7 +15,7 @@
 
 The goal is to show all Females of any generation, that anything is possible also in the area of Tech and to light the fire in each of every Female to find the spark in Tech. We want to connect all generations of Females whether they are pupils, university students or professionals already performing in jobs. Further we want to connect those generations which haven't gotten in touch with Tech yet since we noticed that there is a huge gap between these communities. We believe there aren't enough Female Tech Heros yet. 
 
-But you can start in any age, so we thought of starting with a commonality: building an App on our phone which can take pictures and which we can talk to or in other (tech) words: how to build a progressive Web App on our Phone which uses pre-trained machine learning models as restful endpoints. The Application uses REST APIs and we will use Azure to meet the challenge to get it running.
+However, it is possible to dive into Tech at any age, so we thought of starting with something that we are all familiar with - Applications on our phones. Together we will build an app on our phones which can take pictures and which we can talk to or in other (tech) words: how to build a progressive Web App on our Phone which uses pre-trained machine learning models as restful endpoints. The Application uses REST APIs and we will use Azure to meet the challenge to get it running.
 To close the gap we will first start with getting the application to run and then secondly integrate the ML REST APIs. As a place where we can create our Tech Dreams we will use Github create our space of collaboration as our motto always is: Sharing is Caring!
 
 <div align="center">
