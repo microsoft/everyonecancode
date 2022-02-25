@@ -16,7 +16,7 @@ In this challenge you will learn how to:
 2. [Edit your GitHub Profile](#EditGithubProfile)
 3. [Fork Repository](#ForkRepository)
 
-## Sign Up and Create at Github Account
+## Sign Up and Create at GitHub Account
 
 - Create a GitHub account to get started
 - Simply add your email, password and your desired username
@@ -38,11 +38,11 @@ In this challenge you will learn how to:
 
 ![create account page](./images/createanaccount.png)
 
-## Edit Github Profile
+## Edit your GitHub Profile
 
-### Upload Profile Picture and insert your name
+### Upload a profile picture and insert your name
 
-This is the front page of your account. This overview shows you everything from your contributions, repositories your active in, your achievements and much more.
+This is the front page of your account. This overview shows everything about your activities on GitHub, such as your contributions to repositories, your own repositories, your achievements and much more.
 ![profile page](./images/accountfrontpage.png)
 
 To change or add any of your information, click on your icon in the top right corner and choose **Settings**.
