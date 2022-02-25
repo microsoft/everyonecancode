@@ -47,6 +47,8 @@ The API key is a unique identifier, which we will add to our code. By doing so, 
 ![](./images/milligram-face-api-access-keys.png)
 
 In Action Secrets you can store encrypted variables that you create in an organization, repository, or repository environment. These secrets are available to use in GitHub Actions workflows.
+- Navigate to your repository's _Settings_, then to _Secrets_ and _Actions_
+- Click on _New repository secret_
 - Set the name and value similar to picture and replace the *xxxxxx* part with your values
 - Add the secret
 ![](./images/vue-app-face-api-endpoint-secret.png)
