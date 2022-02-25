@@ -94,7 +94,7 @@ features are:
 - Transcribe sentences you speak using Azure Speech Service (implemented on day2)
 
 - Open your personal Milligram website on your phone and explore it's content
-- Edit the profile in the app to show your own Github profile picture in the app
+- Edit the profile in the app to show your own GitHub profile picture in the app
   ![Add to homescreen 1](images/frontend_homescreen_0.jpg)
 
 ### Add The application to your homescreen
