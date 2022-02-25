@@ -41,7 +41,7 @@ The first step in creating our Face API is to create a new resource.
 - Create a **unique name** and select the **Standard S0 Pricing Tier**.
 ![](./images/create-face-options.png)
 
-## Integrate Face Service Credential into Github Secret
+## Integrate Face Service Credential into GitHub Secrets
 
 The API key is a unique identifier, which we will add to our code. By doing so, we can connect our code to the API and perform API calls.
 ![](./images/milligram-face-api-access-keys.png)
