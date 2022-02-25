@@ -14,10 +14,10 @@ Today you will learn how to:
 ## Table Of Contents
 
 1. [Milligram Application Frontend](#milligram-application-frontend)
-   1. [Enable Github Action](#enable-github-action)
-   2. [Run Github Action](#run-github-action)
-   3. [Enable Github Page in Project Settings](#enable-github-page-in-project-settings)
-   4. [Open Github Page on your phone](#open-github-page-on-your-phone)
+   1. [Enable GitHub Action](#enable-github-action)
+   2. [Run GitHub Action](#run-github-action)
+   3. [Enable GitHub Page in Project Settings](#enable-github-page-in-project-settings)
+   4. [Open GitHub Page on your phone](#open-github-page-on-your-phone)
    5. [Add Application to home screen](#add-application-to-home-screen)
 2. [Milligram Application Backend](#milligram-application-backend)
    1. [Prepare Image Upload](#prepare-image-upload)
@@ -27,8 +27,8 @@ Today you will learn how to:
 
 ### Further informative resources
 
-- [What is Github Action?](https://github.com/features/actions)
-- [Github Action Documentation](https://docs.github.com/actions)
+- [What is GitHub Action?](https://github.com/features/actions)
+- [GitHub Action Documentation](https://docs.github.com/actions)
 - [What is a repository?](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories)
 - [What is a Resource / Resource Group / Subscription?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
 
