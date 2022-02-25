@@ -248,7 +248,7 @@ Let's pause a second. To make sure that you are on track, test your application 
 
 ![Test API Page](./images/TestAPIGetImages.png)
 
-- Select GET/images endpoint hit `Try it Out` and then hit `Execute`, once you get the 200 Response Code you have a successful running service! Congratulations!
+- Select the _GET/images_ endpoint hit `Try it Out` and then hit `Execute`, once you get the 200 Response Code you have a successful running service! Congratulations!
 
 ### Integrate Azure Web App Url in Github Secret
 
