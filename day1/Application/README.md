@@ -46,7 +46,7 @@ will use two of GitHub's awesome features. GitHub Pages and GitHub Actions. Let'
 get started with the actions.
 
 - Go to your repository's **Actions**
-- Click the button which says _I understand my workflows, go ahead and enable them_ to enable Github Actions
+- Click the button which says _I understand my workflows, go ahead and enable them_ to enable GitHub Actions
 
 _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories) contains all of your project's files and each file's revision history. You can discuss and manage your project's work within the repository._
 
