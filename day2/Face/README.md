@@ -8,7 +8,7 @@ In this challenge you will learn how to:
 
 - how to create a Face API service in Azure
 - how to connect you Face API service with your App
-- how to pass the API key to you App using Github Secrets
+- how to pass the API key to you App using GitHub Secrets
 - how to take a selfie 😉
 
 *API - Application Programming Interface: A software intermediary that allows two applications to talk to each other*
