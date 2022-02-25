@@ -263,7 +263,7 @@ To do this, we will use a GitHub Feature called _Secrets_ where you can store yo
 
 For the change of adding the secret taking effect in the frontend we need to run our build pipeline again so that the process can pickup the newly created setting.
 
-- Navigate to Actions and select the pages workflow and rerun the workflow: 
+- Navigate to the _Actions_ tab, select the pages workflow and rerun the workflow: 
 
 ![Github Frontend Workflow](./images/RunWorkflowFrontend.png)
 
