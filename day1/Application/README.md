@@ -52,7 +52,7 @@ _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-re
 
 ![Enable Github Actions](images/frontend_enable_action.png)
 
-### Run Github Actions
+### Run GitHub Actions
 
 - In the **Actions** tab of your repository, click on the **pages** workflow
 - Open the **Run Workflow** dropdown and click the **Run Workflow** button to confirm the workflow execution
