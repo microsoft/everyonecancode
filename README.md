@@ -29,9 +29,9 @@ On day 1 we will create our own GitHub Account and use this repository as our ba
 
 
 On Day 2 we will stay in the developer view by using our existing personal App and our goal is to make it smart with pre-trained machine models behind the scenes. For this we will focus on our managed services like Azure Cognitive Services: Face API and Speech API. As a future developer I can use those REST APIs and enrich my applications without having deep ml expert knowledge.
-As final challenge you will connect your application with the services.  This shows the entire lifecycle and brings together best of both worlds.
+As a final challenge, you will connect your application with the services. This shows the entire lifecycle and brings together best of both worlds.
 
-Afterwards the trainers will suggest a long list of online courses to get started and to get a deeper dive into the Technologies.
+Afterwards, the trainers will suggest a long list of online courses to get started and to get a deeper dive into the technologies.
 Further all the FemaleTechGen graduates are invited to join our [AI Developer College](https://github.com/aidevcollege/aidevcollege) or
 [Azure Developer College](https://github.com/azuredevcollege/trainingdays).
 
