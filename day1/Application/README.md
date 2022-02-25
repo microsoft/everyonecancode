@@ -250,10 +250,10 @@ Let's pause a second. To make sure that you are on track, test your application 
 
 - Select the _GET/images_ endpoint hit `Try it Out` and then hit `Execute`, once you get the 200 Response Code you have a successful running service! Congratulations!
 
-### Integrate Azure Web App Url in Github Secret
+### Integrate Azure Web App Url in GitHub Secrets
 
-Now that we are sure that our back end service works as expected we can bring everything together now.
-To do this we will use a Github Feature called _Secrets_ where you can store your backend URL to make your frontend talk to the backend service. 
+Now that we are sure that our backend service works as expected, we can bring everything together.
+To do this, we will use a GitHub Feature called _Secrets_ where you can store your backend URL to make your frontend talk to the backend service. 
 
 - On your Repository page select settings and navigate to secrets
 - Add a _new secret_ named `VUE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`
