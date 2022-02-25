@@ -39,7 +39,7 @@ see and use on your mobile phone or you web browser. This is the main way to
 interact with milligrams services.
 
 
-### Enable Github Action
+### Enable GitHub Actions
 
 We've prepared an automated way to create and update the website for you. You
 will use two of GitHubs awesome features. GitHub Pages and GitHub Actions. Let's
