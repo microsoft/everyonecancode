@@ -81,7 +81,7 @@ and see that it is stored even if you refresh the browser.
 
 // TODO: Add Challenge to hange in Codespace + push
 
-### Open Github Page on your phone
+### Open GitHub Page on your phone
 
 Milligram is a fun litte app similar to photo based social media that you might
 be familiar with. Of course we want to use it on our mobile phones so we can use
