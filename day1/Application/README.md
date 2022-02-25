@@ -229,7 +229,8 @@ We need to tell the Web Application where it can find our storage service. The a
 To ensure our social media application can actually do something, we need to bring our source code to the Azure Web App. To do that we will automate this so called "deployment". Hence, we don't have to rely on a manual process every time we want to make changes (e.g. changing the title of the application) to our application and thus, we avoid many mistakes. 
 
 - Navigate to the _Deployment Center_ tab on the left hand side of your App
-- Under the _Settings_ tab connect your _GitHub Account_, under _Organization_ select your GitHub Handle and under _Repository_ select `FemaleAIAppInnovationEcosystem` as well as the `main` _Branch_
+- Under the _Settings_ tab connect your _GitHub Account_ and click _Authorize_
+- Under _Organization_ select your GitHub Handle and under _Repository_ select `FemaleAIAppInnovationEcosystem` as well as the `main` _Branch_
 - Hit `Save`
 
 Once you hit `Save` the service automatically creates a workflow file in your Github Repository. This workflow is immediately being executed and after about 2 minutes your web app will be ready. You can also check your deployment on your "Actions" tab in your repository. The color green is always a good sign. 😎
