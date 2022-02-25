@@ -267,7 +267,7 @@ For the change of adding the secret taking effect in the frontend we need to run
 
 ![Github Frontend Workflow](./images/RunWorkflowFrontend.png)
 
-- Once the workflow is started you will see the workflow running and finally finish.
+- Once the workflow is started you will see the workflow running and finally finish (You can get to the view below by clicking on the workflow run).
 
 ![Github Frontend Workflow Progress](./images/FrontendInProgress.png)
 
