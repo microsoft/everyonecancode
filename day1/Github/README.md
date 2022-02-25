@@ -53,7 +53,10 @@ To change or add any of your information, click on your icon in the top right co
 
 ## Fork Repository
 
-A Fork is a copy of a repository. This is extremely handy, if you want to freely experiment without making any changes to the original project. 
+A Fork is a copy of a repository. This is extremely handy if you want to freely experiment without making any changes to the original project.
+
+Now, let's go ahead and fork this repository!
+
 ![highlighted fork button top right](./images/ForkTheRepository.png)
 
 ![fork confirmation page](./images/Forked.png)
