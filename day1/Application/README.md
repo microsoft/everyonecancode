@@ -42,7 +42,7 @@ interact with Milligrams services.
 ### Enable GitHub Actions
 
 We've prepared an automated way to create and update the website for you. You
-will use two of GitHubs awesome features. GitHub Pages and GitHub Actions. Let's
+will use two of GitHub's awesome features. GitHub Pages and GitHub Actions. Let's
 get started with the actions.
 
 - Go to your repository **Actions**
