@@ -12,11 +12,11 @@ In this challenge you will learn how to:
 
 ## Table Of Contents
 
-1. [Sign Up and Create a Github Account](#SignUpandCreateatGithubAccount)
-2. [Edit Github Profile](#EditGithubProfile)
+1. [Sign Up and Create a GitHub Account](#SignUpandCreateatGithubAccount)
+2. [Edit your GitHub Profile](#EditGithubProfile)
 3. [Fork Repository](#ForkRepository)
 
-## Sign Up and Create at Github Account
+## Sign Up and Create at GitHub Account
 
 <details>
 <summary>What is Github?</summary>
@@ -48,14 +48,13 @@ Github is actually two things: **Git** and **Hub**.
 
 ![Create account page](./images/dark/CreateAnAccount.png)
 
-## Edit Github Profile
+## Edit your GitHub Profile
 
-### Upload Profile Picture and insert your name
+### Upload a profile picture and insert your name
 
-This is the front page of your account. This overview shows you everything from your contributions, repositories your active in, your achievements and much more.
+This is the front page of your account. This overview shows everything about your activities on GitHub, such as your contributions to repositories, your own repositories, your achievements and much more.
 ![Profile page](./images/dark/AccountFrontpage.png#gh-dark-mode-only)
 ![Profile page](./images/light/AccountFrontpage.png#gh-light-mode-only)
-
 
 To change or add any of your information, click on your icon in the top right corner and choose **Settings**.
 ![Top right user icon options popup](./images/dark/Settings.png#gh-dark-mode-only)
@@ -67,7 +66,10 @@ To change or add any of your information, click on your icon in the top right co
 
 ## Fork Repository
 
-A Fork is a copy of a repository. This is extremely handy, if you want to freely experiment without making any changes to the original project. 
+A Fork is a copy of a repository. This is extremely handy if you want to freely experiment without making any changes to the original project.
+
+Now, let's go ahead and fork this repository!
+
 ![Highlighted fork button top right](./images/dark/ForkTheRepository.png#gh-dark-mode-only)
 ![Highlighted fork button top right](./images/light/ForkTheRepository.png#gh-light-mode-only)
 

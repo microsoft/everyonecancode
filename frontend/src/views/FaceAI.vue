@@ -149,6 +149,16 @@ export default class FaceAI extends Vue {
             ],
           })
           .then((response) => {
+            if(response.length == 0) {
+              this.$confirm("The AI could not recognize your face, make sure the gray box covers most of your face.", "AI Error", "error")
+              .then((r: boolean) => {
+                this.$router.go(0);
+              })
+              .catch(() => {
+                this.$router.push({ name: 'home' })
+              });
+              return;
+            }
             this.faces = response.map((face) => {
               const {
                 age = 0,
@@ -189,6 +199,11 @@ export default class FaceAI extends Vue {
                 glasses,
               };
             });
+          }).catch(err => {
+                this.$alert("An error occurred while trying to connect to Face AI. Try again and ask your coach if the problem persists.", "Face AI not available", "warning")
+                .then(() => this.$router.go(0));
+              console.log("An error occurred:");
+              console.error(err);
           });
       });
   }

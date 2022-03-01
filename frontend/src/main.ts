@@ -18,15 +18,17 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import router from "./router";
 import EasyCamera from "easy-vue-camera";
 import VueRecord from "@codekraft-studio/vue-record";
+import VueSimpleAlert from "vue-simple-alert";
 
 library.add(
-  faCamera,
-  faMicrophone,
-  faGrinStars,
-  faCheck,
-  faExclamationCircle,
-  faArrowLeft
+  faCamera as any,
+  faMicrophone as any,
+  faGrinStars as any,
+  faCheck as any,
+  faExclamationCircle as any,
+  faArrowLeft as any
 );
+Vue.use(VueSimpleAlert);
 Vue.use(VueRecord);
 Vue.component("vue-fontawesome", FontAwesomeIcon);
 Vue.use(Buefy, {

@@ -8,7 +8,7 @@ In this challenge you will learn how to:
 
 - how to create a Face API service in Azure
 - how to connect you Face API service with your App
-- how to pass the API key to you App using Github Secrets
+- how to pass the API key to you App using GitHub Secrets
 - how to take a selfie 😉
 
 *API - Application Programming Interface: A software intermediary that allows two applications to talk to each other*
@@ -41,13 +41,16 @@ The first step in creating our Face API is to create a new resource.
 - Create a **unique name** and select the **Standard S0 Pricing Tier**.
 ![](./images/dark/create-face-options.png)
 
-## Integrate Face Service Credential into Github Secret
+## Integrate Face Service Credential into GitHub Secrets
 
 The API key is a unique identifier, which we will add to our code. By doing so, we can connect our code to the API and perform API calls.
 ![](./images/dark/milligram-face-api-access-keys.png)
 
 In Action Secrets you can store encrypted variables that you create in an organization, repository, or repository environment. These secrets are available to use in GitHub Actions workflows.
-- Set the name and value similar to picture and replace the *xxxxxx* part with your values
+- Navigate to your repository's _Settings_, then to _Secrets_ and _Actions_
+- Click on _New repository secret_
+- Set the name to _VUE_APP_FACE_API_ENDPOINT_
+- Set the value to your FACE service's endpoint: https://xxxxxxx.cognitiveservices.azure.com/
 - Add the secret
 ![](./images/dark/vue-app-face-api-endpoint-secret.png#gh-dark-mode-only)
 ![](./images/light/vue-app-face-api-endpoint-secret.png#gh-light-mode-only)

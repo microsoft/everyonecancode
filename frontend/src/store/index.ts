@@ -22,13 +22,14 @@ export default new Vuex.Store({
       state.githubUsername = githubUsername;
     },
     setImageList(state, list) {
+      console.log(list)
       state.imageList = list;
     },
   },
   actions: {
     refreshImageList(context) {
       axios
-        .get(`${imageApiUrl}/images`)
+        .get(`${imageApiUrl}images`)
         .then((response) => {
           context.commit("setImageList", response.data);
         })
