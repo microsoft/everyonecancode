@@ -4,20 +4,20 @@
 
 ## Here is what you will learn 🎯
 
-In this day you will learn how to:
+Today you will learn how to:
 
-- get started with Github Actions
-- deploy the Milligram frontend to Github Pages
+- get started with GitHub Actions
+- deploy the Milligram frontend to GitHub Pages
 - create a Python Web App on Azure
-- deploy the Milligram backend on Azure with Github Actions
+- deploy the Milligram backend on Azure with GitHub Actions
 
 ## Table Of Contents
 
 1. [Milligram Application Frontend](#milligram-application-frontend)
-   1. [Enable Github Action](#enable-github-action)
-   2. [Run Github Action](#run-github-action)
-   3. [Enable Github Page in Project Settings](#enable-github-page-in-project-settings)
-   4. [Open Github Page on your phone](#open-github-page-on-your-phone)
+   1. [Enable GitHub Actions](#enable-github-action)
+   2. [Run GitHub Actions](#run-github-action)
+   3. [Enable GitHub Page in Project Settings](#enable-github-page-in-project-settings)
+   4. [Open GitHub Page on your phone](#open-github-page-on-your-phone)
    5. [Add Application to home screen](#add-application-to-home-screen)
 2. [Milligram Application Backend](#milligram-application-backend)
    1. [Prepare Image Upload](#prepare-image-upload)
@@ -27,16 +27,16 @@ In this day you will learn how to:
 
 ### Further informative resources
 
-- [What is Github Action?](https://github.com/features/actions)
-- [Github Action Documentation](https://docs.github.com/actions)
+- [What is GitHub Actions?](https://github.com/features/actions)
+- [GitHub Actions Documentation](https://docs.github.com/actions)
 - [What is a repository?](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories)
 - [What is a Resource / Resource Group / Subscription?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
 
 ## Milligram Application Frontend
 
 First let's get started with the front end application. The part that you will
-see and use on your mobile phone or you web browser. This is the main way to
-interact with milligrams services.
+see and use on your mobile phone or your web browser. This is the main way to
+interact with Milligrams services.
 
 <details>
 <summary>What does front end mean?</summary>
@@ -50,37 +50,37 @@ But how to understand this example now... quite simple. The **frontend** is what
 </details>
 
 
-### Enable Github Action
+### Enable GitHub Actions
 
 We've prepared an automated way to create and update the website for you. You
-will use two of GitHubs awesome features. GitHub Pages and GitHub Actions. Let's
+will use two of GitHub's awesome features. GitHub Pages and GitHub Actions. Let's
 get started with the actions.
 
-- Go to your repository **Actions**
-- Click the button which says _I understand my workflows, go ahead and enable them_ to enable Github Actions
+- Go to your repository's **Actions**
+- Click the button which says _I understand my workflows, go ahead and enable them_ to enable GitHub Actions
 
 _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories) contains all of your project's files and each file's revision history. You can discuss and manage your project's work within the repository._
 
 ![Enable Github Actions](images/dark/EnableGithubActions.png#gh-dark-mode-only)
 ![Enable Github Actions](images/light/EnableGithubActions.png#gh-light-mode-only)
 
-### Run Github Actions
+### Run GitHub Actions
 
-- In the **Actions** tab of your repository, click on the **pages** workflow
-- Open the **Run Workflow** dropdown and click the **Run Workflow** button to confirm the workflow execution
+- In the **Actions** tab of your repository, click on the **pages** workflow.
+- Open the **Run Workflow** dropdown and click the **Run Workflow** button to confirm the workflow execution.
 
 Now observe how the workflow is beeing run and take a look at the individual steps that are run for you by GitHub.
 
 ![Run workflow](images/dark/FrontendRunWorkflow.png#gh-dark-mode-only)
 ![Run workflow](images/light/FrontendRunWorkflow.png#gh-light-mode-only)
 
-### Enable Github Page in Project Settings
+### Enable GitHub Pages in Project Settings
 
 To be able to display the website (frontend) we've built and deployed using
 GitHub Actions, we need to enable the GitHub Pages for your repository.  GitHub
 Pages are an easy way to display a static website related to your repository.
 Many people use it to display the documentation for their projects. We will use
-it to serve the frontend for milligram.
+it to serve the frontend for Milligram.
 
 - Go to your repository settings
   ![Repository Settings](images/dark/RepoSettingsTab.png#gh-dark-mode-only)
@@ -96,11 +96,11 @@ and see that it is stored even if you refresh the browser.
 
 // TODO: Add Challenge to hange in Codespace + push
 
-### Open Github Page on your phone
+### Open GitHub Page on your phone
 
 Milligram is a fun litte app similar to photo based social media that you might
 be familiar with. Of course we want to use it on our mobile phones so we can use
-the cameras to take awesome selfies and picture for milligram. It's main
+the cameras to take awesome selfies and picture for Milligram. Its main
 features are:
 
 - Display simple GitHub account information from your own profile
@@ -109,7 +109,7 @@ features are:
 - Transcribe sentences you speak using Azure Speech Service (implemented on day2)
 
 - Open your personal Milligram website on your phone and explore it's content
-- Edit the profile in the app to show your own Github profile picture in the app
+- Edit the profile in the app to show your own GitHub profile picture in the app
   ![Add to homescreen 1](images/android/FrontendHomescreen0.jpg)
 
 ### Add The application to your homescreen
@@ -127,9 +127,9 @@ Appstores.
 
 The Application Backend will receive uploaded photos, store them for us and return them when needed.  
 
-Our Application can be divided into a Frontend (something you see and runs locally on your phone) and a Backend (something which processes your information). In this case as we want to create our own social media application we need pictures to be stored for our "News Feed". That means we need a place to store many files and a place to run our application logic (which is our programming code). 
+Our Application can be divided into a Frontend (something you see and runs locally on your phone) and a Backend (something which processes your information). In this case, as we want to create our own social media application we need pictures to be stored for our "News Feed". That means we need a place to store many files and a place to run our application logic (which is our programming code). 
 
-To store the files we will use the "Azure Storage Account" and to run our application we will use an "Azure Web App". 
+To store the files, we will use the "Azure Storage Account" and to run our application, we will use an "Azure Web App". 
 First things first we will create our first "Azure Account".
 
 ### Create Azure Account
@@ -161,10 +161,10 @@ Now we log in with `your Azure Account`
 - Click on _Create a resource_
 
 > __Azure Resource__: In Azure, the term resource refers to an entity managed by Azure. For example, virtual machines, virtual networks, 
-> and storage accounts are all referred to as Azure resources._
+> and storage accounts are all referred to as Azure resources.
 
 > __Resource Group__: A resource group is a container that holds related resources for an Azure solution. The resource group can include all the 
-> resources > for the solution, or only those resources that you want to manage as a group._
+> resources > for the solution, or only those resources that you want to manage as a group.
 
 - Search & select _Resource Group_ (A storage for multiple resources) from the text field
 
@@ -176,7 +176,7 @@ Now we log in with `your Azure Account`
 
 ![Create RG 2](images/dark/BackendCreateRG1.png)
 
-- Last but not least, select a region near you to host all your services
+- Last but not least, select a region (e.g. West Europe) near you to host all your services
 
 ![Create RG 3](images/dark/BackendCreateRG2.png)
 
@@ -214,7 +214,7 @@ Our Azure Web App is a Computer managed by Microsoft where you can easily run yo
     ![Backend 0](images/dark/BackendApp0.png)
 - Create a new App Service Plan and `<pick your own name>`
   ![Backend 1](images/dark/BackendApp1.png)
-- Click the _Dev/Test_ tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan
+- Click on _Change size_ and then click the _Dev/Test_ tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan
   ![Backend 2](images/dark/BackendApp2.png)
 - Click _Review + Create_ at the bottom of the screen
 - Review the displayed information and click _Create_ on the next screen to spin up the backend application
@@ -228,7 +228,7 @@ Our Azure Web App is a Computer managed by Microsoft where you can easily run yo
 Now let's connect our Application with our Storage that you can take pictures on your phone and store them in the Cloud Storage. 
 We need to tell the Web Application where it can find our storage service. The application can take external configurations to configure the connection to the storage account. 
 
-- For this reason copy the secret _Connection String_ from our Storage Account from _access keys_
+- For this reason copy the secret _Connection String_ from our Storage Account from _Access keys_
 
 ![](./images/dark/SecretAccessKeys.png)
 
@@ -240,19 +240,20 @@ We need to tell the Web Application where it can find our storage service. The a
 - Navigate and Scroll down to the _CORS_ tab on the left hand side of your App Service and enter `https://<YourGithubHandle>.github.io` under _Allowed Origins_
 - Hit `Save`
 
-### Deploy Milligram Backend Code to Azure Web App via Github Action
+### Deploy Milligram Backend Code to Azure Web App via GitHub Actions
 
-That our social media application can actually do something we need to bring our source code to the Azure Web App. To do that we will automate this so called "deployment" that we don't have to rely on a manual process every time we want to make changes (e.g. changing the title of the application) to our application and thus we avoid many mistakes. 
+To ensure our social media application can actually do something, we need to bring our source code to the Azure Web App. To do that we will automate this so called "deployment". Hence, we don't have to rely on a manual process every time we want to make changes (e.g. changing the title of the application) to our application and thus, we avoid many mistakes. 
 
 - Navigate to the _Deployment Center_ tab on the left hand side of your App
-- Under _Settings_ tab connect your _Github Account_ and under _Organization_ select your Github Handle and under _Repository_ select `FemaleAIAppInnovationEcosystem` as well as the `main` _Branch_
+- Under the _Settings_ tab connect your _GitHub Account_ and click _Authorize_
+- Under _Organization_ select your GitHub Handle and under _Repository_ select `FemaleAIAppInnovationEcosystem` as well as the `main` _Branch_
 - Hit `Save`
 
-Once you hit `Save` the service automatically creates a workflow file in your Github Repository. This workflow is immediately being executed and after about 2 minutes your web app will be ready. You can also check your deployment on your "Actions" tab in your repository. The color green is always a good sign. 😎
+Once you hit `Save` the service automatically creates a workflow file in your GitHub Repository. This workflow is immediately being executed and after about 2 minutes your web app is ready. You can also check your deployment on your "Actions" tab in your repository. The color green is always a good sign. 😎
 
 ### Check if Milligram Service is running correctly
 
-Let's pause a second. To make sure that you are on track, test your application if you get a response from our back end service. Before we bring everything together we want to make sure the back end service is working as expected. 
+Let's pause a second. To make sure that you are on track, test your application if you get a response from our backend service. Before we bring everything together, we want to make sure the backend service is working as expected. 
 
 - Navigate to the _Overview_ tab on the left hand side of the App
 
@@ -263,14 +264,14 @@ Let's pause a second. To make sure that you are on track, test your application 
 
 ![Test API Page](./images/dark/TestAPIGetImages.png)
 
-- Select GET/images endpoint hit `Try it Out` and then hit `Execute`, once you get the 200 Response Code you have a successful running service! Congratulations!
+- Select the _GET/images_ endpoint hit `Try it Out` and then hit `Execute`, once you get the 200 Response Code you have a successful running service! Congratulations!
 
-### Integrate Azure Web App Url in Github Secret
+### Integrate Azure Web App Url in GitHub Secrets
 
-Now that we are sure that our back end service works as expected we can bring everything together now.
-To do this we will use a Github Feature called _Secrets_ where you can store your backend URL to make your frontend talk to the backend service. 
+Now that we are sure that our backend service works as expected, we can bring everything together.
+To do this, we will use a GitHub Feature called _Secrets_ where you can store your backend URL to make your frontend talk to the backend service. 
 
-- On your Repository page select settings and navigate to secrets
+- On your Repository page select settings and navigate to _Secrets_ > _Actions_
 - Add a _new secret_ named `VUE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`
 ![Github Frontend Url](./images/dark/FrontendAPIUrl.png#gh-dark-mode-only)
 ![Github Frontend Url](./images/light/FrontendAPIUrl.png#gh-light-mode-only)
@@ -281,12 +282,12 @@ To do this we will use a Github Feature called _Secrets_ where you can store you
 
 For the change of adding the secret taking effect in the frontend we need to run our build pipeline again so that the process can pickup the newly created setting.
 
-- Navigate to Actions and select the pages workflow and rerun the workflow: 
+- Navigate to the _Actions_ tab, select the pages workflow and rerun the workflow: 
 
 ![Github Frontend Workflow](./images/dark/RunWorkflowFrontend.png#gh-dark-mode-only)
 ![Github Frontend Workflow](./images/light/RunWorkflowFrontend.png#gh-light-mode-only)
 
-- Once the workflow is started you will see the workflow running and finally finish.
+- Once the workflow is started you will see the workflow running (You can get to the view below by clicking on the workflow run).
 
 ![Github Frontend Workflow Progress](./images/dark/FrontendInProgress.png#gh-dark-mode-only)
 ![Github Frontend Workflow Progress](./images/light/FrontendInProgress.png#gh-light-mode-only)
