@@ -1,92 +1,92 @@
-# Face Recognition
+# Gesichtserkennung
 
-⏲️ _est. time to complete: 30 min._ ⏲️
+⏲️ _maximale Bearbeitungszeit: 30 min._ ⏲️
 
-## Here is what you will learn 🎯
+## Das wirst du lernen 🎯
 
-In this challenge you will learn how to:
+In dieser Aufgabe lernst du:
 
-- how to create a Face API service in Azure
-- how to connect you Face API service with your App
-- how to pass the API key to you App using GitHub Secrets
-- how to take a selfie 😉
+- wie man einen Face-API-Dienst in Azure erstellt
+- wie du den Face API Service mit deiner App verbindest
+- wie man den API-Schlüssel mit GitHub Secrets an seine App weitergibt
+- wie man ein Selfie macht 😉.
 
-_API - Application Programming Interface: A software intermediary that allows two applications to talk to each other_
+API - Anwendungsprogrammierschnittstelle: Ein Software-Vermittler, der es zwei Apps ermöglicht, miteinander zu kommunizieren_
 
-### Further informative resources:
+### Weitere Ressourcen:
 
-- [What is a Resource / Resource Group / Subscription?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
+- [Was ist eine Ressource / Ressourcengruppe / Abonnement?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
 - [Face API](https://azure.microsoft.com/services/cognitive-services/face/)
-- [Regions and Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview)
-- [Github Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets)
+- [Regionen und Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview)
+- [Github verschlüsselte Geheimnisse](https://docs.github.com/en/actions/reference/encrypted-secrets)
 
-## Table of contents
+## Inhaltsverzeichnis
 
-## Getting started
+## Erste Schritte
 
-The first step in creating our Face API is to create a new resource.
+Der erste Schritt bei der Erstellung unserer Face-API besteht darin, eine neue Ressource zu erstellen.
 
-_Azure Resource: In Azure, the term resource refers to an entity managed by Azure. For example, virtual machines, virtual networks, and storage accounts are all referred to as Azure resources._
+_Azure Ressource: In Azure bezieht sich der Begriff Ressource auf eine Entität, die von Azure verwaltet wird. Zum Beispiel werden virtuelle Maschinen, virtuelle Netzwerke und Speicherkonten als Azure-Ressourcen bezeichnet.
 
-- Click the **big "+" symbol** on the main page
-- Pick the category **"AI + Machine Learning"**
-- Create a **Face** service.
+- Klick auf das **große "+"-Symbol** auf der Hauptseite
+- Wähl die Kategorie **"AI + Machine Learning "**.
+- Erstell einen **Face**-Service.
   ![](./images/dark/create-face.png)
 
-## Create Face Cognitive Service
+## Gesicht erstellen Kognitiver Service
 
-- Choose your **Subscription**
-- Create a new **Resource Group** (A storage for multiple resources)
-- Choose _West Europe_ as **Region** (Location of datacenter where the service is deployed)
-- Create a **unique name** and select the **Standard S0 Pricing Tier**.
+- Wähle dein **Abonnement**.
+- Erstell eine neue **Ressourcengruppe** (Ein Speicher für mehrere Ressourcen/Services)
+- Wähl _Westeuropa_ als **Region** aus(Standort des Rechenzentrums, in dem der Service bereitgestellt wird)
+- Erstell einen **eindeutigen Namen** und wähl die **Standard S0 Preisstufe**.
   ![](./images/dark/create-face-options.png)
 
-## Integrate Face Service Credential into GitHub Secrets
+## Face Service Credential in GitHub Secrets integrieren
 
-The API key is a unique identifier, which we will add to our code. By doing so, we can connect our code to the API and perform API calls.
+Der API-Schlüssel ist eine eindeutige Kennung, die wir in unseren Code einfügen. Auf diese Weise können wir unseren Code mit der API verbinden und API-Aufrufe durchführen.
 ![](./images/dark/milligram-face-api-access-keys.png)
 
-In Action Secrets you can store encrypted variables that you create in an organization, repository, or repository environment. These secrets are available to use in GitHub Actions workflows.
+In Action Geheimnisse kannst du verschlüsselte Variablen speichern, die du in einer Organisation, einem Repository oder einer Repository-Umgebung erstellst. Diese Geheimnisse können in GitHub-Aktions-Workflows verwendet werden.
 
-- Navigate to your repository's _Settings_, then to _Secrets_ and _Actions_
-- Click on _New repository secret_
-- Set the name to _VUE_APP_FACE_API_ENDPOINT_
-- Set the value to your FACE service's endpoint: https://xxxxxxx.cognitiveservices.azure.com/
-- Add the secret
+- Navigiere zu den _Einstellungen_ deines Repositorys, dann zu _Geheimnisse_ und _Aktionen_.
+- Klick auf _Neues Repository-Geheimnis_
+- Setz den Namen auf _VUE_APP_FACE_API_ENDPOINT_
+- Setz den Wert auf den Endpunkt deines FACE-Service: https://xxxxxxx.cognitiveservices.azure.com/
+- Füge das Geheimnis hinzu
   ![](./images/dark/vue-app-face-api-endpoint-secret.png#gh-dark-mode-only)
   ![](./images/light/vue-app-face-api-endpoint-secret.png#gh-light-mode-only)
 
 ![](./images/dark/vue-app-face-api-key-secret.png#gh-dark-mode-only)
 ![](./images/light/vue-app-face-api-key-secret.png#gh-light-mode-only)
 
-## Run Frontend Pipeline again
+## Führ die Frontend-Pipeline erneut aus
 
-Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...`
+Klick auf den Frontend-Link, der unter dem Deploy-Schritt in deiner Pipeline angezeigt wird: `https://<IhrGithubHandle>.github.io/...`
 
-Our frontend application should now have a new button with a selfie 🤩 symbol that allows us to take selfies and estimate how old we are.
-These selfies will **not** be saved and will **not** appear on the timeline or News Feed.
+Unsere Frontend-Anwendung sollte nun einen neuen Button mit einem Selfie-Symbol 🤩 haben, mit dem wir Selfies machen und schätzen können, wie alt wir sind.
+Diese Selfies werden **nicht** gespeichert und **nicht** in der Timeline oder im News Feed angezeigt.
 
-## Take Selfies! How old are you really? Play around!
+## Mach Selfies! Wie alt bist du wirklich? Spiel herum!
 
-So go ahead and take at least 5 selfies and tell us how old you are in all of them.
+Mach also mindestens 5 Selfies und sag uns, wie alt du auf allen Fotos bist.
 
-Take also pictures of people who are around you and estimate their age, you might surprise them. 😁
+Mach auch Fotos von Leuten, die um dich herum sind, und schätze ihr Alter, du könntest sie überraschen. 😁
 
-That's a wrap for today! Congrats! 🥳🙏
+Das war's für heute! Herzlichen Glückwunsch! 🥳🙏
 
-Now we will make our app understand when we talk 🗣️ to our Milligram Social Media App.
+Jetzt werden wir unserer Milligram Social Media App beibringen zu verstehen, wenn wir mit ihr sprechen 🗣️.
 
-## Overcharged? We got you covered
+## Zu viel? Wir haben die Lösung für dich!
 
-Ask your coach if you did not succeed. We have you covered with a back up. ⚠️
+Frag deinen Coach, wenn du nicht fertig geworden bist. Wir haben ein Back-up für dich. ⚠️
 
-### Use prepared Milligram Backend Service
+### Verwende den vorbereiteten Milligram Backend Service
 
-Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
+Sieh dir die vorbereitete App mit unseren Bildern an, damit du mit [Milligram] (https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a) herumspielen kannst.
 
 _Tipps 📝_
 
-> - [Machine Learning in 5 Levels of Difficulty](https://youtu.be/5q87K1WaoFI)
+> - [Machine Learning in 5 Schwierigkeitsgraden](https://youtu.be/5q87K1WaoFI)
 > - [▶ 2](./WorkInProgress)
 
-[◀ Previous challenge](../../day1/Application/DE_README.md) | [🔼 Home](../../README.md) | [Next challenge ▶](../Speech/DE_README.md)
+[◀ vorherige Challenge](../../day1/Application/DE_README.md) | [🔼 Home](../../README.md) | [nächste Challenge ▶](../Speech/DE_README.md)

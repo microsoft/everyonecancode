@@ -1,96 +1,96 @@
-# Speech Recognition
+# Spracherkennung
 
-⏲️ _est. time to complete: 30 min._ ⏲️
+⏲️ _geschätzte Bearbeitungszeit: 30 min._ ⏲️
 
-## Here is what you will learn 🎯
+## Das wirst du lernen 🎯
 
-In this challenge you will learn how to:
+In dieser Aufgabe wirst du lernen:
 
-- how to create a Speech API service in Azure
-- how to connect you Speech API service with your App
-- how to pass the API key to you App using Github Secrets
-- how to talk to our application 🗣️
+- wie man einen Speech-API-Dienst in Azure erstellt
+- wie du deinen Sprach-API-Dienst mit deiner App verbindest
+- wie man den API-Schlüssel mit Hilfe von Github Secrets an seine App weitergibt
+- wie man mit unserer App spricht 🗣️.
 
-## Table of contents
+## Inhaltsverzeichnis
 
-### Further informative resources:
+### Weitere Ressourcen:
 
-- [What is a Resource / Resource Group / Subscription?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
+- [Was ist eine Ressource / Ressourcengruppe / Abonnement?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
 - [Speech API](https://azure.microsoft.com/services/cognitive-services/speech-services/#overview)
-- [Regions and Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview)
-- [Github Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets)
+- [Regionen und Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview)
+- [Github Verschlüsselte Geheimnisse](https://docs.github.com/en/actions/reference/encrypted-secrets)
 
-## Getting started
+## Erste Schritte
 
-- Navigate to the **Resource Group** we created during the "Speech" challenge
-- Create a new **Resource** and search for **Speech**
+- Navigier zu der **Ressourcengruppe**, die wir während der Challenge "Speech" erstellt haben
+- Erstelle eine neue **Ressource** und such nach **Speech**
   ![](./images/light/createresource.png)
 
 ![](./images/light/selectspeech.png)
 
-## Create Speech Cognitive Service
+## Kognitiven Sprachdienst erstellen
 
-- Create the new resource and set the values as in the screenshot
+- Erstelle die neue Ressource und setz die Werte wie im Screenshot
   ![](./images/light/createspeech.png)
 
 ![](./images/light/createspeechresource.png)
 
-- Similar to the "Speech" challenge, copy the key to store it in **Github Secrets**
+- Ähnlich wie bei der "Speech"-Challenge, kopier den Schlüssel, um ihn in **Github Secrets** zu speichern
   ![](./images/light/copykeys.png)
 
-## Integrate Speech Service Credential into Github Secret
+## Speech Service Credential in Github Secret einbinden
 
 ![](./images/light/vue-app-speech-api-key-secret.png#gh-light-mode-only)
 ![](./images/dark/vue-app-speech-api-key-secret.png#gh-dark-mode-only)
 
-Now we will make our app understand when we talk 🗣️ to our Milligram Social Media App.
+Jetzt werden wir dafür sorgen, dass unsere Milligram Social Media App versteht, wenn wir 🗣️ mit ihr sprechen.
 
-## Run Frontend Pipeline again
+## Frontend Pipeline erneut ausführen
 
-- Now navigate to **Actions** > **pages** and **Re-run all jobs**
+- Navigiere nun zu **Aktionen** > **Seiten** und **Alle Jobs erneut ausführen**
   ![](./images/light/runworkflow.png#gh-light-mode-only)
   ![](./images/dark/runworkflow.png#gh-dark-mode-only)
 
 ![](./images/light/rerunalljobs.png#gh-light-mode-only)
 ![](./images/dark/rerunalljobs.png#gh-dark-mode-only)
 
-Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...`
+Klick auf den Frontend-Link, der unter dem Deploy-Schritt in deiner Pipeline angezeigt wird `https://<IhrGithubHandle>.github.io/...`
 
-Our frontend application should now have a new button with a selfie 🤩 symbol that allows us to take selfies and estimate how old we are.
-These selfies will **not** be saved and will **not** appear on the timeline or News Feed.
+Unsere Frontend-App sollte nun einen neuen Button mit einem Selfie-Symbol 🤩 haben, mit dem wir Selfies machen und schätzen können, wie alt wir sind.
+Diese Selfies werden **nicht** gespeichert und **nicht** in der Timeline oder im News Feed angezeigt.
 
-## Talk to me! What do you have to say? Play around!
+## Sprich mit mir! Was hast du zu sagen? Spielt herum!
 
-So go ahead and say at least 5 sentences and tell us how great your application understands you.
+Also leg los und sag mindestens 5 Sätze und erzähl uns, wie toll dich deine App versteht.
 
-Take also a book and read to your application or ask other people to talk to your phone, you might be surprised. 😁
+Nimm auch ein Buch und lese deiner App vor oder bitte andere Leute, mit deinem Telefon zu sprechen, du wirst überrascht sein. 😁
 
-By default it will only understand German, if you want to change the language you could change the `Microphone.vue` on line 33 and change it to
+Standardmäßig wird nur Deutsch verstanden, wenn du die Sprache ändern möchtest, kannst du die `Microphone.vue` in Zeile 33 ändern und sie zum Beispiel auf Englisch setzen:
 `speechConfig.speechRecognitionLanguage = "en-US";`
 
-That's a wrap for our 2 days! Congrats! 🥳🙏
+Das war's für unsere zwei Tage! Glückwunsch! 🥳🙏
 
-## Overcharged? We got you covered
+## Zu viel? Wir haben die Lösung für dich!
 
-Ask your coach if you did not succeed. We have you covered with a back up. ⚠️
+Frag deinen Coach, wenn du nicht fertig geworden bist. Wir haben ein Back-up für dich. ⚠️
 
-### Use prepared Milligram Backend Service
+### Verwende den vorbereiteten Milligram Backend Service
 
-Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
+Sieh dir die vorbereitete App mit unseren Bildern an, damit du herumspielen kannst [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
 
-# What's next?
+### Was kommt als nächstes?
 
-Start your own Coding Journey or try out an Azure certification as we did using Udacity, Udemy, Pluralsight, Edx etc., make sure to check out the links posted below:
+Starte deine eigene Coding Journey oder probier eine Azure-Zertifizierung aus, so wie wir es mit Udacity, Udemy, Pluralsight, Edx etc. gemacht haben, schau dir die unten stehenden Links an:
 
-_Tipps 📝_
+_Tipps 📝.
 
-> - [Programming Cours](https://www.udacity.com/course/intro-to-programming-nanodegree--nd000)
-> - Learning Paths
+> - [Programmierkurse](https://www.udacity.com/course/intro-to-programming-nanodegree--nd000)
+> - Lernpfade
 
-Be sure to check out our Microsoft Programs for you:
+Informier dich auch über unsere Microsoft-Programme:
 
-- MS Aspire Program
-- Internships at MS
-- Professional Careers at Microsoft
+- MS Aspire Programm
+- Praktika bei MS
+- Berufliche Laufbahnen bei Microsoft
 
-[◀ Previous challenge](../Face/DE_README.md) | [🔼 Home](../../README.md)
+[◀ vorherige Challenge](../Face/DE_README.md) | [🔼 Home](../../README.md)
