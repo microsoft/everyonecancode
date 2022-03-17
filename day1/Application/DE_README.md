@@ -1,8 +1,8 @@
-# Day 1: Deployment of Miligram application on Azure with Github Actions
+# Tag 1: Erstellen der Miligram-Anwendung auf Azure mit Github-Actions
 
-⏲️ _Est. time to complete: 60 min._ ⏲️
+⏲️ _Geschätzte Zeit: 60 min._ ⏲️
 
-## Before you can continue, please select which operating system you are using: 📱
+## Wähle bitte das Betriebssystem deines Handys aus, um die entsprechende Anleitung zu sehen: 📱
 
 > - [iOS](./DE_README_IOS.md)
 > - [Android](./DE_README_ANDROID.md)
