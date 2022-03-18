@@ -88,8 +88,6 @@ Viele Leute nutzen sie, um die Dokumentation für ihre Projekte anzuzeigen. Wir 
 Wirf einen Blick auf die Website. Versuch, das Profil in deinem GitHub-Kontonamen zu ändern
 und speicher die Änderung - schau dir an, was die Änderung bewirkt, auch wenn du den Browser aktualisierst.
 
-// TODO: Challenges zum ändern im Codespace hinzufügen + push
-
 ### Öffne die GitHub Page auf deinem Handy
 
 Milligram ist eine lustige kleine App, ähnlich wie die fotobasierten sozialen Medien, die dir vielleicht vertraut sind. Natürlich wollen wir sie auf unseren Handys benutzen, damit wir die Kamera nutzen können, um tolle Selfies und Bilder für Milligram zu machen. Die wichtigsten Funktionenen sind:
