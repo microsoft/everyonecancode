@@ -1,6 +1,6 @@
-# Spracherkennung
+# Challenge 2: Spracherkennung
 
-⏲️ _geschätzte Bearbeitungszeit: 30 min._ ⏲️
+⏲️ _geschätzte Zeit: 30 min._ ⏲️
 
 ## Das wirst du lernen 🎯
 
@@ -22,42 +22,50 @@ In dieser Aufgabe wirst du lernen:
 
 ## Erste Schritte
 
-- Navigier zu der **Ressourcengruppe**, die wir während der Challenge "Speech" erstellt haben
+- Navigier zu deiner **Ressourcengruppe**
 - Erstelle eine neue **Ressource** und such nach **Speech**
   ![](./images/light/createresource.png)
-
-![](./images/light/selectspeech.png)
+  ![](./images/light/selectspeech.png)
 
 ## Kognitiven Sprachdienst erstellen
 
-- Erstelle die neue Ressource und setz die Werte wie im Screenshot
   ![](./images/light/createspeech.png)
 
-![](./images/light/createspeechresource.png)
+- Wähle den **Spracheingabe/-ausgabe** Service aus und klick auf **Erstellen**
+- Dein Abbonnement und die Ressourcengruppe sollten bereits richtig gesetzt sein. Wähle die Region **West Europa** aus und den **Standard S0**.
+- Wähle **Überprüfen + erstellen** und dann **Erstellen**.
 
-- Ähnlich wie bei der "Speech"-Challenge, kopier den Schlüssel, um ihn in **Github Secrets** zu speichern
+  ![](./images/light/createspeechresource.png)
+
+- Ähnlich wie bei der "Face"-Challenge, kopier diesmal aber nur den Schlüssel, um ihn in **Github Secrets** zu speichern
   ![](./images/light/copykeys.png)
 
 ## Speech Service Credential in Github Secret einbinden
 
+- Navigiere in GitHub wieder zu Settings > Secrets > Actions und füge ein `New repository secret` hinzu.
+- Name: `VUE_APP_SPEECH_API_KEY`
+- Value: Spracherkennungs Schlüssel
+- Add Secret
+
 ![](./images/light/vue-app-speech-api-key-secret.png#gh-light-mode-only)
 ![](./images/dark/vue-app-speech-api-key-secret.png#gh-dark-mode-only)
 
-Jetzt werden wir dafür sorgen, dass unsere Milligram Social Media App versteht, wenn wir 🗣️ mit ihr sprechen.
+Jetzt werden wir dafür sorgen, dass unsere Milligram Social Media App versteht, wenn wir mit ihr sprechen 🗣️.
 
 ## Frontend Pipeline erneut ausführen
 
-- Navigiere nun zu **Aktionen** > **Seiten** und **Alle Jobs erneut ausführen**
+- Navigiere nun zu **Actions** > **pages** und **Run workflow** damit deine Änderungen auch angewendet werden.
   ![](./images/light/runworkflow.png#gh-light-mode-only)
   ![](./images/dark/runworkflow.png#gh-dark-mode-only)
 
-![](./images/light/rerunalljobs.png#gh-light-mode-only)
-![](./images/dark/rerunalljobs.png#gh-dark-mode-only)
+  ![](./images/light/rerunalljobs.png#gh-light-mode-only)
+  ![](./images/dark/rerunalljobs.png#gh-dark-mode-only)
 
-Klick auf den Frontend-Link, der unter dem Deploy-Schritt in deiner Pipeline angezeigt wird `https://<IhrGithubHandle>.github.io/...`
+Klick auf den Frontend-Link, der unter dem Deploy-Schritt in deiner Pipeline angezeigt wird `https://<DeinGithubHandle>.github.io/...` oder öffne die App auf deinem Handy noch einmal.
 
-Unsere Frontend-App sollte nun einen neuen Button mit einem Selfie-Symbol 🤩 haben, mit dem wir Selfies machen und schätzen können, wie alt wir sind.
-Diese Selfies werden **nicht** gespeichert und **nicht** in der Timeline oder im News Feed angezeigt.
+Unsere Frontend-App sollte nun einen neuen Button mit einem Mikrofon-Symbol 🎙️haben, mit dem wir auf deutsch und englisch sprechen können. Was wir hier aufnehmen wird dann transkribiert.
+
+Weder eure Tonaufnahme noch die Transkirbtion werden gespeichert und **nichts** davon taucht in der Timeline oder im News Feed auf.
 
 ## Sprich mit mir! Was hast du zu sagen? Spielt herum!
 
@@ -65,8 +73,10 @@ Also leg los und sag mindestens 5 Sätze und erzähl uns, wie toll dich deine Ap
 
 Nimm auch ein Buch und lese deiner App vor oder bitte andere Leute, mit deinem Telefon zu sprechen, du wirst überrascht sein. 😁
 
-Standardmäßig wird nur Deutsch verstanden, wenn du die Sprache ändern möchtest, kannst du die `Microphone.vue` in Zeile 33 ändern und sie zum Beispiel auf Englisch setzen:
-`speechConfig.speechRecognitionLanguage = "en-US";`
+Standardmäßig werden nur Deutsch und Englisch verstanden, wenn du die Sprache ändern möchtest, kannst du die `Microphone.vue` in Zeile 33 ändern und sie zum Beispiel auf Ukrainisch setzen:
+`speechConfig.speechRecognitionLanguage = "uk-UA";`.
+
+Ihr seht, die Sprachen werden mit einem Kürzel gesetzt. Für Deutsch ist das de-DE, für Englisch (USA) ist das en-US und für Ukrainisch uk-UA. [Hier](https://docs.microsoft.com/de-de/azure/cognitive-services/speech-service/language-support) findest du alle anderen Sprachenkürzel.
 
 Das war's für unsere zwei Tage! Glückwunsch! 🥳🙏
 

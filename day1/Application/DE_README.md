@@ -1,6 +1,6 @@
 # Tag 1: Erstellen der Miligram-Anwendung auf Azure mit Github-Actions
 
-⏲️ _Geschätzte Zeit: 60 min._ ⏲️
+⏲️ _Geschätzte Zeit: 1 min._ ⏲️
 
 ## Wähle bitte das Betriebssystem deines Handys aus, um die entsprechende Anleitung zu sehen: 📱
 
