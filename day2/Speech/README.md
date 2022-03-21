@@ -30,15 +30,24 @@ In this challenge you will learn how to:
 
 ## Create Speech Cognitive Service
 
-- Create the new resource and set the values as in the screenshot
+- Select **Speech** and hit **Create**
+- Your subscription and resource group should already be set. Select **Westeurope** as Region and **Standard S0**.
+- Hit **Review + create** and than **Create**
 ![](./images/light/createspeech.png)
 
 ![](./images/light/createspeechresource.png)
 
-- Similar to the "Speech" challenge, copy the key to store it in **Github Secrets**
+- After the resouce is created, similar to the "Speech" challenge, copy this time only the key to store it in **Github Secrets**
 ![](./images/light/copykeys.png)
 
+> This time the key will suffice since the endpoint for all Speech services are always the same (https://westeurope.api.cognitive.microsoft.com/sts/v1.0/issuetoken).
+
 ## Integrate Speech Service Credential into Github Secret
+
+- Navigate to GitHub > Settings > Secrets > Actions and add a `New repository secret`
+- Name: `VUE_APP_SPEECH_API_KEY`
+- Value: The Key of your Speech service you copied before
+- Add Secret
 
 ![](./images/light/vue-app-speech-api-key-secret.png#gh-light-mode-only)
 ![](./images/dark/vue-app-speech-api-key-secret.png#gh-dark-mode-only)
@@ -47,17 +56,17 @@ Now we will make our app understand when we talk 🗣️ to our Milligram Social
 
 ## Run Frontend Pipeline again
 
-- Now navigate to **Actions** > **pages** and **Re-run all jobs**
-![](./images/light/runworkflow.png#gh-light-mode-only)
-![](./images/dark/runworkflow.png#gh-dark-mode-only)
+- Now navigate to **Actions** > **pages** and **Run workflow**
+  ![](./images/light/runworkflow.png#gh-light-mode-only)
+  ![](./images/dark/runworkflow.png#gh-dark-mode-only)
 
-![](./images/light/rerunalljobs.png#gh-light-mode-only)
-![](./images/dark/rerunalljobs.png#gh-dark-mode-only)
+  ![](./images/light/rerunalljobs.png#gh-light-mode-only)
+  ![](./images/dark/rerunalljobs.png#gh-dark-mode-only)
 
-Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...`
+Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...` or open the App on your phone.
 
-Our frontend application should now have a new button with a selfie 🤩 symbol that allows us to take selfies and estimate how old we are.
-These selfies will __not__ be saved and will __not__ appear on the timeline or News Feed.
+Our frontend application should now have a new button with a microphone 🎙️ symbol that allows us to talk to our app in English and German and have our speech transcribed.
+Neither what you say not what is transcribed will be saved and will __not__ appear on the timeline or News Feed.
 
 ## Talk to me! What do you have to say? Play around!
 
@@ -65,8 +74,10 @@ So go ahead and say at least 5 sentences and tell us how great your application 
 
 Take also a book and read to your application or ask other people to talk to your phone, you might be surprised. 😁
 
-By default it will only understand German, if you want to change the language you could change the `Microphone.vue` on line 33 and change it to 
-`speechConfig.speechRecognitionLanguage = "en-US";`
+By default it will only understand German and English, if you want to change the language you could change the `Microphone.vue` on line 33 and change it to e.g. Ukrainian
+`speechConfig.speechRecognitionLanguage = "uk-UA";`
+
+As you can see the language is represented by four letters. For German it's de-DE, for English (USA) it is en-US and for Ukrainian it is uk-UA. [Here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) you find all languages possible.
 
 That's a wrap for our 2 days! Congrats! 🥳🙏
 

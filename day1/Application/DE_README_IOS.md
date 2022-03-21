@@ -207,7 +207,7 @@ Wir müssen der Web App mitteilen, wo sie unseren Speicherdienst finden kann. Di
 Es fehlt noch eine kleine Konfiguration. Unsere App nutzt einen fertigen Baustein damit Nutzer mit ihren Inhalten interagieren können. Aber dieser Baustein ist noch nicht installiert. Damit er installiert werden kann geben wir der Web App eine Konfiguration mit, die beim Start der App ausgeführt wird und es so ermöglicht, dass Nutzer mit den Daten unserer App interagieren können.
 
 - Navigiere dafür zu **_Konfiguration_** unter _Einstellungen_
-- Unter dem Tab **_Allgemeine Einstellungen_** findest du die _Stapeleinstellungen_. Das ist ein sehr gutes Beispiel für schlechte Übersetzung :wink:. Unser App Backend ist in Programmiersprache Python - genauer Python Version 3.8 geschrieben.
+- Unter dem Tab **_Allgemeine Einstellungen_** findest du die _Stapeleinstellungen_. Das ist ein sehr gutes Beispiel für schlechte Übersetzung 😉. Unser App Backend ist in Programmiersprache Python - genauer Python Version 3.8 geschrieben.
 - Unter **_Startbefehl_** gib `gunicorn -k uvicorn.workers.UvicornWorker` ein uns klick auf 💾 `Speichern`.
 
 ![Bild wie man im App Service den Startbefehl konfiguriert](.\images\light\AppServiceStartupCommand.png)
@@ -221,7 +221,7 @@ Um sicherzustellen, dass unsere Social-Media-App tatsächlich etwas kann, müsse
 - Wähle unter _Organisation_ deinen GitHub-Handle und unter _Repository_ dein `FemaleAIAppInnovationEcosystem` Repo sowie den `main` _Branch_ aus. Alles andere kann so bleiben wie es ist.
 - Drücke 💾 `Speichern`
 
-Sobald du auf "Speichern" klickst, erstellt der Dienst automatisch eine Workflow-Datei in deinem GitHub-Repository. Dieser Workflow wird sofort ausgeführt und nach etwa 2 Minuten ist deine Web-App fertig. Du kannst deine Bereitstellung auch unter der Registerkarte "Actions" in deinem GitHub Repository überprüfen. Die Farbe Grün ist immer ein gutes Zeichen. 😎
+Sobald du auf _Speichern_ klickst, erstellt der Dienst automatisch eine Workflow-Datei in deinem GitHub-Repository. Dieser Workflow wird sofort ausgeführt und nach etwa 2 Minuten ist deine Web-App fertig. Du kannst deine Bereitstellung auch unter der Registerkarte "Actions" in deinem GitHub Repository überprüfen. Die Farbe Grün ist immer ein gutes Zeichen. 😎
 
 ### Überprüfe, ob der Milligram Service korrekt läuft
 
@@ -243,7 +243,7 @@ Lasst uns eine Sekunde innehalten. Um sicherzustellen, dass du auf dem richtigen
 - Wähle den Endpunkt _GET/images_, klick auf `Try it Out` und dann auf `Execute`. Sobald du den 200 Response Code erhältst, hast du einen erfolgreich laufenden Dienst! Herzlichen Glückwunsch!
 
 :::tip
-📝 Schau dir auch gerne noch einmal die HTTP Response Codes bei [Wikipedia](https://de.wikipedia.org/wiki/HTTP-Statuscode) an. 2xx Codes drücken generell Erfolg aus, während 4xx Codes einen Fehler anzeigen. Ihr kennt bestimmt 404 - Not Found.
+📝 Schau dir auch gerne noch einmal die HTTP Response Codes bei [Wikipedia](https://de.wikipedia.org/wiki/HTTP-Statuscode) an. 2xx Codes drücken generell Erfolg aus, während 4xx und 5xx Codes unterschiedliche Arten von Fehlern anzeigen. Ihr kennt bestimmt 404 - Not Found.
 :::
 
 ### Azure Web App Url in GitHub Secrets einbinden

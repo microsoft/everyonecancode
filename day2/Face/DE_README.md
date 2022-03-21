@@ -45,20 +45,22 @@ _Azure Ressource: In Azure bezieht sich der Begriff Ressource auf eine Entität,
 ## Face Service Credential in GitHub Secrets integrieren
 
 Der API-Schlüssel ist eine eindeutige Kennung, die wir in unseren Code einfügen. Auf diese Weise können wir unseren Code mit der API verbinden und API-Aufrufe durchführen.
+- Navigiere zu deinem _Gesichtserkennungsdienst_ und da zu _Schlüssel und Endpunkt_ im Azure Portal
+- Kopiere dir den _Schlüssel_ und den _Endpunkt_ in einen Editor.
 ![Bild vom API Key des Face Services](./images/dark/milligram-face-api-access-keys.png)
 
 In _Action Secrets_ kannst du verschlüsselte Variablen speichern, die du in einer Organisation, einem Repository oder einem Repository-Environment erstellst. Diese Geheimnisse können in GitHub-Aktions-Workflows verwendet werden.
 
 - Navigiere zu den _Settings_ deines Repositorys in GitHub, dann zu _Secrets_ und _Actions_.
 - Klick auf _New repository secret_
-- Setz den Namen auf _VUE_APP_FACE_API_ENDPOINT_
+- Setz den Namen auf `VUE_APP_FACE_API_ENDPOINT`
 - Setz den Wert auf den Endpunkt deines FACE-Service: https://xxxxxxx.cognitiveservices.azure.com/
 - Füge das Geheimnis hinzu
   ![](./images/dark/vue-app-face-api-endpoint-secret.png#gh-dark-mode-only)
   ![](./images/light/vue-app-face-api-endpoint-secret.png#gh-light-mode-only)
 
 - Lege ein weiteres _New repository secret_ an
-- Setz den Namen auf _VUE_APP_FACE_API_KEY_
+- Setz den Namen auf `VUE_APP_FACE_API_KEY`
 - Setz den Wert auf den Schlüssel deines FACE-Services. Das sollte eine Reihe aus Zahlen und Buchstaben sein.
 - Füge das Geheimnis hinzu
   ![](./images/dark/vue-app-face-api-key-secret.png#gh-dark-mode-only)
