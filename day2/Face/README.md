@@ -28,7 +28,7 @@ The first step in creating our Face API is to create a new resource.
 
 *Azure Resource: In Azure, the term resource refers to an entity managed by Azure. For example, virtual machines, virtual networks, and storage accounts are all referred to as Azure resources.*
 
-- Click the **big "+" symbol** on the main page
+- Click the **+ Create a resource** on the home page
 - Pick the category **"AI + Machine Learning"**
 - Create a **Face** service.
 ![](./images/dark/create-face.png)
@@ -36,31 +36,41 @@ The first step in creating our Face API is to create a new resource.
 ## Create Face Cognitive Service
 
 - Choose your **Subscription**
-- Create a new **Resource Group** (A storage for multiple resources)
+- Choose your **Resource Group** (A storage for multiple resources)
 - Choose *West Europe* as **Region** (Location of datacenter where the service is deployed)
 - Create a **unique name** and select the **Standard S0 Pricing Tier**.
 ![](./images/dark/create-face-options.png)
+- Hit **Review + create** and than **Create** 
 
 ## Integrate Face Service Credential into GitHub Secrets
 
 The API key is a unique identifier, which we will add to our code. By doing so, we can connect our code to the API and perform API calls.
+- Navigate to the _Face_ service in the Azure portal and there to _Keys and Endpoint_
+- Copy the _Endpoint_ and the _Key_ into a notepad.
 ![](./images/dark/milligram-face-api-access-keys.png)
 
+
 In Action Secrets you can store encrypted variables that you create in an organization, repository, or repository environment. These secrets are available to use in GitHub Actions workflows.
-- Navigate to your repository's _Settings_, then to _Secrets_ and _Actions_
+- Navigate to your GitHub repository's _Settings_, then to _Secrets_ and _Actions_
 - Click on _New repository secret_
-- Set the name to _VUE_APP_FACE_API_ENDPOINT_
+- Set the name to `VUE_APP_FACE_API_ENDPOINT`
 - Set the value to your FACE service's endpoint: https://xxxxxxx.cognitiveservices.azure.com/
 - Add the secret
-![](./images/dark/vue-app-face-api-endpoint-secret.png#gh-dark-mode-only)
-![](./images/light/vue-app-face-api-endpoint-secret.png#gh-light-mode-only)
+  ![](./images/dark/vue-app-face-api-endpoint-secret.png#gh-dark-mode-only)
+  ![](./images/light/vue-app-face-api-endpoint-secret.png#gh-light-mode-only)
 
-![](./images/dark/vue-app-face-api-key-secret.png#gh-dark-mode-only)
-![](./images/light/vue-app-face-api-key-secret.png#gh-light-mode-only)
+- Create another _New repository secret_
+- Set the name to `VUE_APP_FACE_API_KEY`
+- Set the value to your FACE service's key that should be a string of letters and numbers.
+- Add the secret
+  ![](./images/dark/vue-app-face-api-key-secret.png#gh-dark-mode-only)
+  ![](./images/light/vue-app-face-api-key-secret.png#gh-light-mode-only)
 
 ## Run Frontend Pipeline again
 
-Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...`
+- Navigate to _Actions_, than to your _pages_ workflow and hit _run workflow_.
+
+- Wait a moment for your workflow to run and your changes to kick in. Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...` or restart the App on your phone.
 
 Our frontend application should now have a new button with a selfie 🤩 symbol that allows us to take selfies and estimate how old we are.
 These selfies will __not__ be saved and will __not__ appear on the timeline or News Feed.

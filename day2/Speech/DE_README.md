@@ -40,6 +40,8 @@ In dieser Aufgabe wirst du lernen:
 - Ähnlich wie bei der "Face"-Challenge, kopier diesmal aber nur den Schlüssel, um ihn in **Github Secrets** zu speichern
   ![](./images/light/copykeys.png)
 
+  > Der Schlüssel reicht hier aus, weil der Endpunkt von allen Sprachdiensten in Azure der gleiche ist (https://westeurope.api.cognitive.microsoft.com/sts/v1.0/issuetoken). Also so bereits in unserer App mit einprogrammiert ist.
+
 ## Speech Service Credential in Github Secret einbinden
 
 - Navigiere in GitHub wieder zu Settings > Secrets > Actions und füge ein `New repository secret` hinzu.
