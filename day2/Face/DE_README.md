@@ -11,7 +11,7 @@ In dieser Aufgabe lernst du:
 - wie man den API-Schlüssel mit GitHub Secrets an seine App weitergibt
 - wie man ein Selfie macht 😉.
 
-API - Anwendungsprogrammierschnittstelle: Ein Software-Vermittler, der es zwei Apps ermöglicht, miteinander zu kommunizieren_
+API - Anwendungsprogrammierschnittstelle: Ein Software-Vermittler, der es zwei Apps ermöglicht, miteinander zu kommunizieren\_
 
 ### Weitere Ressourcen:
 
@@ -26,7 +26,7 @@ API - Anwendungsprogrammierschnittstelle: Ein Software-Vermittler, der es zwei A
 
 Der erste Schritt bei der Erstellung unserer Face-API besteht darin, eine neue Ressource zu erstellen.
 
-_Azure Ressource: In Azure bezieht sich der Begriff Ressource auf eine Entität, die von Azure verwaltet wird. Zum Beispiel werden virtuelle Maschinen, virtuelle Netzwerke und Speicherkonten als Azure-Ressourcen bezeichnet.
+\_Azure Ressource: In Azure bezieht sich der Begriff Ressource auf eine Entität, die von Azure verwaltet wird. Zum Beispiel werden virtuelle Maschinen, virtuelle Netzwerke und Speicherkonten als Azure-Ressourcen bezeichnet.
 
 - Klick auf das **+ Ressource erstellen** auf der Hauptseite
 - Wähl die Kategorie **"KI + Machine Learning "**.
@@ -45,9 +45,10 @@ _Azure Ressource: In Azure bezieht sich der Begriff Ressource auf eine Entität,
 ## Face Service Credential in GitHub Secrets integrieren
 
 Der API-Schlüssel ist eine eindeutige Kennung, die wir in unseren Code einfügen. Auf diese Weise können wir unseren Code mit der API verbinden und API-Aufrufe durchführen.
+
 - Navigiere zu deinem _Gesichtserkennungsdienst_ und da zu _Schlüssel und Endpunkt_ im Azure Portal
 - Kopiere dir den _Schlüssel_ und den _Endpunkt_ in einen Editor.
-![Bild vom API Key des Face Services](./images/dark/milligram-face-api-access-keys.png)
+  ![Bild vom API Key des Face Services](./images/dark/milligram-face-api-access-keys.png)
 
 In _Action Secrets_ kannst du verschlüsselte Variablen speichern, die du in einer Organisation, einem Repository oder einem Repository-Environment erstellst. Diese Geheimnisse können in GitHub-Aktions-Workflows verwendet werden.
 
@@ -68,7 +69,7 @@ In _Action Secrets_ kannst du verschlüsselte Variablen speichern, die du in ein
 
 ## Führ die Frontend-Pipeline erneut aus
 
-- Navigiere erneut zu den _Actions_, dann zu dem _pages_ Workflow und lasse den Workflow noch einmal ausführen. 
+- Navigiere erneut zu den _Actions_, dann zu dem _pages_ Workflow und lasse den Workflow noch einmal ausführen.
 
 - Warte einen Moment bis der Workflow durchgelaufen ist und klick dann auf den Frontend-Link, der unter dem Deploy-Schritt in deiner Pipeline angezeigt wird: `https://<DeinGithubHandle>.github.io/...`
 
@@ -96,6 +97,5 @@ Sieh dir die vorbereitete App mit unseren Bildern an, damit du mit [Milligram](h
 _Tipps 📝_
 
 > - [Machine Learning in 5 Schwierigkeitsgraden](https://youtu.be/5q87K1WaoFI)
-> - [▶ 2](./WorkInProgress)
 
 [◀ vorherige Challenge](../../day1/Application/DE_README.md) | [🔼 Home](../../README.md) | [nächste Challenge ▶](../Speech/DE_README.md)

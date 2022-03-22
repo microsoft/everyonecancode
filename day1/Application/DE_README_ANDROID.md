@@ -237,7 +237,7 @@ Lasst uns eine Sekunde innehalten. Um sicherzustellen, dass du auf dem richtigen
 ![Test API Page](./images/dark/TestAPIGetImages.png)
 
 :::tip
-📝 Wenn du nicht genau weißt was ein Swagger ist, dann lies dir gerne etwas mehr dazu bei [Wikipedia](https://de.wikipedia.org/wiki/Swagger_(Software)) durch.
+📝 Wenn du nicht genau weißt was ein Swagger ist, dann lies dir gerne etwas mehr dazu bei [Wikipedia](<https://de.wikipedia.org/wiki/Swagger_(Software)>) durch.
 :::
 
 - Wähle den Endpunkt _GET/images_, klick auf `Try it Out` und dann auf `Execute`. Sobald du den 200 Response Code erhältst, hast du einen erfolgreich laufenden Dienst! Herzlichen Glückwunsch!
@@ -253,7 +253,8 @@ Dazu verwenden wir ein GitHub-Feature namens _Secrets_, in dem du deine Backend-
 
 - Wähle auf deiner Repository-Seite in GitHub _Settings_ und navigiere zu _Secrets_ > _Actions_
 - Füge ein _New repository secret_ mit dem Namen `VUE_APP_IMAGE_API_URL` hinzu und setz als Wert `<Deine WebApp URL>`
-> ⚠️⚠️ Deine URL sollte auf einen **/** enden. Sie sollte in etwa so aussehen: `https://xxxx.azurewebsites.net/`
+
+  > ⚠️⚠️ Deine URL sollte auf einen **/** enden. Sie sollte in etwa so aussehen: `https://xxxx.azurewebsites.net/`
 
   ![Github Frontend Url](./images/dark/FrontendAPIUrl.png#gh-dark-mode-only)
   ![Github Frontend Url](./images/light/FrontendAPIUrl.png#gh-light-mode-only)
@@ -299,12 +300,5 @@ Frag deinen Coach, wenn du nicht fertig geworden bist. Wir haben ein Back-up fü
 ### Verwende den vorbereiteten Milligram Backend Service
 
 Sieh dir die vorbereitete App mit unseren Bildern an, damit su mit [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a) herumspielen kannst.
-
-Interessante Links für dich zum Lesen:
-
-_Tipps 📝_
-
-> - [▶ 1](./WorkInProgress)
-> - [▶ 2](./WorkInProgress)
 
 [◀ vorherige Challenge](../Github/DE_README.md) | [🔼 Home](../../README.md) | [nächste Challenge ▶](../../day2/Face/DE_README.md)
