@@ -33,10 +33,11 @@ Here's the overview of the training week. Happy hacking!
 
 ## Hands on Guide - German/Deutsch
 
-- [Day 1 - Github - Create new Dreams](day1/Github/DE_README.md)
-- [Day 1 - Application on our Phone ](day1/Application/DE_README.md)
-- [Day 2 - Make our Application identify our face](day2/Face/DE_README.md)
-- [Day 2 - Make our Application understand our language](day2/Speech/DE_README.md)
+- [Day 1 - Github - Einen Accoutn erstellen](day1/Github/DE_README.md)
+- [Day 1 - Die Anwendung ins Netz und auf dein Handy bringen](day1/Application/DE_README.md)
+- [Day 2 - Die Anwendung um Gesichtserkennung erweitern](day2/Face/DE_README.md)
+- [Day 2 - Die Anwedung um Spracheerkennung erweitern](day2/Speech/DE_README.md)
+- [Die Anwendung auf dem eigenen Rechner testen und entwickeln - Optional](day1/Application/DE_VSCODE_README.md)
 
 ## Hands on Guide - English/Englisch
 
