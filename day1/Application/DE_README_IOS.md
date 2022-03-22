@@ -171,7 +171,7 @@ Unsere Azure Web App ist ein von Microsoft verwalteter Computer, auf dem du ganz
   - Betriebssystem: `Linux`
   - Region: `Westeuropa`
     ![Backend 0](images/dark/BackendApp0.png)
-- Erstellen Sie einen neuen App Service Plan und `<Wähl deinen eigenen Namen>`
+- Wähle den App Service Plan der zu deinem Nutzernamen passt.
   ![Backend 1](images/dark/BackendApp1.png)
 - Klick auf _Größe ändern_ und dann auf die Registerkarte _Dev/Test_ und wähle **F1** aus, das kostenlos ist, andernfalls können bei der Erstellung eines größeren Plans Gebühren entstehen
   ![Backend 2](images/dark/BackendApp2.png)
