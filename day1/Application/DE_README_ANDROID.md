@@ -124,7 +124,7 @@ Als Erstes kannst du dich nun bei deinem "Azure-Konto" anmelden.
 
 Geh im Browser auf [portal.azure.com](https://portal.azure.com/?l=de.de-de#home).
 
-[!Portal Azure Log In](./images/dark/AzurePortalLogin.png)
+![Portal Azure Log In](./images/dark/AzurePortalLogin.png)
 
 Jetzt melden wir uns mit unserem Azure-Konto an. Die Informationen für dein Azure-Konto findest du in der Excel Tabelle, die wir dir zur Verfügung gestellt haben, oder frag einfach deinen Trainer.
 
