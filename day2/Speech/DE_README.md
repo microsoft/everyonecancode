@@ -33,6 +33,7 @@ In dieser Aufgabe wirst du lernen:
 
 - Wähle den **Spracheingabe/-ausgabe** Service aus und klick auf **Erstellen**
 - Dein Abbonnement und die Ressourcengruppe sollten bereits richtig gesetzt sein. Wähle die Region **West Europa** aus und den **Standard S0**.
+⚠️ Achtung: Westeurope ist hier fest einprogrammiert - also stellt sicher, dass ihr die Region in Wersteurope erstellt
 - Wähle **Überprüfen + erstellen** und dann **Erstellen**.
 
   ![](./images/light/createspeechresource.png)
@@ -75,8 +76,8 @@ Also leg los und sag mindestens 5 Sätze und erzähl uns, wie toll dich deine Ap
 
 Nimm auch ein Buch und lese deiner App vor oder bitte andere Leute, mit deinem Telefon zu sprechen, du wirst überrascht sein. 😁
 
-Standardmäßig werden nur Deutsch und Englisch verstanden, wenn du die Sprache ändern möchtest, kannst du die `Microphone.vue` in Zeile 33 ändern und sie zum Beispiel auf Ukrainisch setzen:
-`speechConfig.speechRecognitionLanguage = "uk-UA";`.
+Standardmäßig werden nur Deutsch und Englisch verstanden, wenn du die Sprache ändern möchtest, kannst du in deinem Repo unter `frontend` > `scr` > `views` > `Microphone.vue` in Zeile 7 ändern und sie zum Beispiel auf Ukrainisch hinzufügen:
+`<option value="uk-UA">Ukrainian</option>`.
 
 Ihr seht, die Sprachen werden mit einem Kürzel gesetzt. Für Deutsch ist das de-DE, für Englisch (USA) ist das en-US und für Ukrainisch uk-UA. [Hier](https://docs.microsoft.com/de-de/azure/cognitive-services/speech-service/language-support) findest du alle anderen Sprachenkürzel.
 

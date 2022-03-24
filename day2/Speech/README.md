@@ -32,6 +32,7 @@ In this challenge you will learn how to:
 
 - Select **Speech** and hit **Create**
 - Your subscription and resource group should already be set. Select **Westeurope** as Region and **Standard S0**.
+⚠️ Attention: Westeurope is hardcoded - so make sure to have this resource in Westeurope
 - Hit **Review + create** and than **Create**
 ![](./images/light/createspeech.png)
 
@@ -74,8 +75,8 @@ So go ahead and say at least 5 sentences and tell us how great your application 
 
 Take also a book and read to your application or ask other people to talk to your phone, you might be surprised. 😁
 
-By default it will only understand German and English, if you want to change the language you could change the `Microphone.vue` on line 33 and change it to e.g. Ukrainian
-`speechConfig.speechRecognitionLanguage = "uk-UA";`
+By default it will only understand German and English, if you want to change the language you could change the repo in `frontend` > `scr` > `views` > `Microphone.vue` on line 7 and add e.g. Ukrainian
+`<option value="uk-UA">Ukrainian</option>`
 
 As you can see the language is represented by four letters. For German it's de-DE, for English (USA) it is en-US and for Ukrainian it is uk-UA. [Here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) you find all languages possible.
 
