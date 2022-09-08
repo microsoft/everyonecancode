@@ -17,6 +17,29 @@ resource "azurerm_storage_account" "images" {
   account_replication_type = "LRS"
 }
 
+resource "azurerm_storage_management_policy" "auto_delete" {
+  storage_account_id = azurerm_storage_account.images.id
+
+  rule {
+    name    = "delete_after_14_days"
+    enabled = true
+
+    actions {
+      version {
+        delete_after_days_since_creation = 14
+      }
+      base_blob {
+        delete_after_days_since_modification_greater_than = 14
+      }
+    }
+
+    filters {
+      blob_types   = ["blockBlob", "appendBlob"]
+      prefix_match = ["images/"]
+    }
+  }
+}
+
 resource "azurerm_storage_container" "images" {
   name = "images"
 
