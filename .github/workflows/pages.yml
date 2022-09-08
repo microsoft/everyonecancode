@@ -25,7 +25,7 @@ jobs:
           npm ci
           npm run build
         env:
-          BASE_URL: FemaleAIAppInnovationEcosystem
+          BASE_URL: anyonecancode
           VUE_APP_FACE_API_KEY: ${{ secrets.VUE_APP_FACE_API_KEY }}
           VUE_APP_SPEECH_API_KEY: ${{ secrets.VUE_APP_SPEECH_API_KEY }}
           VUE_APP_IMAGE_API_URL: ${{secrets.VUE_APP_IMAGE_API_URL}}
