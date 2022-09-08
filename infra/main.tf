@@ -60,3 +60,23 @@ resource "azurerm_linux_web_app" "backend" {
     }
   }
 }
+
+resource "azurerm_cognitive_account" "face" {
+  name = "anyonecancode-face"
+
+  location            = azurerm_resource_group.default.location
+  resource_group_name = azurerm_resource_group.default.name
+
+  kind     = "Face"
+  sku_name = "S0"
+}
+
+resource "azurerm_cognitive_account" "speech" {
+  name = "anyonecancode-speech"
+
+  location            = azurerm_resource_group.default.location
+  resource_group_name = azurerm_resource_group.default.name
+
+  kind     = "SpeechServices"
+  sku_name = "S0"
+}
