@@ -12,7 +12,7 @@ httptools==0.2.0
 idna==3.2
 isodate==0.6.0
 msrest==0.6.21
-oauthlib==3.1.1
+oauthlib==3.2.1
 pycparser==2.20
 pydantic==1.8.2
 python-multipart==0.0.5
