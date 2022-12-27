@@ -19,8 +19,8 @@ jobs:
 
       - uses: actions/setup-node@v2.1.5
         with:
-          node-version: '12'
-          
+          node-version: "14"
+
       - run: |
           npm ci
           npm run build
@@ -30,7 +30,7 @@ jobs:
           VUE_APP_SPEECH_API_KEY: ${{ secrets.VUE_APP_SPEECH_API_KEY }}
           VUE_APP_IMAGE_API_URL: ${{secrets.VUE_APP_IMAGE_API_URL}}
           VUE_APP_FACE_API_ENDPOINT: ${{secrets.VUE_APP_FACE_API_ENDPOINT}}
-          
+
         working-directory: frontend
       - name: Upload result of Application build
         uses: actions/upload-artifact@v2
