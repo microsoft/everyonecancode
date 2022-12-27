@@ -28,7 +28,13 @@
     "ENV{,/**}",
     "env.bak{,/**}",
     "venv.bak{,/**}",
-    ".vscode{,/**}"
+    ".vscode{,/**}",
+    "day1{,/**}",
+    "day2{,/**}",
+    "frontend{,/**}",
+    "helper_scripts{,/**}",
+    "img{,/**}",
+    "infra{,/**}"
   ],
   "python.formatting.provider": "black",
   "azureFunctions.deploySubpath": ".",
