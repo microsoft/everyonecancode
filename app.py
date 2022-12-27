@@ -24,6 +24,7 @@ shared_container_client = None
 
 
 async def get_container_client():
+    """Get a client to interact with the blob storage container."""
     global shared_container_client
     if not shared_container_client:
         connection_string = os.environ["CUSTOMCONNSTR_STORAGE"]
@@ -36,6 +37,7 @@ async def get_container_client():
 
 @app.exception_handler(KeyError)
 async def unicorn_exception_handler(request: Request, exc: KeyError):
+    """Handle missing environment variables."""
     if exc.args[0] == "CUSTOMCONNSTR_STORAGE":
         return JSONResponse(
             status_code=500,
@@ -65,11 +67,13 @@ class Image(BaseModel):
 
 @app.get("/")
 async def redirect_to_docs():
+    """Redirect to the docs page."""
     return RedirectResponse("/docs")
 
 
 @app.get("/images", response_model=List[Image])
 async def list_images(container_client=Depends(get_container_client)):
+    """List all images from a blob storage container."""
     try:
         blobs = [
             Image(created_at=b.last_modified, image_url=f"/images/{quote(b.name)}")
@@ -88,6 +92,7 @@ async def list_images(container_client=Depends(get_container_client)):
 
 @app.get("/images/{image_name}")
 async def images(image_name, container_client=Depends(get_container_client)):
+    """Stream an image from the blob storage container."""
     try:
         blob_container_client = container_client.get_blob_client(image_name)
         blob = blob_container_client.download_blob()
@@ -101,6 +106,7 @@ async def images(image_name, container_client=Depends(get_container_client)):
 
 @app.delete("/images/{image_name}")
 async def delete(image_name, container_client=Depends(get_container_client)):
+    """Delete an image from the blob storage container."""
     try:
         blob_container_client = container_client.get_blob_client(image_name)
         blob_container_client.delete_blob()
@@ -113,6 +119,7 @@ async def delete(image_name, container_client=Depends(get_container_client)):
 async def upload(
     file: UploadFile = File(...), container_client=Depends(get_container_client)
 ):
+    """Upload an image to the blob storage container."""
     container_client.upload_blob(
         file.filename, file.file, blob_type="BlockBlob", overwrite=True
     )
@@ -120,4 +127,5 @@ async def upload(
 
 
 if __name__ == "__main__":
+    """Run the app locally for testing."""
     uvicorn.run(app, port=8000)
