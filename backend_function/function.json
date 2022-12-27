@@ -6,7 +6,7 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "methods": ["get", "put"],
+      "methods": ["get", "put", "post"],
       "route": "{*route}"
     },
     {
