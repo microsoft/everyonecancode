@@ -2,13 +2,17 @@ provider "azurerm" {
   features {}
 }
 
+resource "random_id" "suffix" {
+  byte_length = 2
+}
+
 resource "azurerm_resource_group" "default" {
-  name     = "anyonecancode-rg"
+  name     = "anyonecancode-rg-${random_id.suffix.hex}"
   location = "West Europe"
 }
 
 resource "azurerm_storage_account" "images" {
-  name = "anyonecancodeimages"
+  name = "anyonecancodeimages${random_id.suffix.hex}"
 
   location            = azurerm_resource_group.default.location
   resource_group_name = azurerm_resource_group.default.name
@@ -47,7 +51,7 @@ resource "azurerm_storage_container" "images" {
 }
 
 resource "azurerm_service_plan" "default" {
-  name = "anyonecancode-sp"
+  name = "anyonecancode-sp-${random_id.suffix.hex}"
 
   location            = azurerm_resource_group.default.location
   resource_group_name = azurerm_resource_group.default.name
@@ -57,7 +61,7 @@ resource "azurerm_service_plan" "default" {
 }
 
 resource "azurerm_linux_web_app" "backend" {
-  name = "anyonecancode-backend"
+  name = "anyonecancode-backend-${random_id.suffix.hex}"
 
   location            = azurerm_resource_group.default.location
   resource_group_name = azurerm_resource_group.default.name
@@ -84,18 +88,8 @@ resource "azurerm_linux_web_app" "backend" {
   }
 }
 
-resource "azurerm_cognitive_account" "face" {
-  name = "anyonecancode-face"
-
-  location            = azurerm_resource_group.default.location
-  resource_group_name = azurerm_resource_group.default.name
-
-  kind     = "Face"
-  sku_name = "S0"
-}
-
 resource "azurerm_cognitive_account" "speech" {
-  name = "anyonecancode-speech"
+  name = "anyonecancode-speech-${random_id.suffix.hex}"
 
   location            = azurerm_resource_group.default.location
   resource_group_name = azurerm_resource_group.default.name
