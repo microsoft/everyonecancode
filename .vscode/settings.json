@@ -30,5 +30,11 @@
     "venv.bak{,/**}",
     ".vscode{,/**}"
   ],
-  "python.formatting.provider": "black"
+  "python.formatting.provider": "black",
+  "azureFunctions.deploySubpath": ".",
+  "azureFunctions.scmDoBuildDuringDeployment": true,
+  "azureFunctions.pythonVenv": ".venv",
+  "azureFunctions.projectLanguage": "Python",
+  "azureFunctions.projectRuntime": "~4",
+  "debug.internalConsoleOptions": "neverOpen"
 }

@@ -10,6 +10,7 @@ uvloop = "*"
 fastapi = "*"
 httptools = "*"
 python-multipart = "*"
+nest-asyncio = "*"
 
 [dev-packages]
 black = "*"

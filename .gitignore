@@ -1,3 +1,5 @@
+.envrc
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -274,3 +276,4 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+.python_packages
