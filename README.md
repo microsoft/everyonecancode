@@ -10,6 +10,8 @@
 
 <hr>
 
+## [Click here to take a look at the sample app](https://microsoft.github.io/anyonecancode/app/)
+
 ## Agenda for the Anyone can Code workshop
 
 On day 1 we will create our own GitHub Account and use this repository as our baseline. We will then use Azure Web Apps to host our Application. Further we play a bit around with the frontend to change our personal Headlines for our App and to understand the basic underlying concept of Azure. Further, we will use Azure Functions to automate our tasks. Storages and Databases are used to store our images or our data. All those Azure Services are used behind the scenes and can be consumed by our application aka personal App.
