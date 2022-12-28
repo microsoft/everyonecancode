@@ -16,12 +16,29 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import {
-  SpeechConfig,
+
+import "microsoft-cognitiveservices-speech-sdk/distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle";
+import type * as SpeechSDKType from "microsoft-cognitiveservices-speech-sdk/distrib/lib/microsoft.cognitiveservices.speech.sdk";
+
+declare global {
+  interface Window {
+    SpeechSDK: {
+      AudioConfig: typeof SpeechSDKType.AudioConfig;
+      OutputFormat: typeof SpeechSDKType.OutputFormat;
+      Recognizer: typeof SpeechSDKType.Recognizer;
+      SpeechConfig: typeof SpeechSDKType.SpeechConfig;
+      SpeechRecognizer: typeof SpeechSDKType.SpeechRecognizer;
+    };
+  }
+}
+const {
   AudioConfig,
+  OutputFormat,
+  Recognizer,
+  SpeechConfig,
   SpeechRecognizer,
-  SpeechRecognitionEventArgs,
-} from "microsoft-cognitiveservices-speech-sdk";
+} = window.SpeechSDK;
+
 import { speechApiKey } from "../settings";
 
 import NavBarBack from "../components/NavBarBack.vue";
