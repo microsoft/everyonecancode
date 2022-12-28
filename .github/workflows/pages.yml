@@ -23,7 +23,7 @@ jobs:
 
       - run: |
           npm ci
-          npm run build --base=$BASE_URL
+          npm run build -- --base=$BASE_URL
         env:
           BASE_URL: anyonecancode/app
           VUE_APP_FACE_API_KEY: ${{ secrets.VUE_APP_FACE_API_KEY }}
