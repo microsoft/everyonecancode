@@ -1,14 +1,9 @@
 title: Anyone Can Code
-patterns: ['**/*.md', '!**/node_modules', '!templates/**']
+patterns: ["**/*.md", "!**/node_modules", "!templates/**", "!frontend/**"]
 base: /anyonecancode/
 themeConfig:
-  repo: 'microsoft/anyonecancode'
+  repo: "microsoft/anyonecancode"
   editLinks: true
   sidebar:
-    [
-      ['./', 'Home'],
-      './day1/Github',
-      './day1/Application',
-      './day2/Speech',
-    ]
-plugins: [['vuepress-plugin-code-copy', true]]
+    [["./", "Home"], "./day1/Github/", "./day1/Application/", "./day2/Speech/"]
+plugins: [["vuepress-plugin-code-copy", true]]

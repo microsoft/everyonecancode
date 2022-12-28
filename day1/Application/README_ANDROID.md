@@ -219,7 +219,7 @@ There is still a small configuration missing. Our app uses a ready-made module s
 - Under the tab **_General settings_** you should find the _Stack settings_. For our Backend App we are working with the programming language Python - more specifically Pythin 3.8.
 - Behind **_Startup Command_** enter `gunicorn -k uvicorn.workers.UvicornWorker` and hit _Save_.
 
-![How to configure the Startup Command of the Web Application](.\images\light\AppServiceStartupCommand.png)
+![How to configure the Startup Command of the Web Application](./images/light/AppServiceStartupCommand.png)
 
 ### Deploy Milligram Backend Code to Azure Web App via GitHub Actions
 

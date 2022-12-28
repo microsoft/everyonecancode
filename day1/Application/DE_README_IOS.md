@@ -210,7 +210,7 @@ Es fehlt noch eine kleine Konfiguration. Unsere App nutzt einen fertigen Baustei
 - Unter dem Tab **_Allgemeine Einstellungen_** findest du die _Stapeleinstellungen_. Das ist ein sehr gutes Beispiel für schlechte Übersetzung 😉. Unser App Backend ist in Programmiersprache Python - genauer Python Version 3.8 geschrieben.
 - Unter **_Startbefehl_** gib `gunicorn -k uvicorn.workers.UvicornWorker` ein uns klick auf 💾 `Speichern`.
 
-![Bild wie man im App Service den Startbefehl konfiguriert](.\images\light\AppServiceStartupCommand.png)
+![Bild wie man im App Service den Startbefehl konfiguriert](./images/light/AppServiceStartupCommand.png)
 
 ### Milligram-Backend-Code über GitHub Actions in die Azure Web App einbringen
 

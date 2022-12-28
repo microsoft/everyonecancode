@@ -11,7 +11,7 @@ In dieser Aufgabe lernst du:
 - wie man den API-Schlüssel mit GitHub Secrets an seine App weitergibt
 - wie man ein Selfie macht 😉.
 
-API - Anwendungsprogrammierschnittstelle: Ein Software-Vermittler, der es zwei Apps ermöglicht, miteinander zu kommunizieren\_
+API - Anwendungsprogrammierschnittstelle: Ein Software-Vermittler, der es zwei Apps ermöglicht, miteinander zu kommunizieren.
 
 ### Weitere Ressourcen:
 
@@ -26,7 +26,7 @@ API - Anwendungsprogrammierschnittstelle: Ein Software-Vermittler, der es zwei A
 
 Der erste Schritt bei der Erstellung unserer Face-API besteht darin, eine neue Ressource zu erstellen.
 
-\_Azure Ressource: In Azure bezieht sich der Begriff Ressource auf eine Entität, die von Azure verwaltet wird. Zum Beispiel werden virtuelle Maschinen, virtuelle Netzwerke und Speicherkonten als Azure-Ressourcen bezeichnet.
+Azure Ressource: In Azure bezieht sich der Begriff Ressource auf eine Entität, die von Azure verwaltet wird. Zum Beispiel werden virtuelle Maschinen, virtuelle Netzwerke und Speicherkonten als Azure-Ressourcen bezeichnet.
 
 - Klick auf das **+ Ressource erstellen** auf der Hauptseite
 - Wähl die Kategorie **"KI + Machine Learning "**.
