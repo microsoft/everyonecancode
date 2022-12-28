@@ -38,7 +38,7 @@ In this challenge you will learn how to:
 
 ![](./images/light/createspeechresource.png)
 
-- After the resouce is created, similar to the "Speech" challenge, copy this time only the key to store it in **Github Secrets**
+- After the resource is created, similar to the "Speech" challenge, copy this time only the key to store it in **Github Secrets**
 ![](./images/light/copykeys.png)
 
 > This time the key will suffice since the endpoint for all Speech services are always the same (https://westeurope.api.cognitive.microsoft.com/sts/v1.0/issuetoken).
