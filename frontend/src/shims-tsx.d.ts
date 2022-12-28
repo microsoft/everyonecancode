@@ -1,4 +1,5 @@
 import Vue, { VNode } from "vue";
+import "vite/client";
 
 declare global {
   namespace JSX {

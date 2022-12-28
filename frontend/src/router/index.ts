@@ -3,7 +3,6 @@ import VueRouter from "vue-router";
 import VuePageStack from "vue-page-stack";
 import Home from "../views/Home.vue";
 import Camera from "../views/Camera.vue";
-import Recorder from "../views/Microphone.vue";
 import FaceAI from "../views/FaceAI.vue";
 import EditProfile from "../views/EditProfile.vue";
 
@@ -23,7 +22,7 @@ const routes = [
   {
     path: "/microphone",
     name: "microphone",
-    component: Recorder,
+    component: () => import("../views/Microphone.vue"),
   },
   {
     path: "/faceai",
@@ -38,7 +37,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  base: process.env.BASE_URL,
+  base: import.meta.env.BASE_URL,
   routes,
 });
 
