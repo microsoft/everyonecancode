@@ -26,10 +26,10 @@ jobs:
           npm run build -- --base=$BASE_URL
         env:
           BASE_URL: anyonecancode/app
-          VITE_FACE_API_KEY: ${{ secrets.VUE_APP_FACE_API_KEY }}
-          VITE_SPEECH_API_KEY: ${{ secrets.VUE_APP_SPEECH_API_KEY }}
-          VITE_IMAGE_API_URL: ${{secrets.VUE_APP_IMAGE_API_URL}}
-          VITE_FACE_API_ENDPOINT: ${{secrets.VUE_APP_FACE_API_ENDPOINT}}
+          VITE_FACE_API_KEY: ${{ secrets.VITE_FACE_API_KEY }}
+          VITE_SPEECH_API_KEY: ${{ secrets.VITE_SPEECH_API_KEY }}
+          VITE_IMAGE_API_URL: ${{secrets.VITE_IMAGE_API_URL}}
+          VITE_FACE_API_ENDPOINT: ${{secrets.VITE_FACE_API_ENDPOINT}}
 
         working-directory: frontend
       - name: Upload result of Application build
