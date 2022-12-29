@@ -45,7 +45,7 @@ import NavBarBack from "../components/NavBarBack.vue";
 
 const region = "westeurope";
 
-var recognizer: SpeechRecognizer;
+var recognizer: SpeechSDKType.SpeechRecognizer;
 
 @Component({
   components: { NavBarBack },
@@ -64,7 +64,10 @@ export default class Microphone extends Vue {
     recognizer.startContinuousRecognitionAsync();
   }
 
-  onRegonitionResult(sender: any, event: SpeechRecognitionEventArgs): void {
+  onRegonitionResult(
+    sender: any,
+    event: SpeechSDKType.SpeechRecognitionEventArgs
+  ): void {
     this.text = event.result.text;
   }
 
