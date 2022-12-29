@@ -23,7 +23,7 @@ const routes = [
   {
     path: "/microphone",
     name: "microphone",
-    component: Microphone,
+    component: () => import("../views/Microphone.vue"),
   },
   {
     path: "/faceai",

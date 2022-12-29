@@ -17,27 +17,36 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-import "microsoft-cognitiveservices-speech-sdk/distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle";
-import type * as SpeechSDKType from "microsoft-cognitiveservices-speech-sdk/distrib/lib/microsoft.cognitiveservices.speech.sdk";
-
-declare global {
-  interface Window {
-    SpeechSDK: {
-      AudioConfig: typeof SpeechSDKType.AudioConfig;
-      OutputFormat: typeof SpeechSDKType.OutputFormat;
-      Recognizer: typeof SpeechSDKType.Recognizer;
-      SpeechConfig: typeof SpeechSDKType.SpeechConfig;
-      SpeechRecognizer: typeof SpeechSDKType.SpeechRecognizer;
-    };
-  }
-}
-const {
+// This works after `npm run build`:
+import {
   AudioConfig,
-  OutputFormat,
-  Recognizer,
   SpeechConfig,
   SpeechRecognizer,
-} = window.SpeechSDK;
+  SpeechRecognitionEventArgs,
+} from "microsoft-cognitiveservices-speech-sdk";
+
+// This works on local machines:
+// import "microsoft-cognitiveservices-speech-sdk/distrib/browser/microsoft.cognitiveservices.speech.sdk.bundle";
+// import type * as SpeechSDKType from "microsoft-cognitiveservices-speech-sdk/distrib/lib/microsoft.cognitiveservices.speech.sdk";
+
+// declare global {
+//   interface Window {
+//     SpeechSDK: {
+//       AudioConfig: typeof SpeechSDKType.AudioConfig;
+//       OutputFormat: typeof SpeechSDKType.OutputFormat;
+//       Recognizer: typeof SpeechSDKType.Recognizer;
+//       SpeechConfig: typeof SpeechSDKType.SpeechConfig;
+//       SpeechRecognizer: typeof SpeechSDKType.SpeechRecognizer;
+//     };
+//   }
+// }
+// const {
+//   AudioConfig,
+//   OutputFormat,
+//   Recognizer,
+//   SpeechConfig,
+//   SpeechRecognizer,
+// } = window.SpeechSDK;
 
 import { speechApiKey } from "../settings";
 
@@ -45,7 +54,7 @@ import NavBarBack from "../components/NavBarBack.vue";
 
 const region = "westeurope";
 
-var recognizer: SpeechSDKType.SpeechRecognizer;
+var recognizer: SpeechRecognizer;
 
 @Component({
   components: { NavBarBack },
@@ -64,10 +73,7 @@ export default class Microphone extends Vue {
     recognizer.startContinuousRecognitionAsync();
   }
 
-  onRegonitionResult(
-    sender: any,
-    event: SpeechSDKType.SpeechRecognitionEventArgs
-  ): void {
+  onRegonitionResult(sender: any, event: SpeechRecognitionEventArgs): void {
     this.text = event.result.text;
   }
 
