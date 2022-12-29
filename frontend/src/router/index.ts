@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import VuePageStack from "vue-page-stack";
 import Home from "../views/Home.vue";
 import Camera from "../views/Camera.vue";
+import Microphone from "../views/Microphone.vue";
 import FaceAI from "../views/FaceAI.vue";
 import EditProfile from "../views/EditProfile.vue";
 
@@ -22,7 +23,7 @@ const routes = [
   {
     path: "/microphone",
     name: "microphone",
-    component: () => import("../views/Microphone.vue"),
+    component: Microphone,
   },
   {
     path: "/faceai",
