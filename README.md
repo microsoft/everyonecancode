@@ -10,7 +10,7 @@
 
 <hr>
 
-## [Click here to take a look at the sample app](https://microsoft.github.io/anyonecancode/app/)
+## [Click here to take a look at the sample app](https://microsoft.github.io/anyonecancode/)
 
 ## Agenda for the Anyone can Code workshop
 
@@ -33,15 +33,15 @@ This workshop consists of multiple challenges, you have to complete. Your traine
 
 Here's the overview of the training week. Happy hacking!
 
-## Hands on Guide - English/Englisch
+## Hands on Guide - English
 
-- [Day 1 - Github - Create new Dreams](instructions/day1/Github/README.md)
+- [Day 1 - GitHub - Create new Dreams](instructions/day1/Github/README.md)
 - [Day 1 - Application on our Phone ](instructions/day1/Application/README.md)
 - [Day 2 - Make our Application understand our language](instructions/day2/Speech/README.md)
 
 ## Goal of the Anyone can Code Program for FEMALES in the ENTIRE ECOSYSTEM over Generations
 
-The goal is to show all Females of any generation, that anything is possible also in the area of Tech and to light the fire in each of every Female to find the spark in Tech. We want to connect all generations of Females whether they are pupils, university students or professionals already performing in jobs. Further we want to connect those generations which haven't gotten in touch with Tech yet since we noticed that there is a huge gap between these communities. We believe there aren't enough Female Tech Heros yet.
+The goal is to show all Females of any generation, that anything is possible also in the area of Tech and to light the fire in each of every Female to find the spark in Tech. We want to connect all generations of Females whether they are pupils, university students or professionals already performing in jobs. Further we want to connect those generations which haven't gotten in touch with Tech yet since we noticed that there is a huge gap between these communities. We believe there aren't enough Female Tech Heroes yet.
 
 However, it is possible to dive into Tech at any age, so we thought of starting with something that we are all familiar with - Applications on our phones. Together we will build an app on our phones which can take pictures and which we can talk to. And to put it in other (tech) words: _how to build a progressive Web App on our Phone which uses pre-trained Machine Learning models as restful endpoints_. The Application uses so-called REST APIs (don't worry we will explain this term later) and we will use Azure to meet the challenge to get it running.
 To close the gap, we will first start with getting the application up and running and then secondly integrate the Machine Learning REST APIs. As a place where we can create our Tech Dreams we will use GitHub to create our space of collaboration as our motto always is: Sharing is Caring!

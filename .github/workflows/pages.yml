@@ -25,7 +25,7 @@ jobs:
           npm ci
           npm run build -- --base=$BASE_URL
         env:
-          BASE_URL: anyonecancode/app
+          BASE_URL: anyonecancode
           VITE_FACE_API_KEY: ${{ secrets.VITE_FACE_API_KEY }}
           VITE_SPEECH_API_KEY: ${{ secrets.VITE_SPEECH_API_KEY }}
           VITE_IMAGE_API_URL: ${{secrets.VITE_IMAGE_API_URL}}
@@ -74,12 +74,12 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: static-webapp
-          path: dist/app
+          path: dist
       - name: Download build of static website
         uses: actions/download-artifact@v2
         with:
           name: static-website
-          path: dist
+          path: dist/instructions
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
