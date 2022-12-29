@@ -24,7 +24,7 @@ In this challenge you will learn how to:
 
 - Navigate to the **Resource Group** we created during the "Speech" challenge
 - Create a new **Resource** and search for **Speech**
-![](./images/light/createresource.png)
+  ![](./images/light/createresource.png)
 
 ![](./images/light/selectspeech.png)
 
@@ -32,14 +32,14 @@ In this challenge you will learn how to:
 
 - Select **Speech** and hit **Create**
 - Your subscription and resource group should already be set. Select **Westeurope** as Region and **Standard S0**.
-⚠️ Attention: Westeurope is hardcoded - so make sure to have this resource in Westeurope
+  ⚠️ Attention: Westeurope is hardcoded - so make sure to have this resource in Westeurope
 - Hit **Review + create** and than **Create**
-![](./images/light/createspeech.png)
+  ![](./images/light/createspeech.png)
 
 ![](./images/light/createspeechresource.png)
 
 - After the resource is created, similar to the "Speech" challenge, copy this time only the key to store it in **Github Secrets**
-![](./images/light/copykeys.png)
+  ![](./images/light/copykeys.png)
 
 > This time the key will suffice since the endpoint for all Speech services are always the same (https://westeurope.api.cognitive.microsoft.com/sts/v1.0/issuetoken).
 
@@ -53,7 +53,7 @@ In this challenge you will learn how to:
 ![](./images/light/vue-app-speech-api-key-secret.png#gh-light-mode-only)
 ![](./images/dark/vue-app-speech-api-key-secret.png#gh-dark-mode-only)
 
-Now we will make our app understand when we talk 🗣️ to our Milligram Social Media App. 
+Now we will make our app understand when we talk 🗣️ to our Milligram Social Media App.
 
 ## Run Frontend Pipeline again
 
@@ -67,7 +67,7 @@ Now we will make our app understand when we talk 🗣️ to our Milligram Social
 Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...` or open the App on your phone.
 
 Our frontend application should now have a new button with a microphone 🎙️ symbol that allows us to talk to our app in English and German and have our speech transcribed.
-Neither what you say not what is transcribed will be saved and will __not__ appear on the timeline or News Feed.
+Neither what you say not what is transcribed will be saved and will **not** appear on the timeline or News Feed.
 
 ## Talk to me! What do you have to say? Play around!
 
@@ -82,7 +82,6 @@ As you can see the language is represented by four letters. For German it's de-D
 
 That's a wrap for our 2 days! Congrats! 🥳🙏
 
-
 ## Overcharged? We got you covered
 
 Ask your coach if you did not succeed. We have you covered with a back up. ⚠️
@@ -96,13 +95,14 @@ Look at the prepared application with our pictures for you to play around [Milli
 Start your own Coding Journey or try out an Azure certification as we did using Udacity, Udemy, Pluralsight, Edx etc., make sure to check out the links posted below:
 
 _Tipps 📝_
-  > - [Programming Cours](https://www.udacity.com/course/intro-to-programming-nanodegree--nd000)
-  > - Learning Paths
+
+> - [Programming Course](https://www.udacity.com/course/intro-to-programming-nanodegree--nd000)
+> - Learning Paths
 
 Be sure to check out our Microsoft Programs for you:
 
- - MS Aspire Program
- - Internships at MS
- - Professional Careers at Microsoft
+- MS Aspire Program
+- Internships at MS
+- Professional Careers at Microsoft
 
-[◀ Previous challenge](../Face/README.md) | [🔼 Home](../../README.md)
+[◀ Previous challenge](../../day1/Application/README.md) | [🔼 Home](../../../README.md)

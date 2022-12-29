@@ -1,4 +1,4 @@
-# Day 1: Deployment of Miligram application on Azure with Github Actions
+# Day 1: Deployment of Milligram application on Azure with GitHub Actions
 
 ⏲️ _Est. time to complete: 60 min._ ⏲️
 
@@ -40,7 +40,6 @@ interact with Milligrams services.
 
 <details>
 <summary>What does front end mean?</summary>
-<br>
 
 Let's imagine a simple car. Everything you see - the seats, the roof, the floor, the user interface (dashboard, steering wheel, etc.) - that's all **front end**.
 Then you open the hood: and there it is! The **backend** and the **API**. You can see the engine, the transmission and some other elements.
@@ -61,15 +60,15 @@ get started with the actions.
 
 _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories) contains all of your project's files and each file's revision history. You can discuss and manage your project's work within the repository._
 
-![Enable Github Actions](images/dark/EnableGithubActions.png#gh-dark-mode-only)
-![Enable Github Actions](images/light/EnableGithubActions.png#gh-light-mode-only)
+![Enable GitHub Actions](images/dark/EnableGithubActions.png#gh-dark-mode-only)
+![Enable GitHub Actions](images/light/EnableGithubActions.png#gh-light-mode-only)
 
 ### Run GitHub Actions
 
 - In the **Actions** tab of your repository, click on the **pages** workflow.
 - Open the **Run Workflow** dropdown and click the **Run Workflow** button to confirm the workflow execution.
 
-Now observe how the workflow is beeing run and take a look at the individual steps that are run for you by GitHub.
+Now observe how the workflow is being run and take a look at the individual steps that are run for you by GitHub.
 
 ![Run workflow](images/dark/FrontendRunWorkflow.png#gh-dark-mode-only)
 ![Run workflow](images/light/FrontendRunWorkflow.png#gh-light-mode-only)
@@ -96,13 +95,13 @@ and see that it is stored even if you refresh the browser.
 
 ### Open GitHub Page on your phone
 
-Milligram is a fun litte app similar to photo based social media that you might
+Milligram is a fun little app similar to photo based social media that you might
 be familiar with. Of course we want to use it on our mobile phones so we can use
 the cameras to take awesome selfies and picture for Milligram. Its main
 features are:
 
 - Display simple GitHub account information from your own profile
-- Take fotos and add them to the stream of images
+- Take photos and add them to the stream of images
 - Check your age and facial expression using Azure Face Recognition (implemented on day 2)
 - Transcribe sentences you speak using Azure Speech Service (implemented on day2)
 
@@ -114,7 +113,7 @@ features are:
 
 On modern mobile phone you can "install" webapps on you homescreen to make them
 easier accessible and make them look more like an app from the official
-Appstores.
+Appstore.
 
 - Open the browser menu to add the website to your homescreen
   ![Add to homescreen 2](images/ios/FrontendHomescreen1.jpg)
@@ -199,7 +198,7 @@ Now let's connect our Application with our Storage that you can take pictures on
 We need to tell the Web Application where it can find our storage service. The application can take external configurations to configure the connection to the storage account.
 
 - For this reason navigate to your _Storage Account_ again. You should be able to find it via the search bar in the top either by searching the name or just Storage account.
-- Under _Access keys_ youcan find the _Connection string_ from our Storage Account. Hit the 👀*Show keys* button so cou are able to copy it's value to e.g. a notepad.
+- Under _Access keys_ you can find the _Connection string_ from our Storage Account. Hit the 👀*Show keys* button so are able to copy it's value to e.g. a notepad.
 
 ![](./images/dark/SecretAccessKeys.png)
 
@@ -216,7 +215,7 @@ We need to tell the Web Application where it can find our storage service. The a
 There is still a small configuration missing. Our app uses a ready-made module so that users can interact with their content. But this module is not installed yet. In order for it to be installed, we provide the web app with a configuration that is executed when the app is launched, allowing users to interact with our app's data.
 
 - Navigate to **_Configuration_** under _Settings_
-- Under the tab **_General settings_** you should find the _Stack settings_. For our Backend App we are working with the programming language Python - more specifically Pythin 3.8.
+- Under the tab **_General settings_** you should find the _Stack settings_. For our Backend App we are working with the programming language Python - more specifically Python 3.8.
 - Behind **_Startup Command_** enter `gunicorn -k uvicorn.workers.UvicornWorker` and hit _Save_.
 
 ![How to configure the Startup Command of the Web Application](./images/light/AppServiceStartupCommand.png)
@@ -255,18 +254,14 @@ Let's pause a second. To make sure that you are on track, test your application 
 📝 Look at the HTTP Response Codes at [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). 2xx Codes generally mean success, where as 4xx and 5xx Codes show different kinds of errors. You probably know 404 - Not Found.
 :::
 
-### Integrate Azure Web App Url in GitHub Secrets
+### Integrate Azure Web App URL in GitHub Secrets
 
 Now that we are sure that our backend service works as expected, we can bring everything together.
 To do this, we will use a GitHub Feature called _Secrets_ where you can store your backend URL to make your frontend talk to the backend service.
 
 - On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_
 - Add a _New repository secret_ named `VUE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`
-  > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/`
-  > ![Github Frontend Url](./images/dark/FrontendAPIUrl.png#gh-dark-mode-only)
-  > ![Github Frontend Url](./images/light/FrontendAPIUrl.png#gh-light-mode-only)
-  > ![Github Secrets Create](./images/dark/CreateSecret.png#gh-dark-mode-only)
-  > ![Github Secrets Create](./images/light/CreateSecret.png#gh-light-mode-only)
+  > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/` > ![GitHub Frontend URL](./images/dark/FrontendAPIUrl.png#gh-dark-mode-only) > ![GitHub Frontend URL](./images/light/FrontendAPIUrl.png#gh-light-mode-only) > ![GitHub Secrets Create](./images/dark/CreateSecret.png#gh-dark-mode-only) > ![GitHub Secrets Create](./images/light/CreateSecret.png#gh-light-mode-only)
 
 ### Run Frontend Pipeline again
 
@@ -274,18 +269,18 @@ For the change of adding the secret taking effect in the frontend we need to run
 
 - Navigate to the _Actions_ tab, select the _pages_ workflow and rerun the workflow:
 
-![Github Frontend Workflow](./images/dark/RunWorkflowFrontend.png#gh-dark-mode-only)
-![Github Frontend Workflow](./images/light/RunWorkflowFrontend.png#gh-light-mode-only)
+![GitHub Frontend Workflow](./images/dark/RunWorkflowFrontend.png#gh-dark-mode-only)
+![GitHub Frontend Workflow](./images/light/RunWorkflowFrontend.png#gh-light-mode-only)
 
 - Once the workflow is started you will see the workflow running (You can get to the view below by clicking on the workflow run).
 
-![Github Frontend Workflow Progress](./images/dark/FrontendInProgress.png#gh-dark-mode-only)
-![Github Frontend Workflow Progress](./images/light/FrontendInProgress.png#gh-light-mode-only)
+![GitHub Frontend Workflow Progress](./images/dark/FrontendInProgress.png#gh-dark-mode-only)
+![GitHub Frontend Workflow Progress](./images/light/FrontendInProgress.png#gh-light-mode-only)
 
 - and finally finishing up the Milligram Service.
 
-![Github Frontend Workflow Done](./images/dark/FrontendDone.png#gh-dark-mode-only)
-![Github Frontend Workflow Done](./images/light/FrontendDone.png#gh-light-mode-only)
+![GitHub Frontend Workflow Done](./images/dark/FrontendDone.png#gh-dark-mode-only)
+![GitHub Frontend Workflow Done](./images/light/FrontendDone.png#gh-light-mode-only)
 
 ### Open the App - Take a Selfie and review your News Feed
 
@@ -308,4 +303,4 @@ Ask your coach if you did not succeed. We have you covered with a back up. ⚠�
 
 Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
 
-[◀ Previous challenge](../Github/README.md) | [🔼 Home](../../README.md) | [Next challenge ▶](../../day2/Face/README.md)
+[◀ Previous challenge](../Github/README.md) | [🔼 Home](../../../README.md) | [Next challenge ▶](../../day2/Speech/README.md)
