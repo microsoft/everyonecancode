@@ -94,7 +94,7 @@ export default class App extends Vue {
 }
 @font-face {
   font-family: HaloHandletter;
-  src: url("../public/fonts/HaloHandletter.otf") format("opentype");
+  src: url("../fonts/HaloHandletter.otf") format("opentype");
 }
 #top,
 #bottom,
