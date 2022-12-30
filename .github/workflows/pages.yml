@@ -40,20 +40,25 @@ jobs:
 
   build-documentation:
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'microsoft'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        if: github.repository_owner == 'microsoft'
         with:
           lfs: true
       - uses: actions/setup-node@v2.1.5
+        if: github.repository_owner == 'microsoft'
         with:
           node-version: "14"
       - run: npm init -y
+        if: github.repository_owner == 'microsoft'
       - run: npm install vuepress vuepress-plugin-code-copy
+        if: github.repository_owner == 'microsoft'
       - run: node_modules/.bin/vuepress build
+        if: github.repository_owner == 'microsoft'
       - name: Upload result of vuepress build
         uses: actions/upload-artifact@v2
+        if: github.repository_owner == 'microsoft'
         with:
           name: static-website
           path: .vuepress/dist
