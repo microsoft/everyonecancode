@@ -1,4 +1,4 @@
-# Speech Recognition
+# Challenge 3: Speech Recognition
 
 ⏲️ _est. time to complete: 30 min._ ⏲️
 
@@ -6,10 +6,10 @@
 
 In this challenge you will learn how to:
 
-- how to create a Speech API service in Azure
-- how to connect you Speech API service with your App
-- how to pass the API key to you App using Github Secrets
-- how to talk to our application 🗣️
+- Create a Speech API service in Azure
+- Connect you Speech API service with your app
+- Pass the API key to you app using Github Secrets
+- How to talk to our application
 
 ## Table of contents
 
@@ -46,14 +46,14 @@ In this challenge you will learn how to:
 ## Integrate Speech Service Credential into Github Secret
 
 - Navigate to GitHub > Settings > Secrets > Actions and add a `New repository secret`
-- Name: `VUE_APP_SPEECH_API_KEY`
+- Name: `VUE_app_SPEECH_API_KEY`
 - Value: The Key of your Speech service you copied before
 - Add Secret
 
 ![](./images/light/vue-app-speech-api-key-secret.png#gh-light-mode-only)
 ![](./images/dark/vue-app-speech-api-key-secret.png#gh-dark-mode-only)
 
-Now we will make our app understand when we talk 🗣️ to our Milligram Social Media App.
+Now we will make our app understand when we talk 🗣️ to our Milligram Social Media app.
 
 ## Run Frontend Pipeline again
 
@@ -64,7 +64,7 @@ Now we will make our app understand when we talk 🗣️ to our Milligram Social
   ![](./images/light/rerunalljobs.png#gh-light-mode-only)
   ![](./images/dark/rerunalljobs.png#gh-dark-mode-only)
 
-Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...` or open the App on your phone.
+Click on the frontend link displayed under the deploy step under your pipeline `https://<yourGithubHandle>.github.io/...` or open the app on your phone.
 
 Our frontend application should now have a new button with a microphone 🎙️ symbol that allows us to talk to our app in English and German and have our speech transcribed.
 Neither what you say not what is transcribed will be saved and will **not** appear on the timeline or News Feed.
@@ -88,7 +88,7 @@ Ask your coach if you did not succeed. We have you covered with a back up. ⚠�
 
 ### Use prepared Milligram Backend Service
 
-Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
+Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIappInnovationEcosystem/#/?stack-key=a78e2b9a).
 
 # What's next?
 
@@ -105,4 +105,4 @@ Be sure to check out our Microsoft Programs for you:
 - Internships at MS
 - Professional Careers at Microsoft
 
-[◀ Previous challenge](../../day1/Application/README.md) | [🔼 Home](../../../README.md)
+[◀ Previous challenge](../../day1/application/README.md) | [🔼 Home](../../../README.md)
