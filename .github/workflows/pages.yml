@@ -38,7 +38,7 @@ jobs:
           name: static-webapp
           path: frontend/dist
 
-  build-website:
+  build-documentation:
     runs-on: ubuntu-latest
     if: github.repository_owner == 'microsoft'
     steps:
@@ -63,7 +63,7 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - build-app
-      - build-website
+      - build-documentation
     environment:
       name: pages
       url: https://${{ github.repository_owner }}.github.io/anyonecancode
