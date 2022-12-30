@@ -1,48 +1,39 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import VuePageStack from "vue-page-stack";
+import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Camera from "../views/Camera.vue";
 import Microphone from "../views/Microphone.vue";
 import FaceAI from "../views/FaceAI.vue";
 import EditProfile from "../views/EditProfile.vue";
 
-Vue.use(VueRouter);
-
-const routes = [
-  {
-    path: "/",
-    name: "home",
-    component: Home,
-  },
-  {
-    path: "/camera",
-    name: "camera",
-    component: Camera,
-  },
-  {
-    path: "/microphone",
-    name: "microphone",
-    component: () => import("../views/Microphone.vue"),
-  },
-  {
-    path: "/faceai",
-    name: "faceai",
-    component: FaceAI,
-  },
-  {
-    path: "/editprofile",
-    name: "editprofile",
-    component: EditProfile,
-  },
-];
-
-const router = new VueRouter({
-  base: import.meta.env.BASE_URL,
-  routes,
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: "/",
+      name: "home",
+      component: Home,
+    },
+    {
+      path: "/camera",
+      name: "camera",
+      component: Camera,
+    },
+    {
+      path: "/microphone",
+      name: "microphone",
+      component: () => import("../views/Microphone.vue"),
+    },
+    {
+      path: "/faceai",
+      name: "faceai",
+      component: FaceAI,
+    },
+    {
+      path: "/editprofile",
+      name: "editprofile",
+      component: EditProfile,
+    },
+  ],
 });
-
-// vue-router is necessary
-Vue.use(VuePageStack, { router });
 
 export default router;

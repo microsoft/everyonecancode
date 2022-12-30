@@ -30,12 +30,12 @@
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
 import axios from "axios";
-import store from "../store/index";
+import { useGitHub } from "../store/index";
 import { debounce } from "lodash";
 
 const githubApiUrl = "https://api.github.com/users/";
 
-@Component({ store: store })
+@Component({ store: useGitHub })
 export default class EditProfile extends Vue {
   githubUsername = this.$store.state.githubUsername;
   isValid = false;
