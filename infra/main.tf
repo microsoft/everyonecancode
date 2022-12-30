@@ -6,13 +6,17 @@ resource "random_id" "suffix" {
   byte_length = 2
 }
 
+locals {
+  unique_suffix = var.PARTICIPANT_ID != "" ? var.PARTICIPANT_ID : random_id.suffix.hex
+}
+
 resource "azurerm_resource_group" "default" {
-  name     = "anyonecancode-rg-${random_id.suffix.hex}"
+  name     = "anyonecancode-rg-${local.unique_suffix}"
   location = "West Europe"
 }
 
 resource "azurerm_storage_account" "images" {
-  name = "anyonecancodeimages${random_id.suffix.hex}"
+  name = "anyonecancodeimages${local.unique_suffix}"
 
   location            = azurerm_resource_group.default.location
   resource_group_name = azurerm_resource_group.default.name
@@ -51,7 +55,7 @@ resource "azurerm_storage_container" "images" {
 }
 
 resource "azurerm_service_plan" "default" {
-  name = "anyonecancode-sp-${random_id.suffix.hex}"
+  name = "anyonecancode-sp-${local.unique_suffix}"
 
   location            = azurerm_resource_group.default.location
   resource_group_name = azurerm_resource_group.default.name
@@ -61,7 +65,7 @@ resource "azurerm_service_plan" "default" {
 }
 
 resource "azurerm_linux_web_app" "backend" {
-  name = "anyonecancode-backend-${random_id.suffix.hex}"
+  name = "anyonecancode-backend-${local.unique_suffix}"
 
   location            = azurerm_resource_group.default.location
   resource_group_name = azurerm_resource_group.default.name
@@ -89,7 +93,7 @@ resource "azurerm_linux_web_app" "backend" {
 }
 
 resource "azurerm_cognitive_account" "speech" {
-  name = "anyonecancode-speech-${random_id.suffix.hex}"
+  name = "anyonecancode-speech-${local.unique_suffix}"
 
   location            = azurerm_resource_group.default.location
   resource_group_name = azurerm_resource_group.default.name
