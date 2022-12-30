@@ -83,7 +83,7 @@ resource "azurerm_linux_web_app" "backend" {
     app_command_line = "gunicorn -k uvicorn.workers.UvicornWorker"
 
     cors {
-      allowed_origins = [var.STATIC_WEBSITE_URL]
+      allowed_origins = var.STATIC_WEBSITE_URL
     }
 
     application_stack {
