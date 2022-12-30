@@ -7,8 +7,9 @@ themeConfig:
   sidebar:
     [
       ["./", "Home"],
-      "./instructions/day1/Github/",
+      "./instructions/day1/GitHub/",
       "./instructions/day1/Application/",
+      "./instructions/day2/Vision/",
       "./instructions/day2/Speech/",
     ]
 plugins: [["vuepress-plugin-code-copy", true]]
