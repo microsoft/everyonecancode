@@ -83,7 +83,7 @@ it to serve the frontend for Milligram.
 - Go to your repository settings
   ![Repository Settings](images/light/RepoSettingsTab.png)
 - Navigate to **Pages**, select the branch _gh-pages_ and hit the save button
-  ![Enable Pages](images/light/frontendPages.png)
+  ![Enable Pages](images/light/FrontendPages.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
   accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`
 

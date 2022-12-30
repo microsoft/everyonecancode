@@ -61,8 +61,6 @@ Now, let's go ahead and fork this repository!
 
 ![Highlighted fork button top right](./images/light/ForkTheRepository.png)
 
-![Fork confirmation page](./images/light/Forked.png)
-
 Now that you have successfully created and customised your GitHub account, we will move onto the next challenge for today. You will create your application here.
 
 [🔼 Home](../../../README.md) | [Next challenge ▶](../Application/README.md)
