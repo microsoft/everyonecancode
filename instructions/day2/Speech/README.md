@@ -81,7 +81,7 @@ As you can see, the language is represented by four letters. For German it's de-
 
 That's a wrap for our 2 days. Congrats!
 
-## Overcharged? We got you covered
+### Overcharged? We got you covered
 
 Ask your coach if you did not succeed. We have you covered with a back up. ⚠️
 
@@ -89,7 +89,7 @@ Ask your coach if you did not succeed. We have you covered with a back up. ⚠�
 
 Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.GitHub.io/FemaleAIappInnovationEcosystem/#/?stack-key=a78e2b9a).
 
-# What's next?
+### What's next?
 
 Start your own coding journey now or try out an Azure certification as we did using Udacity, Udemy, Pluralsight, Edx etc., make sure to check out the links posted below:
 
