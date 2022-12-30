@@ -6,10 +6,10 @@
 
 Today you will learn how to:
 
-- get started with GitHub Actions
-- deploy the Milligram frontend to GitHub Pages
-- create a Python Web App on Azure
-- deploy the Milligram backend on Azure with GitHub Actions
+- Get started with GitHub Actions
+- Deploy the Milligram frontend to GitHub Pages
+- Create a Python web app on Azure
+- Deploy the Milligram backend on Azure with GitHub Actions
 
 ## Table Of Contents
 
@@ -27,22 +27,23 @@ Today you will learn how to:
 
 ### Further informative resources
 
-- [What is GitHub Actions?](https://github.com/features/actions)
+- [What are GitHub Actions?](https://github.com/features/actions)
 - [GitHub Actions Documentation](https://docs.github.com/actions)
 - [What is a repository?](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories)
 - [What is a Resource / Resource Group / Subscription?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
 
 ## Milligram Application Frontend
 
-First let's get started with the front end application. The part that you will
+First, let's get started with the frontend application - The part that you will
 see and use on your mobile phone or your web browser. This is the main way to
 interact with Milligrams services.
 
 <details>
-<summary>What does front end mean?</summary>
+<summary>What does frontend mean?</summary>
 
-Let's imagine a simple car. Everything you see - the seats, the roof, the floor, the user interface (dashboard, steering wheel, etc.) - that's all **front end**.
+Let's imagine a simple car. Everything you see - the seats, the roof, the floor, the user interface (dashboard, steering wheel, etc.) - that's all **frontend**.
 Then you open the hood: and there it is! The **backend** and the **API**. You can see the engine, the transmission and some other elements.
+
 But how to understand this example now... quite simple. The **frontend** is what the user uses to give instructions to the **backend** via an **API**. So when you step on the gas pedal, the engine accelerates.
 
 _Stepping on the gas pedal triggers a request in the frontend to the API in the backend for the engine to accelerate, and the required part of the backend (in this case, the engine) executes it._
