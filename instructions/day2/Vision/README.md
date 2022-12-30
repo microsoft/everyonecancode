@@ -1,4 +1,4 @@
-# Image Analysis
+# Challenge 3: Image Analysis
 
 ⏲️ _est. time to complete: 30 min._ ⏲️
 
@@ -14,4 +14,4 @@ In this challenge you will learn how to:
 
 ### Further informative resources:
 
-[◀ Previous challenge](../Speech/README.md) | [🔼 Home](../../../README.md)
+[◀ Previous challenge](../../day1/Application/README.md) | [🔼 Home](../../../README.md)

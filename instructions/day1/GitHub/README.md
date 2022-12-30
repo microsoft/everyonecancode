@@ -30,13 +30,13 @@ GitHub is actually two things: **Git** and **Hub**.
 
 - Go to the [GitHub website](https://github.com/) and create a GitHub account.
 - Add your email address, password and your desired username
-  ![Startpage of GitHub](images/dark/GithubSignUp.png)
-  ![Enter your Email page](./images/dark/EnterEmail.png)
+  ![Startpage of GitHub](images/light/GithubSignUp.png)
+  ![Enter your Email page](./images/light/EnterEmail.png)
 - Type **y** for receiving emails from GitHub about new product updates and announcements. Or **n** for not receiving emails from GitHub about product updates and announcements.
-  ![Announcement confirmation page](./images/dark/NoAnnouncements.png)
+  ![Announcement confirmation page](./images/light/NoAnnouncements.png)
 
 - To **verify** the account, please follow the instructions.
-  ![Verification page](./images/dark/Verification.png)
+  ![Verification page](./images/light/Verification.png)
 
 You have now successfully created your GitHub account. Now it is time to edit your profile and make it your own.
 
@@ -45,16 +45,13 @@ You have now successfully created your GitHub account. Now it is time to edit yo
 ### Upload a profile picture and insert your name
 
 This is the front page of your account. This overview shows everything about your activities on GitHub, such as your contributions to repositories, your own repositories, your achievements and much more.
-![Profile page](./images/dark/AccountFrontpage.png#gh-dark-mode-only)
-![Profile page](./images/light/AccountFrontpage.png#gh-light-mode-only)
+![Profile page](./images/light/AccountFrontpage.png)
 
 To change or add any of your information, click on your icon in the top right corner and choose **Settings**. If you like, you can upload a profile picture here as well.
 
-![Top right user icon options popup](./images/dark/Settings.png#gh-dark-mode-only)
-![Top right user icon options popup](./images/light/Settings.png#gh-light-mode-only)
+![Top right user icon options popup](./images/light/Settings.png)
 
-![Profile page](./images/dark/EditProfile.gif#gh-dark-mode-only)
-![Profile page](./images/light/EditProfile.gif#gh-light-mode-only)
+![Profile page](./images/light/EditProfile.gif)
 
 ## Fork Repository
 
@@ -62,11 +59,9 @@ A Fork is a copy of a repository in your own GitHub account. This is extremely h
 
 Now, let's go ahead and fork this repository!
 
-![Highlighted fork button top right](./images/dark/ForkTheRepository.png#gh-dark-mode-only)
-![Highlighted fork button top right](./images/light/ForkTheRepository.png#gh-light-mode-only)
+![Highlighted fork button top right](./images/light/ForkTheRepository.png)
 
-![Fork confirmation page](./images/dark/Forked.png#gh-dark-mode-only)
-![Fork confirmation page](./images/light/Forked.png#gh-light-mode-only)
+![Fork confirmation page](./images/light/Forked.png)
 
 Now that you have successfully created and customised your GitHub account, we will move onto the next challenge for today. You will create your application here.
 

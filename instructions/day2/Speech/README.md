@@ -1,4 +1,4 @@
-# Challenge 3: Speech Recognition
+# Challenge 4: Speech Recognition
 
 ⏲️ _est. time to complete: 30 min._ ⏲️
 
@@ -48,19 +48,16 @@ Again you need to share the information of this resource with the web app, so th
 - Value: The Key of your Speech service you copied before
 - Add Secret.
 
-  ![Screenshot of creating secret](./images/light/vue-app-speech-api-key-secret.png#gh-light-mode-only)
-  ![Screenshot of creating secret](./images/dark/vue-app-speech-api-key-secret.png#gh-dark-mode-only)
+  ![Screenshot of creating secret](./images/light/vue-app-speech-api-key-secret.png)
 
 Now we will make our app understand when we talk to our Milligram social media application.
 
 ## Run Frontend Pipeline again
 
 - Navigate to **Actions** > **Pages** and **Run workflow**
-  ![](./images/light/runworkflow.png#gh-light-mode-only)
-  ![](./images/dark/runworkflow.png#gh-dark-mode-only)
+  ![](./images/light/runworkflow.png)
 
-  ![](./images/light/rerunalljobs.png#gh-light-mode-only)
-  ![](./images/dark/rerunalljobs.png#gh-dark-mode-only)
+  ![](./images/light/rerunalljobs.png)
 
 Click on the frontend link displayed under the deploy step under your pipeline `https://<yourgithubhandle>.github.io/...` or open the app on your phone.
 
@@ -105,4 +102,4 @@ Be sure to check out our Microsoft Programs:
 - Internships at MS
 - [Professional Careers at Microsoft](https://careers.microsoft.com/)
 
-[◀ Previous challenge](../../day1/application/README.md) | [🔼 Home](../../../README.md)
+[◀ Previous challenge](../Vision/README.md) | [🔼 Home](../../../README.md)
