@@ -40,6 +40,7 @@ jobs:
 
   build-website:
     runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'microsoft' }}}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -77,6 +78,7 @@ jobs:
           path: dist
       - name: Download build of static website
         uses: actions/download-artifact@v2
+        if: ${{ github.repository_owner == 'microsoft' }}}
         with:
           name: static-website
           path: dist/instructions
