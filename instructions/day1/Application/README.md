@@ -80,12 +80,12 @@ Pages are an easy way to display a static website related to your repository.
 Many people use it to display the documentation for their projects. We will use
 it to serve the frontend for Milligram.
 
-- Go to your repository settings
+- Go to your repository settings-
   ![Repository Settings](images/light/RepoSettingsTab.png)
-- Navigate to **Pages**, select the branch _gh-pages_ and hit the save button
+- Navigate to **Pages**, select the branch _gh-pages_ and hit the save button.
   ![Enable Pages](images/light/FrontendPages.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
-  accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`
+  accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`.
 
 Take a look at the website. Try changing the profile to your GitHub account name
 and see that it is stored even if you refresh the browser.
@@ -252,7 +252,8 @@ To do this, we will use a GitHub feature called _Secrets_, where you can store y
 
 - On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_.
 - Add a _New repository secret_ named `VUE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
-  > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/` > ![GitHub frontend URL](./images/light/FrontendAPIUrl.png) > ![GitHub Secrets Create](./images/light/CreateSecret.png)
+  > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/`
+  ![GitHub frontend URL](./images/light/FrontendAPIUrl.png) > ![GitHub Secrets Create](./images/light/CreateSecret.png)
 
 ### Run frontend Pipeline again
 
