@@ -61,8 +61,7 @@ get started with the actions.
 
 _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories) contains all of your project's files and each file's revision history. You can discuss and manage your project's work within the repository._
 
-![Enable GitHub Actions](images/dark/EnableGithubActions.png#gh-dark-mode-only)
-![Enable GitHub Actions](images/light/EnableGithubActions.png#gh-light-mode-only)
+![Enable GitHub Actions](images/light/EnableGithubActions.png)
 
 ### Run GitHub Actions
 
@@ -71,8 +70,7 @@ _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-re
 
 Now, observe how the workflow is being run and take a look at the individual steps that are run for you by GitHub.
 
-![Run workflow](images/dark/FrontendRunWorkflow.png#gh-dark-mode-only)
-![Run workflow](images/light/FrontendRunWorkflow.png#gh-light-mode-only)
+![Run workflow](images/light/FrontendRunWorkflow.png)
 
 ### Enable GitHub Pages in project settings
 
@@ -82,14 +80,12 @@ Pages are an easy way to display a static website related to your repository.
 Many people use it to display the documentation for their projects. We will use
 it to serve the frontend for Milligram.
 
-- Go to your repository settings
-  ![Repository Settings](images/dark/RepoSettingsTab.png#gh-dark-mode-only)
-  ![Repository Settings](images/light/RepoSettingsTab.png#gh-light-mode-only)
-- Navigate to **Pages**, select the branch _gh-pages_ and hit the save button
-  ![Enable Pages](images/dark/frontendPages.png#gh-dark-mode-only)
-  ![Enable Pages](images/light/frontendPages.png#gh-light-mode-only)
+- Go to your repository settings-
+  ![Repository Settings](images/light/RepoSettingsTab.png)
+- Navigate to **Pages**, select the branch _gh-pages_ and hit the save button.
+  ![Enable Pages](images/light/FrontendPages.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
-  accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`
+  accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`.
 
 Take a look at the website. Try changing the profile to your GitHub account name
 and see that it is stored even if you refresh the browser.
@@ -137,7 +133,7 @@ First things first - sign into your "Azure Account".
 
 - Log in with `your Azure Account`. The login information is provided to you by your trainer. Ask them if you don't know where to find it.
 
-![Log In Azure](./images/dark/LogInAzure.png)
+![Log In Azure](./images/light/LogInAzure.png)
 
 ### Create Storage Account
 
@@ -157,7 +153,7 @@ Just like the disk or storage on your computer. A cool fun fact is that you can 
 - Select your subscription & the resource group with the name that you used to log into the Azure Portal.
 - The name of your Azure Storage account needs to be globally unique. It also has to use small letters and no special characters.
 - Make sure to select `Standard` for _Performance_ and `Locally-redundant storage (LRS)` for _Redundancy_.
-  ![Storage](images/dark/BackendStorage0.png)
+  ![Storage](images/light/BackendStorage0.png)
 - Hit _Review & create_ and after that _Create_ to finish creating the storage account.
 - Once the storage account is created there should be a button _Go to resource_. Click on it.
 - Now you should see your storage account. Select _Containers_ on the left hand side.
@@ -179,11 +175,11 @@ Our [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) is
   - Runtime stack: `Python 3.8`
   - Operating System: `Linux`
   - Region: `West Europe`
-    ![backend 0](images/dark/BackendApp0.png)
+    ![backend 0](images/light/BackendApp0.png)
 - Create a new App Service Plan and `<pick your own name>`.
-  ![backend 1](images/dark/BackendApp1.png)
+  ![backend 1](images/light/BackendApp1.png)
 - Click on _Change size_ and then click the _Dev/Test_ tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan.
-  ![backend 2](images/dark/BackendApp2.png)
+  ![backend 2](images/light/BackendApp2.png)
 - Click _Review + Create_ at the bottom of the screen.
 - Review the displayed information and click _Create_ on the next screen to spin up the backend application.
 
@@ -197,7 +193,7 @@ Now let's connect our application with our storage so that you can take pictures
 
 - For this reason navigate to your _storage account_ again. You should be able to find it via the search bar in the top either by searching its unique name or just storage account.
 - Under _Access keys_ you can find the _Connection string_ from our storage account. Hit the 👀*Show keys* button so are able to copy it's value to e.g. a notepad.
- ![Screenshot of Access key page in Azure portal](./images/dark/SecretAccessKeys.png)
+ ![Screenshot of Access key page in Azure portal](./images/light/SecretAccessKeys.png)
 - Navigate back to the web app and open the _Configuration_ tab, click _New connection string_ and create a new connection string with the following settings:
   - Name: `STORAGE`
   - Value: `<paste your (earlier copied) connection string from Storage Account>`
@@ -233,10 +229,10 @@ Once you have hit `Save` the service automatically creates a workflow file in yo
 Let's pause a second. To make sure that you are on track, test if our app's frontend gets a response from our backend service. Before we bring everything together, we want to make sure the backend service is working as expected.
 
 - Navigate to the _Overview_ tab on the left hand side of the Web App Service.
- ![App Service URL](./images/dark/AppServicesDocLink.png)
+ ![App Service URL](./images/light/AppServicesDocLink.png)
 - Hit the _URL_ and test the website using the docs to figure out if the features of our Milligram will work.
 - In your browser you will have the following view:
- ![Test API Page](./images/dark/TestAPIGetImages.png)
+ ![Test API Page](./images/light/TestAPIGetImages.png)
 
   :::tip
   📝 If you want to learn more about Swagger have a look at [Wikipedia](<https://en.wikipedia.org/wiki/Swagger_(software)>).
@@ -256,22 +252,20 @@ To do this, we will use a GitHub feature called _Secrets_, where you can store y
 
 - On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_.
 - Add a _New repository secret_ named `VUE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
-  > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/` > ![GitHub frontend URL](./images/dark/FrontendAPIUrl.png#gh-dark-mode-only) > ![GitHub frontend URL](./images/light/FrontendAPIUrl.png#gh-light-mode-only) > ![GitHub Secrets Create](./images/dark/CreateSecret.png#gh-dark-mode-only) > ![GitHub Secrets Create](./images/light/CreateSecret.png#gh-light-mode-only)
+  > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/`
+  ![GitHub frontend URL](./images/light/FrontendAPIUrl.png) > ![GitHub Secrets Create](./images/light/CreateSecret.png)
 
 ### Run frontend Pipeline again
 
 For the change of adding the secret taking effect in the frontend, we need to run our build pipeline again so that the process can pickup the newly created setting.
 
 - Navigate to the _Actions_ tab, select the _pages_ workflow and rerun the workflow:
-  ![GitHub frontend Workflow](./images/dark/RunWorkflowFrontend.png#gh-dark-mode-only)
-  ![GitHub frontend Workflow](./images/light/RunWorkflowFrontend.png#gh-light-mode-only)
+  ![GitHub frontend Workflow](./images/light/RunWorkflowFrontend.png)
 
 - Once the workflow is started you will see the workflow running. You can get to the view below by clicking on the workflow run.
-  ![GitHub frontend Workflow Progress](./images/dark/FrontendInProgress.png#gh-dark-mode-only)
-  ![GitHub frontend Workflow Progress](./images/light/FrontendInProgress.png#gh-light-mode-only)
+  ![GitHub frontend Workflow Progress](./images/light/FrontendInProgress.png)
 - Finally finishing up the Milligram Service.
-  ![GitHub frontend Workflow Done](./images/dark/FrontendDone.png#gh-dark-mode-only)
-  ![GitHub frontend Workflow Done](./images/light/FrontendDone.png#gh-light-mode-only)
+  ![GitHub frontend Workflow Done](./images/light/FrontendDone.png)
 
 ### Open the App - Take a Selfie and review your News Feed
 
@@ -293,4 +287,4 @@ Ask your coach if you did not succeed. We have you covered with a back up.
 
 Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
 
-[◀ Previous challenge](../Github/README.md) | [🔼 Home](../../../README.md) | [Next challenge ▶](../../day2/Speech/README.md)
+[◀ Previous challenge](../Github/README.md) | [🔼 Home](../../../README.md) | [Next challenge ▶](../../day2/Vision/README.md)

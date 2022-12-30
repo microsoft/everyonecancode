@@ -44,9 +44,10 @@ Here's the overview of the training week. Happy hacking!
 
 ## Hands on Guide
 
-- [Day 1 - GitHub - Create new Dreams](instructions/day1/Github/README.md)
+- [Day 1 - GitHub - Create new dreams](instructions/day1/GitHub/README.md)
 - [Day 1 - Application on our Phone ](instructions/day1/Application/README.md)
-- [Day 2 - Make our Application understand our language](instructions/day2/Speech/README.md)
+- [Day 2 - Make our application recognizer objects in images](instructions/day2/Vision/README.md)
+- [Day 2 - Make our application understand speech](instructions/day2/Speech/README.md)
 
 ## Goal of the Anyone can Code Program for FEMALES in the ENTIRE ECOSYSTEM over Generations
 
