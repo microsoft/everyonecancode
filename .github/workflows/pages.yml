@@ -15,24 +15,27 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v2.1.5
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: "16"
-
-      - run: |
-          npm ci
-          npm run build -- --base=$BASE_URL
+          cache: "npm"
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+        working-directory: frontend
+      - name: Build Static Web App
+        run: npm run build -- --base=$BASE_URL
         env:
           BASE_URL: anyonecancode
           VITE_FACE_API_KEY: ${{ secrets.VITE_FACE_API_KEY }}
           VITE_SPEECH_API_KEY: ${{ secrets.VITE_SPEECH_API_KEY }}
           VITE_IMAGE_API_URL: ${{secrets.VITE_IMAGE_API_URL}}
           VITE_FACE_API_ENDPOINT: ${{secrets.VITE_FACE_API_ENDPOINT}}
-
         working-directory: frontend
-      - name: Upload result of Application build
+      - name: Upload result of Static Web App build
         uses: actions/upload-artifact@v2
         with:
           name: static-webapp
