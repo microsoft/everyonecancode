@@ -23,9 +23,11 @@ jobs:
           node-version: "16"
           cache: "npm"
           cache-dependency-path: frontend/package-lock.json
+
       - name: Install dependencies
         run: npm ci
         working-directory: frontend
+
       - name: Build Static Web App
         run: npm run build -- --base=$BASE_URL
         env:
@@ -35,6 +37,7 @@ jobs:
           VITE_IMAGE_API_URL: ${{secrets.VITE_IMAGE_API_URL}}
           VITE_FACE_API_ENDPOINT: ${{secrets.VITE_FACE_API_ENDPOINT}}
         working-directory: frontend
+
       - name: Upload result of Static Web App build
         uses: actions/upload-artifact@v2
         with:
@@ -49,16 +52,21 @@ jobs:
         if: github.repository_owner == 'microsoft'
         with:
           lfs: true
+
       - uses: actions/setup-node@v2.1.5
         if: github.repository_owner == 'microsoft'
         with:
           node-version: "14"
+
       - run: npm init -y
         if: github.repository_owner == 'microsoft'
+
       - run: npm install vuepress vuepress-plugin-code-copy
         if: github.repository_owner == 'microsoft'
+
       - run: node_modules/.bin/vuepress build
         if: github.repository_owner == 'microsoft'
+
       - name: Upload result of vuepress build
         uses: actions/upload-artifact@v2
         if: github.repository_owner == 'microsoft'
@@ -84,12 +92,14 @@ jobs:
         with:
           name: static-webapp
           path: dist
+
       - name: Download build of static website
         uses: actions/download-artifact@v2
         if: github.repository_owner == 'microsoft'
         with:
           name: static-website
           path: dist/instructions
+
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
