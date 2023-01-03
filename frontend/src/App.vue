@@ -4,40 +4,32 @@
     <div id="right"></div>
     <div id="top"></div>
     <div id="bottom"></div>
-    <transition :name="transitionName">
-      <vue-page-stack>
-        <router-view :key="screen" class="router-view-c"></router-view>
-      </vue-page-stack>
-    </transition>
+    <router-view v-slot="{ Component }">
+      <transition>
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from "vue-property-decorator";
-import ImageList from "./components/ImageList.vue";
-import Profile from "./components/Profile.vue";
-import Navbar from "./components/Navbar.vue";
+// import { Component, Vue, Watch } from "vue-property-decorator";
+import { reactive } from "vue";
 
-@Component({
-  components: {
-    Profile,
-    ImageList,
-    Navbar,
+export default {
+  // `setup` is a special hook dedicated for composition API.
+  setup() {
+    const state = reactive({
+      ansitionName: "forward",
+      screen: "home",
+    });
+
+    // expose the state to the template
+    return {
+      state,
+    };
   },
-})
-export default class App extends Vue {
-  transitionName = "forward";
-  screen = "home";
-
-  @Watch("$route")
-  route(to: any, from: any) {
-    if (to.params["stack-key-dir"] === "forward") {
-      this.transitionName = "forward";
-    } else {
-      this.transitionName = "back";
-    }
-  }
-}
+};
 </script>
 
 <style lang="scss">

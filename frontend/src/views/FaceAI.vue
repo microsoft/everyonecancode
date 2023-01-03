@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch, Ref } from "vue-property-decorator";
+// import { Component, Vue, Watch, Ref } from "vue-property-decorator";
 import { ApiKeyCredentials } from "@azure/ms-rest-js";
 import { FaceClient } from "@azure/cognitiveservices-face";
 import { faceApiKey, faceApiEndpoint } from "../settings";
@@ -43,11 +43,11 @@ function check(value: number, text: string) {
   return value > 0.5 ? text : "";
 }
 
-@Component({
-  components: { NavBarBack },
-})
-export default class FaceAI extends Vue {
-  @Ref() readonly camera!: any;
+// @Component({
+//   components: { NavBarBack },
+// })
+export default class FaceAI {
+  readonly camera!: any;
 
   picture = "";
   faceInterval = -1;
@@ -130,7 +130,6 @@ export default class FaceAI extends Vue {
     }, this.liveFaceDetectionInverval);
   }
 
-  @Watch("picture")
   savePicture(): void {
     this.camera.stop();
     clearInterval(this.faceInterval);
@@ -149,14 +148,18 @@ export default class FaceAI extends Vue {
             ],
           })
           .then((response) => {
-            if(response.length == 0) {
-              this.$confirm("The AI could not recognize your face, make sure the gray box covers most of your face.", "AI Error", "error")
-              .then((r: boolean) => {
-                this.$router.go(0);
-              })
-              .catch(() => {
-                this.$router.push({ name: 'home' })
-              });
+            if (response.length == 0) {
+              this.$confirm(
+                "The AI could not recognize your face, make sure the gray box covers most of your face.",
+                "AI Error",
+                "error"
+              )
+                .then((r: boolean) => {
+                  this.$router.go(0);
+                })
+                .catch(() => {
+                  this.$router.push({ name: "home" });
+                });
               return;
             }
             this.faces = response.map((face) => {
@@ -199,11 +202,15 @@ export default class FaceAI extends Vue {
                 glasses,
               };
             });
-          }).catch(err => {
-                this.$alert("An error occurred while trying to connect to Face AI. Try again and ask your coach if the problem persists.", "Face AI not available", "warning")
-                .then(() => this.$router.go(0));
-              console.log("An error occurred:");
-              console.error(err);
+          })
+          .catch((err) => {
+            this.$alert(
+              "An error occurred while trying to connect to Face AI. Try again and ask your coach if the problem persists.",
+              "Face AI not available",
+              "warning"
+            ).then(() => this.$router.go(0));
+            console.log("An error occurred:");
+            console.error(err);
           });
       });
   }

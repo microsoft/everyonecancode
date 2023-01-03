@@ -4,7 +4,7 @@
       :src="profile.avatar_url"
       alt="Profile Picture of User"
       ratio="1by1"
-      style="margin-top: 100px;"
+      style="margin-top: 100px"
       rounded
     ></b-image>
     <h1>{{ profile.name }}</h1>
@@ -22,35 +22,29 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue, Watch } from "vue-property-decorator";
+<script lang="ts" setup>
 import axios from "axios";
-import store from "../store/index";
 
 const githubApiUrl = "https://api.github.com/users/";
 
-@Component({ store: store })
-export default class Profile extends Vue {
-  profile = {};
+var profile = {};
 
-  mounted() {
-    this.getProfileDetails();
-  }
-  get githubUsername() {
-    return this.$store.state.githubUsername;
-  }
+function mounted() {
+  getProfileDetails();
+}
+function githubUsername() {
+  return "";
+}
 
-  @Watch("githubUsername")
-  getProfileDetails() {
-    axios
-      .get(`${githubApiUrl}${this.githubUsername}`)
-      .then((response) => {
-        this.profile = response.data;
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
+function getProfileDetails() {
+  axios
+    .get(`${githubApiUrl}${githubUsername()}`)
+    .then((response) => {
+      profile = response.data;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 }
 </script>
 

@@ -1,8 +1,8 @@
 // import Vue from "vue";
 import App from "./App.vue";
 // import store from "./store";
-// import Buefy from "buefy";
-// import "buefy/dist/buefy.css";
+import Buefy from "buefy";
+import "buefy/dist/buefy.css";
 
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // internal icons
@@ -16,6 +16,7 @@ import App from "./App.vue";
 // } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import router from "./router";
+
 // import EasyCamera from "easy-vue-camera";
 // import VueRecord from "@codekraft-studio/vue-record";
 // import VueSimpleAlert from "vue-simple-alert";
@@ -47,6 +48,7 @@ const app = createApp(App);
 const pinia = createPinia();
 pinia.use(piniaPluginPersistedstate);
 app.use(pinia);
+app.use(Buefy);
 app.use(router);
 
 app.mount("#app");

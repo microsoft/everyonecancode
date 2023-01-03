@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="tile is-ancestor" style="margin-bottom: 100px;">
+    <div class="tile is-ancestor" style="margin-bottom: 100px">
       <div class="tile is-parent is-vertical">
         <div
           class="tile is-child"
@@ -22,26 +22,23 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import store from "../store/index";
+<script lang="ts" setup>
+// import store from "../store/index";
 import { imageApiUrl } from "../settings";
 
-@Component({ store: store })
-export default class ImageList extends Vue {
-  readonly apiUrl = imageApiUrl;
+const apiUrl = imageApiUrl;
 
-  get imageList() {
-    return this.$store.state.imageList;
-  }
+function imageList() {
+  return [];
+  // return this.$store.state.imageList;
+}
 
-  deleteImage(image: any) {
-    this.$store.dispatch("deleteImage", image);
-  }
+function deleteImage(image: any) {
+  // this.$store.dispatch("deleteImage", image);
+}
 
-  mounted() {
-    this.$store.dispatch("refreshImageList");
-  }
+function mounted() {
+  // this.$store.dispatch("refreshImageList");
 }
 </script>
 

@@ -10,10 +10,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch, Ref } from "vue-property-decorator";
 import axios from "axios";
 import router from "../router";
-import store from "../store/index";
+// import store from "../store/index";
 
 import { imageApiUrl } from "../settings";
 
@@ -27,11 +26,8 @@ function createGuid() {
   return guid.toLowerCase();
 }
 
-@Component({
-  store: store,
-})
-export default class Camera extends Vue {
-  @Ref() readonly camera!: any;
+export default class Camera {
+  readonly camera!: any;
 
   picture = "";
 
@@ -39,7 +35,6 @@ export default class Camera extends Vue {
     router.back();
   }
 
-  @Watch("picture")
   savePicture() {
     this.camera.close();
     fetch(this.picture)

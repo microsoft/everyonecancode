@@ -28,20 +28,20 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Watch } from "vue-property-decorator";
+// import { Component, Vue, Watch } from "vue-property-decorator";
 import axios from "axios";
 import { useGitHub } from "../store/index";
 import { debounce } from "lodash";
 
 const githubApiUrl = "https://api.github.com/users/";
 
-@Component({ store: useGitHub })
-export default class EditProfile extends Vue {
-  githubUsername = this.$store.state.githubUsername;
+// @Component({ store: useGitHub })
+export default class EditProfile {
+  // githubUsername = this.$store.state.githubUsername;
   isValid = false;
   profile = {};
 
-  @Watch("githubUsername")
+  // @Watch("githubUsername")
   public debouncedOnUsernameChanged = debounce(this.onUsernameChanged, 500);
 
   get status() {
