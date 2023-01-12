@@ -1,6 +1,6 @@
 # Anyone can Code! – Light Your Fire for Coding
 
-![FemaleTechGenLogo](./img/anyone-can-code_1400x300.png)
+![FemaleTechGenLogo](./img/MSFT_AnyonecanCode_Banner_small.png)
 
   <p>
     <sub>Built with ❤ by everybody who wants to make the Microsoft App Dev Innovation world a little bit more diverse! </sub>
