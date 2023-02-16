@@ -38,6 +38,7 @@ import {
   faceApiKey,
   faceApiEndpoint,
   speechApiKey,
+  visionApiKey,
 } from "../settings";
 
 @Component
@@ -52,8 +53,7 @@ export default class Navbar extends Vue {
     return speechApiKey !== "";
   }
   get showVisionButton(): boolean {
-    // Todo - add check for vision api key
-    return true;
+    return visionApiKey !== "";
   }
 }
 </script>
