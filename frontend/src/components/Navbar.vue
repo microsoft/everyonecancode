@@ -21,6 +21,11 @@
             <b-icon type="is-white" icon="grin-stars" pack="fas"></b-icon>
           </router-link>
         </b-button>
+        <b-button v-if="showVisionButton" rounded type="is-black">
+          <router-link to="/vision">
+            <b-icon type="is-white" icon="object-group" pack="fas"></b-icon>
+          </router-link>
+        </b-button>
       </div>
     </template>
   </b-navbar>
@@ -45,6 +50,10 @@ export default class Navbar extends Vue {
   }
   get showSpeechButton(): boolean {
     return speechApiKey !== "";
+  }
+  get showVisionButton(): boolean {
+    // Todo - add check for vision api key
+    return true;
   }
 }
 </script>

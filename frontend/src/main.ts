@@ -13,6 +13,7 @@ import {
   faCheck,
   faExclamationCircle,
   faArrowLeft,
+  faObjectGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import router from "./router";
@@ -26,7 +27,8 @@ library.add(
   faGrinStars as any,
   faCheck as any,
   faExclamationCircle as any,
-  faArrowLeft as any
+  faArrowLeft as any,
+  faObjectGroup as any
 );
 Vue.use(VueSimpleAlert);
 Vue.use(VueRecord);
