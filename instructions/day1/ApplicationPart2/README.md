@@ -1,4 +1,4 @@
-# Challenge 2: Create Milligram application on Azure
+# Challenge 3: Create Milligram application on Azure
 
 ⏲️ _Est. time to complete: 60 min._ ⏲️
 
