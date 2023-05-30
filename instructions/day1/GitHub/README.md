@@ -73,7 +73,7 @@ After a few seconds a new browser window will open with your codespace. On the l
 
 ![Install recommended extensions](./images/light/InstallRecommendedExtensions.png)
 
-Another tab in our codespace opens and it installs the extensions for Azure Functions and Python. Click back into to the **Explorer** tab on the upper left to see the folder structure of our repository again.
+Another tab in our codespace opens and it installs the extensions for Azure Functions and Python. Click back into the **Explorer** tab on the upper left to see the folder structure of our repository again.
 
 ![Explorer tab](./images/light/ExplorerTab.png)
 

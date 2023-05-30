@@ -15,7 +15,7 @@
 ## Agenda for the Anyone can Code workshop
 
 ### Day 1
-- Create your own GitHub Account
+- Create your own GitHub Account and merge your first pull request
 - Use this repository as our baseline
 - Use Azure Web Apps to host your own application
 - Play around with the frontend to customize your App and to understand the basic underlying concept of Azure

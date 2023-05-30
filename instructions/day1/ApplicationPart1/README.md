@@ -6,7 +6,8 @@
 
 Today you will learn how to:
 
-- Get started with GitHub Actions
+- How to install dependencies for your project
+- How to make changes to your project
 - Deploy the Milligram frontend to GitHub Pages
 - Create a Python web app on Azure
 - Deploy the Milligram backend on Azure with GitHub Actions
