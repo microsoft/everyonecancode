@@ -63,6 +63,9 @@ _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-re
 
 ![Enable GitHub Actions](images/light/EnableGithubActions.png)
 
+Make sure that the Actions have read/write permissions. Check this via Settings->Actions
+![Check Settings](images/light/gh-actions-read.png)
+
 ### Run GitHub Actions
 
 - In the **Actions** tab of your repository, click on the **pages** workflow.
