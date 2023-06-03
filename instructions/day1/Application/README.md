@@ -6,6 +6,7 @@
 
 Today you will learn how to:
 
+- Run the App Locally 
 - Get started with GitHub Actions
 - Deploy the Milligram frontend to GitHub Pages
 - Create a Python web app on Azure
@@ -14,11 +15,12 @@ Today you will learn how to:
 ## Table Of Contents
 
 1. [Milligram application frontend](#milligram-application-frontend)
-   1. [Enable GitHub Actions](#enable-github-action)
-   2. [Run GitHub Actions](#run-github-action)
-   3. [Enable GitHub Pages in project settings](#enable-github-page-in-project-settings)
-   4. [Open GitHub Page on your phone](#open-github-page-on-your-phone)
-   5. [Add application to home screen](#add-application-to-home-screen)
+   1. [Run App Locally](#run-local)
+   2. [Enable GitHub Actions](#enable-github-action)
+   3. [Run GitHub Actions](#run-github-action)
+   4. [Enable GitHub Pages in project settings](#enable-github-page-in-project-settings)
+   5. [Open GitHub Page on your phone](#open-github-page-on-your-phone)
+   6. [Add application to home screen](#add-application-to-home-screen)
 2. [Milligram application backend](#milligram-application-backend)
    1. [Prepare image upload](#prepare-image-upload)
    2. [Make application backend run in the cloud](#make-application-backend-run-in-the-cloud)
@@ -49,6 +51,12 @@ But how to understand this example now... quite simple. The **frontend** is what
 _Stepping on the gas pedal triggers a request in the frontend to the API in the backend for the engine to accelerate, and the required part of the backend (in this case, the engine) executes it._
 
 </details>
+
+### Run App Locally
+To run the app locally navigate in the terminal (or command prompt to the *frontend* folder).
+1. Build the app with this command - `npm run build`
+2. Run the app locally - `npm run serve`
+3. Browse to "http://localhost:4173" to see the app running locally.
 
 ### Enable GitHub Actions
 
