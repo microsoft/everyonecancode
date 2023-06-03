@@ -29,7 +29,7 @@ export default new Vuex.Store({
   actions: {
     refreshImageList(context) {
       axios
-        .get(`${imageApiUrl}images`)
+        .get(`${imageApiUrl}/images`)
         .then((response) => {
           if(imageApiUrl.length !== 0){
           context.commit("setImageList", response.data);
@@ -44,7 +44,7 @@ export default new Vuex.Store({
         });
     },
     deleteImage(context, image) {
-      axios.delete(`${imageApiUrl}${image.image_url}`).then(() => {
+      axios.delete(`${imageApiUrl}/${image.image_url}`).then(() => {
         context.dispatch("refreshImageList");
       });
     },
