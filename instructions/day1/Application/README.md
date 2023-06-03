@@ -57,6 +57,9 @@ To run the app locally navigate in the terminal (or command prompt to the *front
 1. Build the app with this command - `npm run build`
 2. Run the app locally - `npm run serve`
 3. Browse to "http://localhost:4173" to see the app running locally.
+4. Go ahead and change the Github Username and save.
+5. Open browser in "In Private" mode and you will notice the username does not persist.
+6. In a none private browser, open up console tools, browse to Application and you will see, under local storage, where the data is persisting.
 
 ### Enable GitHub Actions
 

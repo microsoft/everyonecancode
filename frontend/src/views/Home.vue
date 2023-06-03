@@ -7,8 +7,10 @@
         <div id="top"></div>
         <div id="bottom"></div>
         <b-navbar-item id="fontnavbar" class="title is-2">
-          Milligram
+          Milligram - the photo sharing app
+         
         </b-navbar-item>
+        
       </template>
     </b-navbar>
     <div class="container">
