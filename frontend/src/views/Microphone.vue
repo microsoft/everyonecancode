@@ -52,7 +52,8 @@ import { speechApiKey } from "../settings";
 
 import NavBarBack from "../components/NavBarBack.vue";
 
-const region = "westeurope";
+// const region = "westeurope";
+const region = "eastus";
 
 var recognizer: SpeechRecognizer;
 
