@@ -48,7 +48,7 @@ Again you need to share the information of this resource with the web app, so th
 - Value: The Key of your Speech service you copied before
 - Add Secret.
 
-  ![Screenshot of creating secret](./images/light/vue-app-speech-api-key-secret.png)
+  ![Screenshot of creating secret](./images/action_custom_vision_secret.png)
 
 Now we will make our app understand when we talk to our Milligram social media application.
 
