@@ -63,6 +63,9 @@ _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-re
 
 ![Enable GitHub Actions](images/light/EnableGithubActions.png)
 
+Make sure that the Actions have read/write permissions. Check this via Settings->Actions->General and scroll down to the *Workflow permissions* section. Click the *Read and write permissions* option. Click *Save*.
+![Check Settings](images/light/gh-actions-read.png)
+
 ### Run GitHub Actions
 
 - In the **Actions** tab of your repository, click on the **pages** workflow.
@@ -85,7 +88,7 @@ it to serve the frontend for Milligram.
 - Navigate to **Pages**, select the branch _gh-pages_ and hit the save button.
   ![Enable Pages](images/light/FrontendPages.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
-  accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`.
+  accessible through `https://<your github username>.github.io/anyonecancode/`.
 
 Take a look at the website. Try changing the profile to your GitHub account name
 and see that it is stored even if you refresh the browser.
@@ -219,7 +222,7 @@ To ensure our social media application can actually do something, we need to bri
 
 - Navigate to the _Deployment Center_ tab on the left hand side of your Web App in the Azure portal.
 - Under the _Settings_ tab select _GitHub_ as _Source_ and click _Authorize_.
-- Under _Organization_ select your GitHub handle and under _Repository_ select `FemaleAIAppInnovationEcosystem` as well as the `main` _Branch_.
+- Under _Organization_ select your GitHub handle and under _Repository_ select `anyonecancode` as well as the `main` _Branch_.
 - Hit `Save`.
 
 Once you have hit `Save` the service automatically creates a workflow file in your GitHub repository. This workflow is immediately being executed and after about 2 minutes your web app is ready. You can also check your deployment on your "Actions" tab in your repository. The color green is always a good sign.
@@ -251,7 +254,7 @@ Now that we are sure that our backend service works as expected, we can bring ev
 To do this, we will use a GitHub feature called _Secrets_, where you can store your backend URL to make your frontend talk to the backend service.
 
 - On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_.
-- Add a _New repository secret_ named `VUE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
+- Add a _New repository secret_ named `VITE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
   > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/`
   ![GitHub frontend URL](./images/light/FrontendAPIUrl.png) > ![GitHub Secrets Create](./images/light/CreateSecret.png)
 

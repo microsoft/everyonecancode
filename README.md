@@ -49,9 +49,9 @@ Here's the overview of the training week. Happy hacking!
 - [Day 2 - Make our application recognizer objects in images](instructions/day2/Vision/README.md)
 - [Day 2 - Make our application understand speech](instructions/day2/Speech/README.md)
 
-## Goal of the Anyone can Code Program for FEMALES in the ENTIRE ECOSYSTEM over Generations
+## Goal of the Anyone can Code Program for women in the ENTIRE ECOSYSTEM over Generations
 
-The goal is to show all Females of any generation, that anything is possible also in the area of tech and to light the fire for coding. We aim to connect all generations of fFemales whether they are pupils, university students or professionals already performing in jobs. Furthermore, we aim to connect those generations which haven't gotten in touch with tech yet since we noticed that there is a huge gap between these communities. We believe there aren't enough female tech heroes yet.
+The goal is to show all women of any generation, that anything is possible also in the area of tech and to light the fire for coding. We aim to connect all generations of women whether they are pupils, university students or professionals already performing in jobs. Furthermore, we aim to connect those generations which haven't gotten in touch with tech yet since we noticed that there is a huge gap between these communities. We believe there aren't enough female tech heroes yet.
 
 However, it is possible to dive into tech at any age. Therefore, we thought of starting with something that we are all familiar with - applications on our phones. Together we will build an app on our phones which can take pictures and which we can talk to. And to put it in other (tech) words: _how to build a progressive web app on our phones which uses pre-trained Machine Learning models as restful endpoints_. The application uses so-called REST APIs (don't worry we will explain this term later) and we will use Azure to meet the challenges to get it running.
 
