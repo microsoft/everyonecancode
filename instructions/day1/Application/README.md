@@ -63,7 +63,7 @@ _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-re
 
 ![Enable GitHub Actions](images/light/EnableGithubActions.png)
 
-Make sure that the Actions have read/write permissions. Check this via Settings->Actions
+Make sure that the Actions have read/write permissions. Check this via Settings->Actions->General and scroll down to the Workflow permissions section. Click the Read and write permissions option. Click Save
 ![Check Settings](images/light/gh-actions-read.png)
 
 ### Run GitHub Actions
