@@ -167,6 +167,7 @@ This is the place where all uploaded images to our Milligram app will be stored.
 ### Create Web App
 
 Our [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) is a computer managed by Microsoft where you can easily run your own application without worrying about software updates, security issues, backUp or hardware issues (as you might have already experienced on your phone).
+What is needed if the student wants to use East US?  Will the app work or will it break because the app is hard coded to use West Europe region?  Important not to assume the participants will always set the region to West Europe, as I do see it's hard coded in the views.
 
 - Go to the home page of the Azure Portal again.
 - Click on _+ Create a resource_ as you did before.
