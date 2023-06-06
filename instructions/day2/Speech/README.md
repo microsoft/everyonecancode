@@ -44,7 +44,7 @@ In this challenge you will learn how to:
 Again you need to share the information of this resource with the web app, so that it can utilize the Speech service's _intelligence_. Therefore, we will create another GitHub Secret and share this with the app.
 
 - Navigate to GitHub > Settings > Secrets > Actions and add a `New repository secret`.
-- Name: `VUE_app_SPEECH_API_KEY`
+- Name: `VITE_SPEECH_API_KEY`
 - Value: The Key of your Speech service you copied before
 - Add Secret.
 
