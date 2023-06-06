@@ -22,7 +22,7 @@ In this challenge you will learn how to:
 
 ## Getting started
 
-- Navigate to your **Resource Group** we created during the previous challenges.
+- Navigate to your **Resource Group** we created on Day 1 during the previous challenges.
 - Create a new **Resource** and search for **Vision**.
   ![Screenshot of how to create a resource](./images/createresource.png)
 
@@ -34,7 +34,7 @@ In this challenge you will learn how to:
 - Give the resource a unique name.
 - Hit **Review + create** and than **Create**.
   ![](./images/createvisionresource.png)
-- After the resource is created, similar to the "Custom Vision" challenge, copy this time only the key to store it in **GitHub Secrets**
+- After the resource is created, similar to the challenges on Day 1, copy this time only the key to store it in **GitHub Secrets**
   ![Screenshot of Access keys in Custom Vision service](./images/copykeys.png)
 
 > This time the key will suffice since the endpoint for all Custom Vision services are always the same (https://westeurope.api.cognitive.microsoft.com/sts/v1.0/issuetoken).
@@ -61,20 +61,15 @@ Now we will make our app understand when we talk to our Milligram social media a
 
 Click on the frontend link displayed under the deploy step under your pipeline `https://<yourgithubhandle>.github.io/...` or open the app on your phone.
 
-Our frontend application should now have a new button with a microphone symbol that allows us to talk to our app in English and German and have our object on the image recognized.
+Our frontend application should now have a new button with an image symbol that allows us to detect our object on an image and have our object on the image recognized.
 
-Neither what you say nor what is transcribed will be saved and will **not** appear on the timeline or news feed.
+Neither what picture you take nor what is detected will be saved and will **not** appear on the timeline or news feed.
 
 ## Talk to me! What do you have to say? Play around!
 
-So go ahead and say at least 5 sentences and tell us how great your application understands you.
+So go ahead and detect at least 5 objects and tell us how great your application detects objects on images.
 
-Take also a look and read to your application or ask other people to talk to your phone, you might be surprised.
-
-By default, it will only understand German and English, if you want to change the language you could change the repo in `Frontend` > `scr` > `views` > `Microphone.vue` on line 7 and add e.g. Ukrainian
-`<option value="uk-UA">Ukrainian</option>`
-
-As you can see, the language is represented by four letters. For German it's de-DE, for English (USA) it is en-US and for Ukrainian it is uk-UA. [Here](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/language-support) you can find all supported languages with their code.
+Take also a look at your detected objects or ask other people to compare how well their objects where detected, you might be surprised.
 
 That's a wrap for our 2 days. Congrats!
 
