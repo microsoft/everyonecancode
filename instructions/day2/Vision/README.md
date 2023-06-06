@@ -33,24 +33,28 @@ In this challenge you will learn how to:
   ⚠️ Attention: westeurope is hardcoded - so make sure to have this resource in westeurope
 - Give the resource a unique name.
 - Hit **Review + create** and than **Create**.
-  ![](./images/createvisionresource.png)
+  ![Screenshot of Azure Portal create page for vision service](./images/createvisionresource.png)
 - After the resource is created, similar to the challenges on Day 1, copy this time only the key to store it in **GitHub Secrets**
-  ![Screenshot of Access keys in Custom Vision service](./images/copykeys.png)
 
-> This time the key will suffice since the endpoint for all Custom Vision services are always the same (https://westeurope.api.cognitive.microsoft.com/sts/v1.0/issuetoken).
+![Screenshot of Access keys in Custom Vision service](./images/copykeys.png)
 
 ## Integrate Custom Vision Service credentials into GitHub Secret
 
-Again you need to share the information of this resource with the web app, so that it can utilize the Custom Vision service's _intelligence_. Therefore, we will create another GitHub Secret and share this with the app.
+Again you need to share the information of this resource with the web app, so that it can utilize the Custom Vision service's _intelligence_. Therefore, we will create two more GitHub Secret and share this with the app.
 
 - Navigate to GitHub > Settings > Secrets > Actions and add a `New repository secret`.
-- Name: `VUE_app_Custom_Vision_API_KEY`
+- Name: `VITE_VISION_API_KEY`
 - Value: The Key of your Custom Vision service you copied before
 - Add Secret.
 
-  ![Screenshot of creating secret](./images/action_custom_vision_secret.png)
+![Screenshot of creating secret](./images/action_custom_vision_secret.png)
 
-Now we will make our app understand when we talk to our Milligram social media application.
+- Navigate to GitHub > Settings > Secrets > Actions and add a `New repository secret`.
+- Name: `VITE_VISION_API_ENDPOINT`
+- Value: The API endpoint of your Custom Vision service you copied before
+- Add Secret.
+
+![Screenshot of creating secret](./images/vision-api-endpoint-secret.png)
 
 ## Run Frontend Pipeline again
 
@@ -63,7 +67,7 @@ Our frontend application should now have a new button with an image symbol that 
 
 Neither what picture you take nor what is detected will be saved and will **not** appear on the timeline or news feed.
 
-## Talk to me! What do you have to say? Play around!
+## Look around! What can your app detect? Play around!
 
 So go ahead and detect at least 5 objects and tell us how great your application detects objects on images.
 
