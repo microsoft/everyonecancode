@@ -29,7 +29,7 @@ In this challenge you will learn how to:
 ## Create Custom Vision Cognitive Service
 
 - Select **Vision** and hit **Create**.
-- Your subscription and resource group should already be set. Select **westeurope** as region and **Standard S0**.
+- Your subscription and resource group should already be set. Select **westeurope** as region and **Free F0**.
   ⚠️ Attention: westeurope is hardcoded - so make sure to have this resource in westeurope
 - Give the resource a unique name.
 - Hit **Review + create** and than **Create**.
