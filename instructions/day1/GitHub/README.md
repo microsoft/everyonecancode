@@ -57,7 +57,7 @@ To change or add any of your information, click on your icon in the top right co
 
 ## Fork Repository
 
-A Fork is a copy of a repository in your own GitHub account. This is extremely handy if you want to freely experiment without making any changes to the original project.
+A Fork is a copy of a repository in your own GitHub account. This is extremely handy if you want to freely experiment without making any changes to the original project. When you fork the repro, make sure to uncheck the main branch only checkbox, as this will allow you to configure the use of gh-pages branch.
 
 Now, let's go ahead and fork this repository!
 
