@@ -77,22 +77,4 @@ Ask your coach if you did not succeed. We have you covered with a back up. ⚠�
 
 ### Use prepared Milligram Backend Service
 
-Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.GitHub.io/FemaleAIappInnovationEcosystem/#/?stack-key=a78e2b9a).
-
-### What's next?
-
-Start your own coding journey now or try out an Azure certification as we did using Udacity, Udemy, Pluralsight, Edx etc., make sure to check out the links posted below:
-
-_Tipps 📝_
-
-> - [Programming course on Udacity](https://www.udacity.com/course/intro-to-programming-nanodegree--nd000)
-> - [Microsoft Azure AI Fundamentals learning path (with optional certification)](https://learn.microsoft.com/en-us/training/paths/get-started-with-artificial-intelligence-on-azure/)
-> - [Microsoft Azure Fundamentals learning path (with optional certification)](https://learn.microsoft.com/en-gb/certifications/exams/az-900)
-
-Be sure to check out our Microsoft Programs:
-
-- [Microsoft Aspire Program for early in career hires](https://www.microsoft.com/en-ie/earlycareers/aspire-program)
-- Internships at MS
-- [Professional Careers at Microsoft](https://careers.microsoft.com/)
-
-[◀ Previous challenge](../Vision/README.md) | [🔼 Home](../../../README.md)
+Look at the prepared application with our pictures for you to play around [Milligram](https://microsoft.github.io/anyonecancode/).
