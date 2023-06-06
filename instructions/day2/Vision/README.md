@@ -55,9 +55,7 @@ Now we will make our app understand when we talk to our Milligram social media a
 ## Run Frontend Pipeline again
 
 - Navigate to **Actions** > **Pages** and **Run workflow**
-  ![](./images/light/runworkflow.png)
-
-  ![](./images/light/rerunalljobs.png)
+  ![Screenshot of Actions page of github.com/microsoft/anyonecancode](./images/run-workflow.png)
 
 Click on the frontend link displayed under the deploy step under your pipeline `https://<yourgithubhandle>.github.io/...` or open the app on your phone.
 
