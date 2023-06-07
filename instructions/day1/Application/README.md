@@ -256,7 +256,8 @@ To do this, we will use a GitHub feature called _Secrets_, where you can store y
 - On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_.
 - Add a _New repository secret_ named `VITE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
   > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/`
-  ![GitHub frontend URL](./images/light/FrontendAPIUrl.png) > ![GitHub Secrets Create](./images/light/CreateSecret.png)
+  
+![GitHub Secrets Create](./images/light/VITE_IMAGE_API_URL.png)
 
 ### Run frontend Pipeline again
 
