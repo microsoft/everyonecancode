@@ -14,7 +14,7 @@ Today you will learn how to:
 ## Table Of Contents
 
 1. [Milligram application frontend](#milligram-application-frontend)
-   1. [Run App in Development Environment](#setup-codespaces)
+   1. [(**Optional**) Run App in Development Environment](#setup-codespaces)
    2. [Enable GitHub Actions](#enable-github-action)
    3. [Run GitHub Actions](#run-github-action)
    4. [Enable GitHub Pages in project settings](#enable-github-page-in-project-settings)
@@ -51,7 +51,7 @@ _Stepping on the gas pedal triggers a request in the frontend to the API in the 
 
 </details>
 
-## Run App in Development Environment
+## [Optional] Run App in Development Environment
 
 ### Setup GitHub Codespaces
 GitHub Codespaces allow you to have a full development environment without running on your local machine. To set this up follow these steps:
