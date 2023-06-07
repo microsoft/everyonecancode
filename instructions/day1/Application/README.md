@@ -14,11 +14,12 @@ Today you will learn how to:
 ## Table Of Contents
 
 1. [Milligram application frontend](#milligram-application-frontend)
-   1. [Enable GitHub Actions](#enable-github-action)
-   2. [Run GitHub Actions](#run-github-action)
-   3. [Enable GitHub Pages in project settings](#enable-github-page-in-project-settings)
-   4. [Open GitHub Page on your phone](#open-github-page-on-your-phone)
-   5. [Add application to home screen](#add-application-to-home-screen)
+   1. [Run App in Development Environment](#setup-codespaces)
+   2. [Enable GitHub Actions](#enable-github-action)
+   3. [Run GitHub Actions](#run-github-action)
+   4. [Enable GitHub Pages in project settings](#enable-github-page-in-project-settings)
+   5. [Open GitHub Page on your phone](#open-github-page-on-your-phone)
+   6. [Add application to home screen](#add-application-to-home-screen)
 2. [Milligram application backend](#milligram-application-backend)
    1. [Prepare image upload](#prepare-image-upload)
    2. [Make application backend run in the cloud](#make-application-backend-run-in-the-cloud)
@@ -50,11 +51,40 @@ _Stepping on the gas pedal triggers a request in the frontend to the API in the 
 
 </details>
 
+## Run App in Development Environment
+
+### Setup GitHub Codespaces
+GitHub Codespaces allow you to have a full development environment without running on your local machine. To set this up follow these steps:
+
+1. In your main branch choose Code->Codespaces and Create New
+
+![Create a codespace](images/light/codespaces.png)
+
+### Run Frontend
+
+2. Install recommended extensions when prompted.
+3. In the terminal, navigate to the frontend folder with `cd frontend`
+4. Run `npm install` to install node packages.
+5. Build the app with this command - `npm run build`
+6. Run the app - `npm run serve`
+7. Click *browse to site* when it pops up to see the deployed test site
+
+![Browse to test site](images/light/browse-test.png)
+
+### Challenges To Try
+
+1. Modify the App's name to something unique for you. Can you find in the frontend code where to modify the default name, Milligram? HINT: Look in App.vue. Make a change, give the app a unique name. Rebuild and then run `npm run serve` and see the change
+
+2. In your local browser, edit the profile to point to your user name and save it. Now you will notice that the app changes the profile picture. Now open the app in an in-private browser and you will see this change does not persist. Why is this? This is because the front end uses local browser storage to maintain some persistence. To explore this you can dig into developer tools via pressing F12. Work with your coach to see more.
+
+3. Explore the ability to switch between regular website and mobile website in your browsers developer tools to see the app experience as if you were on a mobile device.
+
+![Mobile device emulation](images/light/mobile-emulation.png)
+
+
 ### Enable GitHub Actions
 
-We've prepared an automated way to create and update the website for you. You
-will use two of GitHub's awesome features. GitHub Pages and GitHub Actions. Let's
-get started with the actions.
+We've prepared an automated way to create and update the website for you. You will use two of GitHub's awesome features. GitHub Pages and GitHub Actions. Let's get started with the actions.
 
 - Go to your repository's **Actions**
 - Click the button which says _I understand my workflows, go ahead and enable them_ to enable GitHub Actions
