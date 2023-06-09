@@ -6,8 +6,15 @@
 
 Today you will learn how to:
 
-- How to install dependencies for your project
-- How to make changes to your project
-- Deploy the Milligram frontend to GitHub Pages
-- Create a Python web app on Azure
-- Deploy the Milligram backend on Azure with GitHub Actions
+- Create a new branch in your project
+- How to change the title of your App
+- How to change the colors of the title of your App
+- Test your changes in your codespace
+- Commit & push your changes
+- Open a pull request
+- Merge your pull request
+
+## Table Of Contents
+
+### Further informative resources
+
