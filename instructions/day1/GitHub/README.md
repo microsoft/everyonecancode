@@ -32,7 +32,7 @@ GitHub is actually two things: **Git** and **Hub**.
 
 - Go to the [GitHub website](https://github.com/) and create a GitHub account.
 - Add your email address, password and your desired username
-  ![Startpage of GitHub](images/light/GithubSignUp.png)
+  ![Startpage of GitHub](./images/light/GithubSignUp.png)
   ![Enter your Email page](./images/light/EnterEmail.png)
 - Type **y** for receiving emails from GitHub about new product updates and announcements. Or **n** for not receiving emails from GitHub about product updates and announcements.
   ![Announcement confirmation page](./images/light/NoAnnouncements.png)
