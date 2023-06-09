@@ -1,6 +1,6 @@
 # Challenge 1: GitHub
 
-⏲️ _Est. time to complete: 30 min._ ⏲️
+⏲️ _Est. time to complete: 45 min._ ⏲️
 
 ## Here is what you will learn 🎯
 
@@ -9,12 +9,15 @@ In this challenge you will learn how to:
 - How to sign up at GitHub and create an account
 - How to edit your profile and upload a picture
 - How to fork a repository
+- Bonus: How to build your own Octocat
 
 ## Table Of Contents
 
-1. [Sign up and create a GitHub account](#SignUpandCreateatGitHubAccount)
-2. [Edit your GitHub profile](#EditGitHubProfile)
-3. [Fork repository](#ForkRepository)
+1. [Sign up and create a GitHub account](#sign-up-and-create-at-github-account)
+2. [Edit your GitHub profile](#edit-your-github-profile)
+3. [Fork repository](#fork-repository)
+4. [Create your codespace](#create-your-codespace)
+5. [Bonus Challenge: Octocat](#bonus-challenge-build-your-own-octocat)
 
 ## Sign up and create at GitHub account
 
@@ -30,7 +33,7 @@ GitHub is actually two things: **Git** and **Hub**.
 
 - Go to the [GitHub website](https://github.com/) and create a GitHub account.
 - Add your email address, password and your desired username
-  ![Startpage of GitHub](images/light/GithubSignUp.png)
+  ![Startpage of GitHub](./images/light/GithubSignUp.png)
   ![Enter your Email page](./images/light/EnterEmail.png)
 - Type **y** for receiving emails from GitHub about new product updates and announcements. Or **n** for not receiving emails from GitHub about product updates and announcements.
   ![Announcement confirmation page](./images/light/NoAnnouncements.png)
@@ -81,5 +84,19 @@ Now that you have successfully created and customised your GitHub account, and c
 
 You will make your first code changes and merge your first pull request here.
 
+## Bonus Challenge: Build your own Octocat
+
+Octocat is the official mascot of GitHub and the cutest, friendliest, and most tentacular cat you'll ever meet! With its unique octopus-like shape, Octocat has become a beloved symbol of the GitHub community, popping up in merchandise, events, and social media.
+
+As an extra challenge for those who finish early, we dare you to unleash your creativity and design your own Octocat using the Octocat builder at https://myoctocat.com/. This tool allows you to customize the color, shape, and accessories of your Octocat, and share it with others. 
+
+Think of your Octocat as your personal avatar, your spirit animal, or your alter ego. Give it a funky hairstyle, a cool outfit, or a quirky accessory. Make it reflect your personality, your interests, or your sense of humor. 
+
+Who knows, your Octocat might become the next internet sensation, the star of a blockbuster movie, or the mascot of a future GitHub feature. Or it might just make you smile :) 
+
+So go ahead, have fun, and show us what you've got!
 
 [🔼 Home](../../../README.md) | [Next challenge ▶](../ApplicationPart1/README.md)
+
+
+

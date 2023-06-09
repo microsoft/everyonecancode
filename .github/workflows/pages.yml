@@ -31,7 +31,7 @@ jobs:
       - name: Build Static Web App
         run: npm run build -- --base=$BASE_URL
         env:
-          BASE_URL: anyonecancode
+          BASE_URL: ${{ github.event.repository.name }}
           VITE_FACE_API_KEY: ${{ secrets.VITE_FACE_API_KEY }}
           VITE_SPEECH_API_KEY: ${{ secrets.VITE_SPEECH_API_KEY }}
           VITE_IMAGE_API_URL: ${{secrets.VITE_IMAGE_API_URL}}

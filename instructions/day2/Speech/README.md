@@ -22,29 +22,14 @@ In this challenge you will learn how to:
 
 ## Getting started
 
-- Navigate to the **Resource Group** we created during the "Speech" challenge.
-- Create a new **Resource** and search for **Speech**.
-  ![Screenshot of how to create a resource](./images/light/createresource.png)
-
-## Create Speech Cognitive Service
-
-- Select **Speech** and hit **Create**.
-- Your subscription and resource group should already be set. Select **westeurope** as region and **Standard S0**.
-  ⚠️ Attention: westeurope is hardcoded - so make sure to have this resource in westeurope
-- Give the resource a unique name.
-- Hit **Review + create** and than **Create**.
-  ![](./images/light/createspeechresource.png)
-- After the resource is created, similar to the "Speech" challenge, copy this time only the key to store it in **GitHub Secrets**
-  ![Screenshot of Access keys in Speech service](./images/light/copykeys.png)
-
-> This time the key will suffice since the endpoint for all Speech services are always the same (https://westeurope.api.cognitive.microsoft.com/sts/v1.0/issuetoken).
+- Use the same Cognitive Service you created in the [Vision challenge](../Vision/README.md)
 
 ## Integrate Speech Service credentials into GitHub Secret
 
 Again you need to share the information of this resource with the web app, so that it can utilize the Speech service's _intelligence_. Therefore, we will create another GitHub Secret and share this with the app.
 
 - Navigate to GitHub > Settings > Secrets > Actions and add a `New repository secret`.
-- Name: `VUE_app_SPEECH_API_KEY`
+- Name: `VITE_SPEECH_API_KEY`
 - Value: The Key of your Speech service you copied before
 - Add Secret.
 

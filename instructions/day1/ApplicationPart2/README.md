@@ -61,7 +61,10 @@ get started with the actions.
 
 _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories) contains all of your project's files and each file's revision history. You can discuss and manage your project's work within the repository._
 
-![Enable GitHub Actions](images/light/EnableGithubActions.png)
+![Enable GitHub Actions](images/EnableGithubActions.png)
+
+Make sure that the Actions have read/write permissions. Check this via Settings->Actions->General and scroll down to the *Workflow permissions* section. Click the *Read and write permissions* option. Click *Save*.
+![Check Settings](images/gh-actions-read.png)
 
 ### Run GitHub Actions
 
@@ -70,7 +73,7 @@ _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-re
 
 Now, observe how the workflow is being run and take a look at the individual steps that are run for you by GitHub.
 
-![Run workflow](images/light/FrontendRunWorkflow.png)
+![Run workflow](images/FrontendRunWorkflow.png)
 
 ### Enable GitHub Pages in project settings
 
@@ -81,11 +84,11 @@ Many people use it to display the documentation for their projects. We will use
 it to serve the frontend for Milligram.
 
 - Go to your repository settings-
-  ![Repository Settings](images/light/RepoSettingsTab.png)
+  ![Repository Settings](images/RepoSettingsTab.png)
 - Navigate to **Pages**, select the branch _gh-pages_ and hit the save button.
-  ![Enable Pages](images/light/FrontendPages.png)
+  ![Enable Pages](images/FrontendPages.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
-  accessible through `https://<your github username>.github.io/FemaleAIAppInnovationEcosystem/`.
+  accessible through `https://<your github username>.github.io/anyonecancode/`.
 
 Take a look at the website. Try changing the profile to your GitHub account name
 and see that it is stored even if you refresh the browser.
@@ -103,7 +106,7 @@ features are:
 - Transcribe sentences you speak using Azure Speech Service (implemented on day 2)
 
 To make the first modifications, open your personal Milligram website on your phone and explore it's content. Then edit the profile in the app to show your own GitHub profile picture in the app.
-![Add to homescreen 1](images/ios/FrontendHomescreen0.jpg)
+![Add to homescreen 1](images/FrontendHomescreen0.jpg)
 
 ### Add The application to your homescreen
 
@@ -113,9 +116,9 @@ appstore. Therefore, we will not add the app to our phones' homescreen.
 
 - Open the browser menu to add the website to your homescreen.
   - This is how it should look like on ios:
-    ![Add to homescreen ios](images/ios/FrontendHomescreen1.jpg)
+    ![Add to homescreen ios](images/FrontendHomescreen1.jpg)
   - This is how it should look on Android:
-    ![Add to homescreen Android](images/android/FrontendHomescreen1.jpg)
+    ![Add to homescreen Android](images/FrontendHomescreen1.jpg)
 - Now you can open the website like a normal app from the homescreen of your phone.
 
 ## Milligram application backend
