@@ -58,7 +58,7 @@ GitHub Codespaces allow you to have a full development environment without runni
 
 1. In your main branch choose Code->Codespaces and Create New
 
-![Create a codespace](images/light/codespaces.png)
+![Create a codespace](./images/light/codespaces.png)
 
 ### Run Frontend
 
@@ -69,7 +69,7 @@ GitHub Codespaces allow you to have a full development environment without runni
 6. Run the app - `npm run serve`
 7. Click *browse to site* when it pops up to see the deployed test site
 
-![Browse to test site](images/light/browse-test.png)
+![Browse to test site](./images/light/browse-test.png)
 
 ### Challenges To Try
 
@@ -79,7 +79,7 @@ GitHub Codespaces allow you to have a full development environment without runni
 
 3. Explore the ability to switch between regular website and mobile website in your browsers developer tools to see the app experience as if you were on a mobile device.
 
-![Mobile device emulation](images/light/mobile-emulation.png)
+![Mobile device emulation](./images/light/mobile-emulation.png)
 
 
 ### Enable GitHub Actions
