@@ -119,7 +119,7 @@ it to serve the frontend for Milligram.
 
 - Go to your repository settings-
   ![Repository Settings](./images/light/RepoSettingsTab.png)
-- Navigate to **Pages**, select the branch _gh-pages_ and hit the save button.
+- Navigate to **Pages**, select the branch _gh-pages_ and hit the Save button.
   ![Enable Pages](./images/light/FrontendPages.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
   accessible through `https://<your github username>.github.io/anyonecancode/`.
@@ -139,17 +139,17 @@ features are:
 - Detect objects within images and create image descriptions (implemented on day 2)
 - Transcribe sentences you speak using Azure Speech Service (implemented on day 2)
 
-To make the first modifications, open your personal Milligram website on your phone and explore it's content. Then edit the profile in the app to show your own GitHub profile picture in the app.
+To make the first modifications, open your personal Milligram website on your phone and explore its content. Then edit the profile in the app to show your own GitHub profile picture in the app.
 ![Add to homescreen 1](./images/ios/FrontendHomescreen0.jpg)
 
 ### Add The application to your homescreen
 
 On modern mobile phones, you can "install" web apps on you homescreen to make them
 more accessible and make them look more like an app from an official
-appstore. Therefore, we will add the app to our phones' homescreen.
+appstore. Therefore, we will add the app to our phone's homescreen.
 
 - Open the browser menu to add the website to your homescreen.
-  - This is how it should look like on ios:
+  - This is how it should look like on iOS:
     ![Add to homescreen ios](./images/ios/FrontendHomescreen1.jpg)
   - This is how it should look on Android:
     ![Add to homescreen Android](./images/android/FrontendHomescreen1.jpg)
@@ -175,8 +175,8 @@ First things first - sign into your "Azure Account".
 ### Create Storage Account
 
 Our storage account is the place where we "save" our pictures for our news feed.
-Inside the storage account we use the so called [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/). The Blob Storage can hold a massive amount of files.
-Just like the disk or storage on your computer. A cool fun fact is that you can store as many photos on the storage account as you like and you don't have to worry about your storage space.
+Inside the storage account we use the so called [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/). The Blob Storage can hold a massive amount of files,
+just like the disk or storage on your computer. A cool fun fact is that you can store as many photos on the storage account as you like and you don't have to worry about your storage space.
 
 > **Azure Resource**: In Azure, the term resource refers to an entity managed by Azure. For example, virtual machines, virtual networks,
 > and storage accounts are all referred to as Azure resources.
