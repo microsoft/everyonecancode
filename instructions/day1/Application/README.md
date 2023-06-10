@@ -142,7 +142,7 @@ To make the first modifications, open your personal Milligram website on your ph
 
 On modern mobile phones, you can "install" web apps on you homescreen to make them
 more accessible and make them look more like an app from an official
-appstore. Therefore, we will not add the app to our phones' homescreen.
+appstore. Therefore, we will add the app to our phones' homescreen.
 
 - Open the browser menu to add the website to your homescreen.
   - This is how it should look like on ios:
