@@ -66,12 +66,12 @@ GitHub Codespaces allow you to have a full development environment without runni
 
 ### Run Frontend
 
-2. Install recommended extensions when prompted.
-3. In the terminal, navigate to the frontend folder with `cd frontend`
-4. Run `npm install` to install node packages.
-5. Build the app with this command - `npm run build`
-6. Run the app - `npm run serve`
-7. Click *browse to site* when it pops up to see the deployed test site
+5. Install recommended extensions when prompted.
+6. In the terminal, navigate to the frontend folder with `cd frontend`
+7. Run `npm install` to install node packages.
+8. Build the app with this command - `npm run build`
+9. Run the app - `npm run serve`
+10. Click *browse to site* when it pops up to see the deployed test site
 
 ![Browse to test site](./images/light/browse-test.png)
 
@@ -81,7 +81,7 @@ GitHub Codespaces allow you to have a full development environment without runni
 
 2. In your local browser, edit the profile to point to your user name and save it. Now you will notice that the app changes the profile picture. Now open the app in an in-private browser and you will see this change does not persist. Why is this? This is because the front end uses local browser storage to maintain some persistence. To explore this you can dig into developer tools via pressing F12. Work with your coach to see more.
 
-3. Explore the ability to switch between regular website and mobile website in your browsers developer tools to see the app experience as if you were on a mobile device.
+3. Explore the ability to switch between regular website and mobile website in your browser's developer tools to see the app experience as if you were on a mobile device.
 
 ![Mobile device emulation](./images/light/mobile-emulation.png)
 
