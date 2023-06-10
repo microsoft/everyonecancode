@@ -56,7 +56,11 @@ _Stepping on the gas pedal triggers a request in the frontend to the API in the 
 ### Setup GitHub Codespaces
 GitHub Codespaces allow you to have a full development environment without running on your local machine. To set this up follow these steps:
 
-1. In your main branch choose Code->Codespaces and Create New
+1. In your main branch, click the green * *<> Code* * dropdown
+2. Click the * *Codespaces* * tab
+3. Click the plus + or * *Create codespace on main* * green button
+4. A new browser tab will open while the new Codespace is set up
+
 
 ![Create a codespace](./images/light/codespaces.png)
 
