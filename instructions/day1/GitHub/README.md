@@ -61,6 +61,8 @@ A Fork is a copy of a repository in your own GitHub account. This is extremely h
 
 Now, let's go ahead and fork this repository!
 
+**NOTE**: Make sure to uncheck * *Copy the main branch only* *
+
 ![Highlighted fork button top right](./images/light/ForkTheRepository.png)
 
 Now that you have successfully created and customised your GitHub account, we will move onto the next challenge for today. You will create your application here.
