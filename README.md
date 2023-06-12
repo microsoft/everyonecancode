@@ -15,7 +15,7 @@
 ## Agenda for the Anyone can Code workshop
 
 ### Day 1
-- Create your own GitHub Account
+- Create your own GitHub Account and merge your first pull request
 - Use this repository as our baseline
 - Use Azure Web Apps to host your own application
 - Play around with the frontend to customize your App and to understand the basic underlying concept of Azure
@@ -45,7 +45,8 @@ Here's the overview of the training week. Happy hacking!
 ## Hands on Guide
 
 - [Day 1 - GitHub - Create new dreams](instructions/day1/GitHub/README.md)
-- [Day 1 - Application on our Phone ](instructions/day1/Application/README.md)
+- [Day 1 - Make the first changes](instructions/day1/ApplicationPart1/README.md)
+- [Day 1 - Application on our Phone ](instructions/day1/ApplicationPart2/README.md)
 - [Day 2 - Make our application recognizer objects in images](instructions/day2/Vision/README.md)
 - [Day 2 - Make our application understand speech](instructions/day2/Speech/README.md)
 

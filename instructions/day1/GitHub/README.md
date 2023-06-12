@@ -1,6 +1,6 @@
 # Challenge 1: GitHub
 
-⏲️ _Est. time to complete: 30 min._ ⏲️
+⏲️ _Est. time to complete: 45 min._ ⏲️
 
 ## Here is what you will learn 🎯
 
@@ -16,7 +16,8 @@ In this challenge you will learn how to:
 1. [Sign up and create a GitHub account](#sign-up-and-create-at-github-account)
 2. [Edit your GitHub profile](#edit-your-github-profile)
 3. [Fork repository](#fork-repository)
-4. [Bonus Challenge: Octocat](#bonus-challenge-build-your-own-octocat)
+4. [Create your codespace](#create-your-codespace)
+5. [Bonus Challenge: Octocat](#bonus-challenge-build-your-own-octocat)
 
 ## Sign up and create at GitHub account
 
@@ -63,7 +64,25 @@ Now, let's go ahead and fork this repository!
 
 ![Highlighted fork button top right](./images/light/ForkTheRepository.png)
 
-Now that you have successfully created and customised your GitHub account, we will move onto the next challenge for today. You will create your application here.
+## Create your codespace
+
+GitHub Codespaces is a cloud-based development environment that lets you code directly from your browser. It can also be connected to your local Visual Studio Code. 
+
+In your forked repository, click on the green button that says **<> Code**, go to the **Codespaces** tab an click on **Create codespace on main**. Let's do it!
+
+![Create codespace on main](./images/light/CreateCodespace.png)
+
+After a few seconds a new browser window will open with your codespace. On the lower right corner you will see a pop-up that asks you if you want to install the recommended extensions for this repository. Click on **Install**.
+
+![Install recommended extensions](./images/light/InstallRecommendedExtensions.png)
+
+Another tab in our codespace opens and it installs the extensions for Azure Functions and Python. Click back into the **Explorer** tab on the upper left to see the folder structure of our repository again.
+
+![Explorer tab](./images/light/ExplorerTab.png)
+
+Now that you have successfully created and customised your GitHub account, and created our codespace we will move onto the next challenge for today. 
+
+You will make your first code changes and merge your first pull request here.
 
 ## Bonus Challenge: Build your own Octocat
 
@@ -77,4 +96,7 @@ Who knows, your Octocat might become the next internet sensation, the star of a 
 
 So go ahead, have fun, and show us what you've got!
 
-[🔼 Home](../../../README.md) | [Next challenge ▶](../Application/README.md)
+[🔼 Home](../../../README.md) | [Next challenge ▶](../ApplicationPart1/README.md)
+
+
+
