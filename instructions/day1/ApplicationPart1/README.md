@@ -22,7 +22,7 @@ Today you will learn how to:
 
 ## Create a new branch in your project
 
-Go to your repository on GitHub. Click on the "main" dropdown and type in the name of your new branch (e.g., Update-title-and-color). Click on 'Create branch: update-title-and-color' to create it.
+Go to your forked repository on GitHub. Click on the "main" dropdown and type in the name of your new branch (e.g., Update-title-and-color). Click on 'Create branch: update-title-and-color' to create it.
 
 ![Create a new branch](./images/create-branch.png)
 
