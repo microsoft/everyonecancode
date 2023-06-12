@@ -42,21 +42,21 @@ Congrats! You just created a new branch and switched to it successfully. Now you
 
 ## Change the title and it's color of your App
 
-Open the file **Home.vue** from the folder **frontend/src/views**. On top you find a so called `<template>` that describes the basic structure of the Home-View. To change the title of your App from Milligram however you like, you need to change the text between the `<b-navbar-item>` tags.
+Open the file `Home.vue` from the folder `frontend/src/views`. On top you find a so called `<template>` that describes the basic structure of the Home-View. To change the title of your App from Milligram however you like, you need to change the text between the `<b-navbar-item>` tags.
 
 ![Change title](./images/juliagram.png)
 
-To change the color we need to add a new attribute to the `<b-navbar-item>` tag. The attribute is called `style` and we can set it to `color: green` to make our title green. You can find a full list of all possible colors [here](https://htmlcolorcodes.com/color-names/).
+To change the color we need to add a new attribute to the `<b-navbar-item>` tag. The attribute is called `style` and we can set it to `color: green` to make our title green. [You can find a full list of all possible colors here.](https://htmlcolorcodes.com/color-names/)
 
 ![Change the color of the title](./images/style-tag.png)
 
-## Test your changes in your codespace 
+## Test your changes in your codespace
 
 1. Install recommended extensions when prompted.
 2. In the terminal, navigate to the frontend folder with `cd frontend`
 3. Run `npm install` to install node packages.
 4. Build the app with this command - `npm run build`
-5. Run the app - `npm run serve`
+5. Click _browse to site_ when it pops up to see the deployed test site, you should now see your changes
 6. Click *browse to site* when it pops up to see the deployed test site - you should now see your changes!
 
 ![Browse to test site](./images/browse-test.png)
@@ -101,6 +101,5 @@ If everything went well, you should see a message that your pull request has bee
 ![Pull request merged](./images/pull-request-merged.png)
 
 Congratulations! You have successfully made your first changes to your project, learned how professional developers work together and merged them into the main branch. 
-
 
 [◀ Previous challenge](../GitHub/README.md) | [🔼 Home](../../../README.md) | [Next challenge ▶](../ApplicationPart2/README.md)

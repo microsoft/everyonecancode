@@ -61,7 +61,7 @@ _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-re
 
 ![Enable GitHub Actions](./images/EnableGithubActions.png)
 
-Make sure that the Actions have read/write permissions. Check this via Settings->Actions->General and scroll down to the *Workflow permissions* section. Click the *Read and write permissions* option. Click *Save*.
+Make sure that the Actions have read/write permissions. Check this via Settings->Actions->General and scroll down to the _Workflow permissions_ section. Click the _Read and write permissions_ option. Click _Save_.
 ![Check Settings](./images/gh-actions-read.png)
 
 ### Run GitHub Actions
@@ -194,7 +194,7 @@ Now let's connect our application with our storage so that you can take pictures
 
 - For this reason navigate to your _storage account_ again. You should be able to find it via the search bar in the top either by searching its unique name or just storage account.
 - Under _Access keys_ you can find the _Connection string_ from our storage account. Hit the 👀*Show keys* button so are able to copy it's value to e.g. a notepad.
- ![Screenshot of Access key page in Azure portal](./images/light/SecretAccessKeys.png)
+  ![Screenshot of Access key page in Azure portal](./images/light/SecretAccessKeys.png)
 - Navigate back to the web app and open the _Configuration_ tab, click _New connection string_ and create a new connection string with the following settings:
   - Name: `STORAGE`
   - Value: `<paste your (earlier copied) connection string from Storage Account>`
@@ -230,10 +230,10 @@ Once you have hit `Save` the service automatically creates a workflow file in yo
 Let's pause a second. To make sure that you are on track, test if our app's frontend gets a response from our backend service. Before we bring everything together, we want to make sure the backend service is working as expected.
 
 - Navigate to the _Overview_ tab on the left hand side of the Web App Service.
- ![App Service URL](./images/light/AppServicesDocLink.png)
+  ![App Service URL](./images/light/AppServicesDocLink.png)
 - Hit the _URL_ and test the website using the docs to figure out if the features of our Milligram will work.
 - In your browser you will have the following view:
- ![Test API Page](./images/light/TestAPIGetImages.png)
+  ![Test API Page](./images/light/TestAPIGetImages.png)
 
   :::tip
   📝 If you want to learn more about Swagger have a look at [Wikipedia](<https://en.wikipedia.org/wiki/Swagger_(software)>).
@@ -254,7 +254,7 @@ To do this, we will use a GitHub feature called _Secrets_, where you can store y
 - On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_.
 - Add a _New repository secret_ named `VITE_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
   > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/`
-![GitHub Secrets Create](./images/light/VITE_IMAGE_API_URL.png)
+  > ![GitHub Secrets Create](./images/light/VITE_IMAGE_API_URL.png)
 
 ### Run frontend Pipeline again
 
