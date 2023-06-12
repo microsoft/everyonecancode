@@ -1,4 +1,4 @@
-# Challenge 3: Object Recognition
+# Challenge 4: Object Recognition
 
 ⏲️ _est. time to complete: 30 min._ ⏲️
 

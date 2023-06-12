@@ -1,4 +1,4 @@
-# Challenge 2: Create Milligram application on Azure
+# Challenge 3: Create Milligram application on Azure
 
 ⏲️ _Est. time to complete: 60 min._ ⏲️
 
@@ -14,12 +14,11 @@ Today you will learn how to:
 ## Table Of Contents
 
 1. [Milligram application frontend](#milligram-application-frontend)
-   1. [(**Optional**) Run App in Development Environment](#setup-codespaces)
-   2. [Enable GitHub Actions](#enable-github-action)
-   3. [Run GitHub Actions](#run-github-action)
-   4. [Enable GitHub Pages in project settings](#enable-github-page-in-project-settings)
-   5. [Open GitHub Page on your phone](#open-github-page-on-your-phone)
-   6. [Add application to home screen](#add-application-to-home-screen)
+   1. [Enable GitHub Actions](#enable-github-action)
+   2. [Run GitHub Actions](#run-github-action)
+   3. [Enable GitHub Pages in project settings](#enable-github-page-in-project-settings)
+   4. [Open GitHub Page on your phone](#open-github-page-on-your-phone)
+   5. [Add application to home screen](#add-application-to-home-screen)
 2. [Milligram application backend](#milligram-application-backend)
    1. [Prepare image upload](#prepare-image-upload)
    2. [Make application backend run in the cloud](#make-application-backend-run-in-the-cloud)
@@ -51,37 +50,6 @@ _Stepping on the gas pedal triggers a request in the frontend to the API in the 
 
 </details>
 
-## [Optional] Run App in Development Environment
-
-### Setup GitHub Codespaces
-GitHub Codespaces allow you to have a full development environment without running on your local machine. To set this up follow these steps:
-
-1. In your main branch choose Code->Codespaces and Create New
-
-![Create a codespace](./images/light/codespaces.png)
-
-### Run Frontend
-
-2. Install recommended extensions when prompted.
-3. In the terminal, navigate to the frontend folder with `cd frontend`
-4. Run `npm install` to install node packages.
-5. Build the app with this command - `npm run build`
-6. Run the app - `npm run serve`
-7. Click *browse to site* when it pops up to see the deployed test site
-
-![Browse to test site](./images/light/browse-test.png)
-
-### Challenges To Try
-
-1. Modify the App's name to something unique for you. Can you find in the frontend code where to modify the default name, Milligram? HINT: Look in App.vue. Make a change, give the app a unique name. Rebuild and then run `npm run serve` and see the change
-
-2. In your local browser, edit the profile to point to your user name and save it. Now you will notice that the app changes the profile picture. Now open the app in an in-private browser and you will see this change does not persist. Why is this? This is because the front end uses local browser storage to maintain some persistence. To explore this you can dig into developer tools via pressing F12. Work with your coach to see more.
-
-3. Explore the ability to switch between regular website and mobile website in your browsers developer tools to see the app experience as if you were on a mobile device.
-
-![Mobile device emulation](./images/light/mobile-emulation.png)
-
-
 ### Enable GitHub Actions
 
 We've prepared an automated way to create and update the website for you. You will use two of GitHub's awesome features. GitHub Pages and GitHub Actions. Let's get started with the actions.
@@ -91,10 +59,10 @@ We've prepared an automated way to create and update the website for you. You wi
 
 _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories) contains all of your project's files and each file's revision history. You can discuss and manage your project's work within the repository._
 
-![Enable GitHub Actions](./images/light/EnableGithubActions.png)
+![Enable GitHub Actions](./images/EnableGithubActions.png)
 
 Make sure that the Actions have read/write permissions. Check this via Settings->Actions->General and scroll down to the *Workflow permissions* section. Click the *Read and write permissions* option. Click *Save*.
-![Check Settings](./images/light/gh-actions-read.png)
+![Check Settings](./images/gh-actions-read.png)
 
 ### Run GitHub Actions
 
@@ -103,7 +71,7 @@ Make sure that the Actions have read/write permissions. Check this via Settings-
 
 Now, observe how the workflow is being run and take a look at the individual steps that are run for you by GitHub.
 
-![Run workflow](./images/light/FrontendRunWorkflow.png)
+![Run workflow](./images/FrontendRunWorkflow.png)
 
 ### Enable GitHub Pages in project settings
 
@@ -114,9 +82,9 @@ Many people use it to display the documentation for their projects. We will use
 it to serve the frontend for Milligram.
 
 - Go to your repository settings-
-  ![Repository Settings](./images/light/RepoSettingsTab.png)
+  ![Repository Settings](./images/RepoSettingsTab.png)
 - Navigate to **Pages**, select the branch _gh-pages_ and hit the save button.
-  ![Enable Pages](./images/light/FrontendPages.png)
+  ![Enable Pages](./images/FrontendPages.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
   accessible through `https://<your github username>.github.io/anyonecancode/`.
 
@@ -136,7 +104,7 @@ features are:
 - Transcribe sentences you speak using Azure Speech Service (implemented on day 2)
 
 To make the first modifications, open your personal Milligram website on your phone and explore it's content. Then edit the profile in the app to show your own GitHub profile picture in the app.
-![Add to homescreen 1](./images/ios/FrontendHomescreen0.jpg)
+![Add to homescreen 1](./images/FrontendHomescreen0.jpg)
 
 ### Add The application to your homescreen
 
@@ -146,9 +114,9 @@ appstore. Therefore, we will not add the app to our phones' homescreen.
 
 - Open the browser menu to add the website to your homescreen.
   - This is how it should look like on ios:
-    ![Add to homescreen ios](./images/ios/FrontendHomescreen1.jpg)
+    ![Add to homescreen ios](./images/FrontendHomescreen1.jpg)
   - This is how it should look on Android:
-    ![Add to homescreen Android](./images/android/FrontendHomescreen1.jpg)
+    ![Add to homescreen Android](./images/FrontendHomescreen1.jpg)
 - Now you can open the website like a normal app from the homescreen of your phone.
 
 ## Milligram application backend
@@ -286,7 +254,6 @@ To do this, we will use a GitHub feature called _Secrets_, where you can store y
 - On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_.
 - Add a _New repository secret_ named `VITE_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
   > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/`
-  
 ![GitHub Secrets Create](./images/light/VITE_IMAGE_API_URL.png)
 
 ### Run frontend Pipeline again
@@ -321,4 +288,4 @@ Ask your coach if you did not succeed. We have you covered with a back up.
 
 Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
 
-[◀ Previous challenge](../Github/README.md) | [🔼 Home](../../../README.md) | [Next challenge ▶](../../day2/Vision/README.md)
+[◀ Previous challenge](../ApplicationPart1/README.md) | [🔼 Home](../../../README.md) | [Next challenge ▶](../../day2/Vision/README.md)
