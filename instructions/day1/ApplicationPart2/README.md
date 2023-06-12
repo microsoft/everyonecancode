@@ -83,7 +83,7 @@ it to serve the frontend for Milligram.
 
 - Go to your repository settings-
   ![Repository Settings](./images/RepoSettingsTab.png)
-- Navigate to **Pages**, select the branch _gh-pages_ and hit the save button.
+- Navigate to **Pages**, select the branch _gh-pages_ and hit the *Save* button.
   ![Enable Pages](./images/FrontendPages.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
   accessible through `https://<your github username>.github.io/anyonecancode/`.
@@ -103,14 +103,14 @@ features are:
 - Detect objects within images and create image descriptions (implemented on day 2)
 - Transcribe sentences you speak using Azure Speech Service (implemented on day 2)
 
-To make the first modifications, open your personal Milligram website on your phone and explore it's content. Then edit the profile in the app to show your own GitHub profile picture in the app.
+To make the first modifications, open your personal Milligram website on your phone and explore its content. Then edit the profile in the app to show your own GitHub profile picture in the app.
 ![Add to homescreen 1](./images/FrontendHomescreen0.jpg)
 
 ### Add The application to your homescreen
 
 On modern mobile phones, you can "install" web apps on you homescreen to make them
 more accessible and make them look more like an app from an official
-appstore. Therefore, we will not add the app to our phones' homescreen.
+appstore. Therefore, we will add the app to our phones' homescreen.
 
 - Open the browser menu to add the website to your homescreen.
   - This is how it should look like on ios:
