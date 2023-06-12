@@ -236,7 +236,7 @@ Let's pause a second. To make sure that you are on track, test if our app's fron
   ![Test API Page](./images/light/TestAPIGetImages.png)
 
   :::tip
-  📝 If you want to learn more about Swagger have a look at [Wikipedia](<https://en.wikipedia.org/wiki/Swagger_(software)>).
+  📝 If you want to learn more about OpenAPI have a look at [Wikipedia](<https://en.wikipedia.org/wiki/OpenAPI_(software)>).
   :::
 
 - Select the _GET/images_ endpoint, hit `Try it Out` and then hit `Execute`. Once you get the 200 Response code, you have a successful running service. Congratulations!
