@@ -68,7 +68,7 @@ Now, let's go ahead and fork this repository!
 
 GitHub Codespaces is a cloud-based development environment that lets you code directly from your browser. It can also be connected to your local Visual Studio Code. 
 
-In your forked repository, click on the green button that says **<> Code**, go to the **Codespaces** tab an click on **Create codespace on main**. Let's do it!
+In your forked repository, click on the green button that says **<> Code**, go to the **Codespaces** tab and click on **Create codespace on main**. Let's do it!
 
 ![Create codespace on main](./images/light/CreateCodespace.png)
 
