@@ -59,10 +59,10 @@ We've prepared an automated way to create and update the website for you. You wi
 
 _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories) contains all of your project's files and each file's revision history. You can discuss and manage your project's work within the repository._
 
-![Enable GitHub Actions](images/EnableGithubActions.png)
+![Enable GitHub Actions](./images/EnableGithubActions.png)
 
 Make sure that the Actions have read/write permissions. Check this via Settings->Actions->General and scroll down to the *Workflow permissions* section. Click the *Read and write permissions* option. Click *Save*.
-![Check Settings](images/gh-actions-read.png)
+![Check Settings](./images/gh-actions-read.png)
 
 ### Run GitHub Actions
 
@@ -71,7 +71,7 @@ Make sure that the Actions have read/write permissions. Check this via Settings-
 
 Now, observe how the workflow is being run and take a look at the individual steps that are run for you by GitHub.
 
-![Run workflow](images/FrontendRunWorkflow.png)
+![Run workflow](./images/FrontendRunWorkflow.png)
 
 ### Enable GitHub Pages in project settings
 
@@ -82,9 +82,9 @@ Many people use it to display the documentation for their projects. We will use
 it to serve the frontend for Milligram.
 
 - Go to your repository settings-
-  ![Repository Settings](images/RepoSettingsTab.png)
+  ![Repository Settings](./images/RepoSettingsTab.png)
 - Navigate to **Pages**, select the branch _gh-pages_ and hit the save button.
-  ![Enable Pages](images/FrontendPages.png)
+  ![Enable Pages](./images/FrontendPages.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
   accessible through `https://<your github username>.github.io/anyonecancode/`.
 
@@ -104,7 +104,7 @@ features are:
 - Transcribe sentences you speak using Azure Speech Service (implemented on day 2)
 
 To make the first modifications, open your personal Milligram website on your phone and explore it's content. Then edit the profile in the app to show your own GitHub profile picture in the app.
-![Add to homescreen 1](images/FrontendHomescreen0.jpg)
+![Add to homescreen 1](./images/FrontendHomescreen0.jpg)
 
 ### Add The application to your homescreen
 
@@ -114,9 +114,9 @@ appstore. Therefore, we will not add the app to our phones' homescreen.
 
 - Open the browser menu to add the website to your homescreen.
   - This is how it should look like on ios:
-    ![Add to homescreen ios](images/FrontendHomescreen1.jpg)
+    ![Add to homescreen ios](./images/FrontendHomescreen1.jpg)
   - This is how it should look on Android:
-    ![Add to homescreen Android](images/FrontendHomescreen1.jpg)
+    ![Add to homescreen Android](./images/FrontendHomescreen1.jpg)
 - Now you can open the website like a normal app from the homescreen of your phone.
 
 ## Milligram application backend
@@ -154,7 +154,7 @@ Just like the disk or storage on your computer. A cool fun fact is that you can 
 - Select your subscription & the resource group with the name that you used to log into the Azure Portal.
 - The name of your Azure Storage account needs to be globally unique. It also has to use small letters and no special characters.
 - Make sure to select `Standard` for _Performance_ and `Locally-redundant storage (LRS)` for _Redundancy_.
-  ![Storage](images/light/BackendStorage0.png)
+  ![Storage](./images/light/BackendStorage0.png)
 - Hit _Review & create_ and after that _Create_ to finish creating the storage account.
 - Once the storage account is created there should be a button _Go to resource_. Click on it.
 - Now you should see your storage account. Select _Containers_ on the left hand side.
@@ -176,11 +176,11 @@ Our [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) is
   - Runtime stack: `Python 3.8`
   - Operating System: `Linux`
   - Region: `West Europe`
-    ![backend 0](images/light/BackendApp0.png)
+    ![backend 0](./images/light/BackendApp0.png)
 - Create a new App Service Plan and `<pick your own name>`.
-  ![backend 1](images/light/BackendApp1.png)
+  ![backend 1](./images/light/BackendApp1.png)
 - Click on _Change size_ and then click the _Dev/Test_ tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan.
-  ![backend 2](images/light/BackendApp2.png)
+  ![backend 2](./images/light/BackendApp2.png)
 - Click _Review + Create_ at the bottom of the screen.
 - Review the displayed information and click _Create_ on the next screen to spin up the backend application.
 
