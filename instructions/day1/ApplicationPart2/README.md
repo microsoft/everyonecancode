@@ -276,7 +276,7 @@ Our frontend application should now have a new button with a camera symbol that 
 
 So go ahead and take at least 5 pictures and make sure they appear in your app. Make sure to share them with at least 1-2 friends so they can also upload their photos to your News Feed.
 
-That's a wrap for today. Congrats!
+That's a wrap for today. Congrats! 🎉
 
 Tomorrow, we will make our app smart by adding artificial intelligence to it for detecting objects within your images as well as talking to our app.
 
