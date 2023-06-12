@@ -231,7 +231,7 @@ Let's pause a second. To make sure that you are on track, test if our app's fron
 
 - Navigate to the _Overview_ tab on the left hand side of the Web App Service.
   ![App Service URL](./images/light/AppServicesDocLink.png)
-- Hit the _URL_ and test the website using the docs to figure out if the features of our Milligram will work.
+- Hit the URL, add `/docs` to the end, then test the website using the interactive documentation to figure out if the features of our Milligram will work.
 - In your browser you will have the following view:
   ![Test API Page](./images/light/TestAPIGetImages.png)
 
