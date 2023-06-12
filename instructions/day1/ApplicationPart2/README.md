@@ -52,9 +52,7 @@ _Stepping on the gas pedal triggers a request in the frontend to the API in the 
 
 ### Enable GitHub Actions
 
-We've prepared an automated way to create and update the website for you. You
-will use two of GitHub's awesome features. GitHub Pages and GitHub Actions. Let's
-get started with the actions.
+We've prepared an automated way to create and update the website for you. You will use two of GitHub's awesome features. GitHub Pages and GitHub Actions. Let's get started with the actions.
 
 - Go to your repository's **Actions**
 - Click the button which says _I understand my workflows, go ahead and enable them_ to enable GitHub Actions
@@ -222,7 +220,7 @@ To ensure our social media application can actually do something, we need to bri
 
 - Navigate to the _Deployment Center_ tab on the left hand side of your Web App in the Azure portal.
 - Under the _Settings_ tab select _GitHub_ as _Source_ and click _Authorize_.
-- Under _Organization_ select your GitHub handle and under _Repository_ select `FemaleAIAppInnovationEcosystem` as well as the `main` _Branch_.
+- Under _Organization_ select your GitHub handle and under _Repository_ select `anyonecancode` as well as the `main` _Branch_.
 - Hit `Save`.
 
 Once you have hit `Save` the service automatically creates a workflow file in your GitHub repository. This workflow is immediately being executed and after about 2 minutes your web app is ready. You can also check your deployment on your "Actions" tab in your repository. The color green is always a good sign.
@@ -254,9 +252,9 @@ Now that we are sure that our backend service works as expected, we can bring ev
 To do this, we will use a GitHub feature called _Secrets_, where you can store your backend URL to make your frontend talk to the backend service.
 
 - On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_.
-- Add a _New repository secret_ named `VUE_APP_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
+- Add a _New repository secret_ named `VITE_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
   > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/`
-  ![GitHub frontend URL](./images/light/FrontendAPIUrl.png) > ![GitHub Secrets Create](./images/light/CreateSecret.png)
+![GitHub Secrets Create](./images/light/VITE_IMAGE_API_URL.png)
 
 ### Run frontend Pipeline again
 
