@@ -9,7 +9,7 @@
     "lint": "eslint --ext .js,.vue,.tx --ignore-path .gitignore --fix src"
   },
   "dependencies": {
-    "@azure/cognitiveservices-computervision": "^8.2.0",
+    "@azure/cognitiveservices-computervision": "^8.1.0",
     "@azure/cognitiveservices-face": "^4.2.0",
     "@azure/ms-rest-js": "^2.5.3",
     "@codekraft-studio/vue-record": "^0.0.3",
