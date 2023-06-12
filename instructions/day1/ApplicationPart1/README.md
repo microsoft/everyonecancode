@@ -36,7 +36,7 @@ and afterwards:
 
 It should look similar to this:
 
-![Pull and checkout]./images/pull-checkout.png)
+![Pull and checkout](./images/pull-checkout.png)
 
 Congrats! You just created a new branch and switched to it successfully. Now you can start making changes to your code!
 
@@ -46,7 +46,7 @@ Open the file **Home.vue** from the folder **frontend/src/views**. On top you fi
 
 ![Change title](./images/juliagram.png)
 
-To change the color we need to add a new attribute to the `<b-navbar-item>` tag. The attribute is called `style` and we can set it to `color: greem` to make our title green. You can find a full list of all possible colors [here](https://htmlcolorcodes.com/color-names/).
+To change the color we need to add a new attribute to the `<b-navbar-item>` tag. The attribute is called `style` and we can set it to `color: green` to make our title green. You can find a full list of all possible colors [here](https://htmlcolorcodes.com/color-names/).
 
 ![Change the color of the title](./images/style-tag.png)
 
