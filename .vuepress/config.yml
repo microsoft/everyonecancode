@@ -8,7 +8,8 @@ themeConfig:
     [
       ["./", "Home"],
       "./instructions/day1/GitHub/",
-      "./instructions/day1/Application/",
+      "./instructions/day1/ApplicationPart1/",
+      "./instructions/day1/ApplicationPart2/",
       "./instructions/day2/Vision/",
       "./instructions/day2/Speech/",
     ]

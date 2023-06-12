@@ -1,4 +1,4 @@
-# Challenge 3: Object Recognition
+# Challenge 4: Object Recognition
 
 ⏲️ _est. time to complete: 30 min._ ⏲️
 
@@ -26,9 +26,9 @@ In this challenge you will learn how to:
 - Create a new **Resource** and search for **Vision**.
   ![Screenshot of how to create a resource](./images/createresource.png)
 
-## Create Custom Vision Cognitive Service
+## Create Computer Vision Cognitive Service
 
-- Select **Vision** and hit **Create**.
+- Select **Cognitive Service** and hit **Create**.
 - Your subscription and resource group should already be set. Select **westeurope** as region and **Standard S0**.
   ⚠️ Attention: westeurope is hardcoded - so make sure to have this resource in westeurope
 - Give the resource a unique name.
@@ -36,22 +36,22 @@ In this challenge you will learn how to:
   ![Screenshot of Azure Portal create page for vision service](./images/createvisionresource.png)
 - After the resource is created, similar to the challenges on Day 1, copy this time only the key to store it in **GitHub Secrets**
 
-![Screenshot of Access keys in Custom Vision service](./images/copykeys.png)
+![Screenshot of Access keys in Computer Vision service](./images/copykeys.png)
 
-## Integrate Custom Vision Service credentials into GitHub Secret
+## Integrate Computer Vision Service credentials into GitHub Secret
 
-Again you need to share the information of this resource with the web app, so that it can utilize the Custom Vision service's _intelligence_. Therefore, we will create two more GitHub Secret and share this with the app.
+You need to share the information of this resource with the web app, so that it can utilize the Computer Vision service's _intelligence_. Therefore, we will create two more GitHub Secret and share this with the app.
 
 - Navigate to GitHub > Settings > Secrets > Actions and add a `New repository secret`.
 - Name: `VITE_VISION_API_KEY`
-- Value: The Key of your Custom Vision service you copied before
+- Value: The Key of your Computer Vision service you copied before
 - Add Secret.
 
 ![Screenshot of creating secret](./images/action_custom_vision_secret.png)
 
 - Navigate to GitHub > Settings > Secrets > Actions and add a `New repository secret`.
 - Name: `VITE_VISION_API_ENDPOINT`
-- Value: The API endpoint of your Custom Vision service you copied before
+- Value: The API endpoint of your Computer Vision service you copied before
 - Add Secret.
 
 ![Screenshot of creating secret](./images/vision-api-endpoint-secret.png)
@@ -73,7 +73,7 @@ So go ahead and detect at least 5 objects and tell us how great your application
 
 Take also a look at your detected objects or ask other people to compare how well their objects where detected, you might be surprised.
 
-That's a wrap for our 2 days. Congrats!
+[◀ Previous challenge](../Github/README.md) | [🔼 Home](../../../README.md) | [Next challenge ▶](../../day2/Speech/README.md)
 
 ### Overcharged? We got you covered
 

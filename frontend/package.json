@@ -30,6 +30,7 @@
     "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.5.2",
     "vue-simple-alert": "^1.1.1",
+    "vue-template-compiler": "^2.0.0",
     "vuex": "^3.4.0",
     "vuex-persist": "^3.1.3"
   },
