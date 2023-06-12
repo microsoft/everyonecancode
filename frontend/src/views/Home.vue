@@ -6,7 +6,7 @@
         <div id="right"></div>
         <div id="top"></div>
         <div id="bottom"></div>
-        <b-navbar-item id="fontnavbar" class="title is-2" style="color:Turquoise">
+        <b-navbar-item id="fontnavbar" class="title is-2" style="color:rgb(86, 217, 204)">
           Marzigram
         </b-navbar-item>
       </template>
