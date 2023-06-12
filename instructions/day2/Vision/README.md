@@ -24,6 +24,7 @@ In this challenge you will learn how to:
 
 - Navigate to your **Resource Group** we created on Day 1 during the previous challenges.
 - Create a new **Resource** and search for **Cognitive Services**.
+  
   ![Screenshot of how to create a resource](./images/createresource.png)
 
 ## Create Computer Vision Cognitive Service
