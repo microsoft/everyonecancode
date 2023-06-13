@@ -23,12 +23,13 @@ In this challenge you will learn how to:
 ## Getting started
 
 - Navigate to your **Resource Group** we created on Day 1 during the previous challenges.
-- Create a new **Resource** and search for **Vision**.
+- Create a new **Resource** and search for **Cognitive Services**.
+  
   ![Screenshot of how to create a resource](./images/createresource.png)
 
 ## Create Computer Vision Cognitive Service
 
-- Select **Cognitive Service** and hit **Create**.
+- Select **Cognitive Services** and hit **Create**.
 - Your subscription and resource group should already be set. Select **westeurope** as region and **Standard S0**.
   ⚠️ Attention: westeurope is hardcoded - so make sure to have this resource in westeurope
 - Give the resource a unique name.
