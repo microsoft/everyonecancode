@@ -88,7 +88,7 @@ You will make your first code changes and merge your first pull request here.
 
 Octocat is the official mascot of GitHub and the cutest, friendliest, and most tentacular cat you'll ever meet! With its unique octopus-like shape, Octocat has become a beloved symbol of the GitHub community, popping up in merchandise, events, and social media.
 
-As an extra challenge for those who finish early, we dare you to unleash your creativity and design your own Octocat using the Octocat builder at https://myoctocat.com/. This tool allows you to customize the color, shape, and accessories of your Octocat, and share it with others. 
+As an extra challenge for those who finish early, we dare you to unleash your creativity and design your own Octocat using the Octocat builder at [https://myoctocat.com](https://myoctocat.com/). This tool allows you to customize the color, shape, and accessories of your Octocat, and share it with others. 
 
 Think of your Octocat as your personal avatar, your spirit animal, or your alter ego. Give it a funky hairstyle, a cool outfit, or a quirky accessory. Make it reflect your personality, your interests, or your sense of humor. 
 
