@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'haralds-milligram-backend'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7E202F7A71BC4FDC939ECFAEE3E6A659 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E2D0C1568A274FE49AD8B7BC198D27D0 }}
