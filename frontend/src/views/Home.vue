@@ -6,7 +6,7 @@
         <div id="right"></div>
         <div id="top"></div>
         <div id="bottom"></div>
-        <b-navbar-item id="fontnavbar" class="title is-2" style="color: green;">
+        <b-navbar-item id="fontnavbar" class="title is-2" style="color: rgb(131, 162, 70);">
           This is a new Title
         </b-navbar-item>
       </template>
@@ -20,6 +20,7 @@
 </template>
 
 <script lang="ts">
+
 import { Component, Vue, Watch } from "vue-property-decorator";
 import ImageList from "../components/ImageList.vue";
 import Profile from "../components/Profile.vue";
