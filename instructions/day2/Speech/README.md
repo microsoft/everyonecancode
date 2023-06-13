@@ -13,7 +13,7 @@ In this challenge you will learn how to:
 
 ## Table of contents
 
-### Further informative resources:
+### Further informative resources
 
 - [What is a Resource / Resource Group / Subscription?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
 - [Speech API](https://azure.microsoft.com/services/cognitive-services/speech-services/#overview)
@@ -40,9 +40,8 @@ Now we will make our app understand when we talk to our Milligram social media a
 ## Run Frontend Pipeline again
 
 - Navigate to **Actions** > **Pages** and **Run workflow**
-  ![](./images/light/runworkflow.png)
-
-  ![](./images/light/rerunalljobs.png)
+  ![Run a workflow](./images/light/runworkflow.png)
+  ![Run all jobs](./images/light/rerunalljobs.png)
 
 Click on the frontend link displayed under the deploy step under your pipeline `https://<yourgithubhandle>.github.io/...` or open the app on your phone.
 
@@ -50,7 +49,7 @@ Our frontend application should now have a new button with a microphone symbol t
 
 Neither what you say nor what is transcribed will be saved and will **not** appear on the timeline or news feed.
 
-## Talk to me! What do you have to say? Play around!
+## Talk to me! What do you have to say? Play around
 
 So go ahead and say at least 5 sentences and tell us how great your application understands you.
 
@@ -75,11 +74,11 @@ Look at the prepared application with our pictures for you to play around [Milli
 
 Start your own coding journey now or try out an Azure certification as we did using Udacity, Udemy, Pluralsight, Edx etc., make sure to check out the links posted below:
 
-_Tipps 📝_
-
-> - [Programming course on Udacity](https://www.udacity.com/course/intro-to-programming-nanodegree--nd000)
-> - [Microsoft Azure AI Fundamentals learning path (with optional certification)](https://learn.microsoft.com/en-us/training/paths/get-started-with-artificial-intelligence-on-azure/)
-> - [Microsoft Azure Fundamentals learning path (with optional certification)](https://learn.microsoft.com/en-gb/certifications/exams/az-900)
+  :::tip
+  - [Programming course on Udacity](https://www.udacity.com/course/intro-to-programming-nanodegree--nd000)
+  - [Microsoft Azure AI Fundamentals learning path (with optional certification)](https://learn.microsoft.com/en-us/training/paths/get-started-with-artificial-intelligence-on-azure/)
+  - [Microsoft Azure Fundamentals learning path (with optional certification)](https://learn.microsoft.com/en-gb/certifications/exams/az-900)
+  :::
 
 Be sure to check out our Microsoft Programs:
 
