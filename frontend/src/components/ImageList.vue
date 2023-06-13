@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="tile is-ancestor" style="margin-bottom: 100px;">
+    <div class="tile is-ancestor" style="margin-bottom: 100px">
       <div class="tile is-parent is-vertical">
         <div
           class="tile is-child"
