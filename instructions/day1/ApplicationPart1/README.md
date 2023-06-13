@@ -77,13 +77,16 @@ Now run first `git add .` what will add all changed files to the staging area. A
 
 ## Open a pull request and merge it
 
-Now go back into your GitHub repository. You should see a message that you have pushed your branch. Click on the **Compare & pull request** button to open a new pull request.
+Now go back into your GitHub repository. You should see a message that you have pushed your branch. Click on the **Compare & pull request** button to open a new pull request. 
 
 ![Compare & pull request](./images/compare-pull-request.png)
 
 A new window will open. Here you can see your last commit message as a title and have the possibilty to insert a description. Check that you have chosen your own repositories main branch for the merge. 
 
 Click on the **Create pull request** button on the lower left to create a new pull request.
+
+> **Note**
+> Please check that you open the pull request against the main branch of your own repository as shown in the screenshot below!
 
 ![Open pull request](./images/open-pull-request.png)
 
