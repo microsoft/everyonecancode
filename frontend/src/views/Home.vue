@@ -6,7 +6,7 @@
         <div id="right"></div>
         <div id="top"></div>
         <div id="bottom"></div>
-        <b-navbar-item id="fontnavbar" class="title is-2" style="color: dark pink">
+        <b-navbar-item id="fontnavbar" class="title is-2" style="color: brown">
           Safaegram
         </b-navbar-item>
       </template>
