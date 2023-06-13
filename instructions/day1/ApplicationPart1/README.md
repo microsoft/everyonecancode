@@ -27,7 +27,7 @@ Go to your repository on GitHub. Click on the "main" dropdown and type in the na
 ![Create a new branch](./images/create-branch.png)
 
 Go back into your codespace and type into the terminal:
-    
+
     git pull
 
 and afterwards:
@@ -42,22 +42,22 @@ Congrats! You just created a new branch and switched to it successfully. Now you
 
 ## Change the title and it's color of your App
 
-Open the file **Home.vue** from the folder **frontend/src/views**. On top you find a so called `<template>` that describes the basic structure of the Home-View. To change the title of your App from Milligram however you like, you need to change the text between the `<b-navbar-item>` tags.
+Open the file `Home.vue` from the folder `frontend/src/views`. On top you find a so called `<template>` that describes the basic structure of the Home-View. To change the title of your App from Milligram however you like, you need to change the text between the `<b-navbar-item>` tags.
 
 ![Change title](./images/juliagram.png)
 
-To change the color we need to add a new attribute to the `<b-navbar-item>` tag. The attribute is called `style` and we can set it to `color: green` to make our title green. You can find a full list of all possible colors [here](https://htmlcolorcodes.com/color-names/).
+To change the color we need to add a new attribute to the `<b-navbar-item>` tag. The attribute is called `style` and we can set it to `color: green` to make our title green. [You can find a full list of all possible colors here.](https://htmlcolorcodes.com/color-names/)
 
 ![Change the color of the title](./images/style-tag.png)
 
-## Test your changes in your codespace 
+## Test your changes in your codespace
 
 1. Install recommended extensions when prompted.
 2. In the terminal, navigate to the frontend folder with `cd frontend`
 3. Run `npm install` to install node packages.
-4. Build the app with this command - `npm run build`
-5. Run the app - `npm run serve`
-6. Click *browse to site* when it pops up to see the deployed test site - you should now see your changes!
+4. Build the app with this command - `npm run dev`
+5. Click _browse to site_ when it pops up to see the deployed test site, you should now see your changes
+6. Now, try to change the color of the title to another color of your choice: the color will change automatically in the browser without you having to refresh the page!
 
 ![Browse to test site](./images/browse-test.png)
 
@@ -77,13 +77,18 @@ Now run first `git add .` what will add all changed files to the staging area. A
 
 ## Open a pull request and merge it
 
-Now go back into your GitHub repository. You should see a message that you have pushed your branch. Click on the **Compare & pull request** button to open a new pull request.
+Now go back into your GitHub repository. You should see a message that you have pushed your branch. Click on the **Compare & pull request** button to open a new pull request. 
+
+> If this message does not appear, click on the **Pull requests** tab and then on the **New pull request** button.
 
 ![Compare & pull request](./images/compare-pull-request.png)
 
-A new window will open. Here you can see your last commit message as a title and have the possibilty to insert a description. Check that you have chosen your own repositories main branch for the merge. 
+A new window will open. Here you can see your last commit message as a title and have the possibilty to insert a description. Check that you have chosen your own repositories main branch for the merge.
 
 Click on the **Create pull request** button on the lower left to create a new pull request.
+
+> **Note**
+> Please check that you open the pull request against the main branch of your own repository as shown in the screenshot below!
 
 ![Open pull request](./images/open-pull-request.png)
 
@@ -93,14 +98,13 @@ Another window opens. Here you can review your changes again. Click on **Files c
 
 Click back on **Conversation** to see the conversation view. Here you can see the commit message and the description we have added.
 
-Pull requests are a very popular way of working professionally together with other developers on a project to ensure code quality. Usually another person would now review your changes and then (hopefully) accept them and merge them into the **main** branch. 
+Pull requests are a very popular way of working professionally together with other developers on a project to ensure code quality. Usually another person would now review your changes and then (hopefully) accept them and merge them into the **main** branch.
 Today we will do this ourselves. Click on the **Merge pull request** and then **Confirm merge** button to merge your recent made changes.
 
-If everything went well, you should see a message that your pull request has been merged. 
+If everything went well, you should see a message that your pull request has been merged.
 
 ![Pull request merged](./images/pull-request-merged.png)
 
-Congratulations! You have successfully made your first changes to your project, learned how professional developers work together and merged them into the main branch. 
-
+Congratulations! You have successfully made your first changes to your project, learned how professional developers work together and merged them into the main branch.
 
 [◀ Previous challenge](../GitHub/README.md) | [🔼 Home](../../../README.md) | [Next challenge ▶](../ApplicationPart2/README.md)
