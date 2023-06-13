@@ -254,13 +254,14 @@ To do this, we will use a GitHub feature called _Secrets_, where you can store y
 - On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_.
 - Add a _New repository secret_ named `VITE_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
   > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/`
+- Click the green *Add secret* button
 ![GitHub Secrets Create](./images/light/VITE_IMAGE_API_URL.png)
 
 ### Run frontend Pipeline again
 
 For the change of adding the secret taking effect in the frontend, we need to run our build pipeline again so that the process can pickup the newly created setting.
 
-- Navigate to the _Actions_ tab, select the _pages_ workflow and rerun the workflow:
+- In your GitHub Repository page, navigate to the _Actions_ tab, select the _pages_ workflow and rerun the workflow:
   ![GitHub frontend Workflow](./images/light/RunWorkflowFrontend.png)
 
 - Once the workflow is started you will see the workflow running. You can get to the view below by clicking on the workflow run.
