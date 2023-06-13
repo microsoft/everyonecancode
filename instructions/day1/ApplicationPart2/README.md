@@ -103,7 +103,10 @@ features are:
 - Detect objects within images and create image descriptions (implemented on day 2)
 - Transcribe sentences you speak using Azure Speech Service (implemented on day 2)
 
-To make the first modifications, open your personal Milligram website on your phone and explore it's content. Then edit the profile in the app to show your own GitHub profile picture in the app.
+Your app is available. But there is no storage or database behind it. So it won't be able to store any data. We'll install that in the next step.
+
+Now, to make the first modifications, open your personal Milligram website on your phone and explore it's content. Then edit the profile in the app to show your own GitHub profile picture in the app.
+
 ![Add to homescreen 1](./images/FrontendHomescreen0.jpg)
 
 ### Add The application to your homescreen
