@@ -8,8 +8,7 @@
         <div id="bottom"></div>
         <b-navbar-item id="fontnavbar" class="title is-2" style=" color:blueviolet">
           Serapgram
-        
-        </b-navbar-item>
+              </b-navbar-item>
       </template>
     </b-navbar>
     <div class="container">
