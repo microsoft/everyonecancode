@@ -4,7 +4,7 @@
       :src="profile.avatar_url"
       alt="Profile Picture of User"
       ratio="1by1"
-      style="margin-top: 100px;"
+      style="margin-top: 100px"
       rounded
     ></b-image>
     <h1>{{ profile.name }}</h1>
