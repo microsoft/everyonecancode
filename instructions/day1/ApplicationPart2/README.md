@@ -195,13 +195,13 @@ Our [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) is
 
 Now let's connect our application with our storage so that you can take pictures on your phone and store them. We need to tell the Web application where it can find our storage service. The application can take external configurations to configure the connection to the storage account.
 
-- For this reason navigate to your _storage account_ again. You should be able to find it via the search bar in the top either by searching its unique name or just storage account.
-- Under _Access keys_ you can find the _Connection string_ from our storage account. Hit the 👀*Show keys* button so are able to copy it's value to e.g. a notepad.
+- For this reason navigate to your _Storage account_ again. You should be able to find it via the search bar in the top either by searching its unique name or just storage account.
+- Under _Access keys_ you can find the _Connection string_ from our storage account. Hit the _👀 Show keys_ button so are able to copy it's value to e.g. a notepad.
   ![Screenshot of Access key page in Azure portal](./images/light/SecretAccessKeys.png)
 - Navigate back to the web app and open the _Configuration_ tab, click _New connection string_ and create a new connection string with the following settings:
-  - Name: `STORAGE`
-  - Value: `<paste your (earlier copied) connection string from Storage Account>`
-  - Type: `Custom`
+  | Connection string | Type | Value |
+  |-|-|-|
+  | `STORAGE` | Custom | `<paste your (earlier copied) connection string from Storage Account>` |
 - Hit `ok` and `Save`.
 - Navigate and scroll down to the _CORS_ tab on the left hand side of your app service and enter `https://<YourGithubHandle>.github.io` under _Allowed Origins_.
 - Hit `Save` again.
@@ -256,8 +256,7 @@ To do this, we will use a GitHub feature called _Secrets_, where you can store y
 
 - On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_.
 - Add a _New repository secret_ named `VITE_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
-  > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/`
-  > ![GitHub Secrets Create](./images/light/VITE_IMAGE_API_URL.png)
+  > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/` > ![GitHub Secrets Create](./images/light/VITE_IMAGE_API_URL.png)
 
 ### Run frontend Pipeline again
 
