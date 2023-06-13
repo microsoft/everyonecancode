@@ -6,7 +6,7 @@
         <div id="right"></div>
         <div id="top"></div>
         <div id="bottom"></div>
-        <b-navbar-item id="fontnavbar" class="title is-2" style="color: red">
+        <b-navbar-item id="fontnavbar" class="title is-2" style="color: mediumvioletred">
           Sarahgram
         </b-navbar-item>
       </template>
