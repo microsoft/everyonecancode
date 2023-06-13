@@ -136,3 +136,4 @@ export default class App extends Vue {
   bottom: 0;
 }
 </style>
+git pull
