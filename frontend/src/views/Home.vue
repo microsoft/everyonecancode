@@ -6,8 +6,10 @@
         <div id="right"></div>
         <div id="top"></div>
         <div id="bottom"></div>
+ update-title-and-color
         <b-navbar-item id="fontnavbar" class="title is-2" style="color: blue">
           Haraldsgram
+main
         </b-navbar-item>
       </template>
     </b-navbar>
