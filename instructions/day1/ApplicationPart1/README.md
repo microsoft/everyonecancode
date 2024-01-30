@@ -26,6 +26,16 @@ Go to your repository on GitHub. Click on the "main" dropdown and type in the na
 
 ![Create a new branch](./images/create-branch.png)
 
+Let's type a few git commands in the terminal to create a new branch.
+![Terminal](./images/terminal.png)
+
+<details>
+<summary>What is a terminal?</summary>
+
+You are probably used to getting things done on your computer by moving your mouse around and clicking on things. There is actually a different way with which you can use your computer: The terminal!\ Instead of moving your mouse you can type a command in the terminal and the computer will execute it. Say, you want to go to a specific folder on your computer - we have a command for that, namely, `cd <path-to-your-folder>`. There are many other commands that can do many different things. We call the set of all commands and their combinations the Shell Scripting language. You can try them out for yourself, go to the terminal (the little box as shown in the picture) and type `help` - this will list all the built-in commands. Feel free to play around and give them a try to familiarize yourself with the environment. For some handy common commands you can try: `pwd` (outputs the path of your current directory) and `ls` (lists all the files in the current repository)
+
+</details>
+
 Go back into your codespace and type into the terminal:
 
     git pull
