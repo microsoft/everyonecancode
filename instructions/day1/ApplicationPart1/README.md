@@ -15,7 +15,7 @@ Today you will learn how to:
 ## Table Of Contents
 
 1. [Create a new branch in your project](#create-a-new-branch-in-your-project)
-2. [Change the title and it's color of your App](#change-the-title-and-its-color-of-your-app)
+2. [Change the title and its color of your App](#change-the-title-and-its-color-of-your-app)
 3. [Test your changes in your codespace](#test-your-changes-in-your-codespace)
 4. [Commit & push your changes](#commit--push-your-changes)
 5. [Open a pull request and merge it](#open-a-pull-request-and-merge-it)
@@ -40,7 +40,7 @@ It should look similar to this:
 
 Congrats! You just created a new branch and switched to it successfully. Now you can start making changes to your code!
 
-## Change the title and it's color of your App
+## Change the title and its color of your App
 
 Open the file `Home.vue` from the folder `frontend/src/views`. On top you find a so called `<template>` that describes the basic structure of the Home-View. To change the title of your App from Milligram however you like, you need to change the text between the `<b-navbar-item>` tags.
 
