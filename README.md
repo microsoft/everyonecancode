@@ -10,7 +10,7 @@
 
 <hr>
 
-## [Click here to take a look at the sample app](https://microsoft.github.io/anyonecancode/)
+## [Click here to take a look at the sample app](https://microsoft.github.io/everyonecancode/)
 
 ## Agenda for the Anyone can Code workshop
 

@@ -1,8 +1,8 @@
 title: Anyone Can Code
 patterns: ["**/*.md", "!**/node_modules", "!templates/**", "!frontend/**"]
-base: /anyonecancode/instructions/
+base: /everyonecancode/instructions/
 themeConfig:
-  repo: "microsoft/anyonecancode"
+  repo: "microsoft/everyonecancode"
   editLinks: true
   sidebar:
     [

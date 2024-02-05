@@ -60,7 +60,7 @@ You need to share the information of this resource with the web app, so that it 
 ## Run Frontend Pipeline again
 
 - Navigate to **Actions** > **Pages** and **Run workflow**
-  ![Screenshot of Actions page of github.com/microsoft/anyonecancode](./images/run-workflow.png)
+  ![Screenshot of Actions page of github.com/microsoft/everyonecancode](./images/run-workflow.png)
 
 Click on the frontend link displayed under the deploy step under your pipeline `https://<yourgithubhandle>.github.io/...` or open the app on your phone.
 
@@ -82,4 +82,4 @@ Ask your coach if you did not succeed. We have you covered with a back up. âš ï¸
 
 ### Use prepared Milligram Backend Service
 
-Look at the prepared application with our pictures for you to play around [Milligram](https://microsoft.github.io/anyonecancode/).
+Look at the prepared application with our pictures for you to play around [Milligram](https://microsoft.github.io/everyonecancode/).
