@@ -71,6 +71,13 @@ To change the color we need to add a new attribute to the `<b-navbar-item>` tag.
 
 ![Browse to test site](./images/browse-test.png)
 
+
+| :warning: Troubleshooting          |
+|:---------------------------|
+| if the `open in browser`pop-up does not show up at the bottom of your window, refresh the page and retry    |
+
+
+
 ## Commit & push your changes
 
 Click on the `+` sign on the upper right of your terminal to create a new one. We do not want to stop our app from running, so we will use a new terminal for the next steps.
@@ -81,7 +88,7 @@ After verifying your changes, it's time to commit and push. At first we want to 
 
 ![Git status](./images/git-status.png)
 
-Now run first `git add .` what will add all changed files to the staging area. Afterwards run `git commit -m "Update title and color"` to commit your changes. The `-m` flag is used to add a commit message. It is important to add a meaningful commit message, so that others can understand what you have changed. Afterwards run `git push` to push your changes to GitHub.
+Now first run `git add .` this will add all changed files to the staging area. Afterwards run `git commit -m "Update title and color"` to commit your changes. The `-m` flag is used to add a commit message. It is important to add a meaningful commit message, so that others can understand what you have changed. Afterwards run `git push` to push your changes to GitHub.
 
 ![Git commit and push](./images/git-commit-push.png)
 
