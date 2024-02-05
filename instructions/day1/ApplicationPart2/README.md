@@ -84,7 +84,7 @@ it to serve the frontend for Milligram.
 - Go to your repository settings-
   ![Repository Settings](./images/RepoSettingsTab.png)
 - Navigate to **Pages**, select the branch _gh-pages_ and hit the save button.
-  ![Enable Pages](./images/FrontendPages.png)
+  ![Enable Pages](./images/FrontendPagesUpdated.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
   accessible through `https://<your github username>.github.io/everyonecancode/`.
 
