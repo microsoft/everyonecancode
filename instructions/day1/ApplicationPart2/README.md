@@ -182,8 +182,7 @@ Our [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) is
     ![backend 0](./images/light/BackendApp0.png)
 - Create a new App Service Plan and `<pick your own name>`.
   ![backend 1](./images/light/BackendApp1.png)
-- Click on _Change size_ and then click the _Dev/Test_ tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan.
-  ![backend 2](./images/light/BackendApp2.png)
+- In the pricing plan dropdown menu, select **Free F1** which is free, otherwise you might be charged when creating a larger plan.
 - Click _Review + Create_ at the bottom of the screen.
 - Review the displayed information and click _Create_ on the next screen to spin up the backend application.
 
@@ -234,7 +233,7 @@ Let's pause a second. To make sure that you are on track, test if our app's fron
 
 - Navigate to the _Overview_ tab on the left hand side of the Web App Service.
   ![App Service URL](./images/light/AppServicesDocLink.png)
-- Hit the URL, add `/docs` to the end, then test the website using the interactive documentation to figure out if the features of our Milligram will work.
+- Hit on Default Domain, add `/docs` to the end, then test the website using the interactive documentation to figure out if the features of our Milligram will work.
 - In your browser you will have the following view:
   ![Test API Page](./images/light/TestAPIGetImages.png)
 
@@ -247,6 +246,11 @@ Let's pause a second. To make sure that you are on track, test if our app's fron
   :::tip
   📝 Look at the HTTP Response Codes at [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). 2xx Codes generally mean success, where as 4xx and 5xx Codes show different kinds of errors. You probably know 404 - Not Found.
   :::
+
+### Clarifications, What have we done so far?
+
+Congratulations, you have just deployed the backend to your web application! Let us summarize what we have done so far.\
+First, we have deployed the frontend (user interface) of our web app using github pages. This is what you see when you go to your github pages link. The frontend needed a server to serve images and run some logic. This is where the azure part came in. First, we created a storage resource, this is responsible for storing our images. Second, we created a web app resource, here we will run our server logic. The server logic is written in Python using a framework called FastAPI. The server logic code is hosted in the everyonecancode github repository. We connected our web app to the github repository and we instructed the server to run a specific command upon starting the web app. This command will start running our server logic, this is why you can see the docs in your browser under `/docs`.  Next up, we will try to connect the Frontend to the Backend.
 
 ### Integrate Azure Web App URL in GitHub Secrets
 

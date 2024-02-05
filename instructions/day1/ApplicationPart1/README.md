@@ -72,6 +72,7 @@ To change the color we need to add a new attribute to the `<b-navbar-item>` tag.
 ![Browse to test site](./images/browse-test.png)
 
 
+
 | :warning: Troubleshooting          |
 |:---------------------------|
 | if the `open in browser`pop-up does not show up at the bottom of your window, refresh the page and retry    |
