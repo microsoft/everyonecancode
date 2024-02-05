@@ -258,7 +258,7 @@ Now that we are sure that our backend service works as expected, we can bring ev
 
 To do this, we will use a GitHub feature called _Secrets_, where you can store your backend URL to make your frontend talk to the backend service.
 
-- On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_.
+- On your Repository page in GitHub select _Settings_ and navigate to _Secrets and Variables_ > _Actions_.
 - Add a _New repository secret_ named `VITE_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
   > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/` > ![GitHub Secrets Create](./images/light/VITE_IMAGE_API_URL.png)
 
