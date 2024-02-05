@@ -157,8 +157,8 @@ Just like the disk or storage on your computer. A cool fun fact is that you can 
 - Select your subscription & the resource group with the name that you used to log into the Azure Portal.
 - The name of your Azure Storage account needs to be globally unique. It also has to use small letters and no special characters.
 - Make sure to select `Standard` for _Performance_ and `Locally-redundant storage (LRS)` for _Redundancy_.
-  ![Storage](./images/light/BackendStorage0.png)
-- Hit _Review & create_ and after that _Create_ to finish creating the storage account.
+  ![Storage](./images/light/BackendStorage1.png)
+- Hit _Review_ and after that _Create_ to finish creating the storage account.
 - Once the storage account is created there should be a button _Go to resource_. Click on it.
 - Now you should see your storage account. Select _Containers_ on the left hand side.
 - Click the _New Container_ button and create a container named `images`. Leave everything in the preconfigured settings as is.
