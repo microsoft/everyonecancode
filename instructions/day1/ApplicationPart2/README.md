@@ -84,7 +84,7 @@ it to serve the frontend for Milligram.
 - Go to your repository settings-
   ![Repository Settings](./images/RepoSettingsTab.png)
 - Navigate to **Pages**, select the branch _gh-pages_ and hit the save button.
-  ![Enable Pages](./images/FrontendPages.png)
+  ![Enable Pages](./images/FrontendPagesUpdated.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
   accessible through `https://<your github username>.github.io/everyonecancode/`.
 
@@ -157,8 +157,8 @@ Just like the disk or storage on your computer. A cool fun fact is that you can 
 - Select your subscription & the resource group with the name that you used to log into the Azure Portal.
 - The name of your Azure Storage account needs to be globally unique. It also has to use small letters and no special characters.
 - Make sure to select `Standard` for _Performance_ and `Locally-redundant storage (LRS)` for _Redundancy_.
-  ![Storage](./images/light/BackendStorage0.png)
-- Hit _Review & create_ and after that _Create_ to finish creating the storage account.
+  ![Storage](./images/light/BackendStorage1.png)
+- Hit _Review_ and after that _Create_ to finish creating the storage account.
 - Once the storage account is created there should be a button _Go to resource_. Click on it.
 - Now you should see your storage account. Select _Containers_ on the left hand side.
 - Click the _New Container_ button and create a container named `images`. Leave everything in the preconfigured settings as is.
@@ -182,8 +182,7 @@ Our [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) is
     ![backend 0](./images/light/BackendApp0.png)
 - Create a new App Service Plan and `<pick your own name>`.
   ![backend 1](./images/light/BackendApp1.png)
-- Click on _Change size_ and then click the _Dev/Test_ tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan.
-  ![backend 2](./images/light/BackendApp2.png)
+- In the pricing plan dropdown menu, select **Free F1** which is free, otherwise you might be charged when creating a larger plan.
 - Click _Review + Create_ at the bottom of the screen.
 - Review the displayed information and click _Create_ on the next screen to spin up the backend application.
 
@@ -234,7 +233,7 @@ Let's pause a second. To make sure that you are on track, test if our app's fron
 
 - Navigate to the _Overview_ tab on the left hand side of the Web App Service.
   ![App Service URL](./images/light/AppServicesDocLink.png)
-- Hit the URL, add `/docs` to the end, then test the website using the interactive documentation to figure out if the features of our Milligram will work.
+- Hit on Default Domain, add `/docs` to the end, then test the website using the interactive documentation to figure out if the features of our Milligram will work.
 - In your browser you will have the following view:
   ![Test API Page](./images/light/TestAPIGetImages.png)
 
@@ -248,13 +247,18 @@ Let's pause a second. To make sure that you are on track, test if our app's fron
   📝 Look at the HTTP Response Codes at [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). 2xx Codes generally mean success, where as 4xx and 5xx Codes show different kinds of errors. You probably know 404 - Not Found.
   :::
 
+### Clarifications, What have we done so far?
+
+Congratulations, you have just deployed the backend to your web application! Let us summarize what we have done so far.\
+First, we have deployed the frontend (user interface) of our web app using github pages. This is what you see when you go to your github pages link. The frontend needed a server to serve images and run some logic. This is where the azure part came in. First, we created a storage resource, this is responsible for storing our images. Second, we created a web app resource, here we will run our server logic. The server logic is written in Python using a framework called FastAPI. The server logic code is hosted in the everyonecancode github repository. We connected our web app to the github repository and we instructed the server to run a specific command upon starting the web app. This command will start running our server logic, this is why you can see the docs in your browser under `/docs`.  Next up, we will try to connect the Frontend to the Backend.
+
 ### Integrate Azure Web App URL in GitHub Secrets
 
 Now that we are sure that our backend service works as expected, we can bring everything together.
 
 To do this, we will use a GitHub feature called _Secrets_, where you can store your backend URL to make your frontend talk to the backend service.
 
-- On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_.
+- On your Repository page in GitHub select _Settings_ and navigate to _Secrets and Variables_ > _Actions_.
 - Add a _New repository secret_ named `VITE_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
   > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/` > ![GitHub Secrets Create](./images/light/VITE_IMAGE_API_URL.png)
 
