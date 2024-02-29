@@ -43,8 +43,8 @@ Congratulations! You just deployed an instance of the openAI gpt turbo model, we
 Similar to what we did in the challenges on Day 1 we now want to add the secret keys to Github 
 - Go to the Azure openAI resource dashboard and click on **Keys and Endpoint**
 - On Github Go to your repository, **Settings > Secrets and Variables > Actions** then click on **create new repository secret**
-- Create new secret with name **VITE_CHAT_API_KEY** and paste Key 1
-- Create another secret with name **VITE_CHAT_API_ENDPOINT** and paste the endpoint url
+- Create new secret with name **CHAT_API_KEY** and paste Key 1
+- Create another secret with name **CHAT_API_ENDPOINT** and paste the endpoint url
 - Finally create another secret with name **AZURE_OPENAI_MODEL_NAME** And paste the name you chose when you deployed the gpt turbo model.
 
 ## Run Frontend Pipeline again

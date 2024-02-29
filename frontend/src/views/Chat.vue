@@ -13,8 +13,11 @@
   </div>
 </template>
 
+
+
 <script>
 import axios from 'axios';
+import { imageApiUrl } from "../settings";
 
 export default {
   data() {
@@ -36,8 +39,9 @@ export default {
 
       // Scroll to bottom of chat messages
       this.$refs.chatMessages.scrollTop = this.$refs.chatMessages.scrollHeight;
+      
       try {
-        const response = await axios.post('http://localhost:8000/chat', {
+        const response = await axios.post(`${imageApiUrl}chat`, {
           message: this.newMessage
         });
         console.log(response)
