@@ -6,6 +6,7 @@ import Camera from "../views/Camera.vue";
 import FaceAI from "../views/FaceAI.vue";
 import ComputerVision from "../views/ComputerVision.vue";
 import EditProfile from "../views/EditProfile.vue";
+import Chat from "../views/Chat.vue"
 
 Vue.use(VueRouter);
 
@@ -39,6 +40,11 @@ const routes = [
     path: "/editprofile",
     name: "editprofile",
     component: EditProfile,
+  },
+  {
+    path: "/chat",
+    name: "chat",
+    component: Chat,
   },
 ];
 

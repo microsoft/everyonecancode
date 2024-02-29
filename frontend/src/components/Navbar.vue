@@ -26,6 +26,11 @@
             <b-icon type="is-white" icon="object-group" pack="fas"></b-icon>
           </router-link>
         </b-button>
+        <b-button v-if="showChatButton" rounded type="is-black">
+          <router-link to="/chat">
+            <b-icon type="is-white" icon="comments" pack="fas"></b-icon>
+          </router-link>
+        </b-button>
       </div>
     </template>
   </b-navbar>
@@ -39,6 +44,7 @@ import {
   faceApiEndpoint,
   speechApiKey,
   visionApiKey,
+  chatApiKey,
 } from "../settings";
 
 @Component
@@ -54,6 +60,9 @@ export default class Navbar extends Vue {
   }
   get showVisionButton(): boolean {
     return visionApiKey !== "";
+  }
+  get showChatButton(): boolean {
+    return chatApiKey !== "";
   }
 }
 </script>
