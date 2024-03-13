@@ -1,4 +1,4 @@
-# Anyone can Code! – Light Your Fire for Coding
+# Everyon can Code! – Light Your Fire for Coding
 
 ![FemaleTechGenLogo](./img/BannerEveryoneCanCode.png)
 
@@ -22,7 +22,7 @@ You have two exciting choices ahead of you:
 
 No matter which path you choose, we're thrilled to be a part of your coding adventure. Let's get started! 🚀
 
-## Agenda for the Anyone can Code workshop
+## Agenda for the Everyone can Code workshop
 
 ### Day 1
 - Create your own GitHub Account and merge your first pull request
@@ -39,7 +39,7 @@ All these Azure Services are used behind the scenes and can be consumed by our a
 - Connect your application with the services. This shows the entire lifecycle and brings together best of both worlds.
 - Trainers will suggest a long list of online courses to get started and to get a deeper dive into the technologies.
 
-Furthermore, all Anyone Can Code graduates are invited to join our [AI Developer College](https://github.com/azuredevcollege/aidevcollege) or
+Furthermore, all Everyone Can Code graduates are invited to join our [AI Developer College](https://github.com/azuredevcollege/aidevcollege) or
 [Azure Developer College](https://github.com/azuredevcollege/trainingdays).
 
 <div align="center">
@@ -60,7 +60,7 @@ Here's the overview of the training week. Happy hacking!
 - [Day 2 - Make our application recognizer objects in images](instructions/day2/Vision/README.md)
 - [Day 2 - Make our application understand speech](instructions/day2/Speech/README.md)
 
-## Goal of the Anyone can Code Program for women in the ENTIRE ECOSYSTEM over Generations
+## Goal of the Everyone can Code Program for women in the ENTIRE ECOSYSTEM over Generations
 
 The goal is to show all women of any generation, that anything is possible also in the area of tech and to light the fire for coding. We aim to connect all generations of women whether they are pupils, university students or professionals already performing in jobs. Furthermore, we aim to connect those generations which haven't gotten in touch with tech yet since we noticed that there is a huge gap between these communities. We believe there aren't enough female tech heroes yet.
 
