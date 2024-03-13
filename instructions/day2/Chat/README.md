@@ -47,6 +47,18 @@ Similar to what we did in the challenges on Day 1 we now want to add the secret 
 - Create another secret with name **CHAT_API_ENDPOINT** and paste the endpoint url
 - Finally create another secret with name **AZURE_OPENAI_MODEL_NAME** And paste the name you chose when you deployed the gpt turbo model.
 
+Now we also want to add the secrets to our github workflow:  
+
+1. Add the following code snippet under `subscription-id` around line 74 in the file located at **.github/workflows/main_milligram.yml**
+```
+      - uses: azure/appservice-settings@v1
+        with:
+          app-name: 'milligram'
+          slot-name: 'Production'  # Optional and needed only if the settings have to be configured on the specific deployment slot
+          app-settings-json: '[{ "name": "CHAT_API_KEY", "value": "${{ secrets.CHAT_API_KEY }}", "slotSetting": false }, { "name": "CHAT_API_ENDPOINT", "value":  "${{ secrets.CHAT_API_ENDPOINT }}", "slotSetting": false }, { "name": "AZURE_OPENAI_MODEL_NAME", "value": "${{ secrets.AZURE_OPENAI_MODEL_NAME }}", "slotSetting": false }]'
+        id: settings
+```
+
 ## Run Frontend Pipeline again
 
 - Navigate to **Actions** > **Pages** and **Run workflow**
