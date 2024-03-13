@@ -1,6 +1,6 @@
 # Anyone can Code! – Light Your Fire for Coding
 
-![FemaleTechGenLogo](./img/MSFT_AnyonecanCode_Banner_small.png)
+![FemaleTechGenLogo](./img/BannerEveryoneCanCode.png)
 
   <p>
     <sub>Built with ❤ by everybody who wants to make the Microsoft App Dev Innovation world a little bit more diverse! </sub>
@@ -10,7 +10,17 @@
 
 <hr>
 
-## [Click here to take a look at the sample app](https://microsoft.github.io/everyonecancode/)
+# Welcome to our coding journey!
+
+It's great to have you here! 🎉
+
+You have two exciting choices ahead of you:
+
+1. **Build your own social media app** - If you're outcome-oriented and want to show off a cool social media application, stay right here in this repository! You'll learn how to deploy and configure your very own app. It's a fantastic way to dive right into the world of software development! **[Click here to take a look at the sample app](https://microsoft.github.io/everyonecancode/)**
+
+3. **Learn to code by building a todo app** - If you're detail-oriented and want to start off your coding journey with a solid foundation, jump over to this repository: [everyoneCanCode-Internal](https://github.com/microsoft/everyoneCanCode-Internal). You'll get to learn the basics of coding by building an intuitive, yet powerful, todo app.
+
+No matter which path you choose, we're thrilled to be a part of your coding adventure. Let's get started! 🚀
 
 ## Agenda for the Anyone can Code workshop
 
