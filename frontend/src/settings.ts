@@ -5,8 +5,6 @@ const faceApiEndpoint = import.meta.env.VITE_FACE_API_ENDPOINT || "";
 const visionApiKey = import.meta.env.VITE_VISION_API_KEY || "";
 const visionApiEndpoint = import.meta.env.VITE_VISION_API_ENDPOINT || "";
 const chatApiEndpoint = import.meta.env.VITE_CHAT_API_ENDPOINT || "";
-const chatApiKey = import.meta.env.VITE_CHAT_API_KEY || "";
-
 
 export {
   imageApiUrl,
@@ -16,5 +14,4 @@ export {
   visionApiKey,
   visionApiEndpoint,
   chatApiEndpoint,
-  chatApiKey
 };

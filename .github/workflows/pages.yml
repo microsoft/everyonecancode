@@ -41,7 +41,6 @@ jobs:
           VITE_FACE_API_ENDPOINT: ${{secrets.VITE_FACE_API_ENDPOINT}}
           VITE_VISION_API_ENDPOINT: ${{secrets.VITE_VISION_API_ENDPOINT}}
           VITE_VISION_API_KEY: ${{secrets.VITE_VISION_API_KEY}}
-          VITE_CHAT_API_KEY: ${{secrets.VITE_CHAT_API_KEY}}
           VITE_CHAT_API_ENDPOINT: ${{secrets.VITE_CHAT_API_ENDPOINT}}
         working-directory: frontend
 

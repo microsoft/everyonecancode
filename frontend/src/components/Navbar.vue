@@ -44,7 +44,7 @@ import {
   faceApiEndpoint,
   speechApiKey,
   visionApiKey,
-  chatApiKey,
+  chatApiEndpoint,
 } from "../settings";
 
 @Component
@@ -62,7 +62,7 @@ export default class Navbar extends Vue {
     return visionApiKey !== "";
   }
   get showChatButton(): boolean {
-    return chatApiKey !== "";
+    return chatApiEndpoint !== "";
   }
 }
 </script>
