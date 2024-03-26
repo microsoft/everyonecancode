@@ -1,4 +1,4 @@
-# Challenge 6: Chat Bot
+# Challenge 7: Chat Bot
 
 ⏲️ _est. time to complete: 30 min._ ⏲️
 
@@ -39,7 +39,19 @@ Congratulations! You just deployed an instance of the openAI gpt turbo model, we
  
 ![Screenshot of Gpt turbo model playground](./images/gpt-playground.png)
 
-##  Integrate OpenAI Azure credentials into GitHub Secret 
+## Azure OpenAI credentials
+In order to connect our user interface with the openAI model, we need to integrate the openAI credentials in the process. For this, there are 2 options. We can add our keys in the Azure web app (Option 1) or we can automate it by adding the keys in our github workflow.
+
+### Option 1: Add OpenAI Azure credentials to web app
+Go back to Azure and open the Milligram web app again:
+- Go to **environment variables**  
+- Create new variable with name **CHAT_API_KEY** and paste Key 1
+- Create another variable with name **CHAT_API_ENDPOINT** and paste the endpoint url
+- Finally create another variable with name **AZURE_OPENAI_MODEL_NAME** And paste the name you chose when you deployed the gpt turbo model.
+
+![Screenshot of Gpt turbo model playground](./images/milligram-env-vars.png)
+
+### Option 2: Integrate OpenAI Azure credentials into GitHub Secret 
 Similar to what we did in the challenges on Day 1 we now want to add the secret keys to Github 
 - Go to the Azure openAI resource dashboard and click on **Keys and Endpoint**
 - On Github Go to your repository, **Settings > Secrets and Variables > Actions** then click on **create new repository secret**
