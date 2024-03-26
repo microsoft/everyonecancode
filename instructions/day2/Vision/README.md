@@ -1,4 +1,4 @@
-# Challenge 4: Object Recognition
+# Challenge 5: Object Recognition
 
 ⏲️ _est. time to complete: 30 min._ ⏲️
 
@@ -23,9 +23,9 @@ In this challenge you will learn how to:
 ## Getting started
 
 - Navigate to your **Resource Group** we created on Day 1 during the previous challenges.
-- Create a new **Resource** and search for **Cognitive Services**.
+- Create a new **Resource** and search for **Azure AI services**.
   
-  ![Screenshot of how to create a resource](./images/createresource.png)
+  ![Screenshot of how to create a resource](./images/createresource1.png)
 
 ## Create Computer Vision Cognitive Service
 

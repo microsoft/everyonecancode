@@ -15,7 +15,7 @@ Today you will learn how to:
 ## Table Of Contents
 
 1. [Create a new branch in your project](#create-a-new-branch-in-your-project)
-2. [Change the title and it's color of your App](#change-the-title-and-its-color-of-your-app)
+2. [Change the title and its color of your App](#change-the-title-and-its-color-of-your-app)
 3. [Test your changes in your codespace](#test-your-changes-in-your-codespace)
 4. [Commit & push your changes](#commit--push-your-changes)
 5. [Open a pull request and merge it](#open-a-pull-request-and-merge-it)
@@ -25,6 +25,16 @@ Today you will learn how to:
 Go to your repository on GitHub. Click on the "main" dropdown and type in the name of your new branch (e.g., Update-title-and-color). Click on 'Create branch: update-title-and-color' to create it.
 
 ![Create a new branch](./images/create-branch.png)
+
+Let's type a few git commands in the terminal to create a new branch.
+![Terminal](./images/terminal.png)
+
+<details>
+<summary>What is a terminal?</summary>
+
+You are probably used to getting things done on your computer by moving your mouse around and clicking on things. There is actually a different way with which you can use your computer: The terminal!\ Instead of moving your mouse you can type a command in the terminal and the computer will execute it. Say, you want to go to a specific folder on your computer - we have a command for that, namely, `cd <path-to-your-folder>` (cd stands for change directory). There are many other commands that can do many different things. We call the set of all commands and their combinations the Shell Scripting language. You can try them out for yourself, go to the terminal (the little box as shown in the picture) and type `help` - this will list all the built-in commands. Feel free to play around and give them a try to familiarize yourself with the environment. For some handy common commands you can try: `pwd` (outputs the path of your current directory, pwd stands for print working directory) and `ls` (lists all the files in the current repository)
+
+</details>
 
 Go back into your codespace and type into the terminal:
 
@@ -40,7 +50,7 @@ It should look similar to this:
 
 Congrats! You just created a new branch and switched to it successfully. Now you can start making changes to your code!
 
-## Change the title and it's color of your App
+## Change the title and its color of your App
 
 Open the file `Home.vue` from the folder `frontend/src/views`. On top you find a so called `<template>` that describes the basic structure of the Home-View. To change the title of your App from Milligram however you like, you need to change the text between the `<b-navbar-item>` tags.
 
@@ -61,6 +71,14 @@ To change the color we need to add a new attribute to the `<b-navbar-item>` tag.
 
 ![Browse to test site](./images/browse-test.png)
 
+
+
+| :warning: Troubleshooting          |
+|:---------------------------|
+| if the `open in browser`pop-up does not show up at the bottom of your window, refresh the page and retry    |
+
+
+
 ## Commit & push your changes
 
 Click on the `+` sign on the upper right of your terminal to create a new one. We do not want to stop our app from running, so we will use a new terminal for the next steps.
@@ -71,7 +89,7 @@ After verifying your changes, it's time to commit and push. At first we want to 
 
 ![Git status](./images/git-status.png)
 
-Now run first `git add .` what will add all changed files to the staging area. Afterwards run `git commit -m "Update title and color"` to commit your changes. The `-m` flag is used to add a commit message. It is important to add a meaningful commit message, so that others can understand what you have changed. Afterwards run `git push` to push your changes to GitHub.
+Now first run `git add .` this will add all changed files to the staging area. Afterwards run `git commit -m "Update title and color"` to commit your changes. The `-m` flag is used to add a commit message. It is important to add a meaningful commit message, so that others can understand what you have changed. Afterwards run `git push` to push your changes to GitHub.
 
 ![Git commit and push](./images/git-commit-push.png)
 
