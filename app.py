@@ -9,18 +9,29 @@ import os
 from datetime import datetime
 from typing import List
 from urllib.parse import quote
-
 import uvicorn
 from azure.core.exceptions import ResourceNotFoundError
 from azure.storage.blob import BlobServiceClient
 from fastapi import Depends, FastAPI, File, HTTPException, Request, UploadFile
 from fastapi.responses import RedirectResponse, StreamingResponse, JSONResponse
 from pydantic import BaseModel
+import openai
+import os
+
+
 
 app = FastAPI()
 cache_header = {"Cache-Control": "max-age=31556952"}
 
 shared_container_client = None
+
+client = openai.AzureOpenAI(
+    api_key=os.getenv("CHAT_API_KEY"),
+    api_version="2023-12-01-preview",
+    azure_endpoint = os.getenv("CHAT_API_ENDPOINT"),
+    azure_deployment=os.getenv("AZURE_OPENAI_MODEL_NAME"),
+    
+)
 
 
 async def get_container_client():
@@ -63,6 +74,9 @@ async def unicorn_exception_handler(request: Request, exc: KeyError):
 class Image(BaseModel):
     created_at: datetime = None
     image_url: str
+
+class Prompt(BaseModel):
+    message: str
 
 
 @app.get("/")
@@ -126,6 +140,23 @@ async def upload(
     return {"filename": file.filename}
 
 
+
+
+@app.post("/chat")
+async def chat(prompt: Prompt):
+    messages = [
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": prompt.message}
+    ]
+
+    response = client.chat.completions.create(
+                model="gpt-35-turbo",
+                messages=messages,
+    )
+    return response.choices[0].message.content
+
 if __name__ == "__main__":
     """Run the app locally for testing."""
     uvicorn.run(app, port=8000)
+
+
