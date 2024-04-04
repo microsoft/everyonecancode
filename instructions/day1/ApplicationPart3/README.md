@@ -74,6 +74,14 @@ Now, let's consider the scenario where you're a developer who has no experience 
 
 ![Application Footer](./images/footer-in-milligram.png)
 
+
+
+| :warning: Warning          |
+|:---------------------------|
+| Github Copilot might generate different results for every participant. Please expect that your user interface might look different than the one shown in the picture. If you have any issues with the generated code, feel free to ask the instructors.   |
+
+
+
 ## Explain code with Github Copilot
 
 
