@@ -57,9 +57,10 @@ Here's the overview of the training week. Happy hacking!
 - [Day 1 - GitHub - Create new dreams](instructions/day1/GitHub/README.md)
 - [Day 1 - Make the first changes](instructions/day1/ApplicationPart1/README.md)
 - [Day 1 - Application on our Phone ](instructions/day1/ApplicationPart2/README.md)
+- [Day 1 - Make changes with Github Copilot](instructions/day1/ApplicationPart3/README.md)
 - [Day 2 - Make our application recognizer objects in images](instructions/day2/Vision/README.md)
 - [Day 2 - Make our application understand speech](instructions/day2/Speech/README.md)
-
+- [Day 2 - Power up our application with a chat bot](instructions/day2/Chat/README.md)
 ## Goal of the Everyone can Code Program for women in the ENTIRE ECOSYSTEM over Generations
 
 The goal is to show all women of any generation, that anything is possible also in the area of tech and to light the fire for coding. We aim to connect all generations of women whether they are pupils, university students or professionals already performing in jobs. Furthermore, we aim to connect those generations which haven't gotten in touch with tech yet since we noticed that there is a huge gap between these communities. We believe there aren't enough female tech heroes yet.
