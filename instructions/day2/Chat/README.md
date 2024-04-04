@@ -32,8 +32,8 @@ In this challenge you will learn how to:
 
 ## Create OpenAI Azure service instance
 
--  Select **Azure OpenAI** and hit **Create**.
--  Your subscription and resource group should already be set. Select **westeurope** as region and **Standard S0**.
+- Select **Azure OpenAI** and hit **Create**.
+- Your subscription and resource group should already be set. Select **westeurope** as region and **Standard S0**.
 - Give the resource a unique name.
 - Hit **Next** and in network you should select "All networks, including the internet, can access this resource."
 - Hit **Next** twice and create the resource
