@@ -11,13 +11,26 @@ In this challenge you will learn how to:
 - Pass the API key to your app using GitHub Secrets
 - Start chatting with model powered assistant in the app
 
+## Table Of Contents
+
+1. [Getting Started](#getting-started)
+2. [Create OpenAI Azure service instance](#create-openai-azure-service-instance)
+3. [Deploying openAI Large Language Model](#deploying-openai-large-language-model)
+4. [Azure OpenAI credentials](#azure-openai-credentials)
+5. [Run Frontend Pipeline again](#run-frontend-pipeline-again)
+
+### Further informative resources
+
+- [Azure OpenAI Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/)
+
+
 ## Getting started
 - Navigate to your **Resource Group** we created on Day 1 during the previous challenges again
 - Create a new **Resource** and search for **Azure OpenAI**
 
     ![Screenshot of how to create a resource](./images/resource-azure-openai.png)
 
-## Create OpenAI Azure service
+## Create OpenAI Azure service instance
 
 -  Select **Azure OpenAI** and hit **Create**.
 -  Your subscription and resource group should already be set. Select **westeurope** as region and **Standard S0**.
