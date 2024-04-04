@@ -31,12 +31,14 @@ No matter which path you choose, we're thrilled to be a part of your coding adve
 - Play around with the frontend to customize your App and to understand the basic underlying concept of Azure
 - Use Azure Functions to automate your tasks
 - Use storages and databases to store images and data
+- Use Github Copilot to make changes to the codesource
 
 All these Azure Services are used behind the scenes and can be consumed by our application aka personal App.
 
 ### Day 2
 - Make your existing personal app smart with pre-trained machine learning models. For this we will focus on our managed services like Azure Cognitive Services: Computer Vision API and Speech API.
 - Connect your application with the services. This shows the entire lifecycle and brings together best of both worlds.
+- Add a chat bot to the application using Azure OpenAI.
 - Trainers will suggest a long list of online courses to get started and to get a deeper dive into the technologies.
 
 Furthermore, all Everyone Can Code graduates are invited to join our [AI Developer College](https://github.com/azuredevcollege/aidevcollege) or
