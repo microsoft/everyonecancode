@@ -1,4 +1,4 @@
-# Challenge 6: Speech Recognition
+# Challenge 5: Speech Recognition
 
 ⏲️ _est. time to complete: 30 min._ ⏲️
 

@@ -1,4 +1,4 @@
-# Challenge 7: Chat Bot
+# Challenge 6: Chat Bot
 
 ⏲️ _est. time to complete: 30 min._ ⏲️
 

@@ -31,7 +31,6 @@ No matter which path you choose, we're thrilled to be a part of your coding adve
 - Play around with the frontend to customize your App and to understand the basic underlying concept of Azure
 - Use Azure Functions to automate your tasks
 - Use storages and databases to store images and data
-- Use Github Copilot to make changes to the codesource
 
 All these Azure Services are used behind the scenes and can be consumed by our application aka personal App.
 
@@ -59,7 +58,6 @@ Here's the overview of the training week. Happy hacking!
 - [Day 1 - GitHub - Create new dreams](instructions/day1/GitHub/README.md)
 - [Day 1 - Make the first changes](instructions/day1/ApplicationPart1/README.md)
 - [Day 1 - Application on our Phone ](instructions/day1/ApplicationPart2/README.md)
-- [Day 1 - Make changes with Github Copilot](instructions/day1/ApplicationPart3/README.md)
 - [Day 2 - Make our application recognizer objects in images](instructions/day2/Vision/README.md)
 - [Day 2 - Make our application understand speech](instructions/day2/Speech/README.md)
 - [Day 2 - Power up our application with a chat bot](instructions/day2/Chat/README.md)
