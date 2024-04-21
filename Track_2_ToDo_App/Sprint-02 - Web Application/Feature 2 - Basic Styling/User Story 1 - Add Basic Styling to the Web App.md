@@ -5,10 +5,13 @@
 
 *As a user, I want to have a basic stylized interface to look and feel more like a proper web app*
 
-## Acceptance Criteria:
+## 🎯Acceptance Criteria:
 - The web app should have some basic style features to look like a modern web application.  The interface should look something like this:
 
     ![outcome4](/Track_2_ToDo_App/Sprint-02%20-%20Web%20Application/images/outcome-S02-f02-US01.png)
+
+## 🎓Know Before You Start
+no resources at this time
 
 ## 📋Steps
 

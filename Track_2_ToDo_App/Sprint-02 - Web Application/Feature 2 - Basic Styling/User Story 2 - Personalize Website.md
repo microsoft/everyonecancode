@@ -5,7 +5,7 @@
 
 *As a user, I want to have a basic stylized interface to look and feel more like a proper web app*
 
-## Acceptance Criteria:
+## 🎯Acceptance Criteria:
 - The web app should have a custom title that reflects the user's preferences.
 - The web app should have a custom color scheme that reflects the user's preferences.
 - The web app should have a background picture for the website.
@@ -13,6 +13,9 @@
 - The interface should look something like this:
 
     ![outcome5](/Track_2_ToDo_App/Sprint-02%20-%20Web%20Application/images/outcome-S02-F02-US02.png)
+
+## 🎓Know Before You Start
+no resources at this time
 
 ## 📋Steps
 

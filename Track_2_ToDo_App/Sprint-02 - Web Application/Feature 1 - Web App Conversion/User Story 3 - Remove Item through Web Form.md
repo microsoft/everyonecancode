@@ -5,13 +5,16 @@
 
 *As a user, I want to input tasks through a web form, so I can interact with the application easily.*
 
-## Acceptance Criteria:
+## 🎯Acceptance Criteria:
 - The web app should provide a form for users to input data.  
 - The web form should capture the task number of the item that the user would like to remove.
 - The application should remove the task from the list when the form is submitted.
 - The interface should look something like this:
 
     ![outcome1](/Track_2_ToDo_App/Sprint-02%20-%20Web%20Application/images/outcome-S02-f01-US03.png)
+
+## 🎓Know Before You Start
+no resources at this time
 
 ## 📋Steps
 
