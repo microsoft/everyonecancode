@@ -1,6 +1,6 @@
 ### TO-DO Application###
 todo_list.txt
-todo_list.db
+todos.db
 
 .envrc
 .DS_Store
