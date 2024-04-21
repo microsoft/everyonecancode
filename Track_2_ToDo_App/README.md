@@ -28,7 +28,7 @@ This track has been designed to work in **2 modes** you can either approach it a
 > If you are completely new to coding or just want to follow along with the step-by-step guide, this is the best place to start.
 
 - **Hackathon** - where you are given a set of features/user stories and you try to implement these changes on your own (abliet there is always an option to jump into the step-by-step guide if you get stuck) and work through them in a set amount of time. 
-    - [**start the track in the hackathon format**](/Track_2_ToDo_App/Hackathon-Format.md)
+    - [**start the track in the hackathon format**](/Track_2_ToDo_App/Hackathon-format.md)
 
 
 Still interesting in learning more about coding?  Check out the [**Where to Learn More**](/Track_2_ToDo_App/Where%20to%20Learn%20More.md) section for more resources on coding and building applications.
