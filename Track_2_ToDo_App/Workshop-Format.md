@@ -92,6 +92,8 @@ In this sprint you will be taking the application that you built in Sprint 4 and
 
 
 ## Sprint 6 - Add additional details about to-do item
+⏲️ _Est. time to complete: 60 min._ ⏲️
+
 This sprint is designed to help students add additional details to the To-Do application.  The sprint will walk students through adding details about the task such as Due Date, Priority, Additional Notes, and whether or not the Task has been completed.
 
 **📕Feature: Add additional about to-do item**
