@@ -4,7 +4,7 @@
 ## User Story
 *As a user, I want to be able to tell the system to re-generate the recommendations on how to complete a task when I click on it*
 
-## Acceptance Criteria:
+## 🎯Acceptance Criteria:
 - The web app should provide a user interface element to refresh the recommendations for a task.
 - The system should re-generate the recommendations when the user clicks on the refresh button.
 - The new recommendations should be displayed in the recommendations section.
@@ -13,6 +13,9 @@
 - The interface should look something like this:
 
     ![Refresh Recommendations](/Track_2_ToDo_App/Sprint-05%20-%20Advanced%20AI%20recommendations/images/outcome-S05-F01-US03.png) 
+
+## 🎓Know Before You Start
+no resources at this time
 
 ## 📋Steps
 
