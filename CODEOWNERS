@@ -1,4 +1,2 @@
-# In this example, @doctocat owns any files in the build/logs
-# directory at the root of the repository and any of its
-# subdirectories.
+# Track 2 - To-Do Application
 /Track_2_ToDo_App/ @fcampise
