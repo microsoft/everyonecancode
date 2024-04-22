@@ -81,7 +81,9 @@ This sprint is designed to help students add voice to text functionality to the 
 
 
 ## Sprint 5 - Advanced AI Recommendations
-This sprint is designed to help students add advanced AI recommendations to the To-Do application.  The sprint will walk students through creating recommendations for tasks that the user hasd added to the To-Do application.
+⏲️ _Est. time to complete: 60 min._ ⏲️
+
+In this sprint you will be taking the application that you built in Sprint 4 and adding in AI recommendations to help users complete their tasks.  This will be done by leveraging the Azure OpenAI API to generate recommendations based on the task name.
 
 **📕Feature: Advanced AI Recommendations**
 1. [**📖 Get Recommendations from Generative AI based on To-Do name**](/Track_2_ToDo_App/Sprint-05%20-%20Advanced%20AI%20recommendations/Feature%201%20-%20Get%20Generative%20AI%20recommendation/User%20Story%201%20-%20Get%20Gen%20AI%20recommendation.md)
