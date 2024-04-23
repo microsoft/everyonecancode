@@ -113,9 +113,11 @@ This sprint is designed to help students add advanced styling to the To-Do appli
 5. [**📖 Show spinner when loading recommendations**](/Track_2_ToDo_App/Sprint-07%20-%20Advanced%20Styling%20Your%20Web%20App/Feature%201%20-%20Advanced%20Styling/User%20Story%205%20-%20Show%20Spinner.md)
 
 ## Sprint 8 - Deploy to the Cloud
+⏲️ _Est. time to complete: 60 min._ ⏲️
+
 This sprint is designed to help students deploy the To-Do application to the cloud.  The sprint will walk students through deploying the To-Do application to the Microsoft Azure cloud.
 
-**TBD**
-
+**📕Feature: Deploy to Azure**
+1. [**📖 Deploy To-Do App to Azure**](/Track_2_ToDo_App/Sprint-08%20-%20Deploy%20to%20the%20Cloud/Feature%201%20-%20Deploy%20to%20Azure.md/User%20Story%201%20-%20Deploy%20to%20Azure.md)
 
 [🔼 Home ](/Track_2_ToDo_App/README.md) 
