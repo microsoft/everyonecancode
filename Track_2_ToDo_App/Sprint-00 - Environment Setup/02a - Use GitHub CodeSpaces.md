@@ -70,7 +70,8 @@ In our project, you'll find a file named `devcontainer.json` which is located in
     "vscode": {
       "extensions": [
         "ms-toolsai.jupyter",
-        "ms-python.python"
+        "ms-python.python",
+        "github.copilot"
       ]
     }
   }
@@ -105,11 +106,14 @@ The `devcontainer.json` file also allows us to customize our Codespaces environm
 
 - `"codespaces"`: These customizations apply when we're using Codespaces. `"openFiles": ["README.md"]` means that the `README.md` file that you saw on the main page will automatically pop up when you start the Codespace. It's like walking into a room and finding a welcome note on the table.
 
-- `"vscode": {"extensions": ["ms-toolsai.jupyter", "ms-python.python"]}`: This part tells Visual Studio Code to automatically add two helpers, called extensions, when the Codespace is created:
+- `"vscode": {"extensions": ["ms-toolsai.jupyter", "ms-python.python", "github.copilot"]}`: This part tells Visual Studio Code to automatically add three helpers, called extensions, when the Codespace is created:
 
   - `ms-toolsai.jupyter`: This is like a digital notebook where you can write and run code, and also add notes, images, or even equations. It's very popular in data science because you can see your data and your code side by side. The Jupyter extension lets you use these notebooks right inside Visual Studio Code.
 
-  - `ms-python.python`: This is a helper for writing Python code. It adds features like code suggestions, checks your code for mistakes, and even formats your code to make it look neat and consistent. It's like having a helpful robot that watches over your shoulder while you code.
+  - `ms-python.python`: This is a helper for writing Python code. It adds features like code suggestions, checks your code for mistakes, and even formats your code to make it look neat and consistent. 
+
+  - `github.copilot`: This is an AI-powered extension that assists you in writing code. It suggests code as you type based on patterns in publicly available code. It's like having a co-pilot that helps you navigate and improve your code. After activating it with the code provided by us, you can chat with it by using the speech bubble icon on the left side.
+
 
 By including these extensions in our `devcontainer.json` file, we make sure they are automatically added in the Codespace. This means you don't have to add them yourself, and everyone working on the project has the same setup.
 
