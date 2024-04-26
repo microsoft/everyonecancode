@@ -1,3 +1,7 @@
+### TO-DO Application###
+todo_list.txt
+todos.db
+
 .envrc
 .DS_Store
 
@@ -29,6 +33,14 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
