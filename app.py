@@ -25,13 +25,13 @@ cache_header = {"Cache-Control": "max-age=31556952"}
 
 shared_container_client = None
 
-client = openai.AzureOpenAI(
-    api_key=os.getenv("CHAT_API_KEY"),
-    api_version="2023-12-01-preview",
-    azure_endpoint = os.getenv("CHAT_API_ENDPOINT"),
-    azure_deployment=os.getenv("AZURE_OPENAI_MODEL_NAME"),
-    
-)
+#client = openai.AzureOpenAI(
+#    api_key=os.getenv("CHAT_API_KEY"),
+#    api_version="2023-12-01-preview",
+#    azure_endpoint = os.getenv("CHAT_API_ENDPOINT"),
+#    azure_deployment=os.getenv("AZURE_OPENAI_MODEL_NAME"),
+#    
+#)
 
 
 async def get_container_client():
