@@ -1,5 +1,5 @@
 title: Anyone Can Code
-patterns: ["**/*.md", "!**/node_modules", "!templates/**", "!frontend/**"]
+patterns: ["**/*.md", "!**/node_modules", "!templates/**", "!frontend/**", "!Track_2_ToDo_App/**"]
 base: /everyonecancode/instructions/
 themeConfig:
   repo: "microsoft/everyonecancode"
