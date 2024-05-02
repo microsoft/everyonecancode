@@ -1,6 +1,6 @@
-# Sprint 7 - Source Code Directory
-This directory contains the completed source code after the end of each user story.    The directory is structured as `app-s07-f01-us01` where
-- `s07` - represents the sprint number, in this case sprint 7
+# Sprint 8 - Source Code Directory
+This directory contains the completed source code after the end of each user story.    The directory is structured as `app-s08-f01-us01` where
+- `s08` - represents the sprint number, in this case sprint 8
 - `f01` - represents the feature number, in this case feature 1
 - `us01` - represents the user story number, in this case user story 1
 

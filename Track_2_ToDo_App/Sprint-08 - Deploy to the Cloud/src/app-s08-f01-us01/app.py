@@ -1,7 +1,7 @@
 ###############################################################################
-## Sprint 6: Advanced To-DO Details
-## Feature 1: Add Additional Details to To-Do Items
-## User Story 2: Add Priority and Notes Fields
+## Sprint 8: Deploy to Cloud
+## Feature 1: Deploy to Azure
+## User Story 1: Deploy to Azure
 ############################################################################
 import os
 import json
@@ -13,11 +13,9 @@ from priority import Priority
 from context_processors import inject_current_date
 
 app = Flask(__name__)
-
-# mssql+pyodbc://<sql user name>:<password>@<azure sql server>.database.windows.net:1433/todo?driver=ODBC+Driver+17+for+SQL+Server
-connection_string = os.environ["SQLAZURECONNSTR_AZURE_SQL_CONNECTIONSTRING"]
-
-app.config["SQLALCHEMY_DATABASE_URI"] = connection_string
+basedir = os.path.abspath(os.path.dirname(__file__))   # Get the directory of the this file
+todo_file = os.path.join(basedir, 'todo_list.txt')     # Create the path to the to-do list file using the directory
+app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///' + os.path.join(basedir, 'todos.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)

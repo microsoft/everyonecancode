@@ -1,8 +1,8 @@
 ###############################################################################
-## Sprint 6: Advanced To-DO Details
-## Feature 1: Add Additional Details to To-Do Items
-## User Story 2: Add Priority and Notes Fields
-############################################################################
+## Sprint 7: Advanced Styling in your Web Application
+## Feature 1: Advanced Web App Styling
+## User Story 4: Confirm before deleting a task
+###############################################################################
 import os
 import json
 from flask import Flask, render_template, request, redirect, url_for, g
