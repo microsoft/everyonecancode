@@ -55,11 +55,33 @@ async def get_openai_client():
 @app.exception_handler(KeyError)
 async def unicorn_exception_handler(request: Request, exc: KeyError):
     """Handle missing environment variables."""
-    if exc.args[0] == "CUSTOMCONNSTR_STORAGE":
+    match exc.args[0]:
+      case "CUSTOMCONNSTR_STORAGE":
         return JSONResponse(
             status_code=500,
             content={
                 "message": f"Oops! You forgot to set the STORAGE connection string for your Azure Storage Account. You can test locally by setting CUSTOMCONNSTR_STORAGE. 🤓"
+            },
+        )
+      case "CHAT_API_KEY":
+        return JSONResponse(
+            status_code=500,
+            content={
+                "message": f"Oops! You forgot to set the CHAT_API_KEY environment variable. 🤓"
+            },
+        )
+      case "CHAT_API_ENDPOINT":
+        return JSONResponse(
+            status_code=500,
+            content={
+                "message": f"Oops! You forgot to set the CHAT_API_ENDPOINT environment variable. 🤓"
+            },
+        )
+      case "AZURE_OPENAI_MODEL_NAME":
+        return JSONResponse(
+            status_code=500,
+            content={
+                "message": f"Oops! You forgot to set the AZURE_OPENAI_MODEL_NAME environment variable. 🤓"
             },
         )
     raise exc
@@ -75,33 +97,6 @@ async def unicorn_exception_handler(request: Request, exc: KeyError):
             },
         )
     raise exc
-
-@app.exception_handler(KeyError)
-async def unicorn_exception_handler(request: Request, exc: KeyError):
-    """Handle missing environment variables."""
-    if exc.args[0] == "CHAT_API_KEY":
-        return JSONResponse(
-            status_code=500,
-            content={
-                "message": f"Oops! You forgot to set the CHAT_API_KEY environment variable. 🤓"
-            },
-        )
-    if exc.args[0] == "CHAT_API_ENDPOINT":
-        return JSONResponse(
-            status_code=500,
-            content={
-                "message": f"Oops! You forgot to set the CHAT_API_ENDPOINT environment variable. 🤓"
-            },
-        )
-    if exc.args[0] == "AZURE_OPENAI_MODEL_NAME":
-        return JSONResponse(
-            status_code=500,
-            content={
-                "message": f"Oops! You forgot to set the AZURE_OPENAI_MODEL_NAME environment variable. 🤓"
-            },
-        )
-    raise exc
-
 
 class Image(BaseModel):
     created_at: datetime = None
