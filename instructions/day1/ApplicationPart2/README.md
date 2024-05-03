@@ -212,7 +212,7 @@ Now your storage account and web app are successfully connected and can communic
 There is still a small configuration missing. Our app uses a ready-made module so that users can interact with their content. But this module is not installed yet. In order for it to be installed, we provide the web app with a configuration that is executed when the app is launched, allowing users to interact with our app's data.
 
 - Navigate to **_Configuration_** under _Settings_.
-- Under the tab **_General settings_** you should find the _Stack settings_. For our backend we are working with the programming language Python - more specifically Python 3.8.
+- Under the tab **_General settings_** you should find the _Stack settings_. For our backend we are working with the programming language Python - more specifically Python 3.12.
 - Behind **_Startup Command_** enter `gunicorn -k uvicorn.workers.UvicornWorker` and hit _Save_.
   ![How to configure the Startup Command of the Web application](./images/light/AppServiceStartupCommand.png)
 
