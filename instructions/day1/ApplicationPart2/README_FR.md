@@ -53,19 +53,19 @@ _Appuyer sur la pédale d'accélérateur déclenche une demande dans le frontend
 Nous avons préparé une manière automatisée de créer et de mettre à jour le site web pour vous. Vous utiliserez deux des fonctionnalités géniales de GitHub. GitHub Pages et GitHub Actions. Commençons par les actions.
 
 - Allez aux **Actions** de votre dépôt
-- Cliquez sur le bouton qui dit _Je comprends mes workflows, allez-y et activez-les_ pour activer GitHub Actions
+- Cliquez sur le bouton qui dit _I understand my workflows, go ahead and enable them_ pour activer GitHub Actions
 
 _Un [dépôt](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories) contient tous les fichiers de votre projet et l'historique des révisions de chaque fichier. Vous pouvez discuter et gérer le travail de votre projet au sein du dépôt._
 
 ![Activer GitHub Actions](./images/EnableGithubActions.png)
 
-Assurez-vous que les Actions ont des permissions de lecture/écriture. Vérifiez cela via Paramètres->Actions->Général et descendez jusqu'à la section _Permissions de workflow_. Cliquez sur l'option _Permissions de lecture et d'écriture_. Cliquez sur _Enregistrer_.
+Assurez-vous que les Actions ont des permissions de lecture/écriture. Vérifiez cela via Paramètres->Actions->Général et descendez jusqu'à la section _Workflow Permissions_. Cliquez sur l'option _Read and write permissions_. Cliquez sur _Save_.
 ![Vérifier les paramètres](./images/gh-actions-read.png)
 
 ### Exécuter GitHub Actions
 
 - Dans l'onglet **Actions** de votre dépôt, cliquez sur le workflow **pages**.
-- Ouvrez le menu déroulant **Exécuter le workflow** et cliquez sur le bouton **Exécuter le workflow** pour confirmer l'exécution du workflow.
+- Ouvrez le menu déroulant **Run workflow** et cliquez sur le bouton **Run workflow** pour confirmer l'exécution du workflow.
 
 Maintenant, observez comment le workflow est exécuté et jetez un œil aux étapes individuelles qui sont exécutées pour vous par GitHub.
 
@@ -117,14 +117,14 @@ appstore officiel. Par conséquent, nous n'ajouterons pas l'application à l'éc
   - Voici à quoi cela devrait ressembler sur ios :
     ![Ajouter à l'écran d'accueil ios](./images/FrontendHomescreen1.jpg)
   - Voici à quoi cela devrait ressembler sur Android :
-    ![Ajouter à l'écran d'accueil Android](./images/FrontendHomescreen1.jpg)
+    ![Ajouter à l'écran d'accueil Android](./images/FrontendHomescreenAndroid.jpg)
 - Maintenant, vous pouvez ouvrir le site web comme une application normale depuis l'écran d'accueil de votre téléphone.
 
 ## Backend de l'application Milligram
 
 Le backend de l'application recevra les photos téléchargées, les stockera pour nous et les renverra lorsque nécessaire.
 
-Notre application peut être divisée en un frontend (quelque chose que vous voyez et qui s'exécute localement sur votre téléphone) et un backend (quelque chose qui traite vos informations). Dans ce cas, comme nous voulons créer notre propre application de médias sociaux, nous avons besoin de photos pour notre "Fil d'actualités". Cela signifie que nous avons besoin d'un endroit pour stocker de nombreux fichiers et d'un endroit pour exécuter notre logique d'application (qui est notre code de programmation).
+Notre application peut être divisée en un frontend (quelque chose que vous voyez et qui s'exécute localement sur votre téléphone) et un backend (quelque chose qui traite vos informations et qui s'exécute sur un serveur). Dans ce cas, comme nous voulons créer notre propre application de médias sociaux, nous avons besoin de photos pour notre "Fil d'actualités". Cela signifie que nous avons besoin d'un endroit pour stocker de nombreux fichiers et d'un endroit pour exécuter notre logique d'application (qui est notre code de programmation).
 
 Pour stocker les fichiers, nous utiliserons un "Compte de stockage Azure" et pour exécuter notre application, nous utiliserons une "Application web Azure".
 Tout d'abord, connectez-vous à votre "Compte Azure".
@@ -140,14 +140,12 @@ Tout d'abord, connectez-vous à votre "Compte Azure".
 ### Créer un compte de stockage
 
 Notre compte de stockage est l'endroit où nous "sauvegardons" nos photos pour notre fil d'actualités.
-À l'intérieur du compte de stockage, nous utilisons le soi-disant [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/). Le Blob Storage peut contenir une quantité massive de fichiers.
-Tout comme le disque ou le stockage sur votre ordinateur. Un fait amusant est que vous pouvez stocker autant de photos sur le compte de stockage que vous le souhaitez et vous n'avez pas à vous soucier de votre espace de stockage.
+À l'intérieur du compte de stockage, nous utilisons un [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/). Le Blob Storage peut contenir une quantité massive de fichiers.
+Tout comme le disque ou le stockage sur votre ordinateur. Un point intéresant est que vous pouvez stocker autant de photos sur le compte de stockage que vous le souhaitez et vous n'avez pas à vous soucier de votre espace de stockage.
 
-> **Ressource Azure** : Dans Azure, le terme ressource fait référence à une entité gérée par Azure. Par exemple, les machines virtuelles, les réseaux virtuels,
-> et les comptes de stockage sont tous appelés ressources Azure.
+> **Ressource Azure** : Dans Azure, le terme ressource fait référence à une entité gérée par Azure. Par exemple, les machines virtuelles, les réseaux virtuels, et les comptes de stockage sont tous appelés ressources Azure.
 
-> **Groupe de ressources Azure**: Un groupe de ressources est un conteneur qui contient des ressources liées à une solution Azure. Le groupe de ressources peut inclure toutes les
-> ressources > pour la solution, ou seulement celles que vous souhaitez gérer en groupe.
+> **Groupe de ressources Azure**: Un groupe de ressources est un conteneur qui contient des ressources liées à une solution Azure. Le groupe de ressources peut inclure toutes les ressources > pour la solution, ou seulement celles que vous souhaitez gérer en groupe.
 
 - Allez à la page d'accueil du portail Azure.
 - Cliquez sur _+ Créer une ressource_.
@@ -184,9 +182,8 @@ Notre [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) 
 - Cliquez sur _Review + Create_ en bas de l'écran.
 - Revoyez les informations affichées et cliquez sur _Create_ sur l'écran suivant pour lancer l'application backend.
 
-:::tip
-📝 Sur la page de révision, vous pouvez trouver des informations sur le coût estimé de votre service. Assurez-vous qu'il affiche _Estimated price - Free_
-:::
+> 📝 Sur la page de révision, vous pouvez trouver des informations sur le coût estimé de votre service. Assurez-vous qu'il affiche _Estimated price - Free_
+
 
 ### Intégrer le stockage et configurer l'application Web
 
@@ -247,8 +244,13 @@ Faisons une pause. Pour vous assurer que vous êtes sur la bonne voie, testez si
 
 ### Clarifications, qu'avons-nous fait jusqu'à présent ?
 
-Félicitations, vous venez de déployer le backend de votre application web ! Résumons ce que nous avons fait jusqu'à présent.\
-D'abord, nous avons déployé le frontend (interface utilisateur) de notre application web en utilisant les pages github. C'est ce que vous voyez lorsque vous allez sur votre lien de pages github. Le frontend avait besoin d'un serveur pour servir des images et exécuter une certaine logique. C'est là que la partie azure est intervenue. D'abord, nous avons créé une ressource de stockage, elle est responsable du stockage de nos images. Ensuite, nous avons créé une ressource d'application web, ici nous exécuterons notre logique de serveur. La logique du serveur est écrite en Python en utilisant un framework appelé FastAPI. Le code de la logique du serveur est hébergé dans le dépôt github de everyonecancode. Nous avons connecté notre application web au dépôt github et nous avons demandé au serveur d'exécuter une commande spécifique lors du démarrage de l'application web. Cette commande commencera à exécuter notre logique de serveur, c'est pourquoi vous pouvez voir les docs dans votre navigateur sous `/docs`. Ensuite, nous essaierons de connecter le Frontend au Backend.
+Félicitations, vous venez de déployer le backend de votre application web ! Résumons ce que nous avons fait jusqu'à présent.
+
+D'abord, nous avons déployé le frontend (interface utilisateur) de notre application web en utilisant les pages github. C'est ce que vous voyez lorsque vous allez sur votre lien de pages github. Le frontend avait besoin d'un serveur pour servir des images et exécuter une certaine logique. C'est là que la partie azure est intervenue. 
+
+Nous avons créé une ressource de stockage, elle est responsable du stockage de nos images. Ensuite, nous avons créé une ressource d'application web, ici nous exécuterons notre logique de serveur. La logique du serveur est écrite en Python en utilisant un framework appelé FastAPI. Le code de la logique du serveur est hébergé dans le dépôt github de everyonecancode. 
+
+Nous avons connecté notre application web au dépôt github et nous avons demandé au serveur d'exécuter une commande spécifique lors du démarrage de l'application web. Cette commande commencera à exécuter notre logique de serveur, c'est pourquoi vous pouvez voir les docs dans votre navigateur sous `/docs`. Ensuite, nous essaierons de connecter le Frontend au Backend.
 
 ### Intégrer l'URL de l'application web Azure dans les secrets de GitHub
 
@@ -284,7 +286,7 @@ C'est tout pour aujourd'hui. Félicitations ! 🎉
 
 Demain, nous rendrons notre application intelligente en ajoutant de l'intelligence artificielle pour détecter les objets dans vos images ainsi que pour parler à notre application.
 
-## Surchargé ? Nous avons ce qu'il vous faut
+## Vous coincez ? Nous avons ce qu'il vous faut
 
 Demandez à votre coach si vous n'avez pas réussi. Nous avons une solution de secours pour vous.
 

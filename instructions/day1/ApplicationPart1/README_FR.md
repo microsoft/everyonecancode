@@ -22,11 +22,11 @@ Aujourd'hui, vous allez apprendre comment :
 
 ## Créer une nouvelle branche dans votre projet
 
-Allez sur votre dépôt sur GitHub. Cliquez sur le menu déroulant "main" et tapez le nom de votre nouvelle branche (par exemple, Update-title-and-color). Cliquez sur 'Créer la branche : update-title-and-color' pour la créer.
+Allez sur votre dépôt sur GitHub. Cliquez sur le menu déroulant "main" et tapez le nom de votre nouvelle branche (par exemple, Update-title-and-color). Cliquez sur 'Create branch : update-title-and-color' pour la créer.
 
 ![Créer une nouvelle branche](./images/create-branch.png)
 
-Tapons quelques commandes git dans le terminal pour créer une nouvelle branche.
+Tapons quelques commandes git dans le terminal pour créer une nouvelle branche. Pour afficher le terminal, rendez-vous dans le menu 'View>Terminal' ou par le raccourci clavier `Ctrl + ù`.
 ![Terminal](./images/terminal.png)
 
 <details>
@@ -89,20 +89,22 @@ Maintenant, exécutez d'abord `git add .` cela ajoutera tous les fichiers modifi
 
 ![Git commit and push](./images/git-commit-push.png)
 
-## Ouvrir une demande de tirage et la fusionner
+## Ouvrir une "pull request" et la fusionner
 
-Retournez maintenant dans votre dépôt sur GitHub. Vous devriez voir un message indiquant que vous avez poussé votre branche. Cliquez sur le bouton **Comparer & demande de tirage** pour ouvrir une nouvelle demande de tirage.
+Retournez maintenant dans votre dépôt sur GitHub. Vous devriez voir un message indiquant que vous avez poussé votre branche. Cliquez sur le bouton **Compare & pull request** pour ouvrir une nouvelle pull request.
 
-> Si ce message n'apparaît pas, cliquez sur l'onglet **Demandes de tirage** puis sur le bouton **Nouvelle demande de tirage**.
+Une pull request est une demande de fusion de vos modifications dans la branche principale. C'est une manière très populaire de travailler professionnellement avec d'autres développeurs sur un projet pour garantir la qualité du code.
+
+> Si ce message n'apparaît pas, cliquez sur l'onglet **Pull request** puis sur le bouton **New pull request**.
 
 ![Comparer & demande de tirage](./images/compare-pull-request.png)
 
 Une nouvelle fenêtre s'ouvre. Ici, vous pouvez voir votre dernier message de commit comme titre et avez la possibilité d'insérer une description. Vérifiez que vous avez choisi la branche principale de votre propre dépôt pour la fusion.
 
-Cliquez sur le bouton **Créer une demande de tirage** en bas à gauche pour créer une nouvelle demande de tirage.
+Cliquez sur le bouton **Create pull request** en bas à gauche pour créer une nouvelle pull request.
 
 > **Note**
-> Veuillez vérifier que vous ouvrez la demande de tirage contre la branche principale de votre propre dépôt comme le montre la capture d'écran ci-dessous !
+> Veuillez vérifier que vous ouvrez la pull request contre la branche principale de votre propre dépôt comme le montre la capture d'écran ci-dessous !
 
 ![Ouvrir une demande de tirage](./images/open-pull-request.png)
 
@@ -112,8 +114,8 @@ Une autre fenêtre s'ouvre. Ici, vous pouvez revoir vos modifications. Cliquez s
 
 Cliquez à nouveau sur **Conversation** pour voir la vue de la conversation. Ici, vous pouvez voir le message de commit et la description que nous avons ajoutés.
 
-Les demandes de tirage sont une manière très populaire de travailler professionnellement avec d'autres développeurs sur un projet pour garantir la qualité du code. Habituellement, une autre personne examinerait maintenant vos modifications et les accepterait puis les fusionnerait dans la branche **main**.
-Aujourd'hui, nous allons le faire nous-mêmes. Cliquez sur le bouton **Fusionner la demande de tirage** puis sur le bouton **Confirmer la fusion** pour fusionner vos modifications récentes.
+Les pull requests sont une manière très populaire de travailler professionnellement avec d'autres développeurs sur un projet pour garantir la qualité du code. Habituellement, une autre personne examinerait maintenant vos modifications et les accepterait puis les fusionnerait dans la branche **main**.
+Aujourd'hui, nous allons le faire nous-mêmes. Cliquez sur le bouton **Merge pull request** puis sur le bouton **Confirm merge** pour fusionner vos modifications récentes.
 
 Si tout s'est bien passé, vous devriez voir un message indiquant que votre demande de tirage a été fusionnée.
 
