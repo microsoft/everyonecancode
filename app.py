@@ -23,22 +23,7 @@ app = FastAPI()
 cache_header = {"Cache-Control": "max-age=31556952"}
 
 shared_container_client = None
-
-chat_api_key = os.getenv("CHAT_API_KEY")
-chat_azure_endpoint = os.getenv("CHAT_API_ENDPOINT")
-chat_azure_deployment = os.getenv("AZURE_OPENAI_MODEL_NAME")
-
-if chat_api_key and chat_azure_endpoint and chat_azure_deployment:
-    azOpenAIClient = openai.AzureOpenAI(
-        api_key=chat_api_key,
-        api_version="2024-02-01",
-        azure_endpoint=chat_azure_endpoint,
-        azure_deployment=chat_azure_deployment
-    )
-else:
-    print("One or more environment variables of 'CHAT_API_KEY','CHAT_API_ENDPOINT','AZURE_OPENAI_MODEL_NAME' are not set. Skipping AzureOpenAI client initialization.")
-    azOpenAIClient = None
-
+shared_openai_client = None
 
 async def get_container_client():
     """Get a client to interact with the blob storage container."""
@@ -51,6 +36,21 @@ async def get_container_client():
         shared_container_client = service.get_container_client("images")
     return shared_container_client
 
+async def get_openai_client():
+    """Get a client to interact with the Azure OpenAI chat API."""
+    global shared_openai_client
+    if not shared_openai_client:
+        chat_api_key = os.environ["CHAT_API_KEY"]
+        chat_azure_endpoint = os.environ["CHAT_API_ENDPOINT"]
+        chat_azure_deployment = os.environ["AZURE_OPENAI_MODEL_NAME"]
+
+        shared_openai_client = openai.AzureOpenAI(
+            api_key=chat_api_key,
+            api_version="2023-12-01-preview",
+            azure_endpoint=chat_azure_endpoint,
+            azure_deployment=chat_azure_deployment
+        )
+    return shared_openai_client
 
 @app.exception_handler(KeyError)
 async def unicorn_exception_handler(request: Request, exc: KeyError):
@@ -72,6 +72,32 @@ async def unicorn_exception_handler(request: Request, exc: KeyError):
             status_code=500,
             content={
                 "message": f"Oops! Your connection string is either blank or malformed. 🤓"
+            },
+        )
+    raise exc
+
+@app.exception_handler(KeyError)
+async def unicorn_exception_handler(request: Request, exc: KeyError):
+    """Handle missing environment variables."""
+    if exc.args[0] == "CHAT_API_KEY":
+        return JSONResponse(
+            status_code=500,
+            content={
+                "message": f"Oops! You forgot to set the CHAT_API_KEY environment variable. 🤓"
+            },
+        )
+    if exc.args[0] == "CHAT_API_ENDPOINT":
+        return JSONResponse(
+            status_code=500,
+            content={
+                "message": f"Oops! You forgot to set the CHAT_API_ENDPOINT environment variable. 🤓"
+            },
+        )
+    if exc.args[0] == "AZURE_OPENAI_MODEL_NAME":
+        return JSONResponse(
+            status_code=500,
+            content={
+                "message": f"Oops! You forgot to set the AZURE_OPENAI_MODEL_NAME environment variable. 🤓"
             },
         )
     raise exc
@@ -149,21 +175,17 @@ async def upload(
 
 
 @app.post("/chat")
-async def chat(prompt: Prompt):
-    if azOpenAIClient is None:
-        return {"message": "OpenAI client is not initialized."}
-    
+async def chat(prompt: Prompt, azOpenAIClient=Depends(get_openai_client)):
     messages = [
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": prompt.message}
     ]
 
-    if azOpenAIClient:
-        response = azOpenAIClient.chat.completions.create(
-                    model="gpt-35-turbo",
-                    messages=messages,
-        )
-        return response.choices[0].message.content
+    response = azOpenAIClient.chat.completions.create(
+                model="gpt-35-turbo",
+                messages=messages,
+    )
+    return response.choices[0].message.content
 
 if __name__ == "__main__":
     """Run the app locally for testing."""
