@@ -176,7 +176,7 @@ Our [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) is
 - Make sure to adjust the settings according to the image below:
   - Name: `<pick your own unique name>`
   - Publish: `Code`
-  - Runtime stack: `Python 3.8`
+  - Runtime stack: `Python 3.12`
   - Operating System: `Linux`
   - Region: `West Europe`
     ![backend 0](./images/light/BackendApp0.png)
