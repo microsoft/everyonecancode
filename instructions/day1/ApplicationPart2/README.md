@@ -186,9 +186,7 @@ Our [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) is
 - Click _Review + Create_ at the bottom of the screen.
 - Review the displayed information and click _Create_ on the next screen to spin up the backend application.
 
-:::tip
 📝 On the review page, you can find information about the estimated costs of your service. Make sure it displays _Estimated price - Free_
-:::
 
 ### Integrate storage and configure Web App
 
@@ -198,9 +196,9 @@ Now let's connect our application with our storage so that you can take pictures
 - Under _Access keys_ you can find the _Connection string_ from our storage account. Hit the _👀 Show keys_ button so are able to copy it's value to e.g. a notepad.
   ![Screenshot of Access key page in Azure portal](./images/light/SecretAccessKeys.png)
 - Navigate back to the web app and open the _Configuration_ tab, click _New connection string_ and create a new connection string with the following settings:
-  | Connection string | Type | Value |
-  |-|-|-|
-  | `STORAGE` | Custom | `<paste your (earlier copied) connection string from Storage Account>` |
+  | Connection string | Value |
+  |-|-|
+  | `STORAGE` | `<paste your (earlier copied) connection string from Storage Account>` |
 - Hit `ok` and `Save`.
 - Navigate and scroll down to the _CORS_ tab on the left hand side of your app service and enter `https://<YourGithubHandle>.github.io` under _Allowed Origins_.
 - Hit `Save` again.
@@ -294,4 +292,4 @@ Ask your coach if you did not succeed. We have you covered with a back up.
 
 Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
 
-[◀ Previous challenge](../ApplicationPart1/README.md) | [🔼 Home](../../../README.md) | [Next challenge ▶](../../day2/Vision/README.md)
+[◀ Previous challenge](../ApplicationPart1/README_FR.md) | [🔼 Home](../../../README.md) | [Next challenge ▶](../../day2/Vision/README.md)

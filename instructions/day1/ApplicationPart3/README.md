@@ -97,4 +97,3 @@ Now, let's delve into how GitHub Copilot explains code. Follow these steps:
 Before we move on to the next challenge, try engaging more with Copilot. Explore clarification on various sections of the code that may be interesting to you. Don't hesitate to experiment with different commands and leverage Copilot's capabilities to generate new code snippets. Each time you make a modification, make sure to test it to observe its impact on the application.
 
 
-
