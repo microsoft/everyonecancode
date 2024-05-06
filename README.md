@@ -27,7 +27,6 @@ Nous sommes ravis de faire partie de votre aventure de codage. Commençons ! �
 - Utilisez ce dépôt comme notre base
 - Utilisez Azure Web Apps pour héberger votre propre application
 - Jouez avec l'interface utilisateur pour personnaliser votre application et comprendre le concept de base d'Azure
-- Utilisez Azure Functions pour automatiser vos tâches
 - Utilisez des stockages et des bases de données pour stocker des images et des données
 - Utilisez Github Copilot pour apporter des modifications au code source
 
@@ -52,6 +51,9 @@ Voici un aperçu de la semaine de formation. Bon hacking !
 - [Jour 1 - Faites les premiers changements](instructions/day1/ApplicationPart1/README_FR.md)
 - [Jour 1 - Application sur notre téléphone](instructions/day1/ApplicationPart2/README_FR.md)
 - [Jour 1 - Faites des changements avec Github Copilot](instructions/day1/ApplicationPart3/README_FR.md)
+- [Jour 2 - Faire reconnaitres des objets dans des images à notre app](instructions/day2/Vision/README_FR.md)
+- [Jour 2 - Faire comprendre de commandes vocales à notre app](instructions/day2/Speech/README_FR.md)
+- [Jour 2 - Ajouter une fonctionnalité de Chat avec GPT d'OpenAI](instructions/day2/Chat/README_FR.md)
 
 ## Objectif du programme *EveryoneCanCode* 
 

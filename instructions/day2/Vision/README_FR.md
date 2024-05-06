@@ -74,7 +74,7 @@ Alors allez-y et détectez au moins 5 objets et dites-nous à quel point votre a
 
 Jetez également un œil à vos objets détectés ou demandez à d'autres personnes de comparer à quel point leurs objets ont été détectés, vous pourriez être surpris.
 
-[◀ Défi précédent](../Github/README_FR.md) | [🔼 Accueil](../../../README_FR.md) | [Prochain défi ▶](../../day2/Speech/README_FR.md)
+[◀ Défi précédent](../../day1/ApplicationPart3/README_FR.md) | [🔼 Accueil](../../../README_FR.md) | [Prochain défi ▶](../../day2/Speech/README_FR.md)
 
 ### Surchargé? Nous vous avons couvert
 

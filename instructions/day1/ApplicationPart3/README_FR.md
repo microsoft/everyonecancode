@@ -97,3 +97,5 @@ Maintenant, regardons comment GitHub Copilot explique le code. Suivez ces étape
 ![Expliquer le code](./images/github-copilot-commands.png)  
 
 Avant de passer au prochain défi, essayez d'interagir davantage avec Copilot. Demandez des éclaircissements sur diverses sections du code qui peuvent vous intéresser. N'hésitez pas à expérimenter avec différentes commandes et à tirer parti des capacités de Copilot pour générer de nouveaux extraits de code. Chaque fois que vous faites une modification, assurez-vous de la tester pour observer son impact sur l'application.
+
+[◀ Défi précédent](../ApplicationPart2/README_FR.md) | [🔼 Accueil](../../../README_FR.md) | [Prochain défi ▶](../../day2/Vision/README.md)

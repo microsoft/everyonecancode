@@ -279,7 +279,7 @@ Demandez à votre coach si vous n'avez pas réussi. Nous avons une solution de s
 
 Regardez l'application préparée avec nos photos pour que vous puissiez jouer [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
 
-[◀ Défi précédent](../ApplicationPart1/README_FR.md) | [🔼 Accueil](../../../README_FR.md) | [Prochain défi ▶](../../day1/ApplicationPart3/README.md)
+[◀ Défi précédent](../ApplicationPart1/README_FR.md) | [🔼 Accueil](../../../README_FR.md) | [Prochain défi ▶](../../day1/ApplicationPart3/README_FR.md)
 
 =======
 

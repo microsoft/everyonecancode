@@ -49,7 +49,7 @@ Notre application frontend (coté client) devrait maintenant avoir un nouveau bo
 
 Ni ce que vous dites ni ce qui est transcrit ne sera sauvegardé et n'apparaîtra **pas** sur la chronologie ou le fil d'actualité.
 
-## Parlez-moi! Que voulez-vous dire? Jouez autour
+## Jouez et testez l'application !
 
 Alors allez-y et dites au moins 5 phrases et dites-nous à quel point votre application vous comprend bien.
 
@@ -60,9 +60,10 @@ Par défaut, il ne comprendra que l'allemand et l'anglais, si vous voulez change
 
 Comme vous pouvez le voir, la langue est représentée par quatre lettres. Pour l'allemand, c'est de-DE, pour l'anglais (USA) c'est en-US et pour l'ukrainien c'est uk-UA. [Ici](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support) vous pouvez trouver toutes les langues prises en charge avec leur code.
 
-C'est un wrap pour nos 2 jours. Félicitations!
+[◀ Défi précédent](../Vision/README_FR.md) | [🔼 Accueil](../../../README_FR.md) | [Prochain défi ▶](../../day2/Chat/README_FR.md)
 
-### Surchargé? Nous vous avons couvert
+
+### Dépassé? Nous vous avons couvert
 
 Demandez à votre coach si vous n'avez pas réussi. Nous vous avons couvert avec une sauvegarde. ⚠️
 
@@ -70,20 +71,4 @@ Demandez à votre coach si vous n'avez pas réussi. Nous vous avons couvert avec
 
 Regardez l'application préparée avec nos photos pour pouvoir tester [Milligram](https://codeunicornmartha.GitHub.io/FemaleAIappInnovationEcosystem/#/?stack-key=a78e2b9a).
 
-### Quelle est la prochaine étape?
 
-Commencez votre propre voyage de codage maintenant ou essayez une certification Azure comme nous l'avons fait en utilisant Udacity, Udemy, Pluralsight, Edx etc., assurez-vous de consulter les liens postés ci-dessous:
-
-  :::tip
-  - [Cours de programmation sur Udacity](https://www.udacity.com/course/intro-to-programming-nanodegree--nd000)
-  - [Chemin d'apprentissage des fondamentaux de l'IA Microsoft Azure (avec certification optionnelle)](https://learn.microsoft.com/en-us/training/paths/get-started-with-artificial-intelligence-on-azure/)
-  - [Chemin d'apprentissage des fondamentaux de Microsoft Azure (avec certification optionnelle)](https://learn.microsoft.com/en-gb/certifications/exams/az-900)
-  :::
-
-Assurez-vous de consulter nos programmes Microsoft:
-
-- [Programme Aspire de Microsoft pour les embauches en début de carrière](https://www.microsoft.com/en-ie/earlycareers/aspire-program)
-- Stages chez MS
-- [Carrières professionnelles chez Microsoft](https://careers.microsoft.com/)
-
-[◀ Défi précédent](../Vision/README_FR.md) | [🔼 Accueil](../../../README_FR.md)
