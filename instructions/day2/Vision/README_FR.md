@@ -6,8 +6,8 @@
 
 Dans ce défi, vous apprendrez comment:
 
-- Créer un service API de Vision dans Azure
-- Connecter votre service API de Vision avec votre application
+- Créer un service Azure de type API Vision
+- Connecter votre service Azure : API Vision avec votre application
 - Transmettre la clé API à votre application à l'aide des secrets GitHub
 - Commencer à détecter des objets avec votre application
 

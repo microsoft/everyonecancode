@@ -6,10 +6,10 @@
 
 Dans ce défi, vous apprendrez comment:
 
-- Créer un service API de parole dans Azure
-- Connectez votre service API de parole avec votre application
-- Transmettez la clé API à votre application à l'aide des secrets GitHub
-- Comment parler à notre application
+- Créer un service Azure : Speech API
+- Connectez votre service Speech API avec votre application
+- Transmettez la clé API à votre application à l'aide des variables secretes GitHub
+- Dialoguer avec l'application
 
 ## Table des matières
 
@@ -24,13 +24,13 @@ Dans ce défi, vous apprendrez comment:
 
 - Utilisez le même service cognitif que vous avez créé dans le [défi Vision](../Vision/README_FR.md)
 
-## Intégrer les informations d'identification du service de parole dans le secret GitHub
+## Intégrer les informations d'identification du service Speech API dans les "secrets" GitHub
 
-Encore une fois, vous devez partager les informations de cette ressource avec l'application Web, afin qu'elle puisse utiliser l'_intelligence_ du service de parole. Par conséquent, nous allons créer un autre secret GitHub et le partager avec l'application.
+Encore une fois, vous devez partager les informations de cette ressource avec l'application Web, afin qu'elle puisse utiliser l'_intelligence_ du service Speech API. Par conséquent, nous allons créer un autre secret GitHub et le partager avec l'application.
 
 - Naviguez vers GitHub > Paramètres > Secrets > Actions et ajoutez un `Nouveau secret de dépôt`.
 - Nom: `VITE_SPEECH_API_KEY`
-- Valeur: La clé de votre service de parole que vous avez copiée auparavant
+- Valeur: La clé de votre service Speech API que vous avez copiée auparavant
 - Ajouter un secret.
 
   ![Capture d'écran de la création d'un secret](./images/light/vue-app-speech-api-key-secret.png)
@@ -43,9 +43,9 @@ Maintenant, nous allons faire comprendre à notre application quand nous parlons
   ![Exécutez un workflow](./images/light/runworkflow.png)
   ![Exécutez tous les jobs](./images/light/rerunalljobs.png)
 
-Cliquez sur le lien frontend affiché sous l'étape de déploiement sous votre pipeline `https://<yourgithubhandle>.github.io/...` ou ouvrez l'application sur votre téléphone.
+Cliquez sur le lien frontend (coté client) affiché sous l'étape de déploiement sous votre pipeline `https://<yourgithubhandle>.github.io/...` ou ouvrez l'application sur votre téléphone.
 
-Notre application frontend devrait maintenant avoir un nouveau bouton avec un symbole de microphone qui nous permet de parler à notre application en anglais et en allemand et d'avoir notre discours transcrit.
+Notre application frontend (coté client) devrait maintenant avoir un nouveau bouton avec un symbole de microphone qui nous permet de parler à notre application en anglais et en allemand et d'avoir notre discours transcrit.
 
 Ni ce que vous dites ni ce qui est transcrit ne sera sauvegardé et n'apparaîtra **pas** sur la chronologie ou le fil d'actualité.
 
@@ -53,7 +53,7 @@ Ni ce que vous dites ni ce qui est transcrit ne sera sauvegardé et n'apparaîtr
 
 Alors allez-y et dites au moins 5 phrases et dites-nous à quel point votre application vous comprend bien.
 
-Jetez également un œil et lisez à votre application ou demandez à d'autres personnes de parler à votre téléphone, vous pourriez être surpris.
+Jetez également un œil à votre application ou demandez à d'autres personnes de parler à travers un téléphone, vous pourriez être surpris.
 
 Par défaut, il ne comprendra que l'allemand et l'anglais, si vous voulez changer la langue, vous pouvez changer le repo dans `Frontend` > `scr` > `views` > `Microphone.vue` à la ligne 7 et ajouter par exemple l'ukrainien
 `<option value="uk-UA">Ukrainien</option>`
@@ -68,7 +68,7 @@ Demandez à votre coach si vous n'avez pas réussi. Nous vous avons couvert avec
 
 ### Utilisez le service Backend Milligram préparé
 
-Regardez l'application préparée avec nos photos pour que vous puissiez jouer autour [Milligram](https://codeunicornmartha.GitHub.io/FemaleAIappInnovationEcosystem/#/?stack-key=a78e2b9a).
+Regardez l'application préparée avec nos photos pour pouvoir tester [Milligram](https://codeunicornmartha.GitHub.io/FemaleAIappInnovationEcosystem/#/?stack-key=a78e2b9a).
 
 ### Quelle est la prochaine étape?
 

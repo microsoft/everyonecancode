@@ -34,7 +34,7 @@ Aujourd'hui, vous allez apprendre comment :
 
 ## Frontend de l'application Milligram
 
-Tout d'abord, commençons par l'application frontend - La partie que vous verrez et utiliserez sur votre téléphone mobile ou votre navigateur Web. C'est le principal moyen d'interagir avec les services de Milligram.
+Tout d'abord, commençons par l'application frontend - Il s'agit de la partie que vous verrez et utiliserez sur votre téléphone mobile ou votre navigateur web. C'est le principal moyen d'interagir avec les services de Milligram.
 
 <details>
 <summary>Que signifie frontend ?</summary>
@@ -280,3 +280,4 @@ Demandez à votre coach si vous n'avez pas réussi. Nous avons une solution de s
 Regardez l'application préparée avec nos photos pour que vous puissiez jouer [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
 
 [◀ Défi précédent](../ApplicationPart1/README_FR.md) | [🔼 Accueil](../../../README_FR.md) | [Prochain défi ▶](../../day1/ApplicationPart3/README.md)
+
