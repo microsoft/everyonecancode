@@ -1,28 +1,27 @@
 # Challenge 4: Github Copilot 
 
-⏲️ _Est. time to complete: 15 min._ ⏲️
+⏲️ Temps estimé pour terminer: 15 min._ ⏲️
 
-## Here is what you will learn 🎯
+## Voici ce que vous allez apprendre 🎯
 
-Today you will learn how to:
+Aujourd'hui, vous apprendrez à :
 
-- Adding github copilot to your codespace
-- Adding a footer to the application
-- Generate code with Github Copilot
-- Explain code with Github Copilot
+- Ajout GitHub Copilot à votre espace de travail
+- Ajout d'un pied de page à l'application
+- Générer du code avec Github Copilot
+- Expliquer le code avec Github Copilot
 
-
-## Table Of Contents
+## Table des matières
 
 1. [Getting Started](#getting-started)
 2. [Add a footer](#add-a-footer)
 3. [Generate Code with Github Copilot](#generate-code-with-github-copilot)
 4. [Explain Code with Github Copilot](#explain-code-with-github-copilot) 
 
-### Further informative resources
+### Autres ressources informatives
 
-- [What is CSS?](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
+- [Qu'est ce que le CSS?](https://developer.mozilla.org/fr/docs/Web/CSS)
+- [GitHub Copilot Documentation](https://docs.github.com/fr/copilot)
 
 
 ## Getting Started
