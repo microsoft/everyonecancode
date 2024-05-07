@@ -6,17 +6,17 @@ name = "pypi"
 [packages]
 uvicorn = "*"
 azure-storage-blob = "*"
-uvloop = "*"
 fastapi = "*"
 httptools = "*"
 python-multipart = "*"
 nest-asyncio = "*"
+openai = "*"
 
 [dev-packages]
 black = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.12"
 
 [pipenv]
 allow_prereleases = true
