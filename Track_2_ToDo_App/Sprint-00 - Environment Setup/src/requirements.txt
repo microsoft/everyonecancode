@@ -1,6 +1,0 @@
-openai
-flask
-flask[async]
-flask_sqlalchemy
-sqlalchemy
-semantic_kernel
