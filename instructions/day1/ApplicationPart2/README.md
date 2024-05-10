@@ -119,7 +119,7 @@ appstore. Therefore, we will not add the app to our phones' homescreen.
   - This is how it should look like on ios:
     ![Add to homescreen ios](./images/FrontendHomescreen1.jpg)
   - This is how it should look on Android:
-    ![Add to homescreen Android](./images/FrontendHomescreen1.jpg)
+    ![Add to homescreen Android](./images/FrontendHomescreenAndroid.jpg)
 - Now you can open the website like a normal app from the homescreen of your phone.
 
 ## Milligram application backend
