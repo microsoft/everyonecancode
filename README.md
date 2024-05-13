@@ -1,7 +1,7 @@
 > [!IMPORTANT]
 > The Python Programming Tack can be found [here](https://github.com/microsoft/everyonecancode-us).
 
-# Everyon can Code! – Light Your Fire for Coding
+# Everyone can Code! – Light Your Fire for Coding
 
 ![FemaleTechGenLogo](./img/BannerEveryoneCanCode.png)
 
