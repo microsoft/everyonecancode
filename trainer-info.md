@@ -1,2 +1,11 @@
 # Last Minute Notes for Trainer
 
+> [!CAUTION]
+> We ran into a technical issue while pre-provisioning the AppServicePlans for the workshop. There is a very high likelyhood that this is **not resolved by the time of the event**.
+> To continue working on the hands on track despite AppServicePlans (and therefore WebApps) not being available you have following options:
+>
+> 1.) Priorize the [Python Programming Track](https://github.com/microsoft/everyonecancode-us), it only uses Azure WebApps in the very last step.
+>
+> 2.) Ask Participants to Sign Up for a Free Account. All resource can be created on the free tier. This **requires a credit card and comes with the risk of creating payed resources by accident**!
+>
+> 3.) Ask Participants to use our pre-deployed backend at: [https://everyonecancode-backend-a151.azurewebsites.net/](https://everyonecancode-backend-a151.azurewebsites.net/) and ignore the backend configuration steps.
