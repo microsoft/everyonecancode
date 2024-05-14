@@ -23,6 +23,7 @@
     "easy-vue-camera": "^1.0.5",
     "lodash": "^4.17.21",
     "microsoft-cognitiveservices-speech-sdk": "^1.18.0",
+    "node": "^20.13.1",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
@@ -45,7 +46,7 @@
     "prettier": "^2.2.1",
     "sass": "^1.35.2",
     "typescript": "~4.1.5",
-    "vite": "^2.5.4",
+    "vite": "^2.9.18",
     "vite-plugin-vue2": "1.9.0"
   }
 }
