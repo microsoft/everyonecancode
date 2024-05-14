@@ -6,8 +6,8 @@
         <div id="right"></div>
         <div id="top"></div>
         <div id="bottom"></div>
-        <b-navbar-item id="fontnavbar" class="title is-2">
-          ummagram
+        <b-navbar-item id="fontnavbar" class="title is-2" style='color: orange;'>
+          fridagram
         </b-navbar-item>
       </template>
     </b-navbar>
