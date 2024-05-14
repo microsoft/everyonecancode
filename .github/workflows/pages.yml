@@ -9,6 +9,7 @@ on:
   pull_request:
     branches:
       - main
+      - fix/github-actions-node-16-to-node-20
 permissions:
   packages: write
   contents: write
