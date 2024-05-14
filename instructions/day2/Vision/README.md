@@ -1,4 +1,4 @@
-# Challenge 4: Object Recognition
+# Challenge 5: Object Recognition
 
 ⏲️ _est. time to complete: 30 min._ ⏲️
 
@@ -13,7 +13,7 @@ In this challenge you will learn how to:
 
 ## Table of contents
 
-### Further informative resources:
+### Further informative resources
 
 - [What is a Resource / Resource Group / Subscription?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
 - [Vision API](https://azure.microsoft.com/en-us/products/cognitive-services/vision-services/)
@@ -23,12 +23,13 @@ In this challenge you will learn how to:
 ## Getting started
 
 - Navigate to your **Resource Group** we created on Day 1 during the previous challenges.
-- Create a new **Resource** and search for **Vision**.
-  ![Screenshot of how to create a resource](./images/createresource.png)
+- Create a new **Resource** and search for **Azure AI services**.
+  
+  ![Screenshot of how to create a resource](./images/createresource1.png)
 
 ## Create Computer Vision Cognitive Service
 
-- Select **Cognitive Service** and hit **Create**.
+- Select **Cognitive Services** and hit **Create**.
 - Your subscription and resource group should already be set. Select **westeurope** as region and **Standard S0**.
   ⚠️ Attention: westeurope is hardcoded - so make sure to have this resource in westeurope
 - Give the resource a unique name.
@@ -59,7 +60,7 @@ You need to share the information of this resource with the web app, so that it 
 ## Run Frontend Pipeline again
 
 - Navigate to **Actions** > **Pages** and **Run workflow**
-  ![Screenshot of Actions page of github.com/microsoft/anyonecancode](./images/run-workflow.png)
+  ![Screenshot of Actions page of github.com/microsoft/everyonecancode](./images/run-workflow.png)
 
 Click on the frontend link displayed under the deploy step under your pipeline `https://<yourgithubhandle>.github.io/...` or open the app on your phone.
 
@@ -67,7 +68,7 @@ Our frontend application should now have a new button with an image symbol that 
 
 Neither what picture you take nor what is detected will be saved and will **not** appear on the timeline or news feed.
 
-## Look around! What can your app detect? Play around!
+## Look around! What can your app detect? Play around
 
 So go ahead and detect at least 5 objects and tell us how great your application detects objects on images.
 
@@ -81,4 +82,4 @@ Ask your coach if you did not succeed. We have you covered with a back up. ⚠�
 
 ### Use prepared Milligram Backend Service
 
-Look at the prepared application with our pictures for you to play around [Milligram](https://microsoft.github.io/anyonecancode/).
+Look at the prepared application with our pictures for you to play around [Milligram](https://microsoft.github.io/everyonecancode/).

@@ -66,7 +66,7 @@ Now, let's go ahead and fork this repository!
 
 ## Create your codespace
 
-GitHub Codespaces is a cloud-based development environment that lets you code directly from your browser. It can also be connected to your local Visual Studio Code. 
+GitHub Codespaces is a cloud-based development environment that lets you code directly from your browser. It can also be connected to your local Visual Studio Code.
 
 In your forked repository, click on the green button that says **<> Code**, go to the **Codespaces** tab an click on **Create codespace on main**. Let's do it!
 
@@ -80,7 +80,7 @@ Another tab in our codespace opens and it installs the extensions for Azure Func
 
 ![Explorer tab](./images/light/ExplorerTab.png)
 
-Now that you have successfully created and customised your GitHub account, and created our codespace we will move onto the next challenge for today. 
+Now that you have successfully created and customised your GitHub account, and created our codespace we will move onto the next challenge for today.
 
 You will make your first code changes and merge your first pull request here.
 
@@ -88,15 +88,13 @@ You will make your first code changes and merge your first pull request here.
 
 Octocat is the official mascot of GitHub and the cutest, friendliest, and most tentacular cat you'll ever meet! With its unique octopus-like shape, Octocat has become a beloved symbol of the GitHub community, popping up in merchandise, events, and social media.
 
-As an extra challenge for those who finish early, we dare you to unleash your creativity and design your own Octocat using the Octocat builder at https://myoctocat.com/. This tool allows you to customize the color, shape, and accessories of your Octocat, and share it with others. 
+As an extra challenge for those who finish early, we dare you to unleash your creativity and design your own Octocat using the Octocat builder at [https://myoctocat.com](https://myoctocat.com/). This tool allows you to customize the color, shape, and accessories of your Octocat, and share it with others.
 
-Think of your Octocat as your personal avatar, your spirit animal, or your alter ego. Give it a funky hairstyle, a cool outfit, or a quirky accessory. Make it reflect your personality, your interests, or your sense of humor. 
 
-Who knows, your Octocat might become the next internet sensation, the star of a blockbuster movie, or the mascot of a future GitHub feature. Or it might just make you smile :) 
+Think of your Octocat as your personal avatar, your spirit animal, or your alter ego. Give it a funky hairstyle, a cool outfit, or a quirky accessory. Make it reflect your personality, your interests, or your sense of humor.
+
+Who knows, your Octocat might become the next internet sensation, the star of a blockbuster movie, or the mascot of a future GitHub feature. Or it might just make you smile :)
 
 So go ahead, have fun, and show us what you've got!
 
 [🔼 Home](../../../README.md) | [Next challenge ▶](../ApplicationPart1/README.md)
-
-
-

@@ -61,7 +61,7 @@ _A [repository](https://docs.github.com/github/creating-cloning-and-archiving-re
 
 ![Enable GitHub Actions](./images/EnableGithubActions.png)
 
-Make sure that the Actions have read/write permissions. Check this via Settings->Actions->General and scroll down to the *Workflow permissions* section. Click the *Read and write permissions* option. Click *Save*.
+Make sure that the Actions have read/write permissions. Check this via Settings->Actions->General and scroll down to the _Workflow permissions_ section. Click the _Read and write permissions_ option. Click _Save_.
 ![Check Settings](./images/gh-actions-read.png)
 
 ### Run GitHub Actions
@@ -84,9 +84,9 @@ it to serve the frontend for Milligram.
 - Go to your repository settings-
   ![Repository Settings](./images/RepoSettingsTab.png)
 - Navigate to **Pages**, select the branch _gh-pages_ and hit the save button.
-  ![Enable Pages](./images/FrontendPages.png)
+  ![Enable Pages](./images/FrontendPagesUpdated.png)
 - The deployment will take 1-2 minutes. After that, the Milligram website is
-  accessible through `https://<your github username>.github.io/anyonecancode/`.
+  accessible through `https://<your github username>.github.io/everyonecancode/`.
 
 Take a look at the website. Try changing the profile to your GitHub account name
 and see that it is stored even if you refresh the browser.
@@ -103,7 +103,10 @@ features are:
 - Detect objects within images and create image descriptions (implemented on day 2)
 - Transcribe sentences you speak using Azure Speech Service (implemented on day 2)
 
-To make the first modifications, open your personal Milligram website on your phone and explore it's content. Then edit the profile in the app to show your own GitHub profile picture in the app.
+Your app is available. But there is no storage or database behind it. So it won't be able to store any data. We'll install that in the next step.
+
+Now, to make the first modifications, open your personal Milligram website on your phone and explore it's content. Then edit the profile in the app to show your own GitHub profile picture in the app.
+
 ![Add to homescreen 1](./images/FrontendHomescreen0.jpg)
 
 ### Add The application to your homescreen
@@ -154,8 +157,8 @@ Just like the disk or storage on your computer. A cool fun fact is that you can 
 - Select your subscription & the resource group with the name that you used to log into the Azure Portal.
 - The name of your Azure Storage account needs to be globally unique. It also has to use small letters and no special characters.
 - Make sure to select `Standard` for _Performance_ and `Locally-redundant storage (LRS)` for _Redundancy_.
-  ![Storage](./images/light/BackendStorage0.png)
-- Hit _Review & create_ and after that _Create_ to finish creating the storage account.
+  ![Storage](./images/light/BackendStorage1.png)
+- Hit _Review_ and after that _Create_ to finish creating the storage account.
 - Once the storage account is created there should be a button _Go to resource_. Click on it.
 - Now you should see your storage account. Select _Containers_ on the left hand side.
 - Click the _New Container_ button and create a container named `images`. Leave everything in the preconfigured settings as is.
@@ -173,14 +176,13 @@ Our [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) is
 - Make sure to adjust the settings according to the image below:
   - Name: `<pick your own unique name>`
   - Publish: `Code`
-  - Runtime stack: `Python 3.8`
+  - Runtime stack: `Python 3.12`
   - Operating System: `Linux`
   - Region: `West Europe`
     ![backend 0](./images/light/BackendApp0.png)
 - Create a new App Service Plan and `<pick your own name>`.
   ![backend 1](./images/light/BackendApp1.png)
-- Click on _Change size_ and then click the _Dev/Test_ tab and select the **F1** which is free, otherwise you might be charged when creating a larger plan.
-  ![backend 2](./images/light/BackendApp2.png)
+- In the pricing plan dropdown menu, select **Free F1** which is free, otherwise you might be charged when creating a larger plan.
 - Click _Review + Create_ at the bottom of the screen.
 - Review the displayed information and click _Create_ on the next screen to spin up the backend application.
 
@@ -192,13 +194,13 @@ Our [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) is
 
 Now let's connect our application with our storage so that you can take pictures on your phone and store them. We need to tell the Web application where it can find our storage service. The application can take external configurations to configure the connection to the storage account.
 
-- For this reason navigate to your _storage account_ again. You should be able to find it via the search bar in the top either by searching its unique name or just storage account.
-- Under _Access keys_ you can find the _Connection string_ from our storage account. Hit the 👀*Show keys* button so are able to copy it's value to e.g. a notepad.
- ![Screenshot of Access key page in Azure portal](./images/light/SecretAccessKeys.png)
+- For this reason navigate to your _Storage account_ again. You should be able to find it via the search bar in the top either by searching its unique name or just storage account.
+- Under _Access keys_ you can find the _Connection string_ from our storage account. Hit the _👀 Show keys_ button so are able to copy it's value to e.g. a notepad.
+  ![Screenshot of Access key page in Azure portal](./images/light/SecretAccessKeys.png)
 - Navigate back to the web app and open the _Configuration_ tab, click _New connection string_ and create a new connection string with the following settings:
-  - Name: `STORAGE`
-  - Value: `<paste your (earlier copied) connection string from Storage Account>`
-  - Type: `Custom`
+  | Connection string | Type | Value |
+  |-|-|-|
+  | `STORAGE` | Custom | `<paste your (earlier copied) connection string from Storage Account>` |
 - Hit `ok` and `Save`.
 - Navigate and scroll down to the _CORS_ tab on the left hand side of your app service and enter `https://<YourGithubHandle>.github.io` under _Allowed Origins_.
 - Hit `Save` again.
@@ -210,7 +212,7 @@ Now your storage account and web app are successfully connected and can communic
 There is still a small configuration missing. Our app uses a ready-made module so that users can interact with their content. But this module is not installed yet. In order for it to be installed, we provide the web app with a configuration that is executed when the app is launched, allowing users to interact with our app's data.
 
 - Navigate to **_Configuration_** under _Settings_.
-- Under the tab **_General settings_** you should find the _Stack settings_. For our backend we are working with the programming language Python - more specifically Python 3.8.
+- Under the tab **_General settings_** you should find the _Stack settings_. For our backend we are working with the programming language Python - more specifically Python 3.12.
 - Behind **_Startup Command_** enter `gunicorn -k uvicorn.workers.UvicornWorker` and hit _Save_.
   ![How to configure the Startup Command of the Web application](./images/light/AppServiceStartupCommand.png)
 
@@ -230,13 +232,13 @@ Once you have hit `Save` the service automatically creates a workflow file in yo
 Let's pause a second. To make sure that you are on track, test if our app's frontend gets a response from our backend service. Before we bring everything together, we want to make sure the backend service is working as expected.
 
 - Navigate to the _Overview_ tab on the left hand side of the Web App Service.
- ![App Service URL](./images/light/AppServicesDocLink.png)
-- Hit the _URL_ and test the website using the docs to figure out if the features of our Milligram will work.
+  ![App Service URL](./images/light/AppServicesDocLink.png)
+- Hit on Default Domain, add `/docs` to the end, then test the website using the interactive documentation to figure out if the features of our Milligram will work.
 - In your browser you will have the following view:
- ![Test API Page](./images/light/TestAPIGetImages.png)
+  ![Test API Page](./images/light/TestAPIGetImages.png)
 
   :::tip
-  📝 If you want to learn more about Swagger have a look at [Wikipedia](<https://en.wikipedia.org/wiki/Swagger_(software)>).
+  📝 If you want to learn more about OpenAPI have a look at [Wikipedia](<https://en.wikipedia.org/wiki/OpenAPI_(software)>).
   :::
 
 - Select the _GET/images_ endpoint, hit `Try it Out` and then hit `Execute`. Once you get the 200 Response code, you have a successful running service. Congratulations!
@@ -245,16 +247,20 @@ Let's pause a second. To make sure that you are on track, test if our app's fron
   📝 Look at the HTTP Response Codes at [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes). 2xx Codes generally mean success, where as 4xx and 5xx Codes show different kinds of errors. You probably know 404 - Not Found.
   :::
 
+### Clarifications, What have we done so far?
+
+Congratulations, you have just deployed the backend to your web application! Let us summarize what we have done so far.\
+First, we have deployed the frontend (user interface) of our web app using github pages. This is what you see when you go to your github pages link. The frontend needed a server to serve images and run some logic. This is where the azure part came in. First, we created a storage resource, this is responsible for storing our images. Second, we created a web app resource, here we will run our server logic. The server logic is written in Python using a framework called FastAPI. The server logic code is hosted in the everyonecancode github repository. We connected our web app to the github repository and we instructed the server to run a specific command upon starting the web app. This command will start running our server logic, this is why you can see the docs in your browser under `/docs`.  Next up, we will try to connect the Frontend to the Backend.
+
 ### Integrate Azure Web App URL in GitHub Secrets
 
 Now that we are sure that our backend service works as expected, we can bring everything together.
 
 To do this, we will use a GitHub feature called _Secrets_, where you can store your backend URL to make your frontend talk to the backend service.
 
-- On your Repository page in GitHub select _Settings_ and navigate to _Secrets_ > _Actions_.
+- On your Repository page in GitHub select _Settings_ and navigate to _Secrets and Variables_ > _Actions_.
 - Add a _New repository secret_ named `VITE_IMAGE_API_URL` and as value set `<your WebApp's URL>`.
-  > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/`
-![GitHub Secrets Create](./images/light/VITE_IMAGE_API_URL.png)
+  > ⚠️⚠️ Your URL should end on a **/**. It should look like this: `https://xxxx.azurewebsites.net/` > ![GitHub Secrets Create](./images/light/VITE_IMAGE_API_URL.png)
 
 ### Run frontend Pipeline again
 
@@ -276,7 +282,7 @@ Our frontend application should now have a new button with a camera symbol that 
 
 So go ahead and take at least 5 pictures and make sure they appear in your app. Make sure to share them with at least 1-2 friends so they can also upload their photos to your News Feed.
 
-That's a wrap for today. Congrats!
+That's a wrap for today. Congrats! 🎉
 
 Tomorrow, we will make our app smart by adding artificial intelligence to it for detecting objects within your images as well as talking to our app.
 

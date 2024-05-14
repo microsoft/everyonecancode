@@ -1,8 +1,8 @@
 title: Anyone Can Code
-patterns: ["**/*.md", "!**/node_modules", "!templates/**", "!frontend/**"]
-base: /anyonecancode/instructions/
+patterns: ["**/*.md", "!**/node_modules", "!templates/**", "!frontend/**", "!Track_2_ToDo_App/**"]
+base: /everyonecancode/instructions/
 themeConfig:
-  repo: "microsoft/anyonecancode"
+  repo: "microsoft/everyonecancode"
   editLinks: true
   sidebar:
     [
@@ -10,7 +10,9 @@ themeConfig:
       "./instructions/day1/GitHub/",
       "./instructions/day1/ApplicationPart1/",
       "./instructions/day1/ApplicationPart2/",
+      "./instructions/day1/ApplicationPart3/",
       "./instructions/day2/Vision/",
       "./instructions/day2/Speech/",
+      "./instructions/day2/Chat/",
     ]
 plugins: [["vuepress-plugin-code-copy", true]]
