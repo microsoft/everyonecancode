@@ -7,7 +7,7 @@
         <div id="top"></div>
         <div id="bottom"></div>
         <b-navbar-item id="fontnavbar" class="title is-2">
-          Milligram
+          Sashagram
         </b-navbar-item>
       </template>
     </b-navbar>
@@ -48,8 +48,8 @@ export default class Home extends Vue {}
     #f09433 0%,
     #e6683c 25%,
     #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
+    #fa1e01 75%,
+    #1a1ef5 100%
   );
   position: fixed;
 }
