@@ -7,7 +7,7 @@
         <div id="top"></div>
         <div id="bottom"></div>
         <b-navbar-item id="fontnavbar" class="title is-2" style="color: darkred">
-          Milligun - dont shoot the messenger
+          Milligun - don't shoot the messenger
         </b-navbar-item>
       </template>
     </b-navbar>
