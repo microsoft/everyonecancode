@@ -3,6 +3,7 @@ This is a simple FastAPI app developed for AnyoneCanCode that allows you to uplo
 
 This app is designed to be deployed to Azure App Service as a Linux container. It uses the Azure Storage SDK for Python to
 stream images from Azure Blob Storage to the browser.
+GOSF-GT
 """
 
 import os
