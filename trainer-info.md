@@ -9,3 +9,5 @@
 > 2.) Ask Participants to Sign Up for a Free Account. All resource can be created on the free tier. This **requires a credit card and comes with the risk of creating payed resources by accident**!
 >
 > 3.) Ask Participants to use our pre-deployed backend at: [https://everyonecancode-backend-a151.azurewebsites.net/](https://everyonecancode-backend-a151.azurewebsites.net/) and ignore the backend configuration steps.
+> 
+> 4.) We have created fallback accounts for regions relying on the original EveryoneCanCode Milligram track (Japan and France). We also have a the possiblity to hand out accounts on two shared fallback regions with limited capacity. Please reach out to our orga team for these.
