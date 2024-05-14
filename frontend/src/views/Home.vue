@@ -6,8 +6,8 @@
         <div id="right"></div>
         <div id="top"></div>
         <div id="bottom"></div>
-        <b-navbar-item id="fontnavbar" class="title is-2">
-          Milligram
+        <b-navbar-item id="fontnavbar" class="title is-2" style="color: green">
+          Milligram_shima_test_1446
         </b-navbar-item>
       </template>
     </b-navbar>
