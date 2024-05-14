@@ -33,7 +33,7 @@ jobs:
         working-directory: frontend
 
       - name: Build Static Web App
-        run: npm run build -- --base=$BASE_URL
+        run: npm run build -- --base=/$BASE_URL/
         env:
           BASE_URL: ${{ github.event.repository.name }}
           VITE_FACE_API_KEY: ${{ secrets.VITE_FACE_API_KEY }}
