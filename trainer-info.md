@@ -1,4 +1,6 @@
 # Last Minute Notes for Trainer
+> [!INFO]
+> We have now backup accounts that should be suffient to provide everyone to have access to shared AppService Plans for WebApps in the "asharedplan" resource group. If more plans are needed coaches can provision additional plans in this group.
 
 > [!CAUTION]
 > We ran into a technical issue while pre-provisioning the AppServicePlans for the workshop. There is a very high likelyhood that this is **not resolved by the time of the event**.
