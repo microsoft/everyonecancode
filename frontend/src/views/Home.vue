@@ -49,7 +49,7 @@ export default class Home extends Vue {}
     #e6683c 25%,
     #dc2743 50%,
     #fa1e01 75%,
-    #1a1ef5 100%
+    #6cdf5d 100%
   );
   position: fixed;
 }
