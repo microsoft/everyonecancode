@@ -1,5 +1,4 @@
 name: pages
-de
 
 on:
   workflow_dispatch:
