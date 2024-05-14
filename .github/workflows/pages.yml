@@ -1,4 +1,5 @@
 name: pages
+de
 
 on:
   workflow_dispatch:
@@ -23,7 +24,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: "20"
           cache: "npm"
           cache-dependency-path: frontend/package-lock.json
 
@@ -62,7 +63,7 @@ jobs:
       - uses: actions/setup-node@v3
         if: github.repository_owner == 'microsoft'
         with:
-          node-version: "14"
+          node-version: "20"
 
       - run: npm init -y
         if: github.repository_owner == 'microsoft'
