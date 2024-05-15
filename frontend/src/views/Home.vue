@@ -8,6 +8,7 @@
         <div id="bottom"></div>
         <b-navbar-item id="fontnavbar" class="title is-2" color= "green">
           Llewellyn Jakobus Fourie
+
         </b-navbar-item>
       </template>
     </b-navbar>
