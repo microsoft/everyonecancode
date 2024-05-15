@@ -1,9 +1,9 @@
 {
-  "name": "milligram-frontend",
+  "name": "checkgram-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0 --port 5173",
     "build": "vite build",
     "serve": "vite preview",
     "lint": "eslint --ext .js,.vue,.tx --ignore-path .gitignore --fix src"
