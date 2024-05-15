@@ -8,7 +8,10 @@
       <vue-page-stack>
         <router-view :key="screen" class="router-view-c"></router-view>
       </vue-page-stack>
-    </transition>
+    </transition> 
+    <footer class="footer">
+      Made with love ❤️
+    </footer>
   </div>
 </template>
 
